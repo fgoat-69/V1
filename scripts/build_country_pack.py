@@ -10,20 +10,21 @@ BASE_URL = "https://world.openfoodfacts.org/cgi/search.pl"
 FIELDS = "product_name,brands,code,nutriments,serving_size,serving_quantity"
 REQUEST_TIMEOUT_SECONDS = 30
 
-# Practical pack budget targets
-TARGET_TOTAL_BYTES = 7_000_000     # whole country pack target (~7 MB)
-TARGET_MAIN_BYTES = 5_000_000      # preferred main pack target (~5 MB)
-FULL_PACK_MAX_ITEMS = 15_000       # small-country heuristic threshold
+# Packaging rules
+TARGET_TOTAL_BYTES = 7_000_000
+TARGET_MAIN_BYTES = 5_000_000
+FULL_PACK_MAX_ITEMS = 15_000
 
-# Current discovery method.
-# This is still an API-discovery approach, not guaranteed full OFF coverage.
-SEED_QUERIES = [
-    "a", "e", "i", "o", "u",
-    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
-    "milk", "bread", "rice", "water", "coffee",
-    "juice", "tea", "cheese", "chicken", "pasta",
-    "egg", "yogurt", "soda", "chocolate", "cookie",
-]
+# Build traversal rules
+POPULAR_PAGE_SIZE = 100
+POPULAR_MAX_PAGES_SMALL = 300
+POPULAR_MAX_PAGES_LARGE = 150
+
+# These are NOT food keywords.
+# They are only neutral traversal tokens to broaden search result coverage
+# when the OFF endpoint requires a search term.
+# This avoids English food bias like "milk", "bread", etc.
+TRAVERSAL_TOKENS = list("abcdefghijklmnopqrstuvwxyz0123456789")
 
 LIQUID_HINTS = {
     "water", "milk", "juice", "cola", "soda", "oil", "syrup", "tea", "coffee",
@@ -141,12 +142,17 @@ def json_bytes(data):
     return len(json.dumps(data, ensure_ascii=False, separators=(",", ":")).encode("utf-8"))
 
 
+def save_json(path, payload):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
 def split_items_by_budget(items, main_budget_bytes, total_budget_bytes):
     main_items = []
     fill_items = []
 
-    main_bytes = 2   # []
-    total_bytes = 2  # []
+    main_bytes = 2
+    total_bytes = 2
 
     for item in items:
         item_bytes = json_bytes(item)
@@ -171,7 +177,7 @@ def split_items_by_budget(items, main_budget_bytes, total_budget_bytes):
     return main_items, fill_items
 
 
-def fetch_products(country_slug, query, page, page_size=100):
+def fetch_products(country_slug, query, page, page_size=POPULAR_PAGE_SIZE):
     params = {
         "search_terms": query,
         "page": page,
@@ -189,9 +195,26 @@ def fetch_products(country_slug, query, page, page_size=100):
     return payload.get("products", []) or []
 
 
-def build_country(country_iso2, slug, max_items=100_000, max_pages_per_query=10):
-    print(f"Building {country_iso2} ({slug})")
+def add_products(products, seen, items):
+    added = 0
 
+    for product in products:
+        mapped = map_product(product)
+        if not mapped:
+            continue
+
+        key = normalize_key(mapped)
+        if key in seen:
+            continue
+
+        seen.add(key)
+        items.append(mapped)
+        added += 1
+
+    return added
+
+
+def collect_popularity_first(country_slug, max_pages):
     seen = set()
     items = []
 
@@ -199,77 +222,122 @@ def build_country(country_iso2, slug, max_items=100_000, max_pages_per_query=10)
     successful_requests = 0
     failed_requests = 0
 
-    for query in SEED_QUERIES:
-        for page in range(1, max_pages_per_query + 1):
-            if len(items) >= max_items:
-                break
+    # First pass: most likely/popular coverage using neutral broad token "a"
+    primary_token = "a"
 
+    for page in range(1, max_pages + 1):
+        total_requests += 1
+        try:
+            products = fetch_products(country_slug, primary_token, page)
+            successful_requests += 1
+        except Exception as e:
+            failed_requests += 1
+            print(f"ERROR popularity pass token={primary_token} page={page}: {e}")
+            break
+
+        if not products:
+            break
+
+        added = add_products(products, seen, items)
+        print(f"Popularity pass '{primary_token}' page {page} -> added {added}, total {len(items)}")
+        time.sleep(0.35)
+
+    # Second pass: broader neutral traversal, still popularity-sorted, still country-filtered.
+    # No English food words.
+    for token in TRAVERSAL_TOKENS:
+        if token == primary_token:
+            continue
+
+        for page in range(1, max_pages + 1):
             total_requests += 1
-
             try:
-                products = fetch_products(slug, query, page)
+                products = fetch_products(country_slug, token, page)
                 successful_requests += 1
             except Exception as e:
                 failed_requests += 1
-                print(f"ERROR query={query} page={page}: {e}")
+                print(f"ERROR traversal token={token} page={page}: {e}")
                 break
 
             if not products:
                 break
 
-            added_this_page = 0
-
-            for product in products:
-                mapped = map_product(product)
-                if not mapped:
-                    continue
-
-                key = normalize_key(mapped)
-                if key in seen:
-                    continue
-
-                seen.add(key)
-                items.append(mapped)
-                added_this_page += 1
-
-                if len(items) >= max_items:
-                    break
-
-            print(f"Query '{query}' page {page} -> added {added_this_page}, total {len(items)}")
+            added = add_products(products, seen, items)
+            print(f"Traversal '{token}' page {page} -> added {added}, total {len(items)}")
 
             time.sleep(0.35)
 
-        if len(items) >= max_items:
-            break
+            # Stop once we are far enough past packaging budget.
+            # We do not need endless discovery if the final pack will be byte-capped anyway.
+            if json_bytes(items) > TARGET_TOTAL_BYTES * 2:
+                return items, {
+                    "totalRequests": total_requests,
+                    "successfulRequests": successful_requests,
+                    "failedRequests": failed_requests,
+                    "traversalStoppedEarly": True,
+                }
 
-    if successful_requests == 0:
-        raise RuntimeError(f"No successful OFF requests for {country_iso2} ({slug})")
-
-    discovered_bytes = json_bytes(items)
-
-    build_meta = {
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "seedQueryCount": len(SEED_QUERIES),
-        "maxPagesPerQuery": max_pages_per_query,
-        "maxItems": max_items,
+    return items, {
         "totalRequests": total_requests,
         "successfulRequests": successful_requests,
         "failedRequests": failed_requests,
-        "discoveredItemCount": len(items),
-        "discoveredBytes": discovered_bytes,
-        "discoveryMethod": "api_seeded_country_search",
-        "coverageNote": (
-            "This build is based on OFF search API discovery and deduplication. "
-            "It is practical but does not guarantee full country coverage."
-        ),
+        "traversalStoppedEarly": False,
     }
 
-    return items, build_meta
 
+def build_country(country_iso2, slug):
+    print(f"Building {country_iso2} ({slug})")
 
-def save_json(path, payload):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    # First, collect a broad popularity-first discovered pool.
+    # We use a larger cap for countries that might still qualify as "full".
+    discovered_items, request_meta = collect_popularity_first(
+        country_slug=slug,
+        max_pages=POPULAR_MAX_PAGES_SMALL
+    )
+
+    if request_meta["successfulRequests"] == 0:
+        raise RuntimeError(f"No successful OFF requests for {country_iso2} ({slug})")
+
+    discovered_count = len(discovered_items)
+    discovered_size = json_bytes(discovered_items)
+
+    # Decide whether the country appears small enough for a full-pack candidate.
+    is_full_candidate = (
+        discovered_count <= FULL_PACK_MAX_ITEMS
+        and discovered_size <= TARGET_TOTAL_BYTES
+    )
+
+    # If it clearly is not a full-pack candidate, we do not need extreme traversal.
+    # Rebuild a popularity-first pool with a lower page budget to keep the process practical.
+    if not is_full_candidate:
+        discovered_items, request_meta = collect_popularity_first(
+            country_slug=slug,
+            max_pages=POPULAR_MAX_PAGES_LARGE
+        )
+        discovered_count = len(discovered_items)
+        discovered_size = json_bytes(discovered_items)
+
+    build_meta = {
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "discoveryMethod": "popularity_first_country_search",
+        "coverageNote": (
+            "This build is popularity-first and country-filtered. "
+            "It avoids language-specific food keywords, but still depends on OFF search traversal "
+            "rather than a full bulk export, so full country coverage is not guaranteed."
+        ),
+        "popularPageSize": POPULAR_PAGE_SIZE,
+        "fullPackMaxItems": FULL_PACK_MAX_ITEMS,
+        "targetTotalBytes": TARGET_TOTAL_BYTES,
+        "targetMainBytes": TARGET_MAIN_BYTES,
+        "traversalTokenCount": len(TRAVERSAL_TOKENS),
+        "totalRequests": request_meta["totalRequests"],
+        "successfulRequests": request_meta["successfulRequests"],
+        "failedRequests": request_meta["failedRequests"],
+        "traversalStoppedEarly": request_meta["traversalStoppedEarly"],
+        "discoveredItemCount": discovered_count,
+        "discoveredBytes": discovered_size,
+    }
+
+    return discovered_items, build_meta
 
 
 def save_country(country_iso2, slug, items, build_meta):
@@ -289,8 +357,12 @@ def save_country(country_iso2, slug, items, build_meta):
         "slug": slug,
         "version": int(time.time()),
         "generatedAt": build_meta["generatedAt"],
+        "strategy": None,
         "itemCountDiscovered": discovered_item_count,
         "bytesDiscovered": discovered_bytes,
+        "itemCountTotal": 0,
+        "itemCountMain": 0,
+        "itemCountFill": 0,
         "targetTotalBytes": TARGET_TOTAL_BYTES,
         "targetMainBytes": TARGET_MAIN_BYTES,
         "packFiles": [],
