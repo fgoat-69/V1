@@ -1,2 +1,4 @@
-# V1
-Version one of a helper for a more optimized search system for MostoFit
+full pack threshold = 20k
+capped pack max = 25k
+top tier = 10k
+dedupe rule = barcode else normalized name+brand
