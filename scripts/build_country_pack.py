@@ -8,12 +8,21 @@ import requests
 
 BASE_URL = "https://world.openfoodfacts.org/cgi/search.pl"
 FIELDS = "product_name,brands,code,nutriments,serving_size,serving_quantity"
+REQUEST_TIMEOUT_SECONDS = 30
 
+# Practical pack budget targets
+TARGET_TOTAL_BYTES = 7_000_000     # whole country pack target (~7 MB)
+TARGET_MAIN_BYTES = 5_000_000      # preferred main pack target (~5 MB)
+FULL_PACK_MAX_ITEMS = 15_000       # small-country heuristic threshold
+
+# Current discovery method.
+# This is still an API-discovery approach, not guaranteed full OFF coverage.
 SEED_QUERIES = [
     "a", "e", "i", "o", "u",
+    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
     "milk", "bread", "rice", "water", "coffee",
     "juice", "tea", "cheese", "chicken", "pasta",
-    "egg", "yogurt", "soda", "chocolate", "cookie"
+    "egg", "yogurt", "soda", "chocolate", "cookie",
 ]
 
 LIQUID_HINTS = {
@@ -121,11 +130,45 @@ def map_product(product):
         "protein": round(protein, 2),
         "carbs": round(carbs, 2),
         "fat": round(fat, 2),
-        "servingSize": serving_size,
+        "servingSize": round(serving_size, 2) if isinstance(serving_size, (int, float)) else None,
         "servingUnit": serving_unit,
         "isLiquid": is_liquid,
         "source": "github_country_pack",
     }
+
+
+def json_bytes(data):
+    return len(json.dumps(data, ensure_ascii=False, separators=(",", ":")).encode("utf-8"))
+
+
+def split_items_by_budget(items, main_budget_bytes, total_budget_bytes):
+    main_items = []
+    fill_items = []
+
+    main_bytes = 2   # []
+    total_bytes = 2  # []
+
+    for item in items:
+        item_bytes = json_bytes(item)
+        separator_bytes = 1
+
+        projected_main = main_bytes + item_bytes + (separator_bytes if main_items else 0)
+        projected_total = total_bytes + item_bytes + (separator_bytes if (main_items or fill_items) else 0)
+
+        if projected_main <= main_budget_bytes:
+            main_items.append(item)
+            main_bytes = projected_main
+            total_bytes = projected_total
+            continue
+
+        if projected_total <= total_budget_bytes:
+            fill_items.append(item)
+            total_bytes = projected_total
+            continue
+
+        break
+
+    return main_items, fill_items
 
 
 def fetch_products(country_slug, query, page, page_size=100):
@@ -140,13 +183,13 @@ def fetch_products(country_slug, query, page, page_size=100):
         "countries_tags_en": country_slug,
     }
 
-    response = requests.get(BASE_URL, params=params, timeout=30)
+    response = requests.get(BASE_URL, params=params, timeout=REQUEST_TIMEOUT_SECONDS)
     response.raise_for_status()
     payload = response.json()
     return payload.get("products", []) or []
 
 
-def build_country(country_iso2, slug, max_items=25000, max_pages_per_query=3):
+def build_country(country_iso2, slug, max_items=100_000, max_pages_per_query=10):
     print(f"Building {country_iso2} ({slug})")
 
     seen = set()
@@ -192,9 +235,7 @@ def build_country(country_iso2, slug, max_items=25000, max_pages_per_query=3):
                 if len(items) >= max_items:
                     break
 
-            print(
-                f"Query '{query}' page {page} -> added {added_this_page}, total {len(items)}"
-            )
+            print(f"Query '{query}' page {page} -> added {added_this_page}, total {len(items)}")
 
             time.sleep(0.35)
 
@@ -204,6 +245,8 @@ def build_country(country_iso2, slug, max_items=25000, max_pages_per_query=3):
     if successful_requests == 0:
         raise RuntimeError(f"No successful OFF requests for {country_iso2} ({slug})")
 
+    discovered_bytes = json_bytes(items)
+
     build_meta = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "seedQueryCount": len(SEED_QUERIES),
@@ -212,45 +255,112 @@ def build_country(country_iso2, slug, max_items=25000, max_pages_per_query=3):
         "totalRequests": total_requests,
         "successfulRequests": successful_requests,
         "failedRequests": failed_requests,
+        "discoveredItemCount": len(items),
+        "discoveredBytes": discovered_bytes,
+        "discoveryMethod": "api_seeded_country_search",
+        "coverageNote": (
+            "This build is based on OFF search API discovery and deduplication. "
+            "It is practical but does not guarantee full country coverage."
+        ),
     }
 
     return items, build_meta
+
+
+def save_json(path, payload):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
 def save_country(country_iso2, slug, items, build_meta):
     path = os.path.join("countries", country_iso2)
     os.makedirs(path, exist_ok=True)
 
-    pack_filename = "full.json"
-    pack_relative_path = f"countries/{country_iso2}/{pack_filename}"
-    pack_path = os.path.join(path, pack_filename)
+    discovered_item_count = len(items)
+    discovered_bytes = json_bytes(items)
 
-    with open(pack_path, "w", encoding="utf-8") as f:
-        json.dump(items, f, ensure_ascii=False, indent=2)
+    can_be_full = (
+        discovered_item_count <= FULL_PACK_MAX_ITEMS
+        and discovered_bytes <= TARGET_TOTAL_BYTES
+    )
 
     manifest = {
         "countryIso2": country_iso2,
         "slug": slug,
         "version": int(time.time()),
         "generatedAt": build_meta["generatedAt"],
-        "strategy": "seeded_fullish",
-        "itemCount": len(items),
-        "packFiles": [
-            {
-                "name": pack_filename,
-                "path": pack_relative_path,
-                "kind": "full",
-                "itemCount": len(items),
-            }
-        ],
+        "itemCountDiscovered": discovered_item_count,
+        "bytesDiscovered": discovered_bytes,
+        "targetTotalBytes": TARGET_TOTAL_BYTES,
+        "targetMainBytes": TARGET_MAIN_BYTES,
+        "packFiles": [],
         "buildMeta": build_meta,
     }
 
-    manifest_path = os.path.join(path, "manifest.json")
-    with open(manifest_path, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, ensure_ascii=False, indent=2)
+    if can_be_full:
+        full_filename = "full.json"
+        full_relative_path = f"countries/{country_iso2}/{full_filename}"
+        full_path = os.path.join(path, full_filename)
 
-    print(f"Saved {country_iso2}: {len(items)} items")
+        save_json(full_path, items)
+
+        manifest["strategy"] = "full"
+        manifest["itemCountTotal"] = len(items)
+        manifest["itemCountMain"] = len(items)
+        manifest["itemCountFill"] = 0
+        manifest["packFiles"].append({
+            "name": full_filename,
+            "path": full_relative_path,
+            "kind": "full",
+            "itemCount": len(items),
+            "bytes": json_bytes(items),
+        })
+    else:
+        main_items, fill_items = split_items_by_budget(
+            items=items,
+            main_budget_bytes=TARGET_MAIN_BYTES,
+            total_budget_bytes=TARGET_TOTAL_BYTES,
+        )
+
+        main_filename = "main.json"
+        main_relative_path = f"countries/{country_iso2}/{main_filename}"
+        main_path = os.path.join(path, main_filename)
+        save_json(main_path, main_items)
+
+        manifest["strategy"] = "main_fill"
+        manifest["itemCountMain"] = len(main_items)
+        manifest["itemCountFill"] = len(fill_items)
+        manifest["itemCountTotal"] = len(main_items) + len(fill_items)
+        manifest["packFiles"].append({
+            "name": main_filename,
+            "path": main_relative_path,
+            "kind": "main",
+            "itemCount": len(main_items),
+            "bytes": json_bytes(main_items),
+        })
+
+        if fill_items:
+            fill_filename = "fill.json"
+            fill_relative_path = f"countries/{country_iso2}/{fill_filename}"
+            fill_path = os.path.join(path, fill_filename)
+            save_json(fill_path, fill_items)
+
+            manifest["packFiles"].append({
+                "name": fill_filename,
+                "path": fill_relative_path,
+                "kind": "fill",
+                "itemCount": len(fill_items),
+                "bytes": json_bytes(fill_items),
+            })
+
+    manifest_path = os.path.join(path, "manifest.json")
+    save_json(manifest_path, manifest)
+
+    print(
+        f"Saved {country_iso2}: strategy={manifest['strategy']} "
+        f"discovered={discovered_item_count} packaged={manifest['itemCountTotal']}"
+    )
+
     return manifest
 
 
