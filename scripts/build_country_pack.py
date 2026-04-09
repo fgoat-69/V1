@@ -13,6 +13,7 @@ DUMP_URL = os.getenv(
     "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
 )
 REQUEST_TIMEOUT_SECONDS = int(os.getenv("OFF_REQUEST_TIMEOUT_SECONDS", "120"))
+DOWNLOAD_STALL_TIMEOUT_SECONDS = int(os.getenv("OFF_DOWNLOAD_STALL_TIMEOUT_SECONDS", "120"))
 DOWNLOAD_CHUNK_SIZE = 1024 * 1024
 
 # Packaging rules
@@ -202,6 +203,10 @@ def product_matches_country(product, country_iso2, slug):
 
 
 def map_product(product):
+    name = (product.get("product_name") or "").strip()
+    if not name:
+        return None
+
     nutr = get_nutriments(product)
 
     kcal = to_float(nutr.get("energy-kcal_100g"))
@@ -213,13 +218,6 @@ def map_product(product):
     protein = 0.0 if protein is None else protein
     carbs = 0.0 if carbs is None else carbs
     fat = 0.0 if fat is None else fat
-
-    if kcal == 0 and protein == 0 and carbs == 0 and fat == 0:
-        return None
-
-    name = (product.get("product_name") or "").strip()
-    if not name:
-        return None
 
     brand = first_brand(product.get("brands"))
     barcode = (product.get("code") or "").strip() or None
@@ -292,15 +290,39 @@ def ensure_dump(download_if_missing=True, force_download=False):
         response = requests.get(
             DUMP_URL,
             stream=True,
-            timeout=REQUEST_TIMEOUT_SECONDS,
+            timeout=(30, DOWNLOAD_STALL_TIMEOUT_SECONDS),
             headers={"User-Agent": USER_AGENT},
         )
         response.raise_for_status()
 
+        total_bytes = int(response.headers.get("Content-Length", "0") or "0")
+        downloaded_bytes = 0
+        last_reported_mb = -1
+
+        if total_bytes > 0:
+            print(f"OFF dump size: {round(total_bytes / (1024 * 1024), 2)} MB")
+
         with open(temp_path, "wb") as f:
             for chunk in response.iter_content(chunk_size=DOWNLOAD_CHUNK_SIZE):
-                if chunk:
-                    f.write(chunk)
+                if not chunk:
+                    continue
+
+                f.write(chunk)
+                downloaded_bytes += len(chunk)
+
+                downloaded_mb = downloaded_bytes // (1024 * 1024)
+                if downloaded_mb != last_reported_mb:
+                    last_reported_mb = downloaded_mb
+
+                    if total_bytes > 0:
+                        percent = round((downloaded_bytes / total_bytes) * 100, 2)
+                        print(
+                            f"Downloaded {downloaded_mb} MB / "
+                            f"{round(total_bytes / (1024 * 1024), 2)} MB "
+                            f"({percent}%)"
+                        )
+                    else:
+                        print(f"Downloaded {downloaded_mb} MB")
 
         shutil.move(temp_path, DUMP_PATH)
         return DUMP_PATH
@@ -402,6 +424,8 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
     matched_products = 0
     mapped_products = 0
     deduped_products = 0
+    skipped_no_name = 0
+    skipped_no_key = 0
 
     for _, product in iter_dump_products(dump_path):
         scanned_products += 1
@@ -413,12 +437,14 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
 
         mapped = map_product(product)
         if not mapped:
+            skipped_no_name += 1
             continue
 
         mapped_products += 1
 
         key = normalize_key(mapped)
         if not key:
+            skipped_no_key += 1
             continue
 
         if key in seen:
@@ -439,7 +465,8 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
         "discoveryMethod": "off_jsonl_dump_country_filter",
         "coverageNote": (
             "This build is generated from the OFF JSONL dump with country filtering, "
-            "app-field reduction, and deduplication. Large countries are popularity-sorted "
+            "app-field reduction, and deduplication. Macro-less items are retained if they "
+            "have a usable product name and dedupe key. Large countries are popularity-sorted "
             "using OFF popularity fields when available before budget-based packaging."
         ),
         "dumpUrl": DUMP_URL,
@@ -451,6 +478,8 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
         "matchedProducts": matched_products,
         "mappedProducts": mapped_products,
         "dedupedProducts": deduped_products,
+        "skippedNoName": skipped_no_name,
+        "skippedNoKey": skipped_no_key,
         "discoveredItemCount": discovered_count,
         "discoveredBytes": discovered_size,
     }
