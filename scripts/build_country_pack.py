@@ -1,30 +1,36 @@
+import gzip
 import json
 import os
 import re
+import shutil
 import time
 from datetime import datetime, timezone
 
 import requests
 
-BASE_URL = "https://world.openfoodfacts.org/cgi/search.pl"
-FIELDS = "product_name,brands,code,nutriments,serving_size,serving_quantity"
-REQUEST_TIMEOUT_SECONDS = 30
+DUMP_URL = os.getenv(
+    "OFF_DUMP_URL",
+    "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+)
+REQUEST_TIMEOUT_SECONDS = int(os.getenv("OFF_REQUEST_TIMEOUT_SECONDS", "120"))
+DOWNLOAD_CHUNK_SIZE = 1024 * 1024
 
 # Packaging rules
 TARGET_TOTAL_BYTES = 7_000_000
 TARGET_MAIN_BYTES = 5_000_000
 FULL_PACK_MAX_ITEMS = 15_000
 
-# Build traversal rules
-POPULAR_PAGE_SIZE = 100
-POPULAR_MAX_PAGES_SMALL = 300
-POPULAR_MAX_PAGES_LARGE = 150
+# Local cache
+CACHE_DIR = ".cache"
+DUMP_FILENAME = os.getenv("OFF_DUMP_FILENAME", "openfoodfacts-products.jsonl.gz")
+DUMP_PATH = os.path.join(CACHE_DIR, DUMP_FILENAME)
 
-# These are NOT food keywords.
-# They are only neutral traversal tokens to broaden search result coverage
-# when the OFF endpoint requires a search term.
-# This avoids English food bias like "milk", "bread", etc.
-TRAVERSAL_TOKENS = list("abcdefghijklmnopqrstuvwxyz0123456789")
+# Use a real contact in CI/local shell:
+# export OFF_USER_AGENT="MostoFitCountryPackBuilder/1.0 (your-email@example.com)"
+USER_AGENT = os.getenv(
+    "OFF_USER_AGENT",
+    "MostoFitCountryPackBuilder/1.0 (contact-required-set-OFF_USER_AGENT)",
+)
 
 LIQUID_HINTS = {
     "water", "milk", "juice", "cola", "soda", "oil", "syrup", "tea", "coffee",
@@ -44,14 +50,19 @@ def normalize_key(item):
 
     name = normalize_text(item.get("name"))
     brand = normalize_text(item.get("brand"))
-    return f"nb:{name}|{brand}"
+
+    if name or brand:
+        return f"nb:{name}|{brand}"
+
+    return None
 
 
 def parse_serving_size(raw):
     if not raw:
         return None, None
 
-    match = re.search(r"(\d+(?:[.,]\d+)?)\s*([a-zA-Z]+)", raw.strip())
+    text = str(raw).strip()
+    match = re.search(r"(\d+(?:[.,]\d+)?)\s*([a-zA-Z]+)", text)
     if not match:
         return None, None
 
@@ -63,8 +74,17 @@ def parse_serving_size(raw):
     except ValueError:
         return None, None
 
-    if unit in {"ml", "l", "cl", "dl", "liter", "litre"}:
+    if unit in {"l", "liter", "litre", "liters", "litres"}:
+        return size_value * 1000.0, "ml"
+    if unit in {"dl"}:
+        return size_value * 100.0, "ml"
+    if unit in {"cl"}:
+        return size_value * 10.0, "ml"
+    if unit in {"ml"}:
         return size_value, "ml"
+
+    if unit in {"kg", "kilogram", "kilograms"}:
+        return size_value * 1000.0, "g"
     if unit in {"g", "gram", "grams"}:
         return size_value, "g"
 
@@ -82,16 +102,117 @@ def looks_liquid(name, serving_unit):
 def first_brand(brands):
     if not brands:
         return None
-    return brands.split(",")[0].strip() or None
+
+    if isinstance(brands, list):
+        for value in brands:
+            text = str(value).strip()
+            if text:
+                return text
+        return None
+
+    return str(brands).split(",")[0].strip() or None
+
+
+def to_float(value):
+    if value in (None, ""):
+        return None
+
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def get_nutriments(product):
+    nutr = product.get("nutriments")
+    if isinstance(nutr, dict):
+        return nutr
+    return {}
+
+
+def get_popularity_score(product):
+    for key in (
+        "unique_scans_n",
+        "scans_n",
+        "popularity_key",
+        "completeness",
+    ):
+        raw = product.get(key)
+        if raw in (None, ""):
+            continue
+
+        try:
+            return int(float(raw))
+        except (TypeError, ValueError):
+            continue
+
+    return 0
+
+
+def split_csv_like_string(value):
+    if not value:
+        return []
+
+    return [part.strip() for part in str(value).split(",") if part.strip()]
+
+
+def product_country_tokens(product):
+    values = []
+
+    for key in (
+        "countries",
+        "countries_en",
+        "countries_tags",
+        "countries_tags_en",
+    ):
+        raw = product.get(key)
+
+        if isinstance(raw, list):
+            values.extend(raw)
+        elif isinstance(raw, str):
+            values.extend(split_csv_like_string(raw))
+
+    normalized = set()
+
+    for value in values:
+        token = str(value).strip().lower()
+        if not token:
+            continue
+
+        normalized.add(token)
+
+        if ":" in token:
+            normalized.add(token.split(":", 1)[1])
+
+    return normalized
+
+
+def product_matches_country(product, country_iso2, slug):
+    tokens = product_country_tokens(product)
+    iso2 = (country_iso2 or "").strip().lower()
+    slug = (slug or "").strip().lower()
+
+    if slug and slug in tokens:
+        return True
+
+    if iso2 and iso2 in tokens:
+        return True
+
+    return False
 
 
 def map_product(product):
-    nutr = product.get("nutriments", {}) or {}
+    nutr = get_nutriments(product)
 
-    kcal = float(nutr.get("energy-kcal_100g") or 0)
-    protein = float(nutr.get("proteins_100g") or 0)
-    carbs = float(nutr.get("carbohydrates_100g") or 0)
-    fat = float(nutr.get("fat_100g") or 0)
+    kcal = to_float(nutr.get("energy-kcal_100g"))
+    protein = to_float(nutr.get("proteins_100g"))
+    carbs = to_float(nutr.get("carbohydrates_100g"))
+    fat = to_float(nutr.get("fat_100g"))
+
+    kcal = 0.0 if kcal is None else kcal
+    protein = 0.0 if protein is None else protein
+    carbs = 0.0 if carbs is None else carbs
+    fat = 0.0 if fat is None else fat
 
     if kcal == 0 and protein == 0 and carbs == 0 and fat == 0:
         return None
@@ -112,11 +233,9 @@ def map_product(product):
 
     if serving_size is None:
         quantity = product.get("serving_quantity")
-        if quantity not in (None, ""):
-            try:
-                serving_size = float(quantity)
-            except (TypeError, ValueError):
-                serving_size = None
+        quantity_value = to_float(quantity)
+        if quantity_value is not None:
+            serving_size = quantity_value
 
     is_liquid = looks_liquid(name, serving_unit)
 
@@ -135,6 +254,7 @@ def map_product(product):
         "servingUnit": serving_unit,
         "isLiquid": is_liquid,
         "source": "github_country_pack",
+        "_sortScore": get_popularity_score(product),
     }
 
 
@@ -145,6 +265,84 @@ def json_bytes(data):
 def save_json(path, payload):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
+def ensure_cache_dir():
+    os.makedirs(CACHE_DIR, exist_ok=True)
+
+
+def ensure_dump(download_if_missing=True, force_download=False):
+    ensure_cache_dir()
+
+    if os.path.exists(DUMP_PATH) and not force_download:
+        return DUMP_PATH
+
+    if not download_if_missing:
+        raise FileNotFoundError(
+            f"OFF dump not found at {DUMP_PATH}. Download it first or allow auto-download."
+        )
+
+    print(f"Downloading OFF JSONL dump from {DUMP_URL}")
+    temp_path = f"{DUMP_PATH}.part"
+
+    if os.path.exists(temp_path):
+        os.remove(temp_path)
+
+    try:
+        response = requests.get(
+            DUMP_URL,
+            stream=True,
+            timeout=REQUEST_TIMEOUT_SECONDS,
+            headers={"User-Agent": USER_AGENT},
+        )
+        response.raise_for_status()
+
+        with open(temp_path, "wb") as f:
+            for chunk in response.iter_content(chunk_size=DOWNLOAD_CHUNK_SIZE):
+                if chunk:
+                    f.write(chunk)
+
+        shutil.move(temp_path, DUMP_PATH)
+        return DUMP_PATH
+
+    finally:
+        if os.path.exists(temp_path):
+            try:
+                os.remove(temp_path)
+            except OSError:
+                pass
+
+
+def iter_dump_products(dump_path):
+    with gzip.open(dump_path, "rt", encoding="utf-8") as f:
+        for line_number, line in enumerate(f, start=1):
+            line = line.strip()
+            if not line:
+                continue
+
+            try:
+                yield line_number, json.loads(line)
+            except json.JSONDecodeError:
+                continue
+
+
+def strip_internal_fields(items):
+    cleaned = []
+    for item in items:
+        cleaned.append({
+            "name": item.get("name"),
+            "brand": item.get("brand"),
+            "barcode": item.get("barcode"),
+            "calories": item.get("calories"),
+            "protein": item.get("protein"),
+            "carbs": item.get("carbs"),
+            "fat": item.get("fat"),
+            "servingSize": item.get("servingSize"),
+            "servingUnit": item.get("servingUnit"),
+            "isLiquid": item.get("isLiquid"),
+            "source": item.get("source"),
+        })
+    return cleaned
 
 
 def split_items_by_budget(items, main_budget_bytes, total_budget_bytes):
@@ -177,162 +375,82 @@ def split_items_by_budget(items, main_budget_bytes, total_budget_bytes):
     return main_items, fill_items
 
 
-def fetch_products(country_slug, query, page, page_size=POPULAR_PAGE_SIZE):
-    params = {
-        "search_terms": query,
-        "page": page,
-        "page_size": page_size,
-        "json": 1,
-        "fields": FIELDS,
-        "sort_by": "unique_scans_n",
-        "search_simple": 1,
-        "countries_tags_en": country_slug,
-    }
-
-    response = requests.get(BASE_URL, params=params, timeout=REQUEST_TIMEOUT_SECONDS)
-    response.raise_for_status()
-    payload = response.json()
-    return payload.get("products", []) or []
+def sort_discovered_items(items):
+    items.sort(
+        key=lambda item: (
+            -item.get("_sortScore", 0),
+            normalize_text(item.get("name")),
+            normalize_text(item.get("brand")),
+            normalize_text(item.get("barcode")),
+        )
+    )
+    return items
 
 
-def add_products(products, seen, items):
-    added = 0
+def build_country(country_iso2, slug, download_if_missing=True, force_download=False):
+    print(f"Building {country_iso2} ({slug}) from dump")
 
-    for product in products:
+    dump_path = ensure_dump(
+        download_if_missing=download_if_missing,
+        force_download=force_download,
+    )
+
+    seen = set()
+    items = []
+
+    scanned_products = 0
+    matched_products = 0
+    mapped_products = 0
+    deduped_products = 0
+
+    for _, product in iter_dump_products(dump_path):
+        scanned_products += 1
+
+        if not product_matches_country(product, country_iso2, slug):
+            continue
+
+        matched_products += 1
+
         mapped = map_product(product)
         if not mapped:
             continue
 
+        mapped_products += 1
+
         key = normalize_key(mapped)
+        if not key:
+            continue
+
         if key in seen:
+            deduped_products += 1
             continue
 
         seen.add(key)
         items.append(mapped)
-        added += 1
 
-    return added
+    sort_discovered_items(items)
 
-
-def collect_popularity_first(country_slug, max_pages):
-    seen = set()
-    items = []
-
-    total_requests = 0
-    successful_requests = 0
-    failed_requests = 0
-
-    # First pass: most likely/popular coverage using neutral broad token "a"
-    primary_token = "a"
-
-    for page in range(1, max_pages + 1):
-        total_requests += 1
-        try:
-            products = fetch_products(country_slug, primary_token, page)
-            successful_requests += 1
-        except Exception as e:
-            failed_requests += 1
-            print(f"ERROR popularity pass token={primary_token} page={page}: {e}")
-            break
-
-        if not products:
-            break
-
-        added = add_products(products, seen, items)
-        print(f"Popularity pass '{primary_token}' page {page} -> added {added}, total {len(items)}")
-        time.sleep(0.35)
-
-    # Second pass: broader neutral traversal, still popularity-sorted, still country-filtered.
-    # No English food words.
-    for token in TRAVERSAL_TOKENS:
-        if token == primary_token:
-            continue
-
-        for page in range(1, max_pages + 1):
-            total_requests += 1
-            try:
-                products = fetch_products(country_slug, token, page)
-                successful_requests += 1
-            except Exception as e:
-                failed_requests += 1
-                print(f"ERROR traversal token={token} page={page}: {e}")
-                break
-
-            if not products:
-                break
-
-            added = add_products(products, seen, items)
-            print(f"Traversal '{token}' page {page} -> added {added}, total {len(items)}")
-
-            time.sleep(0.35)
-
-            # Stop once we are far enough past packaging budget.
-            # We do not need endless discovery if the final pack will be byte-capped anyway.
-            if json_bytes(items) > TARGET_TOTAL_BYTES * 2:
-                return items, {
-                    "totalRequests": total_requests,
-                    "successfulRequests": successful_requests,
-                    "failedRequests": failed_requests,
-                    "traversalStoppedEarly": True,
-                }
-
-    return items, {
-        "totalRequests": total_requests,
-        "successfulRequests": successful_requests,
-        "failedRequests": failed_requests,
-        "traversalStoppedEarly": False,
-    }
-
-
-def build_country(country_iso2, slug):
-    print(f"Building {country_iso2} ({slug})")
-
-    # First, collect a broad popularity-first discovered pool.
-    # We use a larger cap for countries that might still qualify as "full".
-    discovered_items, request_meta = collect_popularity_first(
-        country_slug=slug,
-        max_pages=POPULAR_MAX_PAGES_SMALL
-    )
-
-    if request_meta["successfulRequests"] == 0:
-        raise RuntimeError(f"No successful OFF requests for {country_iso2} ({slug})")
-
+    discovered_items = strip_internal_fields(items)
     discovered_count = len(discovered_items)
     discovered_size = json_bytes(discovered_items)
 
-    # Decide whether the country appears small enough for a full-pack candidate.
-    is_full_candidate = (
-        discovered_count <= FULL_PACK_MAX_ITEMS
-        and discovered_size <= TARGET_TOTAL_BYTES
-    )
-
-    # If it clearly is not a full-pack candidate, we do not need extreme traversal.
-    # Rebuild a popularity-first pool with a lower page budget to keep the process practical.
-    if not is_full_candidate:
-        discovered_items, request_meta = collect_popularity_first(
-            country_slug=slug,
-            max_pages=POPULAR_MAX_PAGES_LARGE
-        )
-        discovered_count = len(discovered_items)
-        discovered_size = json_bytes(discovered_items)
-
     build_meta = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "discoveryMethod": "popularity_first_country_search",
+        "discoveryMethod": "off_jsonl_dump_country_filter",
         "coverageNote": (
-            "This build is popularity-first and country-filtered. "
-            "It avoids language-specific food keywords, but still depends on OFF search traversal "
-            "rather than a full bulk export, so full country coverage is not guaranteed."
+            "This build is generated from the OFF JSONL dump with country filtering, "
+            "app-field reduction, and deduplication. Large countries are popularity-sorted "
+            "using OFF popularity fields when available before budget-based packaging."
         ),
-        "popularPageSize": POPULAR_PAGE_SIZE,
+        "dumpUrl": DUMP_URL,
+        "dumpCachePath": dump_path,
         "fullPackMaxItems": FULL_PACK_MAX_ITEMS,
         "targetTotalBytes": TARGET_TOTAL_BYTES,
         "targetMainBytes": TARGET_MAIN_BYTES,
-        "traversalTokenCount": len(TRAVERSAL_TOKENS),
-        "totalRequests": request_meta["totalRequests"],
-        "successfulRequests": request_meta["successfulRequests"],
-        "failedRequests": request_meta["failedRequests"],
-        "traversalStoppedEarly": request_meta["traversalStoppedEarly"],
+        "scannedProducts": scanned_products,
+        "matchedProducts": matched_products,
+        "mappedProducts": mapped_products,
+        "dedupedProducts": deduped_products,
         "discoveredItemCount": discovered_count,
         "discoveredBytes": discovered_size,
     }
