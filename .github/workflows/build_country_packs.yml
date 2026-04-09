@@ -45,6 +45,14 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Cache OFF dump
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: off-dump-${{ runner.os }}-${{ hashFiles('scripts/build_country_pack.py', 'scripts/build_all_packs.py') }}
+          restore-keys: |
+            off-dump-${{ runner.os }}-
+
       - name: Debug inputs
         run: |
           echo "country_filter=${{ github.event.inputs.country_filter }}"
@@ -57,7 +65,6 @@ jobs:
           COUNTRY_FILTER: ${{ github.event.inputs.country_filter }}
           FORCE_DOWNLOAD: ${{ github.event.inputs.force_download }}
           SKIP_EXISTING: ${{ github.event.inputs.skip_existing }}
-
       - name: Commit results
         run: |
           git config user.name "github-actions"
