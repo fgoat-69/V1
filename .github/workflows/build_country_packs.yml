@@ -123,5 +123,10 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update country packs (${{ steps.resolve.outputs.country_batch || steps.resolve.outputs.country_filter }})"
+          RUN_LABEL="${{ steps.resolve.outputs.country_batch }}"
+          if [ -z "$RUN_LABEL" ]; then
+            RUN_LABEL="${{ steps.resolve.outputs.country_filter }}"
+          fi
+
+          git commit -m "Update country packs (${RUN_LABEL})"
           git push
