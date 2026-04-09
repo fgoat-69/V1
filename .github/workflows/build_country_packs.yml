@@ -45,12 +45,18 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Debug inputs
+        run: |
+          echo "country_filter=${{ github.event.inputs.country_filter }}"
+          echo "force_download=${{ github.event.inputs.force_download }}"
+          echo "skip_existing=${{ github.event.inputs.skip_existing }}"
+
       - name: Run builder
         run: python scripts/build_all_packs.py
         env:
-          COUNTRY_FILTER: ${{ github.event.inputs.country_filter || 'HU' }}
-          FORCE_DOWNLOAD: ${{ github.event.inputs.force_download || 'false' }}
-          SKIP_EXISTING: ${{ github.event.inputs.skip_existing || 'false' }}
+          COUNTRY_FILTER: ${{ github.event.inputs.country_filter }}
+          FORCE_DOWNLOAD: ${{ github.event.inputs.force_download }}
+          SKIP_EXISTING: ${{ github.event.inputs.skip_existing }}
 
       - name: Commit results
         run: |
