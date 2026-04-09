@@ -15,9 +15,17 @@ The app will eventually use these packs as a fast local country layer before fal
 
 3. global online OpenFoodFacts fallback
 
-## Current packing strategy
+## Current build strategy
 
-The repository currently builds country packs with these rules:
+The repository now builds packs from the Open Food Facts JSONL dump instead of bulk-crawling the search API.
+
+Why:
+
+- OFF search endpoints are rate-limited and can block bulk traversal
+- OFF recommends downloading CSV / JSONL data directly for large-scale data access
+- this repo needs a stable country-pack publisher path, not an API-crawling script
+
+## Current packing rules
 
 - if a discovered country dataset is small enough, save it as `full.json`
 - if the discovered dataset is too large, split it into:
@@ -28,23 +36,17 @@ The repository currently builds country packs with these rules:
   - barcode first
   - normalized name + brand second
 
-## Important limitation
+## Current output contract
 
-The current builder uses OFF search API discovery with country filtering and popularity sorting.
+Each country directory contains:
 
-That means:
+- `manifest.json`
+- `full.json`
+  - or
+- `main.json`
+- `fill.json` (when needed)
 
-- it is practical and low-cost
-- it can build useful country packs
-- it does **not** guarantee mathematically complete country coverage
-
-So `full.json` currently means:
-“all discovered usable items for that country within the builder’s rules”
-
-It does **not** yet mean:
-“provably every OFF item for that country”
-
-If stricter full-country coverage is needed later, the build pipeline should move toward an OFF dump/export-based ingestion path.
+The root `countries/index.json` contains the generated country manifest list.
 
 ## Output item format
 
