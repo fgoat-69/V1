@@ -1,12 +1,150 @@
 {
-  "generatedAt": "2026-04-09T11:20:10.746638+00:00",
-  "countryCount": 2,
+  "generatedAt": "2026-04-09T12:01:59.593276+00:00",
+  "countryCount": 7,
   "countries": [
+    {
+      "countryIso2": "DE",
+      "slug": "germany",
+      "version": 1775736095,
+      "generatedAt": "2026-04-09T12:01:32.423672+00:00",
+      "strategy": "main_fill",
+      "itemCountDiscovered": 377476,
+      "bytesDiscovered": 79954372,
+      "itemCountTotal": 33080,
+      "itemCountMain": 23623,
+      "itemCountFill": 9457,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "main.json",
+          "path": "countries/DE/main.json",
+          "kind": "main",
+          "itemCount": 23623,
+          "bytes": 4999823
+        },
+        {
+          "name": "fill.json",
+          "path": "countries/DE/fill.json",
+          "kind": "fill",
+          "itemCount": 9457,
+          "bytes": 2000132
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-04-09T12:01:32.423672+00:00",
+        "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+        "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4407817,
+        "matchedProducts": 400010,
+        "mappedProducts": 377476,
+        "dedupedProducts": 0,
+        "discoveredItemCount": 377476,
+        "discoveredBytes": 79954372
+      }
+    },
+    {
+      "countryIso2": "ES",
+      "slug": "spain",
+      "version": 1775736105,
+      "generatedAt": "2026-04-09T12:01:43.017544+00:00",
+      "strategy": "main_fill",
+      "itemCountDiscovered": 332070,
+      "bytesDiscovered": 70379610,
+      "itemCountTotal": 32890,
+      "itemCountMain": 23543,
+      "itemCountFill": 9347,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "main.json",
+          "path": "countries/ES/main.json",
+          "kind": "main",
+          "itemCount": 23543,
+          "bytes": 4999841
+        },
+        {
+          "name": "fill.json",
+          "path": "countries/ES/fill.json",
+          "kind": "fill",
+          "itemCount": 9347,
+          "bytes": 2000075
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-04-09T12:01:43.017544+00:00",
+        "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+        "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4407817,
+        "matchedProducts": 352130,
+        "mappedProducts": 332084,
+        "dedupedProducts": 14,
+        "discoveredItemCount": 332070,
+        "discoveredBytes": 70379610
+      }
+    },
+    {
+      "countryIso2": "FR",
+      "slug": "france",
+      "version": 1775736089,
+      "generatedAt": "2026-04-09T12:01:21.245384+00:00",
+      "strategy": "main_fill",
+      "itemCountDiscovered": 1090984,
+      "bytesDiscovered": 234139520,
+      "itemCountTotal": 31726,
+      "itemCountMain": 22657,
+      "itemCountFill": 9069,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "main.json",
+          "path": "countries/FR/main.json",
+          "kind": "main",
+          "itemCount": 22657,
+          "bytes": 4999994
+        },
+        {
+          "name": "fill.json",
+          "path": "countries/FR/fill.json",
+          "kind": "fill",
+          "itemCount": 9069,
+          "bytes": 1999869
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-04-09T12:01:21.245384+00:00",
+        "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+        "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4407817,
+        "matchedProducts": 1221364,
+        "mappedProducts": 1091005,
+        "dedupedProducts": 21,
+        "discoveredItemCount": 1090984,
+        "discoveredBytes": 234139520
+      }
+    },
     {
       "countryIso2": "HU",
       "slug": "hungary",
-      "version": 1775733609,
-      "generatedAt": "2026-04-09T11:20:09.725851+00:00",
+      "version": 1775736096,
+      "generatedAt": "2026-04-09T12:01:36.000967+00:00",
       "strategy": "full",
       "itemCountDiscovered": 8835,
       "bytesDiscovered": 1908551,
@@ -25,7 +163,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-09T11:20:09.725851+00:00",
+        "generatedAt": "2026-04-09T12:01:36.000967+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -42,10 +180,56 @@
       }
     },
     {
+      "countryIso2": "IT",
+      "slug": "italy",
+      "version": 1775736099,
+      "generatedAt": "2026-04-09T12:01:37.827273+00:00",
+      "strategy": "main_fill",
+      "itemCountDiscovered": 255509,
+      "bytesDiscovered": 54032594,
+      "itemCountTotal": 32704,
+      "itemCountMain": 23357,
+      "itemCountFill": 9347,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "main.json",
+          "path": "countries/IT/main.json",
+          "kind": "main",
+          "itemCount": 23357,
+          "bytes": 4999977
+        },
+        {
+          "name": "fill.json",
+          "path": "countries/IT/fill.json",
+          "kind": "fill",
+          "itemCount": 9347,
+          "bytes": 1999920
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-04-09T12:01:37.827273+00:00",
+        "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+        "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4407817,
+        "matchedProducts": 265105,
+        "mappedProducts": 255515,
+        "dedupedProducts": 6,
+        "discoveredItemCount": 255509,
+        "discoveredBytes": 54032594
+      }
+    },
+    {
       "countryIso2": "RO",
       "slug": "romania",
-      "version": 1775733610,
-      "generatedAt": "2026-04-09T11:20:10.077838+00:00",
+      "version": 1775736100,
+      "generatedAt": "2026-04-09T12:01:40.235985+00:00",
       "strategy": "main_fill",
       "itemCountDiscovered": 25717,
       "bytesDiscovered": 5451047,
@@ -71,7 +255,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-09T11:20:10.077838+00:00",
+        "generatedAt": "2026-04-09T12:01:40.235985+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -85,6 +269,52 @@
         "dedupedProducts": 0,
         "discoveredItemCount": 25717,
         "discoveredBytes": 5451047
+      }
+    },
+    {
+      "countryIso2": "US",
+      "slug": "united-states",
+      "version": 1775736118,
+      "generatedAt": "2026-04-09T12:01:51.950481+00:00",
+      "strategy": "main_fill",
+      "itemCountDiscovered": 870532,
+      "bytesDiscovered": 194998782,
+      "itemCountTotal": 31410,
+      "itemCountMain": 22426,
+      "itemCountFill": 8984,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "main.json",
+          "path": "countries/US/main.json",
+          "kind": "main",
+          "itemCount": 22426,
+          "bytes": 4999967
+        },
+        {
+          "name": "fill.json",
+          "path": "countries/US/fill.json",
+          "kind": "fill",
+          "itemCount": 8984,
+          "bytes": 1999884
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-04-09T12:01:51.950481+00:00",
+        "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+        "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4407817,
+        "matchedProducts": 887206,
+        "mappedProducts": 870535,
+        "dedupedProducts": 3,
+        "discoveredItemCount": 870532,
+        "discoveredBytes": 194998782
       }
     }
   ]

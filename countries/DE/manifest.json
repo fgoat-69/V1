@@ -1,27 +1,34 @@
 {
-  "countryIso2": "HU",
-  "slug": "hungary",
-  "version": 1775736096,
-  "generatedAt": "2026-04-09T12:01:36.000967+00:00",
-  "strategy": "full",
-  "itemCountDiscovered": 8835,
-  "bytesDiscovered": 1908551,
-  "itemCountTotal": 8835,
-  "itemCountMain": 8835,
-  "itemCountFill": 0,
+  "countryIso2": "DE",
+  "slug": "germany",
+  "version": 1775736095,
+  "generatedAt": "2026-04-09T12:01:32.423672+00:00",
+  "strategy": "main_fill",
+  "itemCountDiscovered": 377476,
+  "bytesDiscovered": 79954372,
+  "itemCountTotal": 33080,
+  "itemCountMain": 23623,
+  "itemCountFill": 9457,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
     {
-      "name": "full.json",
-      "path": "countries/HU/full.json",
-      "kind": "full",
-      "itemCount": 8835,
-      "bytes": 1908551
+      "name": "main.json",
+      "path": "countries/DE/main.json",
+      "kind": "main",
+      "itemCount": 23623,
+      "bytes": 4999823
+    },
+    {
+      "name": "fill.json",
+      "path": "countries/DE/fill.json",
+      "kind": "fill",
+      "itemCount": 9457,
+      "bytes": 2000132
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-09T12:01:36.000967+00:00",
+    "generatedAt": "2026-04-09T12:01:32.423672+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -30,10 +37,10 @@
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
     "scannedProducts": 4407817,
-    "matchedProducts": 10416,
-    "mappedProducts": 8835,
+    "matchedProducts": 400010,
+    "mappedProducts": 377476,
     "dedupedProducts": 0,
-    "discoveredItemCount": 8835,
-    "discoveredBytes": 1908551
+    "discoveredItemCount": 377476,
+    "discoveredBytes": 79954372
   }
 }
