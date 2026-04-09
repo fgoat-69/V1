@@ -203,8 +203,6 @@ COUNTRIES = [
 
 COUNTRY_MAP = {iso2: slug for iso2, slug in COUNTRIES}
 
-# Fixed weekly batches.
-# Keep large countries distributed across different batches.
 COUNTRY_BATCHES = {
     "batch_01_europe_north_west": [
         "GB", "IE", "IS", "NO", "SE", "FI", "DK", "NL", "BE", "LU"
@@ -213,7 +211,7 @@ COUNTRY_BATCHES = {
         "DE", "AT", "CH", "LI", "CZ", "PL", "SK", "HU"
     ],
     "batch_03_europe_south_west": [
-        "FR", "ES", "PT", "IT", "SM", "VA", "MT", "AD"
+        "FR", "ES", "PT", "IT", "SM", "VA", "MT"
     ],
     "batch_04_europe_south_east": [
         "RO", "BG", "GR", "HR", "SI", "RS", "BA", "ME", "MK", "AL", "CY"
@@ -237,7 +235,7 @@ COUNTRY_BATCHES = {
         "NG", "GH", "SN", "GM", "GN", "GW", "SL", "LR", "TG", "BJ", "BF", "CV"
     ],
     "batch_11_africa_central_east": [
-        "CM", "GA", "CG", "CD", "DJ", "ER", "ET", "SO", "KE", "UG", "RW", "TZ"
+        "CM", "GA", "CG", "CD", "DJ", "ER", "SO", "KE", "UG", "RW", "TZ"
     ],
     "batch_12_africa_south_indian_ocean": [
         "ZA", "BW", "NA", "LS", "MZ", "MW", "ZM", "ZW", "MG", "MU", "SC"
@@ -256,7 +254,7 @@ COUNTRY_BATCHES = {
         "AU", "NZ", "FJ", "PG", "SB", "TO", "VU", "WS", "MH", "FM"
     ],
     "batch_17_misc_small_states": [
-        "AW", "GI", "KM", "MV", "MN", "PA", "PY"
+        "AW", "GI", "KM", "MV", "MN"
     ],
 }
 
