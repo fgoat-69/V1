@@ -3,7 +3,21 @@ import os
 import traceback
 from datetime import datetime, timezone
 
-from build_country_pack import build_country, save_country
+from build_country_pack import (
+    DUMP_URL,
+    FULL_PACK_MAX_ITEMS,
+    TARGET_MAIN_BYTES,
+    TARGET_TOTAL_BYTES,
+    ensure_dump,
+    iter_dump_products,
+    json_bytes,
+    map_product,
+    normalize_key,
+    product_country_tokens,
+    save_country,
+    sort_discovered_items,
+    strip_internal_fields,
+)
 
 # OFF-supported countries you want to build.
 COUNTRIES = [
@@ -256,6 +270,108 @@ def load_existing_manifest(iso2):
         return json.load(f)
 
 
+def init_country_state(iso2, slug):
+    return {
+        "countryIso2": iso2,
+        "slug": slug,
+        "seen": set(),
+        "items": [],
+        "matchedProducts": 0,
+        "mappedProducts": 0,
+        "dedupedProducts": 0,
+    }
+
+
+def build_token_to_iso_map(countries_to_build):
+    token_to_iso = {}
+
+    for iso2, slug in countries_to_build:
+        token_to_iso[iso2.lower()] = iso2
+        token_to_iso[slug.lower()] = iso2
+
+    return token_to_iso
+
+
+def matched_country_isos(product, token_to_iso):
+    tokens = product_country_tokens(product)
+    matched = {token_to_iso[token] for token in tokens if token in token_to_iso}
+    return matched
+
+
+def single_pass_collect(countries_to_build):
+    dump_path = ensure_dump(
+        download_if_missing=True,
+        force_download=FORCE_DOWNLOAD,
+    )
+
+    token_to_iso = build_token_to_iso_map(countries_to_build)
+    states = {
+        iso2: init_country_state(iso2, slug)
+        for iso2, slug in countries_to_build
+    }
+
+    scanned_products = 0
+
+    for _, product in iter_dump_products(dump_path):
+        scanned_products += 1
+
+        matched_isos = matched_country_isos(product, token_to_iso)
+        if not matched_isos:
+            continue
+
+        mapped = map_product(product)
+
+        for iso2 in matched_isos:
+            states[iso2]["matchedProducts"] += 1
+
+        if not mapped:
+            continue
+
+        key = normalize_key(mapped)
+        if not key:
+            continue
+
+        for iso2 in matched_isos:
+            state = states[iso2]
+            state["mappedProducts"] += 1
+
+            if key in state["seen"]:
+                state["dedupedProducts"] += 1
+                continue
+
+            state["seen"].add(key)
+            state["items"].append(dict(mapped))
+
+    return dump_path, scanned_products, states
+
+
+def build_meta_for_country(dump_path, scanned_products, state):
+    sorted_items = sort_discovered_items(state["items"])
+    discovered_items = strip_internal_fields(sorted_items)
+
+    return discovered_items, {
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+        "coverageNote": (
+            "This build is generated from a single pass over the OFF JSONL dump with "
+            "country filtering, app-field reduction, and per-country deduplication. "
+            "Large countries are popularity-sorted using OFF popularity fields when available "
+            "before budget-based packaging."
+        ),
+        "dumpUrl": DUMP_URL,
+        "dumpCachePath": dump_path,
+        "fullPackMaxItems": FULL_PACK_MAX_ITEMS,
+        "targetTotalBytes": TARGET_TOTAL_BYTES,
+        "targetMainBytes": TARGET_MAIN_BYTES,
+        "scannedProducts": scanned_products,
+        "matchedProducts": state["matchedProducts"],
+        "mappedProducts": state["mappedProducts"],
+        "dedupedProducts": state["dedupedProducts"],
+        "discoveredItemCount": len(discovered_items),
+        "discoveredBytes": json_bytes(discovered_items),
+    }
+
+
 def main():
     ensure_output_root()
 
@@ -274,48 +390,59 @@ def main():
     print(f"FORCE_DOWNLOAD={FORCE_DOWNLOAD}")
     print(f"SKIP_EXISTING={SKIP_EXISTING}")
 
-    for index, (iso2, slug) in enumerate(countries_to_build, start=1):
+    countries_to_scan = []
+    for iso2, slug in countries_to_build:
+        if should_skip_existing(iso2):
+            existing = load_existing_manifest(iso2)
+            if existing:
+                manifests.append(existing)
+                print(f"SKIPPED {iso2} (existing manifest retained)")
+                continue
+
+        countries_to_scan.append((iso2, slug))
+
+    if countries_to_scan:
         print("=" * 80)
-        print(f"[{index}/{total}] Building {iso2} ({slug})")
+        print(f"Single-pass scan for {len(countries_to_scan)} countries starting")
 
-        try:
-            if should_skip_existing(iso2):
-                existing = load_existing_manifest(iso2)
-                if existing:
-                    manifests.append(existing)
-                    print(f"[{index}/{total}] SKIPPED {iso2} (existing manifest retained)")
-                    write_index(manifests)
-                    write_failures(failures)
-                    continue
+        dump_path, scanned_products, states = single_pass_collect(countries_to_scan)
 
-            items, build_meta = build_country(
-                iso2,
-                slug,
-                download_if_missing=True,
-                force_download=FORCE_DOWNLOAD,
-            )
-            manifest = save_country(iso2, slug, items, build_meta)
-            manifests.append(manifest)
+        for index, (iso2, slug) in enumerate(countries_to_scan, start=1):
+            print("=" * 80)
+            print(f"[{index}/{len(countries_to_scan)}] Packaging {iso2} ({slug})")
 
-            print(
-                f"[{index}/{total}] SUCCESS {iso2} "
-                f"strategy={manifest['strategy']} "
-                f"packaged={manifest['itemCountTotal']}"
-            )
+            try:
+                state = states[iso2]
+                items, build_meta = build_meta_for_country(
+                    dump_path=dump_path,
+                    scanned_products=scanned_products,
+                    state=state,
+                )
 
-        except Exception as e:
-            failure = {
-                "countryIso2": iso2,
-                "slug": slug,
-                "error": str(e),
-                "traceback": traceback.format_exc(),
-            }
-            failures.append(failure)
+                manifest = save_country(iso2, slug, items, build_meta)
+                manifests.append(manifest)
 
-            print(f"[{index}/{total}] FAILED {iso2} ({slug}): {e}")
+                print(
+                    f"[{index}/{len(countries_to_scan)}] SUCCESS {iso2} "
+                    f"strategy={manifest['strategy']} "
+                    f"packaged={manifest['itemCountTotal']}"
+                )
 
-        write_index(manifests)
-        write_failures(failures)
+            except Exception as e:
+                failure = {
+                    "countryIso2": iso2,
+                    "slug": slug,
+                    "error": str(e),
+                    "traceback": traceback.format_exc(),
+                }
+                failures.append(failure)
+
+                print(f"[{index}/{len(countries_to_scan)}] FAILED {iso2} ({slug}): {e}")
+
+            write_index(manifests)
+            write_failures(failures)
+    else:
+        print("Nothing to scan. All selected countries were skipped.")
 
     print("=" * 80)
     print(f"Finished. Success={len(manifests)} Failed={len(failures)}")
