@@ -1,20 +1,29 @@
 name: Build country packs
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
     inputs:
       country_filter:
         description: "Comma-separated ISO2 codes (e.g. HU,RO)"
         required: false
-        default: ""
+        default: "HU"
+      force_download:
+        description: "Force re-download of OFF dump"
+        required: false
+        default: "false"
+      skip_existing:
+        description: "Skip countries that already have a manifest.json"
+        required: false
+        default: "false"
   schedule:
     - cron: "23 4 * * 1"
 
 permissions:
   contents: write
+
+concurrency:
+  group: build-country-packs-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -39,7 +48,9 @@ jobs:
       - name: Run builder
         run: python scripts/build_all_packs.py
         env:
-          COUNTRY_FILTER: ${{ inputs.country_filter }}
+          COUNTRY_FILTER: ${{ github.event.inputs.country_filter || 'HU' }}
+          FORCE_DOWNLOAD: ${{ github.event.inputs.force_download || 'false' }}
+          SKIP_EXISTING: ${{ github.event.inputs.skip_existing || 'false' }}
 
       - name: Commit results
         run: |
