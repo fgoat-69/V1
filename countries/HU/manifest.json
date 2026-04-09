@@ -1,0 +1,39 @@
+{
+  "countryIso2": "HU",
+  "slug": "hungary",
+  "version": 1775721899,
+  "generatedAt": "2026-04-09T08:04:59.928727+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 6094,
+  "bytesDiscovered": 1324515,
+  "itemCountTotal": 6094,
+  "itemCountMain": 6094,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/HU/full.json",
+      "kind": "full",
+      "itemCount": 6094,
+      "bytes": 1324515
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-09T08:04:59.928727+00:00",
+    "discoveryMethod": "off_jsonl_dump_country_filter",
+    "coverageNote": "This build is generated from the OFF JSONL dump with country filtering, app-field reduction, and deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4405596,
+    "matchedProducts": 10410,
+    "mappedProducts": 6094,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 6094,
+    "discoveredBytes": 1324515
+  }
+}
