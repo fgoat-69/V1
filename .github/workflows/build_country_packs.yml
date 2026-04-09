@@ -3,10 +3,14 @@ name: Build country packs
 on:
   workflow_dispatch:
     inputs:
-      country_filter:
-        description: "Comma-separated ISO2 codes (e.g. HU,RO)"
+      country_batch:
+        description: "Optional batch name"
         required: false
-        default: "HU"
+        default: "batch_13_north_america"
+      country_filter:
+        description: "Optional comma-separated ISO2 codes (overrides batch)"
+        required: false
+        default: ""
       force_download:
         description: "Force re-download of OFF dump"
         required: false
@@ -22,12 +26,34 @@ permissions:
   contents: write
 
 concurrency:
-  group: build-country-packs-${{ github.ref }}
+  group: build-country-packs-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-batches:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        country_batch:
+          - batch_01_europe_north_west
+          - batch_02_europe_central
+          - batch_03_europe_south_west
+          - batch_04_europe_south_east
+          - batch_05_europe_east_caucasus
+          - batch_06_middle_east
+          - batch_07_central_south_asia
+          - batch_08_east_south_east_asia
+          - batch_09_africa_north_west
+          - batch_10_africa_west
+          - batch_11_africa_central_east
+          - batch_12_africa_south_indian_ocean
+          - batch_13_north_america
+          - batch_14_central_america_caribbean
+          - batch_15_south_america
+          - batch_16_oceania_pacific
+          - batch_17_misc_small_states
 
     env:
       OFF_USER_AGENT: MostoFitCountryPackBuilder/1.0 (szegedi.kristof12@gmail.com)
@@ -53,22 +79,42 @@ jobs:
           restore-keys: |
             off-dump-${{ runner.os }}-
 
+      - name: Resolve run mode
+        id: resolve
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.country_filter }}" ]; then
+            echo "country_filter=${{ github.event.inputs.country_filter }}" >> "$GITHUB_OUTPUT"
+            echo "country_batch=" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.country_batch }}" ]; then
+            echo "country_filter=" >> "$GITHUB_OUTPUT"
+            echo "country_batch=${{ github.event.inputs.country_batch }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "country_filter=" >> "$GITHUB_OUTPUT"
+            echo "country_batch=${{ matrix.country_batch }}" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Debug inputs
         run: |
-          echo "country_filter=${{ github.event.inputs.country_filter }}"
+          echo "event_name=${{ github.event_name }}"
+          echo "resolved_country_batch=${{ steps.resolve.outputs.country_batch }}"
+          echo "resolved_country_filter=${{ steps.resolve.outputs.country_filter }}"
           echo "force_download=${{ github.event.inputs.force_download }}"
           echo "skip_existing=${{ github.event.inputs.skip_existing }}"
 
       - name: Run builder
         run: python scripts/build_all_packs.py
         env:
-          COUNTRY_FILTER: ${{ github.event.inputs.country_filter }}
+          COUNTRY_BATCH: ${{ steps.resolve.outputs.country_batch }}
+          COUNTRY_FILTER: ${{ steps.resolve.outputs.country_filter }}
           FORCE_DOWNLOAD: ${{ github.event.inputs.force_download }}
           SKIP_EXISTING: ${{ github.event.inputs.skip_existing }}
+
       - name: Commit results
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+
+          git pull --rebase origin "${GITHUB_REF_NAME}" || true
 
           git add countries
 
@@ -77,5 +123,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update country packs"
+          git commit -m "Update country packs (${{ steps.resolve.outputs.country_batch || steps.resolve.outputs.country_filter }})"
           git push
