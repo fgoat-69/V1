@@ -19,7 +19,6 @@ from build_country_pack import (
     strip_internal_fields,
 )
 
-# OFF-supported countries you want to build.
 COUNTRIES = [
     ("AL", "albania"),
     ("DZ", "algeria"),
@@ -202,12 +201,72 @@ COUNTRIES = [
     ("ZW", "zimbabwe"),
 ]
 
+COUNTRY_MAP = {iso2: slug for iso2, slug in COUNTRIES}
+
+# Fixed weekly batches.
+# Keep large countries distributed across different batches.
+COUNTRY_BATCHES = {
+    "batch_01_europe_north_west": [
+        "GB", "IE", "IS", "NO", "SE", "FI", "DK", "NL", "BE", "LU"
+    ],
+    "batch_02_europe_central": [
+        "DE", "AT", "CH", "LI", "CZ", "PL", "SK", "HU"
+    ],
+    "batch_03_europe_south_west": [
+        "FR", "ES", "PT", "IT", "SM", "VA", "MT", "AD"
+    ],
+    "batch_04_europe_south_east": [
+        "RO", "BG", "GR", "HR", "SI", "RS", "BA", "ME", "MK", "AL", "CY"
+    ],
+    "batch_05_europe_east_caucasus": [
+        "UA", "BY", "MD", "LT", "LV", "EE", "GE", "AM", "AZ", "RU"
+    ],
+    "batch_06_middle_east": [
+        "TR", "IL", "JO", "LB", "SY", "IQ", "SA", "AE", "QA", "KW", "OM", "BH", "YE"
+    ],
+    "batch_07_central_south_asia": [
+        "IN", "PK", "BD", "LK", "NP", "KZ", "KG", "TJ", "TM", "UZ"
+    ],
+    "batch_08_east_south_east_asia": [
+        "CN", "JP", "KR", "TW", "HK", "MO", "TH", "VN", "MY", "SG", "ID", "PH", "KH", "LA", "MM"
+    ],
+    "batch_09_africa_north_west": [
+        "DZ", "EG", "MA", "TN", "LY", "SD", "MR", "ML", "NE", "TD"
+    ],
+    "batch_10_africa_west": [
+        "NG", "GH", "SN", "GM", "GN", "GW", "SL", "LR", "TG", "BJ", "BF", "CV"
+    ],
+    "batch_11_africa_central_east": [
+        "CM", "GA", "CG", "CD", "DJ", "ER", "ET", "SO", "KE", "UG", "RW", "TZ"
+    ],
+    "batch_12_africa_south_indian_ocean": [
+        "ZA", "BW", "NA", "LS", "MZ", "MW", "ZM", "ZW", "MG", "MU", "SC"
+    ],
+    "batch_13_north_america": [
+        "US", "CA", "MX"
+    ],
+    "batch_14_central_america_caribbean": [
+        "AG", "BS", "BZ", "CR", "CU", "DM", "DO", "GD", "GT", "HN", "HT",
+        "JM", "KN", "KY", "LC", "NI", "PA", "SV", "TC", "TT", "VG"
+    ],
+    "batch_15_south_america": [
+        "AR", "BO", "BR", "CL", "CO", "EC", "PE", "PY", "UY", "VE", "SR"
+    ],
+    "batch_16_oceania_pacific": [
+        "AU", "NZ", "FJ", "PG", "SB", "TO", "VU", "WS", "MH", "FM"
+    ],
+    "batch_17_misc_small_states": [
+        "AW", "GI", "KM", "MV", "MN", "PA", "PY"
+    ],
+}
+
 COUNTRY_FILTER = {
     token.strip().upper()
     for token in os.getenv("COUNTRY_FILTER", "").split(",")
     if token.strip()
 }
 
+BATCH_NAME = os.getenv("COUNTRY_BATCH", "").strip()
 FORCE_DOWNLOAD = os.getenv("FORCE_DOWNLOAD", "").strip().lower() in {"1", "true", "yes"}
 SKIP_EXISTING = os.getenv("SKIP_EXISTING", "").strip().lower() in {"1", "true", "yes"}
 
@@ -217,14 +276,30 @@ def ensure_output_root():
 
 
 def selected_countries():
-    if not COUNTRY_FILTER:
-        return COUNTRIES
+    if COUNTRY_FILTER:
+        return [
+            (iso2, slug)
+            for (iso2, slug) in COUNTRIES
+            if iso2.upper() in COUNTRY_FILTER
+        ]
 
-    return [
-        (iso2, slug)
-        for (iso2, slug) in COUNTRIES
-        if iso2.upper() in COUNTRY_FILTER
-    ]
+    if BATCH_NAME:
+        if BATCH_NAME not in COUNTRY_BATCHES:
+            raise RuntimeError(
+                f"Unknown COUNTRY_BATCH '{BATCH_NAME}'. "
+                f"Known batches: {', '.join(sorted(COUNTRY_BATCHES.keys()))}"
+            )
+
+        batch_iso2s = COUNTRY_BATCHES[BATCH_NAME]
+        missing = [iso2 for iso2 in batch_iso2s if iso2 not in COUNTRY_MAP]
+        if missing:
+            raise RuntimeError(
+                f"Batch '{BATCH_NAME}' references unknown country codes: {', '.join(missing)}"
+            )
+
+        return [(iso2, COUNTRY_MAP[iso2]) for iso2 in batch_iso2s]
+
+    return COUNTRIES
 
 
 def manifest_path_for(iso2):
@@ -270,6 +345,32 @@ def load_existing_manifest(iso2):
         return json.load(f)
 
 
+def load_existing_index_manifests():
+    path = os.path.join("countries", "index.json")
+    if not os.path.exists(path):
+        return {}
+
+    with open(path, "r", encoding="utf-8") as f:
+        payload = json.load(f)
+
+    return {
+        manifest["countryIso2"]: manifest
+        for manifest in payload.get("countries", [])
+        if manifest.get("countryIso2")
+    }
+
+
+def load_existing_failures():
+    path = os.path.join("countries", "failures.json")
+    if not os.path.exists(path):
+        return []
+
+    with open(path, "r", encoding="utf-8") as f:
+        payload = json.load(f)
+
+    return payload.get("failures", [])
+
+
 def init_country_state(iso2, slug):
     return {
         "countryIso2": iso2,
@@ -294,8 +395,7 @@ def build_token_to_iso_map(countries_to_build):
 
 def matched_country_isos(product, token_to_iso):
     tokens = product_country_tokens(product)
-    matched = {token_to_iso[token] for token in tokens if token in token_to_iso}
-    return matched
+    return {token_to_iso[token] for token in tokens if token in token_to_iso}
 
 
 def single_pass_collect(countries_to_build):
@@ -375,18 +475,26 @@ def build_meta_for_country(dump_path, scanned_products, state):
 def main():
     ensure_output_root()
 
-    manifests = []
-    failures = []
+    existing_manifest_map = load_existing_index_manifests()
+    existing_failures = load_existing_failures()
+
+    manifests_by_iso = dict(existing_manifest_map)
+    failures_by_iso = {
+        failure["countryIso2"]: failure
+        for failure in existing_failures
+        if failure.get("countryIso2")
+    }
 
     countries_to_build = selected_countries()
     total = len(countries_to_build)
 
     if total == 0:
         raise RuntimeError(
-            "No countries selected. Check COUNTRY_FILTER env var, e.g. COUNTRY_FILTER=HU,RO"
+            "No countries selected. Set COUNTRY_FILTER or COUNTRY_BATCH."
         )
 
     print(f"Selected countries: {total}")
+    print(f"COUNTRY_BATCH={BATCH_NAME}")
     print(f"FORCE_DOWNLOAD={FORCE_DOWNLOAD}")
     print(f"SKIP_EXISTING={SKIP_EXISTING}")
 
@@ -395,7 +503,8 @@ def main():
         if should_skip_existing(iso2):
             existing = load_existing_manifest(iso2)
             if existing:
-                manifests.append(existing)
+                manifests_by_iso[iso2] = existing
+                failures_by_iso.pop(iso2, None)
                 print(f"SKIPPED {iso2} (existing manifest retained)")
                 continue
 
@@ -420,7 +529,8 @@ def main():
                 )
 
                 manifest = save_country(iso2, slug, items, build_meta)
-                manifests.append(manifest)
+                manifests_by_iso[iso2] = manifest
+                failures_by_iso.pop(iso2, None)
 
                 print(
                     f"[{index}/{len(countries_to_scan)}] SUCCESS {iso2} "
@@ -435,17 +545,20 @@ def main():
                     "error": str(e),
                     "traceback": traceback.format_exc(),
                 }
-                failures.append(failure)
+                failures_by_iso[iso2] = failure
 
                 print(f"[{index}/{len(countries_to_scan)}] FAILED {iso2} ({slug}): {e}")
 
-            write_index(manifests)
-            write_failures(failures)
+            write_index(list(manifests_by_iso.values()))
+            write_failures(list(failures_by_iso.values()))
     else:
         print("Nothing to scan. All selected countries were skipped.")
 
     print("=" * 80)
-    print(f"Finished. Success={len(manifests)} Failed={len(failures)}")
+    print(
+        f"Finished. Success={len(manifests_by_iso)} "
+        f"Failed={len(failures_by_iso)}"
+    )
 
 
 if __name__ == "__main__":
