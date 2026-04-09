@@ -4,19 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       country_filter:
-        description: "Optional comma-separated ISO2 list, e.g. HU,RO"
+        description: "Comma-separated ISO2 codes (e.g. HU,RO)"
         required: false
         default: ""
-      force_download:
-        description: "Force re-download of OFF dump"
-        required: false
-        default: "false"
   schedule:
     - cron: "23 4 * * 1"
-
-concurrency:
-  group: build-country-packs-${{ github.ref }}
-  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -26,50 +18,35 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      OFF_USER_AGENT: MostoFitCountryPackBuilder/1.0 (szegedi.kristof12@gmail.com)
-      COUNTRY_FILTER: ${{ inputs.country_filter }}
-      FORCE_DOWNLOAD: ${{ inputs.force_download }}
+      OFF_USER_AGENT: MostoFitCountryPackBuilder/1.0 (your-email@example.com)
       PYTHONUNBUFFERED: "1"
 
     steps:
-      - name: Check out repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Cache OFF dump
-        uses: actions/cache@v4
-        with:
-          path: .cache
-          key: off-dump-${{ runner.os }}-${{ hashFiles('scripts/build_country_pack.py', 'scripts/build_all_packs.py') }}
-          restore-keys: |
-            off-dump-${{ runner.os }}-
-
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+        run: pip install requests
 
-      - name: Build country packs
-        run: |
-          python scripts/build_all_packs.py
+      - name: Run builder
+        run: python scripts/build_all_packs.py
         env:
-          COUNTRY_FILTER: ${{ env.COUNTRY_FILTER }}
-          FORCE_DOWNLOAD: ${{ env.FORCE_DOWNLOAD }}
+          COUNTRY_FILTER: ${{ inputs.country_filter }}
 
-      - name: Commit changes
+      - name: Commit results
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
 
           git add countries
-          git status --short
 
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No changes"
             exit 0
           fi
 
