@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      OFF_USER_AGENT: MostoFitCountryPackBuilder/1.0 (your-email@example.com)
+      OFF_USER_AGENT: MostoFitCountryPackBuilder/1.0 (szegedi.kristof12@gmail.com)
       PYTHONUNBUFFERED: "1"
 
     steps:
