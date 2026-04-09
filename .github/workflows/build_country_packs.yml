@@ -1,6 +1,9 @@
 name: Build country packs
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       country_filter:
