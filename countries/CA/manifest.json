@@ -1,34 +1,34 @@
 {
-  "countryIso2": "US",
-  "slug": "united-states",
-  "version": 1775944022,
-  "generatedAt": "2026-04-11T21:46:54.799747+00:00",
+  "countryIso2": "CA",
+  "slug": "canada",
+  "version": 1775944024,
+  "generatedAt": "2026-04-11T21:47:03.702922+00:00",
   "strategy": "main_fill",
-  "itemCountDiscovered": 871497,
-  "bytesDiscovered": 195208357,
-  "itemCountTotal": 31415,
-  "itemCountMain": 22426,
-  "itemCountFill": 8989,
+  "itemCountDiscovered": 115359,
+  "bytesDiscovered": 24682120,
+  "itemCountTotal": 32273,
+  "itemCountMain": 22965,
+  "itemCountFill": 9308,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
     {
       "name": "main.json",
-      "path": "countries/US/main.json",
+      "path": "countries/CA/main.json",
       "kind": "main",
-      "itemCount": 22426,
-      "bytes": 4999823
+      "itemCount": 22965,
+      "bytes": 4999989
     },
     {
       "name": "fill.json",
-      "path": "countries/US/fill.json",
+      "path": "countries/CA/fill.json",
       "kind": "fill",
-      "itemCount": 8989,
-      "bytes": 1999993
+      "itemCount": 9308,
+      "bytes": 1999903
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-11T21:46:54.799747+00:00",
+    "generatedAt": "2026-04-11T21:47:03.702922+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -37,10 +37,10 @@
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
     "scannedProducts": 4411648,
-    "matchedProducts": 888186,
-    "mappedProducts": 871500,
-    "dedupedProducts": 3,
-    "discoveredItemCount": 871497,
-    "discoveredBytes": 195208357
+    "matchedProducts": 118292,
+    "mappedProducts": 115359,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 115359,
+    "discoveredBytes": 24682120
   }
 }
