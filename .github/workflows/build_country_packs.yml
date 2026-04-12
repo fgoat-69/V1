@@ -30,7 +30,96 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  build-manual:
+    if: ${{ github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    env:
+      OFF_USER_AGENT: MostoFitCountryPackBuilder/1.0 (szegedi.kristof12@gmail.com)
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Cache OFF dump
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: off-dump-${{ runner.os }}-${{ hashFiles('scripts/build_country_pack.py', 'scripts/build_all_packs.py') }}
+          restore-keys: |
+            off-dump-${{ runner.os }}-
+
+      - name: Debug inputs
+        run: |
+          echo "event_name=${{ github.event_name }}"
+          echo "country_batch=${{ github.event.inputs.country_batch }}"
+          echo "country_filter=${{ github.event.inputs.country_filter }}"
+          echo "force_download=${{ github.event.inputs.force_download }}"
+          echo "skip_existing=${{ github.event.inputs.skip_existing }}"
+
+      - name: Run builder
+        run: python scripts/build_all_packs.py
+        env:
+          COUNTRY_BATCH: ${{ github.event.inputs.country_batch }}
+          COUNTRY_FILTER: ${{ github.event.inputs.country_filter }}
+          FORCE_DOWNLOAD: ${{ github.event.inputs.force_download }}
+          SKIP_EXISTING: ${{ github.event.inputs.skip_existing }}
+
+      - name: Stage batch output artifact
+        env:
+          COUNTRY_BATCH: ${{ github.event.inputs.country_batch }}
+          COUNTRY_FILTER: ${{ github.event.inputs.country_filter }}
+        run: |
+          python - <<'PY'
+          import importlib.util
+          import os
+          import pathlib
+          import shutil
+
+          root = pathlib.Path(".")
+          stage = root / "artifact_out"
+          if stage.exists():
+              shutil.rmtree(stage)
+          (stage / "countries").mkdir(parents=True, exist_ok=True)
+
+          spec = importlib.util.spec_from_file_location("build_all_packs", root / "scripts" / "build_all_packs.py")
+          mod = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(mod)
+
+          country_filter = os.getenv("COUNTRY_FILTER", "").strip()
+          country_batch = os.getenv("COUNTRY_BATCH", "").strip()
+
+          if country_filter:
+              selected = [token.strip().upper() for token in country_filter.split(",") if token.strip()]
+          elif country_batch:
+              selected = list(mod.COUNTRY_BATCHES[country_batch])
+          else:
+              raise RuntimeError("Either COUNTRY_FILTER or COUNTRY_BATCH must be set for manual run.")
+
+          for iso2 in selected:
+              src = root / "countries" / iso2
+              if src.exists():
+                  shutil.copytree(src, stage / "countries" / iso2)
+
+          print("Staged countries:", ", ".join(selected))
+          PY
+
+      - name: Upload batch artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: manual-pack-output
+          path: artifact_out
+
   build-batches:
+    if: ${{ github.event_name == 'schedule' }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -79,42 +168,142 @@ jobs:
           restore-keys: |
             off-dump-${{ runner.os }}-
 
-      - name: Resolve run mode
-        id: resolve
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.country_filter }}" ]; then
-            echo "country_filter=${{ github.event.inputs.country_filter }}" >> "$GITHUB_OUTPUT"
-            echo "country_batch=" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.country_batch }}" ]; then
-            echo "country_filter=" >> "$GITHUB_OUTPUT"
-            echo "country_batch=${{ github.event.inputs.country_batch }}" >> "$GITHUB_OUTPUT"
-          else
-            echo "country_filter=" >> "$GITHUB_OUTPUT"
-            echo "country_batch=${{ matrix.country_batch }}" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Debug inputs
-        run: |
-          echo "event_name=${{ github.event_name }}"
-          echo "resolved_country_batch=${{ steps.resolve.outputs.country_batch }}"
-          echo "resolved_country_filter=${{ steps.resolve.outputs.country_filter }}"
-          echo "force_download=${{ github.event.inputs.force_download }}"
-          echo "skip_existing=${{ github.event.inputs.skip_existing }}"
-
       - name: Run builder
         run: python scripts/build_all_packs.py
         env:
-          COUNTRY_BATCH: ${{ steps.resolve.outputs.country_batch }}
-          COUNTRY_FILTER: ${{ steps.resolve.outputs.country_filter }}
-          FORCE_DOWNLOAD: ${{ github.event.inputs.force_download }}
-          SKIP_EXISTING: ${{ github.event.inputs.skip_existing }}
+          COUNTRY_BATCH: ${{ matrix.country_batch }}
+          COUNTRY_FILTER: ""
+          FORCE_DOWNLOAD: "false"
+          SKIP_EXISTING: "false"
 
-      - name: Commit results
+      - name: Stage batch output artifact
+        env:
+          COUNTRY_BATCH: ${{ matrix.country_batch }}
+        run: |
+          python - <<'PY'
+          import importlib.util
+          import os
+          import pathlib
+          import shutil
+
+          root = pathlib.Path(".")
+          stage = root / "artifact_out"
+          if stage.exists():
+              shutil.rmtree(stage)
+          (stage / "countries").mkdir(parents=True, exist_ok=True)
+
+          spec = importlib.util.spec_from_file_location("build_all_packs", root / "scripts" / "build_all_packs.py")
+          mod = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(mod)
+
+          country_batch = os.getenv("COUNTRY_BATCH", "").strip()
+          selected = list(mod.COUNTRY_BATCHES[country_batch])
+
+          for iso2 in selected:
+              src = root / "countries" / iso2
+              if src.exists():
+                  shutil.copytree(src, stage / "countries" / iso2)
+
+          print("Staged countries:", ", ".join(selected))
+          PY
+
+      - name: Upload batch artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-${{ matrix.country_batch }}-pack-output
+          path: artifact_out
+
+  merge-and-commit:
+    if: >-
+      ${{
+        (github.event_name == 'workflow_dispatch' && needs.build-manual.result == 'success') ||
+        (github.event_name == 'schedule' && needs.build-batches.result == 'success')
+      }}
+    needs:
+      - build-manual
+      - build-batches
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download all batch artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: collected_artifacts
+          pattern: "*-pack-output"
+          merge-multiple: true
+
+      - name: Merge country folders into repo
+        run: |
+          python - <<'PY'
+          import pathlib
+          import shutil
+
+          repo_countries = pathlib.Path("countries")
+          repo_countries.mkdir(exist_ok=True)
+
+          collected = pathlib.Path("collected_artifacts") / "countries"
+          if not collected.exists():
+              raise RuntimeError("No collected country artifacts found.")
+
+          for country_dir in collected.iterdir():
+              if not country_dir.is_dir():
+                  continue
+              target = repo_countries / country_dir.name
+              if target.exists():
+                  shutil.rmtree(target)
+              shutil.copytree(country_dir, target)
+              print(f"Merged {country_dir.name}")
+          PY
+
+      - name: Rebuild index and failures
+        run: |
+          python - <<'PY'
+          import json
+          import pathlib
+          from datetime import datetime, timezone
+
+          countries_root = pathlib.Path("countries")
+          manifests = []
+
+          for child in sorted(countries_root.iterdir()):
+              if not child.is_dir():
+                  continue
+
+              manifest_path = child / "manifest.json"
+              if not manifest_path.exists():
+                  continue
+
+              with open(manifest_path, "r", encoding="utf-8") as f:
+                  manifests.append(json.load(f))
+
+          index_payload = {
+              "generatedAt": datetime.now(timezone.utc).isoformat(),
+              "countryCount": len(manifests),
+              "countries": sorted(manifests, key=lambda x: x["countryIso2"]),
+          }
+
+          failures_payload = {
+              "generatedAt": datetime.now(timezone.utc).isoformat(),
+              "failureCount": 0,
+              "failures": [],
+          }
+
+          with open(countries_root / "index.json", "w", encoding="utf-8") as f:
+              json.dump(index_payload, f, ensure_ascii=False, indent=2)
+
+          with open(countries_root / "failures.json", "w", encoding="utf-8") as f:
+              json.dump(failures_payload, f, ensure_ascii=False, indent=2)
+
+          print(f"Rebuilt countries/index.json with {len(manifests)} manifests")
+          PY
+
+      - name: Commit merged results
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-
-          git pull --rebase origin "${GITHUB_REF_NAME}" || true
 
           git add countries
 
@@ -123,10 +312,5 @@ jobs:
             exit 0
           fi
 
-          RUN_LABEL="${{ steps.resolve.outputs.country_batch }}"
-          if [ -z "$RUN_LABEL" ]; then
-            RUN_LABEL="${{ steps.resolve.outputs.country_filter }}"
-          fi
-
-          git commit -m "Update country packs (${RUN_LABEL})"
+          git commit -m "Update country packs"
           git push
