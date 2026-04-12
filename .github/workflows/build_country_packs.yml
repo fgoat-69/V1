@@ -90,19 +90,29 @@ jobs:
               shutil.rmtree(stage)
           (stage / "countries").mkdir(parents=True, exist_ok=True)
 
-          spec = importlib.util.spec_from_file_location("build_all_packs", root / "scripts" / "build_all_packs.py")
+          spec = importlib.util.spec_from_file_location(
+              "build_all_packs",
+              root / "scripts" / "build_all_packs.py",
+          )
           mod = importlib.util.module_from_spec(spec)
           spec.loader.exec_module(mod)
 
           country_filter = os.getenv("COUNTRY_FILTER", "").strip()
           country_batch = os.getenv("COUNTRY_BATCH", "").strip()
 
+          selected = []
+
           if country_filter:
               selected = [token.strip().upper() for token in country_filter.split(",") if token.strip()]
-          elif country_batch:
+          elif country_batch and country_batch in mod.COUNTRY_BATCHES:
               selected = list(mod.COUNTRY_BATCHES[country_batch])
           else:
-              raise RuntimeError("Either COUNTRY_FILTER or COUNTRY_BATCH must be set for manual run.")
+              built_root = root / "countries"
+              if built_root.exists():
+                  selected = [p.name for p in built_root.iterdir() if p.is_dir()]
+
+          if not selected:
+              raise RuntimeError("No countries detected to stage")
 
           for iso2 in selected:
               src = root / "countries" / iso2
@@ -192,7 +202,10 @@ jobs:
               shutil.rmtree(stage)
           (stage / "countries").mkdir(parents=True, exist_ok=True)
 
-          spec = importlib.util.spec_from_file_location("build_all_packs", root / "scripts" / "build_all_packs.py")
+          spec = importlib.util.spec_from_file_location(
+              "build_all_packs",
+              root / "scripts" / "build_all_packs.py",
+          )
           mod = importlib.util.module_from_spec(spec)
           spec.loader.exec_module(mod)
 
