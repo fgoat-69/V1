@@ -83,8 +83,12 @@ jobs:
           import os
           import pathlib
           import shutil
+          import sys
 
-          root = pathlib.Path(".")
+          root = pathlib.Path(".").resolve()
+          scripts_dir = root / "scripts"
+          sys.path.insert(0, str(scripts_dir))
+
           stage = root / "artifact_out"
           if stage.exists():
               shutil.rmtree(stage)
@@ -92,7 +96,7 @@ jobs:
 
           spec = importlib.util.spec_from_file_location(
               "build_all_packs",
-              root / "scripts" / "build_all_packs.py",
+              scripts_dir / "build_all_packs.py",
           )
           mod = importlib.util.module_from_spec(spec)
           spec.loader.exec_module(mod)
@@ -195,8 +199,12 @@ jobs:
           import os
           import pathlib
           import shutil
+          import sys
 
-          root = pathlib.Path(".")
+          root = pathlib.Path(".").resolve()
+          scripts_dir = root / "scripts"
+          sys.path.insert(0, str(scripts_dir))
+
           stage = root / "artifact_out"
           if stage.exists():
               shutil.rmtree(stage)
@@ -204,7 +212,7 @@ jobs:
 
           spec = importlib.util.spec_from_file_location(
               "build_all_packs",
-              root / "scripts" / "build_all_packs.py",
+              scripts_dir / "build_all_packs.py",
           )
           mod = importlib.util.module_from_spec(spec)
           spec.loader.exec_module(mod)
