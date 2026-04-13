@@ -26,8 +26,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Almond Drink",
-    "brand": "Bio Organic",
+    "name": "Bio Mandel",
+    "brand": "Vemondo",
     "barcode": "4056489346357",
     "calories": 0.0,
     "protein": 0.0,
@@ -468,7 +468,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Kinder Crispy",
+    "name": "Kinder CRISPEASY",
     "brand": "Kinder",
     "barcode": "8000500434123",
     "calories": 0.0,
@@ -2213,6 +2213,19 @@
     "name": "Bryndza",
     "brand": "Pilos",
     "barcode": "4335619086470",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Bryndza plnotučná",
+    "brand": "Agrofarma Červený Kameň",
+    "barcode": "8586001301534",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -4160,6 +4173,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "exkluzívny majonéze",
+    "brand": "Fresh",
+    "barcode": "8588003633101",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Extra Jahoda",
     "brand": "Schwartau",
     "barcode": "4011800135515",
@@ -5889,6 +5915,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Kešu (pražené solené)",
+    "brand": "Alesto",
+    "barcode": "4335619086258",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Kielbasa for Grill (Domaca Klobasa na Gril)",
     "brand": "Tauris Slovakia for Coop",
     "barcode": "8588003411617",
@@ -6461,6 +6500,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Leberkase",
+    "brand": "Bikla",
+    "barcode": "9008684037481",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "pack",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "lekořicove",
     "brand": null,
     "barcode": "0200030523870",
@@ -7013,6 +7065,19 @@
     "calories": 314.0,
     "protein": 0.4,
     "carbs": 78.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Mehmet Efendi kakao 250gr",
+    "brand": null,
+    "barcode": "0690908649809",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
@@ -8108,6 +8173,19 @@
     "fat": 4.6,
     "servingSize": 1.0,
     "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Nuri toplar Osmanská káva",
+    "brand": null,
+    "barcode": "8681026204201",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -15080,6 +15158,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Green Olives pitted",
+    "brand": "Baresa",
+    "barcode": "4056489171294",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Horalky peanut butter",
     "brand": "Sedita",
     "barcode": "8584004042157",
@@ -21466,10 +21557,10 @@
     "name": "Atun",
     "brand": "Isabel",
     "barcode": "8410111003326",
-    "calories": 101.0,
-    "protein": 24.0,
+    "calories": 0.0,
+    "protein": 0.0,
     "carbs": 0.0,
-    "fat": 0.5,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "can",
     "isLiquid": false,
@@ -35491,12 +35582,12 @@
   },
   {
     "name": "Makrela filety v olivovém oleji",
-    "brand": "Franz Josef",
+    "brand": "Franz Josef Kaiser",
     "barcode": "8594012796386",
-    "calories": 453.0,
-    "protein": 12.0,
+    "calories": 0.0,
+    "protein": 0.0,
     "carbs": 0.0,
-    "fat": 45.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "can",
     "isLiquid": false,
@@ -37571,7 +37662,7 @@
   },
   {
     "name": "Olomoucké tvarůžky malé",
-    "brand": "A.W.",
+    "brand": "AW",
     "barcode": "85905689",
     "calories": 0.0,
     "protein": 0.0,
@@ -42887,7 +42978,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Teriyaki Sauce",
+    "name": "Teriyaki omáčka",
     "brand": "Maggi",
     "barcode": "8445291784956",
     "calories": 0.0,
@@ -58461,6 +58552,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Mascarpone So Sezónnym Ovocím",
+    "brand": "Yeme",
+    "barcode": "2103460000004",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Maslo",
     "brand": null,
     "barcode": "4337185525520",
@@ -58743,6 +58847,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Micellar Casein",
+    "brand": "GymBeam",
+    "barcode": "8586026895148",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "scoop",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -70559,6 +70676,19 @@
     "carbs": 49.0,
     "fat": 35.0,
     "servingSize": 40.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Ľanový chlieb",
+    "brand": "Peza",
+    "barcode": "8586005756545",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
