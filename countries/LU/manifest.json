@@ -1,0 +1,39 @@
+{
+  "countryIso2": "LU",
+  "slug": "luxembourg",
+  "version": 1776106951,
+  "generatedAt": "2026-04-13T19:02:30.908149+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 10722,
+  "bytesDiscovered": 2288609,
+  "itemCountTotal": 10722,
+  "itemCountMain": 10722,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/LU/full.json",
+      "kind": "full",
+      "itemCount": 10722,
+      "bytes": 2288609
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-13T19:02:30.908149+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 11151,
+    "mappedProducts": 10722,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 10722,
+    "discoveredBytes": 2288609
+  }
+}

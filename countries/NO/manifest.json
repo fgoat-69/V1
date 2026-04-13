@@ -1,0 +1,46 @@
+{
+  "countryIso2": "NO",
+  "slug": "norway",
+  "version": 1776106945,
+  "generatedAt": "2026-04-13T19:02:24.965504+00:00",
+  "strategy": "main_fill",
+  "itemCountDiscovered": 24200,
+  "bytesDiscovered": 5349043,
+  "itemCountTotal": 24200,
+  "itemCountMain": 22599,
+  "itemCountFill": 1601,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "main.json",
+      "path": "countries/NO/main.json",
+      "kind": "main",
+      "itemCount": 22599,
+      "bytes": 4999970
+    },
+    {
+      "name": "fill.json",
+      "path": "countries/NO/fill.json",
+      "kind": "fill",
+      "itemCount": 1601,
+      "bytes": 349074
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-13T19:02:24.965504+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 24962,
+    "mappedProducts": 24201,
+    "dedupedProducts": 1,
+    "discoveredItemCount": 24200,
+    "discoveredBytes": 5349043
+  }
+}

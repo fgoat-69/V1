@@ -1,0 +1,39 @@
+{
+  "countryIso2": "FI",
+  "slug": "finland",
+  "version": 1776106946,
+  "generatedAt": "2026-04-13T19:02:26.476455+00:00",
+  "strategy": "main_fill",
+  "itemCountDiscovered": 17747,
+  "bytesDiscovered": 3840658,
+  "itemCountTotal": 17747,
+  "itemCountMain": 17747,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "main.json",
+      "path": "countries/FI/main.json",
+      "kind": "main",
+      "itemCount": 17747,
+      "bytes": 3840658
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-13T19:02:26.476455+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 18655,
+    "mappedProducts": 17747,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 17747,
+    "discoveredBytes": 3840658
+  }
+}

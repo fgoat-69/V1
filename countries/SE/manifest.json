@@ -1,0 +1,39 @@
+{
+  "countryIso2": "SE",
+  "slug": "sweden",
+  "version": 1776106945,
+  "generatedAt": "2026-04-13T19:02:25.760439+00:00",
+  "strategy": "main_fill",
+  "itemCountDiscovered": 22459,
+  "bytesDiscovered": 4763644,
+  "itemCountTotal": 22459,
+  "itemCountMain": 22459,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "main.json",
+      "path": "countries/SE/main.json",
+      "kind": "main",
+      "itemCount": 22459,
+      "bytes": 4763644
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-13T19:02:25.760439+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 24124,
+    "mappedProducts": 22459,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 22459,
+    "discoveredBytes": 4763644
+  }
+}
