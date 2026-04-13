@@ -234,14 +234,106 @@ jobs:
           name: batch-${{ matrix.country_batch }}-pack-output
           path: artifact_out
 
-  merge-and-commit:
-    if: >-
-      ${{
-        (github.event_name == 'workflow_dispatch' && needs.build-manual.result == 'success') ||
-        (github.event_name == 'schedule' && needs.build-batches.result == 'success')
-      }}
+  merge-manual:
+    if: ${{ github.event_name == 'workflow_dispatch' && needs.build-manual.result == 'success' }}
     needs:
       - build-manual
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download manual artifact
+        uses: actions/download-artifact@v4
+        with:
+          path: collected_artifacts
+          pattern: "manual-pack-output"
+          merge-multiple: true
+
+      - name: Merge country folders into repo
+        run: |
+          python - <<'PY'
+          import pathlib
+          import shutil
+
+          repo_countries = pathlib.Path("countries")
+          repo_countries.mkdir(exist_ok=True)
+
+          collected = pathlib.Path("collected_artifacts") / "countries"
+          if not collected.exists():
+              raise RuntimeError("No collected country artifacts found.")
+
+          for country_dir in collected.iterdir():
+              if not country_dir.is_dir():
+                  continue
+              target = repo_countries / country_dir.name
+              if target.exists():
+                  shutil.rmtree(target)
+              shutil.copytree(country_dir, target)
+              print(f"Merged {country_dir.name}")
+          PY
+
+      - name: Rebuild index and failures
+        run: |
+          python - <<'PY'
+          import json
+          import pathlib
+          from datetime import datetime, timezone
+
+          countries_root = pathlib.Path("countries")
+          manifests = []
+
+          for child in sorted(countries_root.iterdir()):
+              if not child.is_dir():
+                  continue
+
+              manifest_path = child / "manifest.json"
+              if not manifest_path.exists():
+                  continue
+
+              with open(manifest_path, "r", encoding="utf-8") as f:
+                  manifests.append(json.load(f))
+
+          index_payload = {
+              "generatedAt": datetime.now(timezone.utc).isoformat(),
+              "countryCount": len(manifests),
+              "countries": sorted(manifests, key=lambda x: x["countryIso2"]),
+          }
+
+          failures_payload = {
+              "generatedAt": datetime.now(timezone.utc).isoformat(),
+              "failureCount": 0,
+              "failures": [],
+          }
+
+          with open(countries_root / "index.json", "w", encoding="utf-8") as f:
+              json.dump(index_payload, f, ensure_ascii=False, indent=2)
+
+          with open(countries_root / "failures.json", "w", encoding="utf-8") as f:
+              json.dump(failures_payload, f, ensure_ascii=False, indent=2)
+
+          print(f"Rebuilt countries/index.json with {len(manifests)} manifests")
+          PY
+
+      - name: Commit merged results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add countries
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update country packs"
+          git push
+
+  merge-scheduled:
+    if: ${{ github.event_name == 'schedule' && needs.build-batches.result == 'success' }}
+    needs:
       - build-batches
     runs-on: ubuntu-latest
 
@@ -253,7 +345,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: collected_artifacts
-          pattern: "*-pack-output"
+          pattern: "batch-*-pack-output"
           merge-multiple: true
 
       - name: Merge country folders into repo
