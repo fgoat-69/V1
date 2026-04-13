@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Frutta secca di qualita'",
+    "brand": null,
+    "barcode": "2000967002985",
+    "calories": 654.0,
+    "protein": 15.0,
+    "carbs": 7.0,
+    "fat": 61.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Miele millefiori",
+    "brand": null,
+    "barcode": "8019331001176",
+    "calories": 320.0,
+    "protein": 0.2,
+    "carbs": 82.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Nero di Troia",
+    "brand": "Selex",
+    "barcode": "8000965261371",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Noce sgusciate in pezzi",
+    "brand": "Todis",
+    "barcode": "8025916124833",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  }
+]

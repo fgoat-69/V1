@@ -1,5 +1,31 @@
 [
   {
+    "name": "Samossas aux légumes avec sauce aigre-douce",
+    "brand": "Cuisine évasion",
+    "barcode": "3270160391042",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Samossas légumes",
+    "brand": "Monique Ranou",
+    "barcode": "3366760042849",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Sandwich club Trio - Poulet crudités x3 - 230g",
     "brand": "Monique ranou",
     "barcode": "3250392764951",
@@ -560,7 +586,7 @@
   },
   {
     "name": "Skyr nature",
-    "brand": "Ísey",
+    "brand": "Issey",
     "barcode": "5690527904001",
     "calories": 0.0,
     "protein": 0.0,
@@ -1567,8 +1593,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "opakowanie",
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5629,6 +5655,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Coconut Basmati Rice",
+    "brand": "Tilda",
+    "barcode": "5011157888316",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Coconut Water",
     "brand": "Naturis",
     "barcode": "20952983",
@@ -6111,7 +6150,7 @@
   },
   {
     "name": "Corny Schoko",
-    "brand": "CORNY",
+    "brand": "Corny",
     "barcode": "4011800521226",
     "calories": 0.0,
     "protein": 0.0,
@@ -14275,7 +14314,7 @@
   },
   {
     "name": "Petits pois aux oignons fondants Bio engagé d'aucy 340g",
-    "brand": "D'aucy",
+    "brand": "d'aucy",
     "barcode": "3017800246795",
     "calories": 0.0,
     "protein": 0.0,
@@ -16250,19 +16289,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Sauce Tomates fraîches & ail émincé",
-    "brand": "Italians do it better",
-    "barcode": "3760253402019",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Sauce tomates séchées",
     "brand": "Carrefour",
     "barcode": "3245414321847",
@@ -17771,19 +17797,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Tilda Coconut Basmati Rice",
-    "brand": "Sainsbury's",
-    "barcode": "5011157888316",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Tipiak Épeautre perles de blé",
     "brand": "Tipiak",
     "barcode": "3600900023009",
@@ -17858,6 +17871,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "tomates fraîches & ail émincé",
+    "brand": "italians do it better",
+    "barcode": "3760253402019",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -19084,19 +19110,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "100% Gold Standard Whey",
-    "brand": "Optimum Nutrition",
-    "barcode": "5060469988474",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 31.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "100% JUS",
     "brand": null,
     "barcode": "6111179006923",
@@ -19175,8 +19188,21 @@
     "source": "github_country_pack"
   },
   {
+    "name": "100% Whey Gold Standard Double Rich Chocolate",
+    "brand": "Optimum Nutrition",
+    "barcode": "5060469988474",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 31.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "100% Whey Protein",
-    "brand": "Ironmaxx",
+    "brand": "IronMaxx",
     "barcode": "4260426832104",
     "calories": 0.0,
     "protein": 0.0,
@@ -20293,19 +20319,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Berlina glacé",
-    "brand": "Hacendado",
-    "barcode": "8425514214583",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Betteraves Rouges cuites",
     "brand": "Terr'Loire",
     "barcode": "3182349293491",
@@ -20966,6 +20979,19 @@
     "servingSize": 250.0,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Boneless Butterflied Sardine Fillets",
+    "brand": "Brunswick",
+    "barcode": "0066613000097",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 80.0,
+    "servingUnit": "g",
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -22386,7 +22412,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cinnamon Almond Butter",
+    "name": "Cinnamon Almond Butter Biscuits",
     "brand": "Nature Valley",
     "barcode": "0016000513693",
     "calories": 0.0,
@@ -29562,6 +29588,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "My Bakery",
+    "brand": "My Bakery",
+    "barcode": "8425514214583",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Myrtilles et graines de lin",
     "brand": "Belvita",
     "barcode": "7622210695451",
@@ -33047,7 +33086,7 @@
   },
   {
     "name": "Rigatoni n°50",
-    "brand": "Rummo",
+    "brand": "RUMMO",
     "barcode": "8008343200509",
     "calories": 0.0,
     "protein": 0.0,
@@ -33554,7 +33593,7 @@
   },
   {
     "name": "Salade pates œuf fromage",
-    "brand": "Select & Go",
+    "brand": "Pasta BOL",
     "barcode": "4056489195221",
     "calories": 0.0,
     "protein": 0.0,
@@ -33719,19 +33758,6 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Sardine Fillets In Spring Water",
-    "brand": "Brunswick",
-    "barcode": "0066613000097",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 80.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -41548,19 +41574,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Destination Marrakech",
-    "brand": "Pago",
-    "barcode": "9002515602824",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 750.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Digestive avena",
     "brand": "Consum",
     "barcode": "8414807539861",
@@ -41575,7 +41588,7 @@
   },
   {
     "name": "Dijon Original",
-    "brand": "Maille",
+    "brand": "MAILLE",
     "barcode": "3036810201372",
     "calories": 0.0,
     "protein": 0.0,
@@ -44967,6 +44980,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Jus Orange mandarine Marrakech",
+    "brand": "Pago",
+    "barcode": "9002515602824",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 750.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Jus pomme & fruits rouges",
     "brand": "Innocent",
     "barcode": "5038862137270",
@@ -46670,8 +46696,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "mac & cheese",
-    "brand": "Kraft",
+    "name": "Macaroni and Cheese",
+    "brand": "Kraft Heinz",
     "barcode": "0021000028092",
     "calories": 0.0,
     "protein": 0.0,
@@ -49023,6 +49049,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Pain",
+    "brand": null,
+    "barcode": "3250393445347",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Pain au chocolat",
     "brand": "CROUSTIPATE",
     "barcode": "3392590205741",
@@ -49097,19 +49136,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Pain campagne aux noix",
-    "brand": null,
-    "barcode": "3250393445347",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -67835,7 +67861,7 @@
   },
   {
     "name": "Mayonnaise light",
-    "brand": "Vita d or",
+    "brand": "Kania",
     "barcode": "20207199",
     "calories": 0.0,
     "protein": 0.0,
@@ -71936,8 +71962,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 250.0,
-    "servingUnit": "ml",
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -76271,7 +76297,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "vanilla probiotic yogurt",
+    "name": "vanilla",
     "brand": "ACTIVIA",
     "barcode": "0056800098297",
     "calories": 0.0,
@@ -76279,8 +76305,8 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
+    "servingUnit": null,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -77285,7 +77311,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Yellow Corn Tortilla",
+    "name": "Yellow Corn Tortillas",
     "brand": "Mission",
     "barcode": "0073731003282",
     "calories": 0.0,
@@ -82303,19 +82329,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Chunky Burger Sauce Tangy & Tasty",
-    "brand": "Hellmann's",
-    "barcode": "8712100891779",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 15.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Châtaignes entières cuites",
     "brand": "Auchan",
     "barcode": "3596710451760",
@@ -84690,19 +84703,6 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 50.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Do kavu",
-    "brand": "Roshen",
-    "barcode": "4823077623790",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -87655,6 +87655,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Hellman's burger sauce",
+    "brand": "Hellmann's",
+    "barcode": "8712100891779",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 15.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -93301,19 +93314,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Nut & seed granola",
-    "brand": "Morrisons",
-    "barcode": "5010251743392",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Nutella glass",
     "brand": "Nutella",
     "barcode": "36454860",
@@ -93354,7 +93354,7 @@
   },
   {
     "name": "Nürnberger Rostbratwürste",
-    "brand": "Alpen fest style",
+    "brand": "GRILL & FUN",
     "barcode": "4056489141723",
     "calories": 0.0,
     "protein": 0.0,
@@ -97019,19 +97019,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Ready to Eat Seafood Sticks",
-    "brand": "Tesco",
-    "barcode": "5000436868941",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Real Lancashire Eccles Cakes",
     "brand": "Lancashire Eccles Cake Ltd",
     "barcode": "5011403997670",
@@ -97643,7 +97630,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Rotini Made From Chickpeas",
+    "name": "Rotini made from chickpeas",
     "brand": "Banza",
     "barcode": "0857183005014",
     "calories": 0.0,
@@ -98627,6 +98614,19 @@
     "fat": 0.0,
     "servingSize": 40.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "SEAFOOD STICKS",
+    "brand": "TESCO",
+    "barcode": "5000436868941",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -100350,6 +100350,19 @@
     "name": "Teurgoule de Cambremer",
     "brand": "Jacques Sablery",
     "barcode": "3353930111016",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "The Best Nut & Seed Granola",
+    "brand": "Morrisons",
+    "barcode": "5010251743392",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -102388,6 +102401,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Печиво До кави пряжене молоко",
+    "brand": "Roshen",
+    "barcode": "4823077623790",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "زنجبيل الكبير",
     "brand": "Kabir 170da",
     "barcode": "6132508340051",
@@ -103324,6 +103350,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Almarai fresh laban full fat",
+    "brand": null,
+    "barcode": "6281007023122",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Almond drink sugar free",
     "brand": "The bridge",
     "barcode": "8019428007289",
@@ -103541,19 +103580,6 @@
     "fat": 0.0,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Ananas coco",
-    "brand": "Continente",
-    "barcode": "5601312509066",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -107497,8 +107523,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Chocolate flavour pudding",
-    "brand": "Arla",
+    "name": "Chocolate Flavour Pudding",
+    "brand": "Arla Protein",
     "barcode": "5711953197529",
     "calories": 0.0,
     "protein": 0.0,
@@ -110721,6 +110747,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "FAMILY PAN PREMIUM WHITE BREAD",
+    "brand": "Brennans",
+    "barcode": "5011059000014",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 40.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Fanta",
     "brand": "Fanta The Coca-Cola Company Coca-Cola",
     "barcode": "5449000054531",
@@ -111592,19 +111631,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Food in a bottle",
-    "brand": "Milbona",
-    "barcode": "4056489920144",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 500.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Formule Choc' Biscuit",
     "brand": "Bonneterre",
     "barcode": "3396410153113",
@@ -111718,19 +111744,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Fresh laban",
-    "brand": "Al marai",
-    "barcode": "6281007023122",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -111939,6 +111952,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Fromage Blanc Nature 0% Matière Grasse",
+    "brand": "Milsani",
+    "barcode": "4068262050726",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -117867,32 +117893,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Mochi ice cream coconut",
-    "brand": "Little Moons",
-    "barcode": "5027324001198",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "mini",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Mogettes De Vendée cuir au naturel",
-    "brand": "Nos Régions ont du Talent",
-    "barcode": "3564709000176",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   }

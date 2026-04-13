@@ -1,34 +1,27 @@
 {
-  "countryIso2": "IT",
-  "slug": "italy",
+  "countryIso2": "MT",
+  "slug": "malta",
   "version": 1776121780,
-  "generatedAt": "2026-04-13T23:09:38.207898+00:00",
-  "strategy": "main_fill",
-  "itemCountDiscovered": 255538,
-  "bytesDiscovered": 54039879,
-  "itemCountTotal": 32705,
-  "itemCountMain": 23357,
-  "itemCountFill": 9348,
+  "generatedAt": "2026-04-13T23:09:40.704305+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 1728,
+  "bytesDiscovered": 365454,
+  "itemCountTotal": 1728,
+  "itemCountMain": 1728,
+  "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
     {
-      "name": "main.json",
-      "path": "countries/IT/main.json",
-      "kind": "main",
-      "itemCount": 23357,
-      "bytes": 4999923
-    },
-    {
-      "name": "fill.json",
-      "path": "countries/IT/fill.json",
-      "kind": "fill",
-      "itemCount": 9348,
-      "bytes": 1999972
+      "name": "full.json",
+      "path": "countries/MT/full.json",
+      "kind": "full",
+      "itemCount": 1728,
+      "bytes": 365454
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-13T23:09:38.207898+00:00",
+    "generatedAt": "2026-04-13T23:09:40.704305+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -37,10 +30,10 @@
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
     "scannedProducts": 4411648,
-    "matchedProducts": 265134,
-    "mappedProducts": 255544,
-    "dedupedProducts": 6,
-    "discoveredItemCount": 255538,
-    "discoveredBytes": 54039879
+    "matchedProducts": 1950,
+    "mappedProducts": 1728,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 1728,
+    "discoveredBytes": 365454
   }
 }

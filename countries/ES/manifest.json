@@ -1,14 +1,14 @@
 {
   "countryIso2": "ES",
   "slug": "spain",
-  "version": 1775736105,
-  "generatedAt": "2026-04-09T12:01:43.017544+00:00",
+  "version": 1776121775,
+  "generatedAt": "2026-04-13T23:09:32.907495+00:00",
   "strategy": "main_fill",
-  "itemCountDiscovered": 332070,
-  "bytesDiscovered": 70379610,
-  "itemCountTotal": 32890,
-  "itemCountMain": 23543,
-  "itemCountFill": 9347,
+  "itemCountDiscovered": 332162,
+  "bytesDiscovered": 70399376,
+  "itemCountTotal": 32891,
+  "itemCountMain": 23545,
+  "itemCountFill": 9346,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
@@ -16,19 +16,19 @@
       "name": "main.json",
       "path": "countries/ES/main.json",
       "kind": "main",
-      "itemCount": 23543,
-      "bytes": 4999841
+      "itemCount": 23545,
+      "bytes": 4999939
     },
     {
       "name": "fill.json",
       "path": "countries/ES/fill.json",
       "kind": "fill",
-      "itemCount": 9347,
-      "bytes": 2000075
+      "itemCount": 9346,
+      "bytes": 1999943
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-09T12:01:43.017544+00:00",
+    "generatedAt": "2026-04-13T23:09:32.907495+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -36,11 +36,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4407817,
-    "matchedProducts": 352130,
-    "mappedProducts": 332084,
+    "scannedProducts": 4411648,
+    "matchedProducts": 352230,
+    "mappedProducts": 332176,
     "dedupedProducts": 14,
-    "discoveredItemCount": 332070,
-    "discoveredBytes": 70379610
+    "discoveredItemCount": 332162,
+    "discoveredBytes": 70399376
   }
 }
