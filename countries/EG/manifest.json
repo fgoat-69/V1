@@ -1,0 +1,39 @@
+{
+  "countryIso2": "EG",
+  "slug": "egypt",
+  "version": 1776182803,
+  "generatedAt": "2026-04-14T16:06:43.129988+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 2945,
+  "bytesDiscovered": 628376,
+  "itemCountTotal": 2945,
+  "itemCountMain": 2945,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/EG/full.json",
+      "kind": "full",
+      "itemCount": 2945,
+      "bytes": 628376
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T16:06:43.129988+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 3602,
+    "mappedProducts": 2945,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 2945,
+    "discoveredBytes": 628376
+  }
+}

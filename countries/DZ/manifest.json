@@ -1,0 +1,39 @@
+{
+  "countryIso2": "DZ",
+  "slug": "algeria",
+  "version": 1776182803,
+  "generatedAt": "2026-04-14T16:06:43.005368+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 4915,
+  "bytesDiscovered": 1023002,
+  "itemCountTotal": 4915,
+  "itemCountMain": 4915,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/DZ/full.json",
+      "kind": "full",
+      "itemCount": 4915,
+      "bytes": 1023002
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T16:06:43.005368+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 7105,
+    "mappedProducts": 4915,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 4915,
+    "discoveredBytes": 1023002
+  }
+}

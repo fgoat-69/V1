@@ -1,0 +1,39 @@
+{
+  "countryIso2": "TN",
+  "slug": "tunisia",
+  "version": 1776182803,
+  "generatedAt": "2026-04-14T16:06:43.588709+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 2888,
+  "bytesDiscovered": 610959,
+  "itemCountTotal": 2888,
+  "itemCountMain": 2888,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/TN/full.json",
+      "kind": "full",
+      "itemCount": 2888,
+      "bytes": 610959
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T16:06:43.588709+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 3682,
+    "mappedProducts": 2889,
+    "dedupedProducts": 1,
+    "discoveredItemCount": 2888,
+    "discoveredBytes": 610959
+  }
+}
