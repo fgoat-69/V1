@@ -1,0 +1,39 @@
+{
+  "countryIso2": "EC",
+  "slug": "ecuador",
+  "version": 1776197278,
+  "generatedAt": "2026-04-14T20:07:58.188473+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 1763,
+  "bytesDiscovered": 373558,
+  "itemCountTotal": 1763,
+  "itemCountMain": 1763,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/EC/full.json",
+      "kind": "full",
+      "itemCount": 1763,
+      "bytes": 373558
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T20:07:58.188473+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 2009,
+    "mappedProducts": 1763,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 1763,
+    "discoveredBytes": 373558
+  }
+}

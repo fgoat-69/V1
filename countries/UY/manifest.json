@@ -1,0 +1,39 @@
+{
+  "countryIso2": "UY",
+  "slug": "uruguay",
+  "version": 1776197278,
+  "generatedAt": "2026-04-14T20:07:58.335359+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 1703,
+  "bytesDiscovered": 367234,
+  "itemCountTotal": 1703,
+  "itemCountMain": 1703,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/UY/full.json",
+      "kind": "full",
+      "itemCount": 1703,
+      "bytes": 367234
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T20:07:58.335359+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 1853,
+    "mappedProducts": 1703,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 1703,
+    "discoveredBytes": 367234
+  }
+}
