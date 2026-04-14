@@ -1,0 +1,39 @@
+{
+  "countryIso2": "MO",
+  "slug": "macao",
+  "version": 1776181424,
+  "generatedAt": "2026-04-14T15:43:44.651760+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 119,
+  "bytesDiscovered": 25993,
+  "itemCountTotal": 119,
+  "itemCountMain": 119,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/MO/full.json",
+      "kind": "full",
+      "itemCount": 119,
+      "bytes": 25993
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T15:43:44.651760+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 129,
+    "mappedProducts": 119,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 119,
+    "discoveredBytes": 25993
+  }
+}

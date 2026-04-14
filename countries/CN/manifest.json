@@ -1,0 +1,39 @@
+{
+  "countryIso2": "CN",
+  "slug": "china",
+  "version": 1776181423,
+  "generatedAt": "2026-04-14T15:43:43.231206+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 1266,
+  "bytesDiscovered": 271344,
+  "itemCountTotal": 1266,
+  "itemCountMain": 1266,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/CN/full.json",
+      "kind": "full",
+      "itemCount": 1266,
+      "bytes": 271344
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T15:43:43.231206+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 1584,
+    "mappedProducts": 1266,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 1266,
+    "discoveredBytes": 271344
+  }
+}
