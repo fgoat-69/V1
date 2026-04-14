@@ -1,0 +1,39 @@
+{
+  "countryIso2": "LV",
+  "slug": "latvia",
+  "version": 1776176169,
+  "generatedAt": "2026-04-14T14:16:09.662996+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 3601,
+  "bytesDiscovered": 788687,
+  "itemCountTotal": 3601,
+  "itemCountMain": 3601,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/LV/full.json",
+      "kind": "full",
+      "itemCount": 3601,
+      "bytes": 788687
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T14:16:09.662996+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 4189,
+    "mappedProducts": 3601,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 3601,
+    "discoveredBytes": 788687
+  }
+}
