@@ -1,0 +1,39 @@
+{
+  "countryIso2": "MW",
+  "slug": "malawi",
+  "version": 1776188976,
+  "generatedAt": "2026-04-14T17:49:36.902564+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 30,
+  "bytesDiscovered": 6246,
+  "itemCountTotal": 30,
+  "itemCountMain": 30,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/MW/full.json",
+      "kind": "full",
+      "itemCount": 30,
+      "bytes": 6246
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T17:49:36.902564+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 38,
+    "mappedProducts": 30,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 30,
+    "discoveredBytes": 6246
+  }
+}
