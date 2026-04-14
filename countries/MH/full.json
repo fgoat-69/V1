@@ -1,0 +1,28 @@
+[
+  {
+    "name": "E006624009",
+    "brand": null,
+    "barcode": "3348900012219",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Mauna Loa",
+    "brand": "Macadamias",
+    "barcode": "0072992540338",
+    "calories": 212.0,
+    "protein": 2.0,
+    "carbs": 10.0,
+    "fat": 21.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Ayam thai red curry cooking sauce",
+    "brand": "Ayam",
+    "barcode": "9556041602808",
+    "calories": 151.0,
+    "protein": 1.6,
+    "carbs": 5.0,
+    "fat": 13.7,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Chilli tuna",
+    "brand": null,
+    "barcode": "9317116555531",
+    "calories": 154.6,
+    "protein": 23.6,
+    "carbs": 1.6,
+    "fat": 5.9,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Danish Salami",
+    "brand": "Primo",
+    "barcode": "9311594918154",
+    "calories": 382.0,
+    "protein": 19.6,
+    "carbs": 3.8,
+    "fat": 32.6,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  }
+]
