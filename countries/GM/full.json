@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Armanti Mayonnaise",
+    "brand": "Armanti Mayonnaise",
+    "barcode": "8718182021844",
+    "calories": 735.0,
+    "protein": 1.2,
+    "carbs": 1.4,
+    "fat": 80.4,
+    "servingSize": 750.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Lait Concentré Non Sucré",
+    "brand": "Peak",
+    "barcode": "8716200453578",
+    "calories": 173.0,
+    "protein": 8.7,
+    "carbs": 12.6,
+    "fat": 9.7,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Coconut oil",
+    "brand": null,
+    "barcode": "0041348001830",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "bouye",
+    "brand": "Go Fresh",
+    "barcode": "95387420",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Energy drink",
+    "brand": "حلال",
+    "barcode": "8853647000108",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Sirop menthe",
+    "brand": null,
+    "barcode": "6044000007007",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "ceesayfatoumatta114@gmail.com",
+    "brand": "brand",
+    "barcode": "02552121",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  }
+]

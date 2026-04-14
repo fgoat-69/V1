@@ -1,0 +1,39 @@
+{
+  "countryIso2": "GH",
+  "slug": "ghana",
+  "version": 1776185046,
+  "generatedAt": "2026-04-14T16:44:06.485433+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 236,
+  "bytesDiscovered": 49838,
+  "itemCountTotal": 236,
+  "itemCountMain": 236,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/GH/full.json",
+      "kind": "full",
+      "itemCount": 236,
+      "bytes": 49838
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-14T16:44:06.485433+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4411648,
+    "matchedProducts": 379,
+    "mappedProducts": 236,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 236,
+    "discoveredBytes": 49838
+  }
+}
