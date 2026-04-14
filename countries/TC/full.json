@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Conditioner",
+    "brand": "Shea Moitune",
+    "barcode": "0764302280217",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Cool ranch",
+    "brand": "Doritos",
+    "barcode": "0028400065856",
+    "calories": 534.59,
+    "protein": 6.29,
+    "carbs": 62.89,
+    "fat": 28.3,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Bison Striploin",
+    "brand": "Blackwing Meats",
+    "barcode": "0753390060061",
+    "calories": 77.1,
+    "protein": 15.4,
+    "carbs": 0.0,
+    "fat": 1.54,
+    "servingSize": 1.0,
+    "servingUnit": "each",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Bite size chocolate peanut butter",
+    "brand": null,
+    "barcode": "0745527510105",
+    "calories": 482.76,
+    "protein": 6.9,
+    "carbs": 65.52,
+    "fat": 20.69,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "California Style Vegetables",
+    "brand": "Essential Everyday",
+    "barcode": "0041303100189",
+    "calories": 35.3,
+    "protein": 2.35,
+    "carbs": 5.88,
+    "fat": 0.0,
+    "servingSize": 0.67,
+    "servingUnit": "cup",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Pork Tenderloin",
+    "brand": "Good Chop",
+    "barcode": "0002100002038",
+    "calories": 118.0,
+    "protein": 20.6,
+    "carbs": 0.0,
+    "fat": 3.53,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Schweppes Tonic Water",
+    "brand": "Schweppes",
+    "barcode": "0016600101238",
+    "calories": 130.0,
+    "protein": 0.9,
+    "carbs": 32.0,
+    "fat": 0.0,
+    "servingSize": 355.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  }
+]
