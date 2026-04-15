@@ -1,8 +1,8 @@
 {
   "countryIso2": "MW",
   "slug": "malawi",
-  "version": 1776188976,
-  "generatedAt": "2026-04-14T17:49:36.902564+00:00",
+  "version": 1776256563,
+  "generatedAt": "2026-04-15T12:36:03.687642+00:00",
   "strategy": "full",
   "itemCountDiscovered": 30,
   "bytesDiscovered": 6246,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T17:49:36.902564+00:00",
+    "generatedAt": "2026-04-15T12:36:03.687642+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

@@ -1,27 +1,27 @@
 {
-  "countryIso2": "ZM",
-  "slug": "zambia",
+  "countryIso2": "AO",
+  "slug": "angola",
   "version": 1776256563,
-  "generatedAt": "2026-04-15T12:36:03.696014+00:00",
+  "generatedAt": "2026-04-15T12:36:03.414532+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 278,
-  "bytesDiscovered": 59539,
-  "itemCountTotal": 278,
-  "itemCountMain": 278,
+  "itemCountDiscovered": 48,
+  "bytesDiscovered": 10004,
+  "itemCountTotal": 48,
+  "itemCountMain": 48,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
     {
       "name": "full.json",
-      "path": "countries/ZM/full.json",
+      "path": "countries/AO/full.json",
       "kind": "full",
-      "itemCount": 278,
-      "bytes": 59539
+      "itemCount": 48,
+      "bytes": 10004
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-15T12:36:03.696014+00:00",
+    "generatedAt": "2026-04-15T12:36:03.414532+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -30,10 +30,10 @@
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
     "scannedProducts": 4411648,
-    "matchedProducts": 293,
-    "mappedProducts": 278,
+    "matchedProducts": 78,
+    "mappedProducts": 48,
     "dedupedProducts": 0,
-    "discoveredItemCount": 278,
-    "discoveredBytes": 59539
+    "discoveredItemCount": 48,
+    "discoveredBytes": 10004
   }
 }

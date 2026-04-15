@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-14T20:58:26.991330+00:00",
-  "countryCount": 167,
+  "generatedAt": "2026-04-15T12:37:31.731303+00:00",
+  "countryCount": 168,
   "countries": [
     {
       "countryIso2": "AE",
@@ -156,6 +156,45 @@
         "dedupedProducts": 0,
         "discoveredItemCount": 293,
         "discoveredBytes": 63989
+      }
+    },
+    {
+      "countryIso2": "AO",
+      "slug": "angola",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.414532+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 48,
+      "bytesDiscovered": 10004,
+      "itemCountTotal": 48,
+      "itemCountMain": 48,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/AO/full.json",
+          "kind": "full",
+          "itemCount": 48,
+          "bytes": 10004
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-04-15T12:36:03.414532+00:00",
+        "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+        "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4411648,
+        "matchedProducts": 78,
+        "mappedProducts": 48,
+        "dedupedProducts": 0,
+        "discoveredItemCount": 48,
+        "discoveredBytes": 10004
       }
     },
     {
@@ -767,8 +806,8 @@
     {
       "countryIso2": "BW",
       "slug": "botswana",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.877582+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.656260+00:00",
       "strategy": "full",
       "itemCountDiscovered": 50,
       "bytesDiscovered": 10683,
@@ -787,7 +826,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.877582+00:00",
+        "generatedAt": "2026-04-15T12:36:03.656260+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -3365,8 +3404,8 @@
     {
       "countryIso2": "LS",
       "slug": "lesotho",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.891128+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.673335+00:00",
       "strategy": "full",
       "itemCountDiscovered": 3,
       "bytesDiscovered": 627,
@@ -3385,7 +3424,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.891128+00:00",
+        "generatedAt": "2026-04-15T12:36:03.673335+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -3677,8 +3716,8 @@
     {
       "countryIso2": "MG",
       "slug": "madagascar",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.926796+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.716310+00:00",
       "strategy": "full",
       "itemCountDiscovered": 362,
       "bytesDiscovered": 75653,
@@ -3697,7 +3736,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.926796+00:00",
+        "generatedAt": "2026-04-15T12:36:03.716310+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -4028,8 +4067,8 @@
     {
       "countryIso2": "MU",
       "slug": "mauritius",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.943437+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.733997+00:00",
       "strategy": "full",
       "itemCountDiscovered": 1089,
       "bytesDiscovered": 229871,
@@ -4048,7 +4087,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.943437+00:00",
+        "generatedAt": "2026-04-15T12:36:03.733997+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -4106,8 +4145,8 @@
     {
       "countryIso2": "MW",
       "slug": "malawi",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.902564+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.687642+00:00",
       "strategy": "full",
       "itemCountDiscovered": 30,
       "bytesDiscovered": 6246,
@@ -4126,7 +4165,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.902564+00:00",
+        "generatedAt": "2026-04-15T12:36:03.687642+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -4223,8 +4262,8 @@
     {
       "countryIso2": "MZ",
       "slug": "mozambique",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.896370+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.680001+00:00",
       "strategy": "full",
       "itemCountDiscovered": 64,
       "bytesDiscovered": 13469,
@@ -4243,7 +4282,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.896370+00:00",
+        "generatedAt": "2026-04-15T12:36:03.680001+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -4262,8 +4301,8 @@
     {
       "countryIso2": "NA",
       "slug": "namibia",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.885069+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.665775+00:00",
       "strategy": "full",
       "itemCountDiscovered": 61,
       "bytesDiscovered": 12981,
@@ -4282,7 +4321,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.885069+00:00",
+        "generatedAt": "2026-04-15T12:36:03.665775+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -5194,8 +5233,8 @@
     {
       "countryIso2": "SC",
       "slug": "seychelles",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.968605+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.760238+00:00",
       "strategy": "full",
       "itemCountDiscovered": 123,
       "bytesDiscovered": 27040,
@@ -5214,7 +5253,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.968605+00:00",
+        "generatedAt": "2026-04-15T12:36:03.760238+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -6527,8 +6566,8 @@
     {
       "countryIso2": "ZA",
       "slug": "south-africa",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.686628+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.463730+00:00",
       "strategy": "full",
       "itemCountDiscovered": 8838,
       "bytesDiscovered": 1897538,
@@ -6547,7 +6586,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.686628+00:00",
+        "generatedAt": "2026-04-15T12:36:03.463730+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -6566,8 +6605,8 @@
     {
       "countryIso2": "ZM",
       "slug": "zambia",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.909359+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.696014+00:00",
       "strategy": "full",
       "itemCountDiscovered": 278,
       "bytesDiscovered": 59539,
@@ -6586,7 +6625,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.909359+00:00",
+        "generatedAt": "2026-04-15T12:36:03.696014+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -6605,8 +6644,8 @@
     {
       "countryIso2": "ZW",
       "slug": "zimbabwe",
-      "version": 1776188976,
-      "generatedAt": "2026-04-14T17:49:36.919347+00:00",
+      "version": 1776256563,
+      "generatedAt": "2026-04-15T12:36:03.707231+00:00",
       "strategy": "full",
       "itemCountDiscovered": 48,
       "bytesDiscovered": 10191,
@@ -6625,7 +6664,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-04-14T17:49:36.919347+00:00",
+        "generatedAt": "2026-04-15T12:36:03.707231+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
