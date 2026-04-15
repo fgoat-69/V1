@@ -238,7 +238,7 @@ COUNTRY_BATCHES = {
         "CM", "GA", "CG", "CD", "DJ", "ER", "SO", "KE", "UG", "RW", "TZ"
     ],
     "batch_12_africa_south_indian_ocean": [
-        "ZA", "BW", "NA", "LS", "MZ", "MW", "ZM", "ZW", "MG", "MU", "SC"
+        "AO", "ZA", "BW", "NA", "LS", "MZ", "MW", "ZM", "ZW", "MG", "MU", "SC"
     ],
     "batch_13_north_america": [
         "US", "CA", "MX"
