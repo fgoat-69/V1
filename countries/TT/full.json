@@ -936,19 +936,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Coco milk powder",
-    "brand": "Rainbow",
-    "barcode": "0667101120015",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "coconut milk powder",
     "brand": "mabels",
     "barcode": "0036494069810",
@@ -6643,19 +6630,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Adam's Garlic Sauce",
-    "brand": "Adams",
-    "barcode": "0858302006240",
-    "calories": 259.0,
-    "protein": 2.18,
-    "carbs": 22.4,
-    "fat": 19.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Blackcurrant Drink",
     "brand": "Ribena",
     "barcode": "5054267005044",
@@ -6691,6 +6665,19 @@
     "fat": 24.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Coco milk powder",
+    "brand": "Rainbow",
+    "barcode": "0667101120015",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 10.0,
+    "servingUnit": "ml",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -9243,6 +9230,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Adam's Garlic Sauce",
+    "brand": "Adams",
+    "barcode": "0858302006240",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Addictive salted egg yolk popcorn",
     "brand": "O My Pop",
     "barcode": "9557152600301",
@@ -9958,6 +9958,32 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Classics Hazelnut",
+    "brand": "Charles Chocolates",
+    "barcode": "0040032496150",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 30.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Clear Protein Blueberry",
+    "brand": "Naughty Boy",
+    "barcode": "5061071620844",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "scoop",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Cloud 9 salted caramel puffcorn",
     "brand": null,
     "barcode": "0850028547229",
@@ -10059,6 +10085,19 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Coconut Milk Powder",
+    "brand": "Bess",
+    "barcode": "0036494160173",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 30.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {

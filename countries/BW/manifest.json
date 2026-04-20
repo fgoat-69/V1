@@ -1,8 +1,8 @@
 {
   "countryIso2": "BW",
   "slug": "botswana",
-  "version": 1776256563,
-  "generatedAt": "2026-04-15T12:36:03.656260+00:00",
+  "version": 1776671675,
+  "generatedAt": "2026-04-20T07:54:35.830881+00:00",
   "strategy": "full",
   "itemCountDiscovered": 50,
   "bytesDiscovered": 10683,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-15T12:36:03.656260+00:00",
+    "generatedAt": "2026-04-20T07:54:35.830881+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,7 +29,7 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
+    "scannedProducts": 4428145,
     "matchedProducts": 53,
     "mappedProducts": 50,
     "dedupedProducts": 0,

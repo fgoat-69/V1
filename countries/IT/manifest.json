@@ -1,14 +1,14 @@
 {
   "countryIso2": "IT",
   "slug": "italy",
-  "version": 1776121780,
-  "generatedAt": "2026-04-13T23:09:38.207898+00:00",
+  "version": 1776668130,
+  "generatedAt": "2026-04-20T06:55:28.623550+00:00",
   "strategy": "main_fill",
-  "itemCountDiscovered": 255538,
-  "bytesDiscovered": 54039879,
-  "itemCountTotal": 32705,
-  "itemCountMain": 23357,
-  "itemCountFill": 9348,
+  "itemCountDiscovered": 255770,
+  "bytesDiscovered": 54093760,
+  "itemCountTotal": 32704,
+  "itemCountMain": 23354,
+  "itemCountFill": 9350,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
@@ -16,19 +16,19 @@
       "name": "main.json",
       "path": "countries/IT/main.json",
       "kind": "main",
-      "itemCount": 23357,
-      "bytes": 4999923
+      "itemCount": 23354,
+      "bytes": 4999936
     },
     {
       "name": "fill.json",
       "path": "countries/IT/fill.json",
       "kind": "fill",
-      "itemCount": 9348,
-      "bytes": 1999972
+      "itemCount": 9350,
+      "bytes": 1999846
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-13T23:09:38.207898+00:00",
+    "generatedAt": "2026-04-20T06:55:28.623550+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -36,11 +36,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 265134,
-    "mappedProducts": 255544,
+    "scannedProducts": 4428145,
+    "matchedProducts": 265408,
+    "mappedProducts": 255776,
     "dedupedProducts": 6,
-    "discoveredItemCount": 255538,
-    "discoveredBytes": 54039879
+    "discoveredItemCount": 255770,
+    "discoveredBytes": 54093760
   }
 }

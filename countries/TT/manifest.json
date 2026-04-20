@@ -1,13 +1,13 @@
 {
   "countryIso2": "TT",
   "slug": "trinidad-and-tobago",
-  "version": 1776193805,
-  "generatedAt": "2026-04-14T19:10:05.829144+00:00",
+  "version": 1776672902,
+  "generatedAt": "2026-04-20T08:15:02.223750+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 988,
-  "bytesDiscovered": 209177,
-  "itemCountTotal": 988,
-  "itemCountMain": 988,
+  "itemCountDiscovered": 991,
+  "bytesDiscovered": 209822,
+  "itemCountTotal": 991,
+  "itemCountMain": 991,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/TT/full.json",
       "kind": "full",
-      "itemCount": 988,
-      "bytes": 209177
+      "itemCount": 991,
+      "bytes": 209822
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T19:10:05.829144+00:00",
+    "generatedAt": "2026-04-20T08:15:02.223750+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 1049,
-    "mappedProducts": 988,
+    "scannedProducts": 4428145,
+    "matchedProducts": 1054,
+    "mappedProducts": 991,
     "dedupedProducts": 0,
-    "discoveredItemCount": 988,
-    "discoveredBytes": 209177
+    "discoveredItemCount": 991,
+    "discoveredBytes": 209822
   }
 }

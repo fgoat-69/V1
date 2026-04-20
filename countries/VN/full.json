@@ -1,14 +1,14 @@
 [
   {
-    "name": "Cream Carbonara Buldak Artificial Spicy Chicken Flavor",
-    "brand": "Samyang",
+    "name": "Cream Carbonara Ramen",
+    "brand": "Buldak",
     "barcode": "8801073114814",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.0,
-    "servingUnit": "bag",
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -26,7 +26,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Mint Candy Lemon Flavor",
+    "name": "Mint Candy Lemon Flavour",
     "brand": "Himalaya Salt",
     "barcode": "9555030107614",
     "calories": 0.0,
@@ -377,6 +377,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Chicken Teriyaki Pizza",
+    "brand": "Pizza 4P’s",
+    "barcode": "8938508228850",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Choco Pie",
     "brand": "Delfi orion",
     "barcode": "8936036021783",
@@ -412,19 +425,6 @@
     "fat": 21.4,
     "servingSize": 1.0,
     "servingUnit": "roll",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Citron Tea",
-    "brand": "Dooraeone",
-    "barcode": "8802920004043",
-    "calories": 253.1,
-    "protein": 0.19,
-    "carbs": 62.7,
-    "fat": 0.15,
-    "servingSize": 10.0,
-    "servingUnit": "portion",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -1014,6 +1014,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Pork Jerky",
+    "brand": "O'lala",
+    "barcode": "8936034877665",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Prawn and chives dumplins - Bibigo Mandu",
     "brand": "Bibigo Mandu",
     "barcode": "8935297103887",
@@ -1491,6 +1504,19 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "stick",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "VINAMILK probi",
+    "brand": "Vinamilk",
+    "barcode": "8934673301060",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 130.0,
+    "servingUnit": "ml",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -4927,19 +4953,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Instant Noodles Lobster Hotpot Favor",
-    "brand": "Omachi",
-    "barcode": "8936221041763",
-    "calories": 451.0,
-    "protein": 10.2,
-    "carbs": 57.9,
-    "fat": 19.9,
-    "servingSize": 1.0,
-    "servingUnit": "package",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Instant Oat Porridge",
     "brand": "Xuan oats",
     "barcode": "8936081298000",
@@ -5216,12 +5229,12 @@
     "name": "Lays Natural Classic",
     "brand": "Lays",
     "barcode": "8936079120139",
-    "calories": 533.0,
-    "protein": 6.67,
-    "carbs": 56.7,
-    "fat": 30.0,
-    "servingSize": 1.0,
-    "servingUnit": "bag",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 30.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5547,6 +5560,19 @@
     "fat": 17.8,
     "servingSize": 63.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Mì gói Omachi",
+    "brand": "Omachi",
+    "barcode": "8936221041763",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "package",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -6370,8 +6396,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Sour Cream",
-    "brand": "Tatua",
+    "name": "SOUR CREAM",
+    "brand": "TATUA",
     "barcode": "9414997006678",
     "calories": 0.0,
     "protein": 0.0,
@@ -7878,6 +7904,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Brown Rice Sandwich",
+    "brand": "Ankie",
+    "barcode": "8938554984106",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Brunoise à la méridionale",
     "brand": "Picard",
     "barcode": "8939289031004",
@@ -8437,19 +8476,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Choco Late Hazelnut",
-    "brand": "I’s more than just",
-    "barcode": "9556771011420",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "can",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Chocochip Cookies",
     "brand": null,
     "barcode": "8934760019250",
@@ -8537,6 +8563,19 @@
     "fat": 12.2,
     "servingSize": 1.0,
     "servingUnit": "package",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "CHOCOLATE HAZELNUT Nutty Kick",
+    "brand": "IT'S",
+    "barcode": "9556771011420",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "can",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -8629,6 +8668,19 @@
     "servingSize": 300.0,
     "servingUnit": "g",
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Citron Tea",
+    "brand": "Dooreaone",
+    "barcode": "8802920004043",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 10.0,
+    "servingUnit": "portion",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {

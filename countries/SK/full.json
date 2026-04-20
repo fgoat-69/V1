@@ -7,14 +7,14 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 12.5,
-    "servingUnit": "g",
+    "servingSize": 1.0,
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
   {
     "name": "Alpro Mandeldrink, Original 1L",
-    "brand": "alpro",
+    "brand": "Alpro",
     "barcode": "5411188110835",
     "calories": 0.0,
     "protein": 0.0,
@@ -26,7 +26,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Bio Mandel",
+    "name": "Almond Drink Sugar-Free",
     "brand": "Vemondo",
     "barcode": "4056489346357",
     "calories": 0.0,
@@ -52,8 +52,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Coco Délicieuse et Tropicale",
-    "brand": "alpro",
+    "name": "Alpro tempting and tropical coco low fat",
+    "brand": "Alpro",
     "barcode": "5411188116592",
     "calories": 0.0,
     "protein": 0.0,
@@ -130,19 +130,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Raffaello",
-    "brand": "Raffaello",
-    "barcode": "8000500023976",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "piece",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Milka Tablette Noisette",
     "brand": "Milka",
     "barcode": "3045140118502",
@@ -170,7 +157,7 @@
   },
   {
     "name": "Tortilla Wraps",
-    "brand": "Snack Day (Lidl)",
+    "brand": "Snack Day",
     "barcode": "4056489018636",
     "calories": 0.0,
     "protein": 0.0,
@@ -273,16 +260,16 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Kokosmilch",
-    "brand": "Freshona",
+    "name": "Coconut Milk kókusz tej",
+    "brand": "VITASIA",
     "barcode": "20103644",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 400.0,
-    "servingUnit": "g",
-    "isLiquid": false,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -312,7 +299,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "SUN-DRIED TOMATOES",
+    "name": "Sun-Dried Tomatoes with sea salt",
     "brand": "Baresa",
     "barcode": "20487942",
     "calories": 0.0,
@@ -345,7 +332,7 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 33.3,
+    "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -793,19 +780,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Rice Noodles",
-    "brand": "Combino",
-    "barcode": "4056489714507",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "spaghetti",
     "brand": "Combino",
     "barcode": "20063757",
@@ -1079,6 +1053,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "CECI SOTTOVUOTO",
+    "brand": "Bonduelle",
+    "barcode": "3083681003949",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 200.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "dried plums pitted",
     "brand": "Alesto Lidl",
     "barcode": "4056489880455",
@@ -1087,19 +1074,6 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kichererbsen",
-    "brand": "Bonduelle",
-    "barcode": "3083681003949",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 200.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -1768,6 +1742,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Apple sauce with peach",
+    "brand": "Ovko",
+    "barcode": "8586015177842",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 120.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Apricots in syrup",
     "brand": "Giana",
     "barcode": "8594012794283",
@@ -2037,6 +2024,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "BIO milchbrei banane",
+    "brand": "Babylove",
+    "barcode": "4067796173017",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5603,6 +5603,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Jankove buchty s makovou náplňou",
+    "brand": "Penam",
+    "barcode": "8584126867188",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "piece",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "jemná saláma",
     "brand": null,
     "barcode": "2811943001522",
@@ -7670,6 +7683,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "morcacia sunka",
+    "brand": "berger",
+    "barcode": "9001455033453",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Mortadella di Pollo con Pistacchio",
     "brand": "Liberamente",
     "barcode": "8004225041550",
@@ -8047,6 +8073,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Niva",
+    "brand": "Pilos",
+    "barcode": "4056489331902",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "NOK CHA WON Medovo grepovy čaj",
     "brand": null,
     "barcode": "8801767336447",
@@ -8199,6 +8238,19 @@
     "fat": 38.0,
     "servingSize": 1.0,
     "servingUnit": "bar",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "nátierka tofu na mexický spôsob",
+    "brand": null,
+    "barcode": "4056489068266",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -8678,8 +8730,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -9298,10 +9350,10 @@
     "name": "Protein Bar",
     "brand": "Lite bite",
     "barcode": "6772504452299",
-    "calories": 366.0,
-    "protein": 28.6,
-    "carbs": 37.1,
-    "fat": 11.4,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 70.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -10244,6 +10296,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Smotanový Jogurt Kokos",
+    "brand": "Zvolenský",
+    "barcode": "8586000515864",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Smotanový jogurt čokoláda",
     "brand": "rajo",
     "barcode": "8585002520630",
@@ -11076,19 +11141,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Tortilla Wraps 20cm",
-    "brand": "Metro Chef",
-    "barcode": "4337182265931",
-    "calories": 310.0,
-    "protein": 9.9,
-    "carbs": 52.0,
-    "fat": 6.5,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "tortove zele",
     "brand": null,
     "barcode": "8595072600026",
@@ -11417,6 +11469,19 @@
     "name": "vanilkové marshmalllow",
     "brand": null,
     "barcode": "0200030606474",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Vegan 80",
+    "brand": "Extrifit",
+    "barcode": "8594181603287",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -11878,19 +11943,6 @@
     "fat": 0.0,
     "servingSize": 2.0,
     "servingUnit": "cm",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Závin S Tvarohovou Náplňou",
-    "brand": "Tesco",
-    "barcode": "5051007099769",
-    "calories": 229.0,
-    "protein": 9.1,
-    "carbs": 38.0,
-    "fat": 3.8,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -14937,6 +14989,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Wheat Flour Tortilla Wraps",
+    "brand": "METRO Chef",
+    "barcode": "4337182265931",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Špička krémová Malina",
     "brand": "Penam",
     "barcode": "8590077921510",
@@ -16162,10 +16227,10 @@
     "name": "Mini Horalky",
     "brand": "Sedita",
     "barcode": "8584004061424",
-    "calories": 541.0,
-    "protein": 8.0,
-    "carbs": 51.0,
-    "fat": 33.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 27.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -16615,7 +16680,7 @@
   },
   {
     "name": "Cottage cheese s pažítkou",
-    "brand": "rajo",
+    "brand": "Rajo",
     "barcode": "8585002575562",
     "calories": 0.0,
     "protein": 0.0,
@@ -16653,7 +16718,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Delissa",
+    "name": "Delissa Hazelnut",
     "brand": "Orion",
     "barcode": "8445291111110",
     "calories": 0.0,
@@ -16706,10 +16771,10 @@
   },
   {
     "name": "ERDUNESSE",
-    "brand": null,
+    "brand": "K-Classic",
     "barcode": "4063367209864",
-    "calories": 552.0,
-    "protein": 15.0,
+    "calories": 0.0,
+    "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
@@ -16916,19 +16981,6 @@
     "name": "Licor jägermeifter",
     "brand": "Jägermeister",
     "barcode": "4067700014931",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Malokarpatská salama",
-    "brand": "tauris",
-    "barcode": "8588002193729",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -17213,14 +17265,14 @@
   },
   {
     "name": "Sardinen in Sonnenblumenöl mit Chili",
-    "brand": "Combino",
+    "brand": "COMBINO",
     "barcode": "20143084",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
+    "servingSize": 50.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -17381,19 +17433,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Vapeur šošovka",
-    "brand": "Bonduelle",
-    "barcode": "3083681003963",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 265.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Veganer Sojagurt Natur",
     "brand": "Kaufland Take It Veggie",
     "barcode": "4103840033507",
@@ -17416,6 +17455,19 @@
     "fat": 16.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Šošovica",
+    "brand": "Bonduelle",
+    "barcode": "3083681003963",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 265.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -18248,6 +18300,19 @@
     "fat": 0.0,
     "servingSize": 500.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Malokarpatská salama",
+    "brand": "tauris",
+    "barcode": "8588002193729",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -23091,12 +23156,12 @@
     "name": "Kabanos klasiskās",
     "brand": "Pekpol",
     "barcode": "5903195018636",
-    "calories": 417.0,
-    "protein": 28.0,
-    "carbs": 3.0,
-    "fat": 33.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -25350,7 +25415,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Steinofen Brötchen kernig",
+    "name": "Steinofenbrötchen",
     "brand": "K Favourites",
     "barcode": "4337185577024",
     "calories": 0.0,
@@ -26718,10 +26783,10 @@
     "name": "3Bit Sušenka s mléčnou čokoládou a náplní s lískovými oříšky",
     "brand": "3Bit",
     "barcode": "7622201692568",
-    "calories": 549.0,
-    "protein": 5.1,
-    "carbs": 57.0,
-    "fat": 33.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -29797,7 +29862,7 @@
   },
   {
     "name": "Cottage cheese",
-    "brand": "rajo",
+    "brand": "Rajo",
     "barcode": "8585002519498",
     "calories": 0.0,
     "protein": 0.0,
@@ -29825,12 +29890,12 @@
     "name": "Cottage Cheese Grilovana Paprika",
     "brand": "Rajo",
     "barcode": "8585002527226",
-    "calories": 90.0,
-    "protein": 11.0,
-    "carbs": 2.2,
-    "fat": 4.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 180.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -33907,10 +33972,10 @@
     "name": "Keto bar",
     "brand": "Tekmar",
     "barcode": "8585004503204",
-    "calories": 460.0,
-    "protein": 24.0,
-    "carbs": 18.5,
-    "fat": 27.5,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 40.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -34804,10 +34869,10 @@
     "name": "Kúsky tvarohu protein lesné ovocie",
     "brand": "tami",
     "barcode": "8586015913006",
-    "calories": 134.0,
-    "protein": 5.0,
-    "carbs": 15.1,
-    "fat": 6.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -36351,10 +36416,10 @@
     "name": "Milka Alpine Milk",
     "brand": "Milka",
     "barcode": "7622202323102",
-    "calories": 539.0,
-    "protein": 6.5,
-    "carbs": 57.0,
-    "fat": 31.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "bar",
     "isLiquid": true,
@@ -38704,10 +38769,10 @@
     "name": "piquant paprika",
     "brand": "lays",
     "barcode": "5900259128683",
-    "calories": 517.0,
-    "protein": 6.8,
-    "carbs": 52.0,
-    "fat": 30.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -41395,10 +41460,10 @@
     "name": "Smotana",
     "brand": "Babicka",
     "barcode": "8588000057139",
-    "calories": 155.0,
-    "protein": 2.9,
-    "carbs": 4.0,
-    "fat": 14.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -43371,10 +43436,10 @@
     "name": "Tofu",
     "brand": "Tesco",
     "barcode": "4056489332305",
-    "calories": 125.0,
-    "protein": 12.0,
-    "carbs": 2.3,
-    "fat": 7.5,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -45695,6 +45760,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Závin S Tvarohovou Náplňou",
+    "brand": "TESCO",
+    "barcode": "5051007099769",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Údené Šproty V Oleji",
     "brand": "Losos Ustka",
     "barcode": "5901069005201",
@@ -47392,8 +47470,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -47420,6 +47498,19 @@
     "fat": 15.7,
     "servingSize": 1.0,
     "servingUnit": "bottle",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "American Gril Mix",
+    "brand": "Hyza",
+    "barcode": "2810212015550",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -48902,6 +48993,32 @@
     "fat": 0.37,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Brusnice v horkej čokoláde",
+    "brand": "Dr.Ensa",
+    "barcode": "8586015878244",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Bryndza",
+    "brand": "Coop",
+    "barcode": "85819122",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 25.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -50583,6 +50700,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Coconut Milk",
+    "brand": "Freshona",
+    "barcode": "4335619278936",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Coconut Milk Drink Mango flavor",
     "brand": "Coco Royal- Royal Plus Thailand",
     "barcode": "8855044053039",
@@ -52143,6 +52273,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Džem Čučoriedka A Jablko",
+    "brand": "Hamé",
+    "barcode": "8594001697502",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "ECE- čierny sypaný čaj",
     "brand": null,
     "barcode": "9004152107007",
@@ -53554,8 +53697,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "servingSize": 80.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -54977,19 +55120,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Jankove buchty s makovou náplňou",
-    "brand": "Penam",
-    "barcode": "8584126867188",
-    "calories": 349.0,
-    "protein": 8.8,
-    "carbs": 46.0,
-    "fat": 13.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Jankové buchty tvaroh",
     "brand": "Slovensko",
     "barcode": "4056489332077",
@@ -56156,6 +56286,19 @@
     "fat": 0.5,
     "servingSize": 100.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Knedličky - tvarohovo čučoriedkové",
+    "brand": "Stará Mama",
+    "barcode": "8588008154533",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "dumpling",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -58903,6 +59046,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Mila Kokos",
+    "brand": "Sedita",
+    "barcode": "8584004031588",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Mild Cheder",
     "brand": "Wyke Farms",
     "barcode": "5021427913242",
@@ -59003,6 +59159,19 @@
     "fat": 3.5,
     "servingSize": 14.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Mini Club Caramel",
+    "brand": "Sedita",
+    "barcode": "8584004113857",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -59296,10 +59465,10 @@
     "name": "Mleté morčacie mäso 10% tuku",
     "brand": "Tesco",
     "barcode": "1234562736735",
-    "calories": 143.0,
-    "protein": 20.0,
+    "calories": 0.0,
+    "protein": 0.0,
     "carbs": 0.0,
-    "fat": 6.8,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -60918,6 +61087,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Ovsené Müsli Kakaové",
+    "brand": "Fit Bakers",
+    "barcode": "8588006074802",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Ovsené vločky",
     "brand": "COOP Jednota",
     "barcode": "8586009021182",
@@ -61226,6 +61408,19 @@
     "fat": 20.6,
     "servingSize": 110.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Parenica Údená",
+    "brand": "Billa",
+    "barcode": "8584444007549",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -61591,6 +61786,19 @@
     "servingSize": 68.0,
     "servingUnit": "g",
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Peanut Butter White Chocolate And Strawberries",
+    "brand": "Proteinaco",
+    "barcode": "0745125345505",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 15.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -62019,6 +62227,19 @@
     "fat": 2.4,
     "servingSize": 100.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Piskoty Z Vajec",
+    "brand": "Fresh",
+    "barcode": "8588005881081",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -62868,19 +63089,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Probiotic Water Watermelon Wild Berry",
-    "brand": "Karma",
-    "barcode": "85819122",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 25.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Processed cheese slices cheddar",
     "brand": "Tesco",
     "barcode": "5051007153775",
@@ -63297,6 +63505,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Proteinový chlieb",
+    "brand": "Tostino",
+    "barcode": "4335619085480",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Proteinshake Cocoa",
     "brand": "Vilgain",
     "barcode": "8595717714163",
@@ -63330,19 +63551,6 @@
     "protein": 17.1,
     "carbs": 36.9,
     "fat": 13.4,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Proteínový Chlieb",
-    "brand": "Tastino",
-    "barcode": "4335619085480",
-    "calories": 307.0,
-    "protein": 16.0,
-    "carbs": 40.0,
-    "fat": 10.5,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -65442,19 +65650,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Smotanový Jogurt Kokos",
-    "brand": "Zvolenský",
-    "barcode": "8586000515864",
-    "calories": 150.0,
-    "protein": 2.6,
-    "carbs": 12.2,
-    "fat": 10.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Smotanový Jogurt Lesná Zmes",
     "brand": null,
     "barcode": "8588000282746",
@@ -65880,6 +66075,19 @@
     "fat": 1.3,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Spanish Olives",
+    "brand": "Kaufland",
+    "barcode": "8426622202349",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -66703,6 +66911,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Syr s šunkou",
+    "brand": "Bohemilk",
+    "barcode": "8594006326902",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Syrceky",
     "brand": "L’improvisa",
     "barcode": "8588004509436",
@@ -67353,6 +67574,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Termix Extra Malina",
+    "brand": "Kunín",
+    "barcode": "8595671301508",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 130.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Tesco",
     "brand": "Alaskan cod fillets",
     "barcode": "5051007101080",
@@ -67434,12 +67668,12 @@
     "name": "Tesco parenica",
     "brand": "Tesco",
     "barcode": "5051007129947",
-    "calories": 288.0,
-    "protein": 24.2,
-    "carbs": 1.6,
-    "fat": 19.9,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 112.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -67466,6 +67700,19 @@
     "fat": 30.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Teľacie Medailônky",
+    "brand": "Pureland",
+    "barcode": "8713246999862",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 240.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -67951,6 +68198,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Tuna In Brine",
+    "brand": "Calvo",
+    "barcode": "8410090061447",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Tuna in olive oil",
     "brand": null,
     "barcode": "8588003656391",
@@ -68263,6 +68523,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Tvatoh Tucny",
+    "brand": "Tesco",
+    "barcode": "5051007127219",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Tvrdé cukríky lebky",
     "brand": null,
     "barcode": "0200030324514",
@@ -68558,6 +68831,19 @@
     "fat": 0.0,
     "servingSize": 100.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Vegan Strips Beef Style",
+    "brand": "Goody Foody",
+    "barcode": "8586001018333",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -69433,6 +69719,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "XL Vestky Že Syrem",
+    "brand": "Vest",
+    "barcode": "8594014991628",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 90.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Yerba Matte",
     "brand": "Bombilla",
     "barcode": "5906395642120",
@@ -69823,6 +70122,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Zero Sirup White Choco",
+    "brand": "Gymbeam",
+    "barcode": "8588007275017",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Zilinske Parky",
     "brand": "Nedzbala",
     "barcode": "2957283009351",
@@ -70012,8 +70324,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },

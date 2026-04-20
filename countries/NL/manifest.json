@@ -1,14 +1,14 @@
 {
   "countryIso2": "NL",
   "slug": "netherlands",
-  "version": 1776106948,
-  "generatedAt": "2026-04-13T19:02:27.830553+00:00",
+  "version": 1776667925,
+  "generatedAt": "2026-04-20T06:52:05.407277+00:00",
   "strategy": "main_fill",
-  "itemCountDiscovered": 57541,
-  "bytesDiscovered": 12441434,
-  "itemCountTotal": 32514,
+  "itemCountDiscovered": 57845,
+  "bytesDiscovered": 12506163,
+  "itemCountTotal": 32515,
   "itemCountMain": 23220,
-  "itemCountFill": 9294,
+  "itemCountFill": 9295,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
@@ -17,18 +17,18 @@
       "path": "countries/NL/main.json",
       "kind": "main",
       "itemCount": 23220,
-      "bytes": 4999904
+      "bytes": 4999916
     },
     {
       "name": "fill.json",
       "path": "countries/NL/fill.json",
       "kind": "fill",
-      "itemCount": 9294,
-      "bytes": 1999944
+      "itemCount": 9295,
+      "bytes": 2000051
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-13T19:02:27.830553+00:00",
+    "generatedAt": "2026-04-20T06:52:05.407277+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -36,11 +36,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 61331,
-    "mappedProducts": 57541,
+    "scannedProducts": 4428145,
+    "matchedProducts": 61643,
+    "mappedProducts": 57845,
     "dedupedProducts": 0,
-    "discoveredItemCount": 57541,
-    "discoveredBytes": 12441434
+    "discoveredItemCount": 57845,
+    "discoveredBytes": 12506163
   }
 }

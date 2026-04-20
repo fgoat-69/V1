@@ -1,13 +1,13 @@
 {
   "countryIso2": "VE",
   "slug": "venezuela",
-  "version": 1776197278,
-  "generatedAt": "2026-04-14T20:07:58.379100+00:00",
+  "version": 1776672901,
+  "generatedAt": "2026-04-20T08:15:01.182914+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 1367,
-  "bytesDiscovered": 285640,
-  "itemCountTotal": 1367,
-  "itemCountMain": 1367,
+  "itemCountDiscovered": 1383,
+  "bytesDiscovered": 288893,
+  "itemCountTotal": 1383,
+  "itemCountMain": 1383,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/VE/full.json",
       "kind": "full",
-      "itemCount": 1367,
-      "bytes": 285640
+      "itemCount": 1383,
+      "bytes": 288893
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T20:07:58.379100+00:00",
+    "generatedAt": "2026-04-20T08:15:01.182914+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 1557,
-    "mappedProducts": 1367,
+    "scannedProducts": 4428145,
+    "matchedProducts": 1572,
+    "mappedProducts": 1383,
     "dedupedProducts": 0,
-    "discoveredItemCount": 1367,
-    "discoveredBytes": 285640
+    "discoveredItemCount": 1383,
+    "discoveredBytes": 288893
   }
 }

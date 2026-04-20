@@ -1,13 +1,13 @@
 {
   "countryIso2": "DO",
   "slug": "dominican-republic",
-  "version": 1776193805,
-  "generatedAt": "2026-04-14T19:10:05.554091+00:00",
+  "version": 1776672901,
+  "generatedAt": "2026-04-20T08:15:01.935691+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 1399,
-  "bytesDiscovered": 295390,
-  "itemCountTotal": 1399,
-  "itemCountMain": 1399,
+  "itemCountDiscovered": 1405,
+  "bytesDiscovered": 296604,
+  "itemCountTotal": 1405,
+  "itemCountMain": 1405,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/DO/full.json",
       "kind": "full",
-      "itemCount": 1399,
-      "bytes": 295390
+      "itemCount": 1405,
+      "bytes": 296604
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T19:10:05.554091+00:00",
+    "generatedAt": "2026-04-20T08:15:01.935691+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 1618,
-    "mappedProducts": 1399,
+    "scannedProducts": 4428145,
+    "matchedProducts": 1624,
+    "mappedProducts": 1405,
     "dedupedProducts": 0,
-    "discoveredItemCount": 1399,
-    "discoveredBytes": 295390
+    "discoveredItemCount": 1405,
+    "discoveredBytes": 296604
   }
 }

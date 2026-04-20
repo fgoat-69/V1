@@ -78,7 +78,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Red bull energy drink",
+    "name": "Red Bull",
     "brand": "Red Bull",
     "barcode": "90162602",
     "calories": 0.0,
@@ -87,7 +87,7 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "can",
-    "isLiquid": true,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -222,7 +222,7 @@
   },
   {
     "name": "Protein pudding",
-    "brand": "Zott",
+    "brand": "20th Protein",
     "barcode": "4014500519180",
     "calories": 0.0,
     "protein": 0.0,
@@ -312,7 +312,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Farina tipo",
+    "name": "Farina Tipo &quot;00&quot; di Grano Tenero",
     "brand": "Barilla",
     "barcode": "8076802795019",
     "calories": 0.0,
@@ -672,6 +672,19 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "fresh",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Fusilli",
+    "brand": "Diamond",
+    "barcode": "5304000222673",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1366,7 +1379,7 @@
   },
   {
     "name": "Greek kefir",
-    "brand": "Koukakis",
+    "brand": "Koukakis Dairy Farm",
     "barcode": "5200106871213",
     "calories": 0.0,
     "protein": 0.0,
@@ -2093,19 +2106,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Breyers Carb Smart Neopolitan",
-    "brand": "Breyers",
-    "barcode": "0077567003270",
-    "calories": 141.0,
-    "protein": 2.56,
-    "carbs": 20.5,
-    "fat": 7.69,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "chipsy",
     "brand": "marbo / pepsico",
     "barcode": "8606017377306",
@@ -2376,6 +2376,19 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Vanilla, Chocolate, Strawberry Frozen Dairy Dessert",
+    "brand": "Breyers",
+    "barcode": "0077567003270",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -2679,11 +2692,11 @@
   },
   {
     "name": "Frutti PEACH 1L AUL Viniy",
-    "brand": null,
+    "brand": "Frutti",
     "barcode": "3900167230807",
-    "calories": 100.0,
-    "protein": 1.0,
-    "carbs": 12.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
@@ -5567,10 +5580,10 @@
     "name": "piquant paprika",
     "brand": "lays",
     "barcode": "5900259128683",
-    "calories": 517.0,
-    "protein": 6.8,
-    "carbs": 52.0,
-    "fat": 30.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -6461,6 +6474,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Apple & Cinnamon Oat Bites",
+    "brand": "Biasol",
+    "barcode": "5392000227477",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 60.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Apple in carrots",
     "brand": "Hipp",
     "barcode": "9062300140023",
@@ -6470,6 +6496,19 @@
     "fat": 0.1,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Apple Pie",
+    "brand": "Zorbas",
+    "barcode": "5290460005447",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -6757,6 +6796,19 @@
     "servingSize": 1.0,
     "servingUnit": "pi",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Brochette De Porc",
+    "brand": "Aldi",
+    "barcode": "4068261103386",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "brochette",
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {

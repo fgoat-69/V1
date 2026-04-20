@@ -533,6 +533,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Arroz faisán empacado",
+    "brand": null,
+    "barcode": "7434000051152",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Arroz tío pelón 80/2",
     "brand": null,
     "barcode": "7433200318041",
@@ -1755,8 +1768,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Centavito",
-    "brand": null,
+    "name": "Centavito Max",
+    "brand": "Diana",
     "barcode": "0748757011992",
     "calories": 0.0,
     "protein": 0.0,
@@ -2094,7 +2107,7 @@
   },
   {
     "name": "Chobix Queso Chipotle",
-    "brand": null,
+    "brand": "EDT",
     "barcode": "7406007091844",
     "calories": 0.0,
     "protein": 0.0,
@@ -2148,6 +2161,19 @@
     "name": "Choco Tron",
     "brand": null,
     "barcode": "8906041810139",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Choco Tron",
+    "brand": null,
+    "barcode": "8906041811884",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -2223,6 +2249,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Chocomad",
+    "brand": "Gama",
+    "barcode": "0753081008822",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Chocó mad",
     "brand": null,
     "barcode": "0753081008839",
@@ -2278,6 +2317,19 @@
     "name": "Churrito 12g DIANA",
     "brand": null,
     "barcode": "0748757010575",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Churritos Max",
+    "brand": "Diana",
+    "barcode": "0748757011985",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -2785,6 +2837,19 @@
     "name": "Desodorante para varón sachet",
     "brand": null,
     "barcode": "7411000363164",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Desodorante rexona",
+    "brand": null,
+    "barcode": "75026608",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -4745,8 +4810,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Jalapeño",
-    "brand": null,
+    "name": "Jalapeño Max",
+    "brand": "Diana",
     "barcode": "0748757006080",
     "calories": 0.0,
     "protein": 0.0,
@@ -6643,6 +6708,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Papel delsey",
+    "brand": null,
+    "barcode": "7441008171690",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Papel fluorescente y estándar mix",
     "brand": null,
     "barcode": "7501214965442",
@@ -6841,6 +6919,19 @@
     "name": "PASTE TRATO VERDE 12PACK",
     "brand": null,
     "barcode": "6930958820129",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Pega 250 gr",
+    "brand": null,
+    "barcode": "7873747722503",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -7215,6 +7306,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Quesito Max",
+    "brand": "Diana",
+    "barcode": "0748757008398",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Quesito máx",
     "brand": null,
     "barcode": "0748757007537",
@@ -7374,6 +7478,19 @@
     "name": "Resaltador Verde SHARPIE",
     "brand": null,
     "barcode": "5401178077309",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Resma bond carta",
+    "brand": null,
+    "barcode": "6937819420160",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -7931,7 +8048,7 @@
   },
   {
     "name": "Snak choby",
-    "brand": null,
+    "brand": "EDT",
     "barcode": "7406007091851",
     "calories": 0.0,
     "protein": 0.0,
@@ -8307,7 +8424,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Tang Naranja",
+    "name": "Tang naranja",
     "brand": null,
     "barcode": "7622201393236",
     "calories": 0.0,
@@ -8323,6 +8440,19 @@
     "name": "Tang te limón",
     "brand": null,
     "barcode": "7622202008474",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Taquerito queso",
+    "brand": null,
+    "barcode": "0750894612567",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -8515,8 +8645,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Tortillitas",
-    "brand": null,
+    "name": "Tortillitas Llamas",
+    "brand": "edt",
     "barcode": "7406007092629",
     "calories": 0.0,
     "protein": 0.0,
@@ -10286,12 +10416,12 @@
     "name": "Collagen Peptides Unflavored",
     "brand": "Rule 1",
     "barcode": "0196671009043",
-    "calories": 381.0,
-    "protein": 85.7,
+    "calories": 0.0,
+    "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 10.5,
-    "servingUnit": "g",
+    "servingSize": 1.0,
+    "servingUnit": "scoop",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -12740,19 +12870,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Chocomax",
-    "brand": null,
-    "barcode": "0753081008822",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Cinta métrica Truper",
     "brand": null,
     "barcode": "7501206673324",
@@ -13392,6 +13509,19 @@
   {
     "name": "Desodorante",
     "brand": null,
+    "barcode": "7411000363102",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Desodorante",
+    "brand": null,
     "barcode": "7909189271368",
     "calories": 0.0,
     "protein": 0.0,
@@ -13406,19 +13536,6 @@
     "name": "Detergente Espumil explosión limpieza 500gr",
     "brand": null,
     "barcode": "7401001682173",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Diana Max Chirritos",
-    "brand": null,
-    "barcode": "0748757011985",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -13510,6 +13627,19 @@
     "name": "Dulce",
     "brand": null,
     "barcode": "0693235956114",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Durango para ollas",
+    "brand": null,
+    "barcode": "6930958820273",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -13640,6 +13770,19 @@
     "name": "Empanizador Don julio",
     "brand": null,
     "barcode": "0714258001442",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Encendedor bic",
+    "brand": null,
+    "barcode": "0070330617285",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -14173,6 +14316,19 @@
     "name": "Galleta chocomax",
     "brand": "Diana",
     "barcode": "05701711",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Galleta crema fresa",
+    "brand": null,
+    "barcode": "7441163411860",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -15041,6 +15197,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "La sirena",
+    "brand": null,
+    "barcode": "0028571010754",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Lapicero azul",
     "brand": null,
     "barcode": "7432003400847",
@@ -15457,6 +15626,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "MARGARINA LA PERFECTA",
+    "brand": null,
+    "barcode": "7432003500226",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Marias",
     "brand": null,
     "barcode": "7441029513257",
@@ -15668,6 +15850,19 @@
     "name": "Mortadela",
     "brand": null,
     "barcode": "0664990170510",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Mykey pop",
+    "brand": null,
+    "barcode": "5431486767869",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -16614,19 +16809,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Quesitos 33g",
-    "brand": null,
-    "barcode": "0748757008398",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Queso Americano",
     "brand": "Dos Pinos",
     "barcode": "7441001605901",
@@ -17498,19 +17680,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Taquerito queso",
-    "brand": null,
-    "barcode": "0750894612567",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Taza de princesa",
     "brand": null,
     "barcode": "7031703419571",
@@ -17696,6 +17865,19 @@
     "name": "Tropikul",
     "brand": null,
     "barcode": "0759094074229",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Tualla humedad",
+    "brand": null,
+    "barcode": "7421002046910",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,

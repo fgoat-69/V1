@@ -40,7 +40,7 @@
   },
   {
     "name": "Original",
-    "brand": "wasa",
+    "brand": "Wasa",
     "barcode": "7300400118101",
     "calories": 0.0,
     "protein": 0.0,
@@ -117,7 +117,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "sprite 500ml",
+    "name": "sprite 500ml ethio",
     "brand": "Sprite",
     "barcode": "54491069",
     "calories": 0.0,
@@ -170,7 +170,7 @@
   },
   {
     "name": "Protein pudding",
-    "brand": "Zott",
+    "brand": "20th Protein",
     "barcode": "4014500519180",
     "calories": 0.0,
     "protein": 0.0,
@@ -884,6 +884,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Troko sok",
+    "brand": null,
+    "barcode": "5319992114059",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Fusilli 40",
     "brand": "Divella",
     "barcode": "8005121000405",
@@ -1170,6 +1183,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "DELIGHT 50% LESS FAT",
+    "brand": "THOMY",
+    "barcode": "7613036012805",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Domaćinski",
     "brand": "Pepsico",
     "barcode": "8606017375333",
@@ -1218,19 +1244,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "THOMY Delight",
-    "brand": "Nestlé",
-    "barcode": "7613036012805",
-    "calories": 400.0,
-    "protein": 0.0,
-    "carbs": 9.33,
-    "fat": 39.3,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -2555,7 +2568,7 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
+    "servingSize": 2.0,
     "servingUnit": "slice",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -2929,9 +2942,9 @@
     "brand": "Waltz",
     "barcode": "8606103924025",
     "calories": 0.0,
-    "protein": 6.2,
-    "carbs": 61.0,
-    "fat": 29.2,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -4215,9 +4228,9 @@
     "name": "Tube red mix",
     "brand": null,
     "barcode": "8600037003108",
-    "calories": 43.0,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 10.7,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
@@ -5677,6 +5690,19 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "serving",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Pileca Prsa u Omotu",
+    "brand": "Goranovic",
+    "barcode": "2720667024062",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },

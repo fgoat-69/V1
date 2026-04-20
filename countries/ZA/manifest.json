@@ -1,13 +1,13 @@
 {
   "countryIso2": "ZA",
   "slug": "south-africa",
-  "version": 1776256563,
-  "generatedAt": "2026-04-15T12:36:03.463730+00:00",
+  "version": 1776671675,
+  "generatedAt": "2026-04-20T07:54:35.634099+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 8838,
-  "bytesDiscovered": 1897538,
-  "itemCountTotal": 8838,
-  "itemCountMain": 8838,
+  "itemCountDiscovered": 8861,
+  "bytesDiscovered": 1902594,
+  "itemCountTotal": 8861,
+  "itemCountMain": 8861,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/ZA/full.json",
       "kind": "full",
-      "itemCount": 8838,
-      "bytes": 1897538
+      "itemCount": 8861,
+      "bytes": 1902594
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-15T12:36:03.463730+00:00",
+    "generatedAt": "2026-04-20T07:54:35.634099+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 9496,
-    "mappedProducts": 8838,
+    "scannedProducts": 4428145,
+    "matchedProducts": 9524,
+    "mappedProducts": 8861,
     "dedupedProducts": 0,
-    "discoveredItemCount": 8838,
-    "discoveredBytes": 1897538
+    "discoveredItemCount": 8861,
+    "discoveredBytes": 1902594
   }
 }

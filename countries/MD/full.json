@@ -1,6 +1,6 @@
 [
   {
-    "name": "Original Taste",
+    "name": "Original ethiopian",
     "brand": "Coca-Cola",
     "barcode": "54491472",
     "calories": 0.0,
@@ -111,8 +111,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 20.0,
-    "servingUnit": "g",
+    "servingSize": 1.0,
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -182,7 +182,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "kinder maxi king",
+    "name": "Kinder Maxi King",
     "brand": "Kinder",
     "barcode": "4008400553023",
     "calories": 0.0,
@@ -637,6 +637,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Bucuria Drajeuri",
+    "brand": null,
+    "barcode": "4840095028758",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Bucuria favorit",
     "brand": null,
     "barcode": "4840095013037",
@@ -910,6 +923,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Ensalada de Atún (Mayo & Choclo)",
+    "brand": "Norte",
+    "barcode": "7840029875479",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 150.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Extra Urban Energy Drink Kiwi Cactus",
     "brand": "Jaguar",
     "barcode": "4630065254337",
@@ -939,6 +965,19 @@
     "name": "Felii de pasare globino cașcaval 50g",
     "brand": null,
     "barcode": "4820112655945",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Finitas Clásicas",
+    "brand": "Mazzei",
+    "barcode": "7841503002770",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -1036,6 +1075,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Imperium Ice Cream Cherry",
+    "brand": "Rud",
+    "barcode": "4823097819531",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 70.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1742,6 +1794,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Yoghurt Griego (Con Frutilla)",
+    "brand": "Agua'i",
+    "barcode": "7848001700269",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 200.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Zmeura Acva Kristall",
     "brand": null,
     "barcode": "4630011231702",
@@ -2392,7 +2457,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Ongezouten roomboter",
+    "name": "Ongezouten Roomboter",
     "brand": "De Zaanse Hoeve",
     "barcode": "8718906812161",
     "calories": 0.0,
@@ -4005,14 +4070,14 @@
   },
   {
     "name": "Chips",
-    "brand": null,
+    "brand": "Hroom",
     "barcode": "4820182061639",
-    "calories": 483.0,
-    "protein": 8.0,
-    "carbs": 61.0,
-    "fat": 23.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 50.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5402,8 +5467,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -5515,10 +5580,10 @@
     "name": "milka",
     "brand": "milka",
     "barcode": "7622210308108",
-    "calories": 544.0,
-    "protein": 6.6,
-    "carbs": 55.0,
-    "fat": 33.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 90.0,
     "servingUnit": "ml",
     "isLiquid": true,
@@ -10569,6 +10634,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Chiken Julien In Bread",
+    "brand": "Gustland",
+    "barcode": "4841802004720",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Chiken Pizza",
     "brand": "Andys",
     "barcode": "4841802002665",
@@ -10777,6 +10855,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Cottage Cheese 0%",
+    "brand": "Sana",
+    "barcode": "4840564000193",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "package",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Covrigei Cu Mac",
     "brand": "Belzer",
     "barcode": "4840259004727",
@@ -10812,6 +10903,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Crab Sticks",
+    "brand": "YAW",
+    "barcode": "4841900001188",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -12285,6 +12389,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Nestle cereale",
+    "brand": null,
+    "barcode": "8410100088006",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "No-fat Cottage Cheese",
     "brand": "Волошкове Поле",
     "barcode": "4820004239062",
@@ -12636,19 +12753,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "pabeda",
-    "brand": null,
-    "barcode": "4607005407511",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Paine",
     "brand": "Cuptoraș",
     "barcode": "4841818000105",
@@ -12944,6 +13048,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Ravioli With Chiken",
+    "brand": "Gustland",
+    "barcode": "4841802006793",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -14470,14 +14587,14 @@
   },
   {
     "name": "Эфис 0%",
-    "brand": null,
+    "brand": "Efes",
     "barcode": "4840032006092",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "servingSize": 1.0,
+    "servingUnit": "can",
     "isLiquid": false,
     "source": "github_country_pack"
   },

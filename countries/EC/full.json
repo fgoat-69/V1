@@ -1690,6 +1690,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Ke chidos",
+    "brand": "Leo",
+    "barcode": "0604722013692",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Kefir Pre - Probiotico",
     "brand": "Miraflores",
     "barcode": "7861031542661",
@@ -2574,6 +2587,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Queso Fresco Semidescremado",
+    "brand": "Don Joselito",
+    "barcode": "7861000242486",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Queso Mozzarella",
     "brand": "Mi Comisariato",
     "barcode": "7861003000168",
@@ -2785,6 +2811,19 @@
     "name": "Salticas",
     "brand": "Superior",
     "barcode": "7862117323365",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Sardinas En Salsa De Tomate",
+    "brand": "Real",
+    "barcode": "7862100602002",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -6932,9 +6971,9 @@
     "name": "COCOA",
     "brand": null,
     "barcode": "7862122701448",
-    "calories": 40.0,
-    "protein": 1.0,
-    "carbs": 10.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
@@ -8264,19 +8303,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "tbsp",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kiwi Strawberry Focus",
-    "brand": "Vitaminwater",
-    "barcode": "0786162411785",
-    "calories": 80.0,
-    "protein": 0.0,
-    "carbs": 22.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -10748,6 +10774,19 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "vitaminwater",
+    "brand": "glaceau",
+    "barcode": "0786162411785",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -15704,6 +15743,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Granola Y chocolate",
+    "brand": "Kandú",
+    "barcode": "7862131820185",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 46.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Greek Yogurt",
     "brand": "Kaaru",
     "barcode": "7862126492144",
@@ -18002,19 +18054,6 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Natural Yogurt",
-    "brand": "Chiveria",
-    "barcode": "7861025806878",
-    "calories": 54.1,
-    "protein": 2.7,
-    "carbs": 4.32,
-    "fat": 2.7,
-    "servingSize": 185.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -22330,6 +22369,19 @@
     "fat": 2.16,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "YOGUR SEMIDESCREMADO CLÁSICO NATURAL CON PROBIÓTICOS AB",
+    "brand": "CHIVERIA",
+    "barcode": "7861025806878",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 185.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },

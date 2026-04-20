@@ -1,6 +1,6 @@
 [
   {
-    "name": "Cocacola original taste",
+    "name": "Cocacola original  500",
     "brand": "Coca-Cola",
     "barcode": "5449000054227",
     "calories": 0.0,
@@ -39,7 +39,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Original Taste",
+    "name": "Original ethiopian",
     "brand": "Coca-Cola",
     "barcode": "54491472",
     "calories": 0.0,
@@ -117,8 +117,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Hot Chicken Flavor Ramen",
-    "brand": "Samyang",
+    "name": "Samyang habanero lime buldak hot chicken flavor ramen",
+    "brand": null,
     "barcode": "8801073115514",
     "calories": 0.0,
     "protein": 0.0,
@@ -261,7 +261,7 @@
   },
   {
     "name": "Lakritz Schnecken",
-    "brand": "Haribo",
+    "brand": "HARIBO",
     "barcode": "4001686102701",
     "calories": 0.0,
     "protein": 0.0,
@@ -572,6 +572,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Whey Protein",
+    "brand": "Yummy Lab",
+    "barcode": "0792649123645",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Whey protein (milk chocolate)",
     "brand": "YummyLab",
     "barcode": "0792649123607",
@@ -620,6 +633,19 @@
     "fat": 0.5,
     "servingSize": 25.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Бородинский",
+    "brand": "Vitalnan",
+    "barcode": "4870001373122",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1589,10 +1615,10 @@
     "name": "Nescafé® Classic. Натуральный растворимый порошкообразный кофе с добавлением натурального жареного молотого кофе.",
     "brand": "Nescafé",
     "barcode": "4600680010632",
-    "calories": 128.0,
-    "protein": 8.0,
-    "carbs": 3.0,
-    "fat": 1.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 7.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -2587,6 +2613,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Bibigo cheese tteokbokki ramyun",
+    "brand": null,
+    "barcode": "9555050302815",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Bonbons Rosehen",
     "brand": "Roshen",
     "barcode": "4823077609732",
@@ -2883,19 +2922,6 @@
     "servingSize": 1.0,
     "servingUnit": "bag",
     "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Korean style stir-fried ramyun Cheese Tteokbokki",
-    "brand": "Bibigo",
-    "barcode": "9555050302815",
-    "calories": 397.0,
-    "protein": 6.3,
-    "carbs": 68.9,
-    "fat": 10.7,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
     "source": "github_country_pack"
   },
   {

@@ -13,8 +13,21 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Lightly Breaded Chicken Wings",
-    "brand": "Realgood Foods Co.",
+    "name": "IQ BAR 12 Bar Variety Pack",
+    "brand": "IQ BAR",
+    "barcode": "0850004554623",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "bar",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Lightly Breaded Chicken Strips",
+    "brand": "Real Good Foods Co.",
     "barcode": "0850049384674",
     "calories": 0.0,
     "protein": 0.0,
@@ -48,19 +61,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "unidad",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Peanut Butter Chip",
-    "brand": "IQ BAR",
-    "barcode": "0850004554623",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -767,6 +767,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Loaded Protein Peanut Butter Flavor",
+    "brand": "RYSE",
+    "barcode": "0850041914497",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Low Carb Pretzels",
     "brand": "Beyond Twistz",
     "barcode": "0850027326320",
@@ -1179,19 +1192,6 @@
     "fat": 15.2,
     "servingSize": 1.0,
     "servingUnit": "sandwich",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Protein powder",
-    "brand": "Ryse",
-    "barcode": "0850041914497",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1963,19 +1963,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Prime Protein",
-    "brand": "EQUIP",
-    "barcode": "0850020087235",
-    "calories": 391.0,
-    "protein": 91.3,
-    "carbs": 4.35,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Strawberry & Cream Flavor Boost",
     "brand": "Gainful",
     "barcode": "0850046940026",
@@ -2024,6 +2011,19 @@
     "fat": 800.0,
     "servingSize": 1.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "COOKIES & CREAM",
+    "brand": "Barebells",
+    "barcode": "0850054108203",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "bar",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -2275,19 +2275,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Protein Bar Cookies & Cream",
-    "brand": "Barebells",
-    "barcode": "0850054108203",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Raw Organic Cacao Powder",
     "brand": "Ramp",
     "barcode": "0850018464680",
@@ -2535,19 +2522,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Flour tortillas",
-    "brand": "Hero",
-    "barcode": "0850047659118",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "tortilla",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Fresh Strawberry",
     "brand": "Mitchell’s Homemade Ice Cream",
     "barcode": "0850286001273",
@@ -2557,6 +2531,19 @@
     "fat": 11.11,
     "servingSize": 117.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Hero Flour Tortillas",
+    "brand": "Hero",
+    "barcode": "0850047659118",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "tortilla",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -2848,14 +2835,14 @@
   },
   {
     "name": "Blueberry Muffin Protein Cereal",
-    "brand": "Catalina Crunch",
+    "brand": "CATALINA CRUNCH",
     "barcode": "0850044112098",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 0.5,
-    "servingUnit": "cup",
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -3029,8 +3016,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Loaded Protein",
-    "brand": "RYSE",
+    "name": "Loaded Protein Cinnamon Toast Protein Drink Mix",
+    "brand": "Ryse",
     "barcode": "0850041914503",
     "calories": 0.0,
     "protein": 0.0,
@@ -3038,7 +3025,7 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "scoop",
-    "isLiquid": false,
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -3695,8 +3682,8 @@
     "name": "Cafe la llave",
     "brand": "Cafe La Llave",
     "barcode": "0072323000142",
-    "calories": 34.3,
-    "protein": 4.06,
+    "calories": 0.0,
+    "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 2.0,
@@ -3805,19 +3792,6 @@
     "fat": 0.0,
     "servingSize": 3.0,
     "servingUnit": "cup",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Eggplant Chickpea Veggie Ball",
-    "brand": "Actual Veggies",
-    "barcode": "0850020260522",
-    "calories": 110.0,
-    "protein": 4.0,
-    "carbs": 18.0,
-    "fat": 3.5,
-    "servingSize": 6.0,
-    "servingUnit": "veggieballs",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -4992,6 +4966,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Prime Protein",
+    "brand": "equip",
+    "barcode": "0850020087235",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Protein isolate elite series",
     "brand": "Kaged",
     "barcode": "0850045966676",
@@ -5039,7 +5026,7 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.0,
-    "servingUnit": "stick",
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5619,12 +5606,12 @@
     "name": "Blueberry Protein Waffle",
     "brand": "BANZA",
     "barcode": "0850011443774",
-    "calories": 300.0,
-    "protein": 12.9,
-    "carbs": 30.0,
-    "fat": 14.3,
-    "servingSize": 2.0,
-    "servingUnit": "waffles",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5668,7 +5655,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Brownie Batter Plant-Based Protein Bar",
+    "name": "Brownie Batter",
     "brand": "MISFITS",
     "barcode": "0850049100274",
     "calories": 0.0,
@@ -5863,8 +5850,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Chicken & Pepper Jack Cheese Burritos",
-    "brand": "Realgood",
+    "name": "CHICKEN & PEPPER JACK CHEESE BURRITOS",
+    "brand": "Realgood Foods Co.",
     "barcode": "0850049384070",
     "calories": 0.0,
     "protein": 0.0,
@@ -6175,13 +6162,13 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cookie Butter Coffee Creamer",
-    "brand": "But Pods",
+    "name": "Cookie Butter Dairy-Free Coffee Creamer",
+    "brand": "nutpods",
     "barcode": "0850026212877",
-    "calories": 200.0,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 33.3,
-    "fat": 6.67,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": true,
@@ -6591,7 +6578,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "high energy pre-workout sour peach ring flavored",
+    "name": "high energy pre-workout",
     "brand": "Bloom",
     "barcode": "0850042641477",
     "calories": 0.0,
@@ -6906,10 +6893,10 @@
     "name": "Lupini Beans",
     "brand": "Simpli",
     "barcode": "0850033785623",
-    "calories": 429.0,
-    "protein": 40.0,
-    "carbs": 31.4,
-    "fat": 14.3,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 35.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -7093,7 +7080,7 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.0,
-    "servingUnit": "serving",
+    "servingUnit": "container",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -11336,6 +11323,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Eggplant Chickpea Veggieballs",
+    "brand": "Actual Veggies",
+    "barcode": "0850020260522",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 6.0,
+    "servingUnit": "veggieballs",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Eggwich Canadian bacon",
     "brand": "REDS",
     "barcode": "0850011911884",
@@ -14290,10 +14290,10 @@
     "name": "Not chicken tenders - Not Co",
     "brand": "Notchicken",
     "barcode": "0850020078578",
-    "calories": 271.0,
-    "protein": 11.8,
-    "carbs": 15.3,
-    "fat": 18.8,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,

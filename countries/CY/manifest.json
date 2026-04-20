@@ -1,13 +1,13 @@
 {
   "countryIso2": "CY",
   "slug": "cyprus",
-  "version": 1776174017,
-  "generatedAt": "2026-04-14T13:40:17.728550+00:00",
+  "version": 1776669215,
+  "generatedAt": "2026-04-20T07:13:35.724409+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 1938,
-  "bytesDiscovered": 419351,
-  "itemCountTotal": 1938,
-  "itemCountMain": 1938,
+  "itemCountDiscovered": 1952,
+  "bytesDiscovered": 422253,
+  "itemCountTotal": 1952,
+  "itemCountMain": 1952,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/CY/full.json",
       "kind": "full",
-      "itemCount": 1938,
-      "bytes": 419351
+      "itemCount": 1952,
+      "bytes": 422253
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T13:40:17.728550+00:00",
+    "generatedAt": "2026-04-20T07:13:35.724409+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 2372,
-    "mappedProducts": 1938,
+    "scannedProducts": 4428145,
+    "matchedProducts": 2391,
+    "mappedProducts": 1952,
     "dedupedProducts": 0,
-    "discoveredItemCount": 1938,
-    "discoveredBytes": 419351
+    "discoveredItemCount": 1952,
+    "discoveredBytes": 422253
   }
 }

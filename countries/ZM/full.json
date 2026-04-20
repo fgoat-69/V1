@@ -1508,6 +1508,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Protein Beast",
+    "brand": "USN",
+    "barcode": "6009544951940",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Pure glycerine",
     "brand": null,
     "barcode": "6009642160053",
@@ -2600,19 +2613,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Juwisy drink pineapple k6  500ml 6 &quot;009713101503 bigtree bigree",
-    "brand": null,
-    "barcode": "6009713101503",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "KOFLYN COUGH EXPECTORANT 100 ml",
     "brand": null,
     "barcode": "6161101510097",
@@ -3224,6 +3224,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Juwisy drink pineapple k6  500ml 6 &quot;009713101503 bigtree bigree",
+    "brand": "Juwisy",
+    "barcode": "6009713101503",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "MARIANA Arroz White Ric White Rice",
     "brand": null,
     "barcode": "6009819740156",
@@ -3337,6 +3350,19 @@
     "fat": 22.6,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Oat Cranberry Cookies",
+    "brand": "Oven Fresh",
+    "barcode": "6291103083869",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 45.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },

@@ -1,6 +1,6 @@
 [
   {
-    "name": "Cocacola original taste",
+    "name": "Cocacola original  500",
     "brand": "Coca-Cola",
     "barcode": "5449000054227",
     "calories": 0.0,
@@ -247,7 +247,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "NESCAFÉ SPECIAL FILTRE L'Original, Café Soluble, Boite de 25 Sticks",
+    "name": "NESCAFÉ SPECIAL FILTRE L'Original, Café Soluble, Boîte de 25 Sticks",
     "brand": "Nestlé",
     "barcode": "3033710076017",
     "calories": 0.0,
@@ -365,7 +365,7 @@
   },
   {
     "name": "High Protein, Low Sugar Chocolate Chip Salted Caramel",
-    "brand": "GRENADE",
+    "brand": "Grenade",
     "barcode": "5060221206860",
     "calories": 0.0,
     "protein": 0.0,
@@ -845,6 +845,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "VITABANANE",
+    "brand": null,
+    "barcode": "6044000153094",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Xplus",
     "brand": "Gayelord Hauser",
     "barcode": "6046000098405",
@@ -939,9 +952,9 @@
     "name": "Rani",
     "brand": null,
     "barcode": "6281034903930",
-    "calories": 145.0,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 11.4,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
@@ -1264,9 +1277,9 @@
     "name": "Sprite",
     "brand": "Coca-Cola",
     "barcode": "90377266",
-    "calories": 154.0,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 8.9,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 300.0,
     "servingUnit": "ml",
@@ -2206,19 +2219,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "kinder creamy 20days",
-    "brand": "Ferrero",
-    "barcode": "80824107",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },

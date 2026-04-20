@@ -1,0 +1,39 @@
+{
+  "countryIso2": "TZ",
+  "slug": "tanzania",
+  "version": 1776671672,
+  "generatedAt": "2026-04-20T07:54:32.276611+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 68,
+  "bytesDiscovered": 13977,
+  "itemCountTotal": 68,
+  "itemCountMain": 68,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/TZ/full.json",
+      "kind": "full",
+      "itemCount": 68,
+      "bytes": 13977
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-20T07:54:32.276611+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4428145,
+    "matchedProducts": 97,
+    "mappedProducts": 68,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 68,
+    "discoveredBytes": 13977
+  }
+}

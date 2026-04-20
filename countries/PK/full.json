@@ -1,6 +1,6 @@
 [
   {
-    "name": "Cocacola original taste",
+    "name": "Cocacola original  500",
     "brand": "Coca-Cola",
     "barcode": "5449000054227",
     "calories": 0.0,
@@ -494,19 +494,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Greek Yogurt Plain",
-    "brand": "Homemade & Co",
-    "barcode": "0309030466542",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 250.0,
-    "servingUnit": "gm",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "harison premium chocolate",
     "brand": null,
     "barcode": "6291103541468",
@@ -594,6 +581,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Indome Instant Noodles ( Meat Masala flavor)",
+    "brand": "INDOME",
+    "barcode": "5285000396857",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -725,6 +725,19 @@
     "servingSize": 17.0,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Lay's French Cheese",
+    "brand": "Flavored Potato Chips",
+    "barcode": "8964002345656",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -1261,6 +1274,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Sucral Stevia",
+    "brand": null,
+    "barcode": "8964000192665",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Sunsilk",
     "brand": null,
     "barcode": "8851932355131",
@@ -1361,6 +1387,19 @@
     "fat": 3.5,
     "servingSize": 1.0,
     "servingUnit": "portion",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Tapal Green Tea",
+    "brand": null,
+    "barcode": "8961103601032",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -1635,6 +1674,19 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Greek Yogurt Plain",
+    "brand": "Homemade & Co.",
+    "barcode": "0309030466542",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 250.0,
+    "servingUnit": "gm",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -2681,9 +2733,9 @@
     "name": "Pepsi",
     "brand": "Pepsi",
     "barcode": "0012000801754",
-    "calories": 20.0,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 5.35,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
@@ -2874,7 +2926,7 @@
   },
   {
     "name": "Pepsi",
-    "brand": null,
+    "brand": "Pepsi",
     "barcode": "0012000004070",
     "calories": 0.0,
     "protein": 0.0,
@@ -2984,6 +3036,19 @@
     "protein": 7.0,
     "carbs": 58.0,
     "fat": 26.3,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "4017602700890",
+    "brand": null,
+    "barcode": "4017602700890",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -3101,7 +3166,7 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
+    "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
     "source": "github_country_pack"
@@ -3383,10 +3448,10 @@
     "name": "Milk pack",
     "brand": null,
     "barcode": "8961008213415",
-    "calories": 2000.0,
-    "protein": 2.9,
-    "carbs": 4.8,
-    "fat": 3.5,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
@@ -3714,19 +3779,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "0094922961518",
-    "brand": "prema",
-    "barcode": "0094922961518",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -6042,6 +6094,19 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Natural yogurt",
+    "brand": "prema",
+    "barcode": "0094922961518",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -10793,6 +10858,19 @@
     "name": "Fruity Candies",
     "brand": "Expert food",
     "barcode": "12358733",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "FZUP NEXT",
+    "brand": null,
+    "barcode": "8964001179436",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,

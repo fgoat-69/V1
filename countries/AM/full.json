@@ -1,6 +1,6 @@
 [
   {
-    "name": "Cocacola original taste",
+    "name": "Cocacola original  500",
     "brand": "Coca-Cola",
     "barcode": "5449000054227",
     "calories": 0.0,
@@ -26,7 +26,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Biscoff",
+    "name": "Lotus Biscoff",
     "brand": "Lotus",
     "barcode": "5410126716016",
     "calories": 0.0,
@@ -614,10 +614,10 @@
     "name": "Овсяные хлопья",
     "brand": "Nordic",
     "barcode": "4607058800376",
-    "calories": 360.0,
-    "protein": 13.5,
-    "carbs": 56.0,
-    "fat": 7.2,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 50.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -2600,6 +2600,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Love Ice cream",
+    "brand": "Grand Candy",
+    "barcode": "4850001392699",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Matsun Lactose Free",
     "brand": "Panatsea",
     "barcode": "4850017010396",
@@ -3233,6 +3246,19 @@
     "fat": 0.0,
     "servingSize": 2.0,
     "servingUnit": "ice",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Vanilla Cinnamon Apple Black tea",
+    "brand": "Ahmad tea",
+    "barcode": "0054881028295",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "bag",
     "isLiquid": true,
     "source": "github_country_pack"
   },

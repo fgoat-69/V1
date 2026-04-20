@@ -1,11 +1,11 @@
 {
   "countryIso2": "HT",
   "slug": "haiti",
-  "version": 1776193805,
-  "generatedAt": "2026-04-14T19:10:05.652100+00:00",
+  "version": 1776672902,
+  "generatedAt": "2026-04-20T08:15:02.040038+00:00",
   "strategy": "full",
   "itemCountDiscovered": 145,
-  "bytesDiscovered": 30192,
+  "bytesDiscovered": 30182,
   "itemCountTotal": 145,
   "itemCountMain": 145,
   "itemCountFill": 0,
@@ -17,11 +17,11 @@
       "path": "countries/HT/full.json",
       "kind": "full",
       "itemCount": 145,
-      "bytes": 30192
+      "bytes": 30182
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T19:10:05.652100+00:00",
+    "generatedAt": "2026-04-20T08:15:02.040038+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
+    "scannedProducts": 4428145,
     "matchedProducts": 184,
     "mappedProducts": 145,
     "dedupedProducts": 0,
     "discoveredItemCount": 145,
-    "discoveredBytes": 30192
+    "discoveredBytes": 30182
   }
 }

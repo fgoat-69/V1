@@ -1,14 +1,14 @@
 {
   "countryIso2": "IE",
   "slug": "ireland",
-  "version": 1776106944,
-  "generatedAt": "2026-04-13T19:02:23.458495+00:00",
+  "version": 1776667921,
+  "generatedAt": "2026-04-20T06:52:01.229805+00:00",
   "strategy": "main_fill",
-  "itemCountDiscovered": 73437,
-  "bytesDiscovered": 15610149,
-  "itemCountTotal": 32815,
-  "itemCountMain": 23375,
-  "itemCountFill": 9440,
+  "itemCountDiscovered": 73512,
+  "bytesDiscovered": 15627486,
+  "itemCountTotal": 32810,
+  "itemCountMain": 23369,
+  "itemCountFill": 9441,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
@@ -16,19 +16,19 @@
       "name": "main.json",
       "path": "countries/IE/main.json",
       "kind": "main",
-      "itemCount": 23375,
-      "bytes": 4999846
+      "itemCount": 23369,
+      "bytes": 4999875
     },
     {
       "name": "fill.json",
       "path": "countries/IE/fill.json",
       "kind": "fill",
-      "itemCount": 9440,
-      "bytes": 2000017
+      "itemCount": 9441,
+      "bytes": 2000043
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-13T19:02:23.458495+00:00",
+    "generatedAt": "2026-04-20T06:52:01.229805+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -36,11 +36,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 78225,
-    "mappedProducts": 73437,
+    "scannedProducts": 4428145,
+    "matchedProducts": 78304,
+    "mappedProducts": 73512,
     "dedupedProducts": 0,
-    "discoveredItemCount": 73437,
-    "discoveredBytes": 15610149
+    "discoveredItemCount": 73512,
+    "discoveredBytes": 15627486
   }
 }

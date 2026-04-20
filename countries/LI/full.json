@@ -78,6 +78,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Zack-Zack Minutensteak",
+    "brand": "TANN",
+    "barcode": "2288666005401",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Egli Prche Persico",
     "brand": "Pelican",
     "barcode": "7613312443286",

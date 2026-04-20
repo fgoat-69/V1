@@ -1560,6 +1560,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Innbökuð Kalkúnabringa Wellington",
+    "brand": "Ferskar Kjötvörur",
+    "barcode": "2382953018935",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Isblom Með Kaffi Og Karamellu",
     "brand": "Emmessis",
     "barcode": "5690535120165",
@@ -1638,28 +1651,28 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Jógúrt Sósa",
-    "brand": "Saffran",
-    "barcode": "5690838201875",
-    "calories": 108.0,
-    "protein": 5.9,
-    "carbs": 4.8,
-    "fat": 7.2,
-    "servingSize": 100.0,
-    "servingUnit": "g",
+    "name": "Kaffi",
+    "brand": "MS",
+    "barcode": "5690527521000",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
   {
-    "name": "Kaffi",
-    "brand": "MS",
-    "barcode": "5690527521000",
-    "calories": 132.0,
-    "protein": 8.0,
-    "carbs": 15.0,
-    "fat": 4.5,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
+    "name": "Kalkúnabringa",
+    "brand": "Ísfugl",
+    "barcode": "5694230115525",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 13.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1976,6 +1989,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Kleinur",
+    "brand": "Aðalbakarí Siglufirði",
+    "barcode": "5690350254175",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Kolvetnaskert Brauð",
     "brand": "GæðA",
     "barcode": "5690896004715",
@@ -2009,8 +2035,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "container",
+    "servingSize": 200.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -2581,19 +2607,6 @@
     "protein": 15.0,
     "carbs": 13.0,
     "fat": 64.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "nömm óðar snældur",
-    "brand": null,
-    "barcode": "5690545020028",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -3328,6 +3341,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Skyr frost jarðaberja",
+    "brand": "skyr frost",
+    "barcode": "5690581165400",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Skúbb Skál Skógarberja",
     "brand": "Skúbb",
     "barcode": "5694230445462",
@@ -3591,6 +3617,19 @@
     "name": "Sveitabiti",
     "brand": "MS",
     "barcode": "2351470011347",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Sveppa Smurostur",
+    "brand": "MS",
+    "barcode": "5690527061438",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -4212,6 +4251,32 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Куриная грудка запечённая",
+    "brand": "АВД Продакт",
+    "barcode": "4673774505734",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 280.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Куриная грудка с овощами-гриль и кукурузным вйоли",
+    "brand": "Лавка",
+    "barcode": "4673774505697",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 225.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Мясо цыплят бройлеров",
     "brand": "Дзержинка",
     "barcode": "4811397072091",
@@ -4259,6 +4324,19 @@
     "carbs": 14.0,
     "fat": 6.0,
     "servingSize": 175.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Стейк из индейки с рисом и брусничным соусом",
+    "brand": "Шоколадница",
+    "barcode": "4660048544490",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 230.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -4992,6 +5070,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Jógúrt Sósa",
+    "brand": "Saffran",
+    "barcode": "5690838201875",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Naggar í kornflex hjúp",
     "brand": "Holtakjúklingur",
     "barcode": "5690740006254",
@@ -5538,6 +5629,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "nömm óðar snældur",
+    "brand": "Freyja",
+    "barcode": "5690545020028",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Piri Piri Kjúklingur",
     "brand": "Saffran",
     "barcode": "2341954007003",
@@ -5564,21 +5668,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "skinka",
-    "brand": "stjörnu grís",
-    "barcode": "5694230203024",
-    "calories": 145.0,
-    "protein": 24.0,
-    "carbs": 0.0,
-    "fat": 5.0,
-    "servingSize": 70.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Skyr Moka",
-    "brand": "Ísey",
+    "brand": "Ísey Skyr",
     "barcode": "5690845001987",
     "calories": 0.0,
     "protein": 0.0,
@@ -5788,10 +5879,10 @@
     "name": "Protein Toastbrot",
     "brand": "Happy Harvest",
     "barcode": "4061463989000",
-    "calories": 272.0,
-    "protein": 24.4,
-    "carbs": 26.8,
-    "fat": 6.8,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
@@ -6059,7 +6150,7 @@
   },
   {
     "name": "Skyr Air fruit de la passion",
-    "brand": "Isey skir air",
+    "brand": "Isey Skyr",
     "barcode": "5690845002762",
     "calories": 0.0,
     "protein": 0.0,
@@ -6812,6 +6903,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Ísey Skyr",
+    "brand": "Ísey Skyr",
+    "barcode": "5690845002328",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 140.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Ísey vanillu skyr",
     "brand": "Isey",
     "barcode": "5690527671002",
@@ -6820,19 +6924,6 @@
     "carbs": 3.7,
     "fat": 0.2,
     "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "íssey SKYR LACTOSE FREE",
-    "brand": "Ísey Skyr",
-    "barcode": "5690845002328",
-    "calories": 70.0,
-    "protein": 8.9,
-    "carbs": 4.1,
-    "fat": 2.1,
-    "servingSize": 140.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -7462,6 +7553,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Chicken Panang With Jasmine Rice",
+    "brand": "Food court Far east",
+    "barcode": "5706911026539",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 350.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Chocolat au lait avec du raisin et des noisettes",
     "brand": null,
     "barcode": "5690576570059",
@@ -7498,6 +7602,19 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Energy Drink",
+    "brand": "Euroshopper",
+    "barcode": "8719323800892",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "can",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -8531,12 +8648,12 @@
     "name": "Apple Pie Cream Of Rice",
     "brand": "tbJP Nutrition",
     "barcode": "0643985588219",
-    "calories": 340.0,
-    "protein": 6.8,
-    "carbs": 76.0,
-    "fat": 0.4,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
-    "servingUnit": "serving",
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -9675,10 +9792,10 @@
     "name": "Heida",
     "brand": null,
     "barcode": "5690668003861",
-    "calories": 62.0,
-    "protein": 1.0,
-    "carbs": 7.8,
-    "fat": 2.8,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -10049,19 +10166,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Isey Skyr",
-    "brand": null,
-    "barcode": "5690845000683",
-    "calories": 80.0,
-    "protein": 9.6,
-    "carbs": 10.0,
-    "fat": 0.2,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Isey skyr drink",
     "brand": null,
     "barcode": "5690845002908",
@@ -10323,12 +10427,12 @@
   },
   {
     "name": "Kremkex",
-    "brand": null,
+    "brand": "Bónus",
     "barcode": "5690605417638",
-    "calories": 465.3,
-    "protein": 5.9,
-    "carbs": 66.0,
-    "fat": 19.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -11726,6 +11830,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "skinka",
+    "brand": "Stjornugris hf",
+    "barcode": "5694230203024",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 70.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Skinka & Pítusósa - Langloka",
     "brand": "Dagný & Co",
     "barcode": "5694230170265",
@@ -12567,6 +12684,19 @@
     "fat": 2.3,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Ísey Skyr Blueberry",
+    "brand": "Ísey Skyr",
+    "barcode": "5690845000683",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -14365,6 +14495,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Baselina",
+    "brand": null,
+    "barcode": "0808829081466",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Battenbergs",
     "brand": "Euroshopper",
     "barcode": "8717775818014",
@@ -14453,6 +14596,19 @@
     "servingSize": 1.0,
     "servingUnit": "patty",
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Beef Juice",
+    "brand": "Näno",
+    "barcode": "5999576921602",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 30.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -17030,6 +17186,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Eplalengja",
+    "brand": "Bakaríið",
+    "barcode": "2204131012293",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Extra cherry jam",
     "brand": "Euro shopper",
     "barcode": "8717399856652",
@@ -18070,6 +18239,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Grænmetissamloka",
+    "brand": "Háma",
+    "barcode": "5694311275872",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Grænn Hlunkur",
     "brand": "Kjörís",
     "barcode": "5690581481005",
@@ -18441,6 +18623,19 @@
     "protein": 5.0,
     "carbs": 16.0,
     "fat": 0.3,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Gulróta Kaka",
+    "brand": "Krónan",
+    "barcode": "5690896030448",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -19144,6 +19339,19 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 82.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Hnetu Toppur",
+    "brand": "Rjómaís",
+    "barcode": "5690535101669",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -19877,6 +20085,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Indverskur Smjörkjúklingur",
+    "brand": "1944",
+    "barcode": "5690564104662",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Indónesískt Lime - Mist Uppbygging",
     "brand": "Egils",
     "barcode": "5690542007862",
@@ -20306,6 +20527,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Kaffi súkkulaði",
+    "brand": "Linda",
+    "barcode": "5690653121105",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Kaiser Rúnstykki",
     "brand": "Krónan",
     "barcode": "5690896953532",
@@ -20718,6 +20952,19 @@
     "fat": 48.9,
     "servingSize": 100.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Kasjúhnetur",
+    "brand": "Krónan",
+    "barcode": "5690595098107",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -22035,6 +22282,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Klattar Saltkaramella Og Hnetur",
+    "brand": "Hamingju",
+    "barcode": "5690595098329",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 140.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Kleinu Hringir",
     "brand": "Ömmubakstur",
     "barcode": "5690608091453",
@@ -22763,6 +23023,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Lamba Prime - Buffalo Hill",
+    "brand": "Sælkerabúðin",
+    "barcode": "2395186004569",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Lamba prime - Hvítlauk Og Rósmarín",
     "brand": "Krónan",
     "barcode": "2203081039169",
@@ -23309,6 +23582,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Lleinuhringur Fyltur Með Lotus Kexi",
+    "brand": "Bakaríið",
+    "barcode": "2252849002990",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 71.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "lommeletter",
     "brand": null,
     "barcode": "7311041074190",
@@ -23713,12 +23999,12 @@
   },
   {
     "name": "Makhani",
-    "brand": "Hraðlestin",
+    "brand": "HRADLESTIN",
     "barcode": "5694230188079",
-    "calories": 201.0,
-    "protein": 4.2,
-    "carbs": 14.0,
-    "fat": 15.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -24317,8 +24603,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 170.0,
-    "servingUnit": "g",
+    "servingSize": 1.0,
+    "servingUnit": "dolla",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -24479,6 +24765,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Naan bread",
+    "brand": "bread of the world",
+    "barcode": "5706911026263",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 40.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Nacho Cheese Haddock",
     "brand": "Næra",
     "barcode": "0850049941051",
@@ -24623,12 +24922,12 @@
   },
   {
     "name": "Non-stick cooking spray - coconut oil",
-    "brand": "Shoprite",
+    "brand": "bowl & basket",
     "barcode": "0041190071197",
-    "calories": 18.0,
+    "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
-    "fat": 2.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
@@ -25493,6 +25792,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Pepperóní Ostur",
+    "brand": "Ms",
+    "barcode": "5690516059354",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Performance Protein Dark Chocolate Salted Caramel",
     "brand": "Tbjp",
     "barcode": "0659048915960",
@@ -26231,6 +26543,19 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Prettyboy Choco",
+    "brand": "Góa",
+    "barcode": "5690558111423",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -27469,6 +27794,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Rúnstykki Með Birki",
+    "brand": "Gæða bakstur",
+    "barcode": "5690766953525",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 95.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "S-Marke Hallonsura",
     "brand": "Candy People",
     "barcode": "7350039457676",
@@ -27654,10 +27992,10 @@
     "name": "Samloku Brauð",
     "brand": "Nettó",
     "barcode": "5690568010778",
-    "calories": 263.0,
-    "protein": 9.6,
-    "carbs": 47.0,
-    "fat": 2.9,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -27790,6 +28128,19 @@
     "fat": 18.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Seasamstangir Með Súkkulaði",
+    "brand": "Himnesk Hollusta",
+    "barcode": "5690350050555",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 40.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -28024,6 +28375,19 @@
     "fat": 10.0,
     "servingSize": 180.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Skinka/cooked Ham",
+    "brand": "Ali",
+    "barcode": "5690803001318",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -28977,6 +29341,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Stjörnuegg stór brún egg 6stk",
+    "brand": "Lausagönguhænum",
+    "barcode": "5694110055637",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Stjörnurúll",
     "brand": "Appolo Lakkrís",
     "barcode": "5690594001504",
@@ -29220,19 +29597,6 @@
     "fat": 29.6,
     "servingSize": 1.0,
     "servingUnit": "bj",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Sveppa Smurostur",
-    "brand": "MS",
-    "barcode": "5690527061438",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -30394,6 +30758,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Túnfisksalat",
+    "brand": "Sómi",
+    "barcode": "5690596069076",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Túnfisksamloka",
     "brand": "Sómi",
     "barcode": "5690597041408",
@@ -30540,6 +30917,19 @@
     "name": "Ungnautainnralæri",
     "brand": "Krónan",
     "barcode": "2203607038928",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Ungversk Gúllassúpa",
+    "brand": "Krónan",
+    "barcode": "5694311802504",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -30936,6 +31326,19 @@
     "fat": 23.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Vínarbrauð Snúðar",
+    "brand": "Bakaríið",
+    "barcode": "5690568040386",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 160.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },

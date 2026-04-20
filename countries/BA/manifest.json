@@ -1,13 +1,13 @@
 {
   "countryIso2": "BA",
   "slug": "bosnia-and-herzegovina",
-  "version": 1776174017,
-  "generatedAt": "2026-04-14T13:40:17.639814+00:00",
+  "version": 1776669215,
+  "generatedAt": "2026-04-20T07:13:35.614142+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 1014,
-  "bytesDiscovered": 214708,
-  "itemCountTotal": 1014,
-  "itemCountMain": 1014,
+  "itemCountDiscovered": 1021,
+  "bytesDiscovered": 216209,
+  "itemCountTotal": 1021,
+  "itemCountMain": 1021,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/BA/full.json",
       "kind": "full",
-      "itemCount": 1014,
-      "bytes": 214708
+      "itemCount": 1021,
+      "bytes": 216209
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T13:40:17.639814+00:00",
+    "generatedAt": "2026-04-20T07:13:35.614142+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 1272,
-    "mappedProducts": 1014,
+    "scannedProducts": 4428145,
+    "matchedProducts": 1284,
+    "mappedProducts": 1021,
     "dedupedProducts": 0,
-    "discoveredItemCount": 1014,
-    "discoveredBytes": 214708
+    "discoveredItemCount": 1021,
+    "discoveredBytes": 216209
   }
 }

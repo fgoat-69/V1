@@ -1,11 +1,11 @@
 {
   "countryIso2": "KH",
   "slug": "cambodia",
-  "version": 1776181425,
-  "generatedAt": "2026-04-14T15:43:45.615357+00:00",
+  "version": 1776670490,
+  "generatedAt": "2026-04-20T07:34:50.798471+00:00",
   "strategy": "full",
   "itemCountDiscovered": 993,
-  "bytesDiscovered": 206393,
+  "bytesDiscovered": 206382,
   "itemCountTotal": 993,
   "itemCountMain": 993,
   "itemCountFill": 0,
@@ -17,11 +17,11 @@
       "path": "countries/KH/full.json",
       "kind": "full",
       "itemCount": 993,
-      "bytes": 206393
+      "bytes": 206382
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T15:43:45.615357+00:00",
+    "generatedAt": "2026-04-20T07:34:50.798471+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 1129,
+    "scannedProducts": 4428145,
+    "matchedProducts": 1130,
     "mappedProducts": 993,
     "dedupedProducts": 0,
     "discoveredItemCount": 993,
-    "discoveredBytes": 206393
+    "discoveredBytes": 206382
   }
 }

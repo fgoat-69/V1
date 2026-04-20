@@ -897,6 +897,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Corn Flakes with Real Strawberry Puree",
+    "brand": "Kellogg's",
+    "barcode": "8901499008381",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 30.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Eau",
     "brand": null,
     "barcode": "2362003905002",
@@ -959,19 +972,6 @@
     "servingSize": 190.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kellogg's Corn Flakes with real strawberry puree",
-    "brand": "Kellogg's",
-    "barcode": "8901499008381",
-    "calories": 380.0,
-    "protein": 4.0,
-    "carbs": 90.0,
-    "fat": 0.67,
-    "servingSize": 30.0,
-    "servingUnit": "g",
-    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -1600,7 +1600,7 @@
   },
   {
     "name": "Safa semolina (Suji)",
-    "brand": null,
+    "brand": "safa",
     "barcode": "0014796402191",
     "calories": 0.0,
     "protein": 0.0,

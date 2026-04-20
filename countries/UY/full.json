@@ -1833,19 +1833,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Galleta de Arroz Blue Patna",
-    "brand": "Blue Patna",
-    "barcode": "7730114000032",
-    "calories": 340.0,
-    "protein": 8.0,
-    "carbs": 76.7,
-    "fat": 0.0,
-    "servingSize": 3.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Galleta Parmesano",
     "brand": "La Torre",
     "barcode": "6645622789328",
@@ -1881,6 +1868,19 @@
     "fat": 21.7,
     "servingSize": 3.0,
     "servingUnit": "galletas",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Galletas Marina",
+    "brand": "Mister Pan",
+    "barcode": "7730901480061",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -3201,12 +3201,12 @@
     "name": "Pan Blanco Lacteado",
     "brand": "Bimbo",
     "barcode": "7730117008240",
-    "calories": 248.0,
-    "protein": 9.6,
-    "carbs": 46.0,
-    "fat": 2.8,
-    "servingSize": 2.0,
-    "servingUnit": "rebanadas",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -3965,19 +3965,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Schneck panchos largos x8",
-    "brand": null,
-    "barcode": "7730138003019",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Segurísimo con duraznos",
     "brand": null,
     "barcode": "7730922255488",
@@ -4485,6 +4472,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Wik taste barrita",
+    "brand": "Wik Taste",
+    "barcode": "7798055091038",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 20.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Yogur Bebible Frutilla",
     "brand": "Calcar",
     "barcode": "7730901251616",
@@ -4637,19 +4637,6 @@
     "fat": 0.4,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Cofler Blanco con Chocolinas",
-    "brand": "Arcor",
-    "barcode": "7790580103538",
-    "calories": 541.0,
-    "protein": 7.9,
-    "carbs": 56.0,
-    "fat": 32.0,
-    "servingSize": 6.0,
-    "servingUnit": "cuadraditos",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -4979,6 +4966,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Cofler Blanco con Chocolinas",
+    "brand": "Arcor",
+    "barcode": "7790580103538",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 6.0,
+    "servingUnit": "cuadraditos",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Cofler Block",
     "brand": "Arcor",
     "barcode": "7790580108397",
@@ -5148,6 +5148,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Galleta de Arroz Blue Patna",
+    "brand": "Blue Patna",
+    "barcode": "7730114000032",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 3.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Galletas finitas clásicas",
     "brand": "La Celestina",
     "barcode": "7730116275179",
@@ -5187,13 +5200,13 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Mayonesa Natura ñ",
+    "name": "Mayonesa Natura",
     "brand": "Natura",
     "barcode": "7791866001364",
-    "calories": 317.0,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 7.5,
-    "fat": 30.8,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "cuchara",
     "isLiquid": false,
@@ -5239,7 +5252,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Casanmcrem",
+    "name": "Casanmcrem Balance",
     "brand": "La serenisima",
     "barcode": "7791337061507",
     "calories": 0.0,
@@ -6097,19 +6110,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cadbury tres sueños",
-    "brand": "Casbury",
-    "barcode": "7622201818739",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 25.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Capelettini",
     "brand": "Giacomo",
     "barcode": "7792390620809",
@@ -6501,7 +6501,7 @@
   },
   {
     "name": "Pan Integral Cero Cero",
-    "brand": "Bimbo",
+    "brand": "Bimbo Cero Cero",
     "barcode": "7730117008400",
     "calories": 0.0,
     "protein": 0.0,
@@ -6976,6 +6976,19 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.8,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Cadbury tres sueños",
+    "brand": "Casbury",
+    "barcode": "7622201818739",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 25.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -7956,7 +7969,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Rex",
+    "name": "Rex 125g",
     "brand": "Bagley",
     "barcode": "7790040719804",
     "calories": 0.0,
@@ -11677,10 +11690,10 @@
     "name": "Menthoplus 2 Café Latte",
     "brand": "Arcor",
     "barcode": "77955111",
-    "calories": 362.0,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 90.5,
-    "fat": 6.67,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 6.0,
     "servingUnit": "unidades",
     "isLiquid": false,
@@ -13243,6 +13256,19 @@
     "fat": 0.0,
     "servingSize": 2.0,
     "servingUnit": "unidades",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Schneck panchos largos x8",
+    "brand": "Schneck",
+    "barcode": "7730138003019",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 61.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -16523,6 +16549,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Expresso",
+    "brand": "Watt's",
+    "barcode": "2000000157159",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Extracto De Tomate",
     "brand": "Pitzer",
     "barcode": "7730385000014",
@@ -18161,6 +18200,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Lytos Electrolitos",
+    "brand": "Lytos",
+    "barcode": "7730956300031",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.8,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Macarrones Carbonara",
     "brand": "Listo",
     "barcode": "7730915361103",
@@ -19747,6 +19799,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Papas Pay Manolo",
+    "brand": "Manolo",
+    "barcode": "7730118011607",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 25.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Paps Y Boniatos",
     "brand": "De La Tierra",
     "barcode": "7730999112080",
@@ -20223,6 +20288,19 @@
     "carbs": 38.33,
     "fat": 18.33,
     "servingSize": 60.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Psyllium Husk Cápsulas",
+    "brand": "Qualivits",
+    "barcode": "7730993960359",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -20770,6 +20848,19 @@
     "fat": 15.3,
     "servingSize": 6.0,
     "servingUnit": "pieces",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Ruffles Original",
+    "brand": "Ruffles",
+    "barcode": "7802000017148",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 25.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -21477,12 +21568,12 @@
   },
   {
     "name": "Thai Con Jengibre",
-    "brand": "Fritos Del Maipo",
+    "brand": "Frutos del Maipo",
     "barcode": "7801300000713",
-    "calories": 38.0,
-    "protein": 1.3,
-    "carbs": 7.6,
-    "fat": 0.3,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -21836,19 +21927,6 @@
     "fat": 0.0,
     "servingSize": 20.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Wik taste barrita",
-    "brand": null,
-    "barcode": "7798055091038",
-    "calories": 57.0,
-    "protein": 1.4,
-    "carbs": 10.0,
-    "fat": 3.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },

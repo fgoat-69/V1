@@ -1,0 +1,39 @@
+{
+  "countryIso2": "GA",
+  "slug": "gabon",
+  "version": 1776671672,
+  "generatedAt": "2026-04-20T07:54:32.170084+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 248,
+  "bytesDiscovered": 51820,
+  "itemCountTotal": 248,
+  "itemCountMain": 248,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/GA/full.json",
+      "kind": "full",
+      "itemCount": 248,
+      "bytes": 51820
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-04-20T07:54:32.170084+00:00",
+    "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4428145,
+    "matchedProducts": 320,
+    "mappedProducts": 248,
+    "dedupedProducts": 0,
+    "discoveredItemCount": 248,
+    "discoveredBytes": 51820
+  }
+}

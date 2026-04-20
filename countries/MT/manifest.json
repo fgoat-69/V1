@@ -1,13 +1,13 @@
 {
   "countryIso2": "MT",
   "slug": "malta",
-  "version": 1776121780,
-  "generatedAt": "2026-04-13T23:09:40.704305+00:00",
+  "version": 1776668130,
+  "generatedAt": "2026-04-20T06:55:30.967835+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 1728,
-  "bytesDiscovered": 365454,
-  "itemCountTotal": 1728,
-  "itemCountMain": 1728,
+  "itemCountDiscovered": 1784,
+  "bytesDiscovered": 377003,
+  "itemCountTotal": 1784,
+  "itemCountMain": 1784,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/MT/full.json",
       "kind": "full",
-      "itemCount": 1728,
-      "bytes": 365454
+      "itemCount": 1784,
+      "bytes": 377003
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-13T23:09:40.704305+00:00",
+    "generatedAt": "2026-04-20T06:55:30.967835+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 1950,
-    "mappedProducts": 1728,
+    "scannedProducts": 4428145,
+    "matchedProducts": 2008,
+    "mappedProducts": 1784,
     "dedupedProducts": 0,
-    "discoveredItemCount": 1728,
-    "discoveredBytes": 365454
+    "discoveredItemCount": 1784,
+    "discoveredBytes": 377003
   }
 }

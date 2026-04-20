@@ -156,19 +156,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Whey Protein",
-    "brand": "Nutrex Research",
-    "barcode": "0850060362675",
-    "calories": 429.0,
-    "protein": 68.6,
-    "carbs": 14.3,
-    "fat": 10.0,
-    "servingSize": 35.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "100% Whey Vanilla",
     "brand": "Nutrex",
     "barcode": "0850046504679",
@@ -244,6 +231,19 @@
     "servingSize": 20.0,
     "servingUnit": "ol",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Whey Protein",
+    "brand": "Nutrex Research",
+    "barcode": "0850060362675",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "scoop",
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {

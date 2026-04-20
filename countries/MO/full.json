@@ -78,6 +78,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Fumado A Lenha De Azinho",
+    "brand": "Mestre Henrique",
+    "barcode": "2958813003245",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 325.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Giant Flat Croissant - Dark Chocolate",
     "brand": "St. Honor",
     "barcode": "4892515617295",
@@ -117,6 +130,32 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Low Fat Low Sugar Jasmine Milk Tea",
+    "brand": "HeyTea",
+    "barcode": "6974348722396",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 350.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Low Sugar Low Fat Thick Jasmine Milk Tea",
+    "brand": "HeyTea",
+    "barcode": "6974348722686",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 350.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Milk Ice Cream",
     "brand": "Meiji",
     "barcode": "6930692700176",
@@ -127,6 +166,19 @@
     "servingSize": 1.0,
     "servingUnit": "cone",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Original Crackers",
+    "brand": "Lee",
+    "barcode": "9556390238161",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 3.0,
+    "servingUnit": "pieces",
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -819,6 +871,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Honey Cashew Granola",
+    "brand": "Francis",
+    "barcode": "8997240490758",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Huile d’olive vierge extra",
     "brand": "Auchan",
     "barcode": "9586210472628",
@@ -1089,6 +1154,19 @@
     "servingSize": 200.0,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Original Crackers",
+    "brand": "Lee",
+    "barcode": "9556390375064",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 3.0,
+    "servingUnit": "pieces",
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {

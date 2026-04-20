@@ -1,6 +1,6 @@
 [
   {
-    "name": "Cocacola original taste",
+    "name": "Cocacola original  500",
     "brand": "Coca-Cola",
     "barcode": "5449000054227",
     "calories": 0.0,
@@ -13,7 +13,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Original Taste",
+    "name": "Original ethiopian",
     "brand": "Coca-Cola",
     "barcode": "54491472",
     "calories": 0.0,
@@ -4394,6 +4394,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Cocoa biscuit with cocoa cream",
+    "brand": "Ulker",
+    "barcode": "4870112006100",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 10.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Evolia 1l",
     "brand": "Azərsunn",
     "barcode": "4620169404110",
@@ -4752,8 +4765,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -6565,6 +6578,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Milka",
+    "brand": null,
+    "barcode": "7622201410407",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "milla goodies",
     "brand": null,
     "barcode": "4760081600327",
@@ -6919,6 +6945,19 @@
     "name": "Su",
     "brand": null,
     "barcode": "0404082404266",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "svetstar 500ml",
+    "brand": null,
+    "barcode": "4760000102918",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,

@@ -33,8 +33,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 240.0,
-    "servingUnit": "ml",
+    "servingSize": 1.0,
+    "servingUnit": "can",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -182,12 +182,12 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Arizona",
-    "brand": "Arizona",
+    "name": "Arizona lemonade fruit juice cocktail",
+    "brand": null,
     "barcode": "0613008726096",
-    "calories": 41.7,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 10.8,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 240.0,
     "servingUnit": "ml",

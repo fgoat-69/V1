@@ -1,11 +1,11 @@
 {
   "countryIso2": "NE",
   "slug": "niger",
-  "version": 1776182803,
-  "generatedAt": "2026-04-14T16:06:43.689159+00:00",
+  "version": 1776670501,
+  "generatedAt": "2026-04-20T07:35:01.344883+00:00",
   "strategy": "full",
   "itemCountDiscovered": 71,
-  "bytesDiscovered": 14637,
+  "bytesDiscovered": 14659,
   "itemCountTotal": 71,
   "itemCountMain": 71,
   "itemCountFill": 0,
@@ -17,11 +17,11 @@
       "path": "countries/NE/full.json",
       "kind": "full",
       "itemCount": 71,
-      "bytes": 14637
+      "bytes": 14659
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T16:06:43.689159+00:00",
+    "generatedAt": "2026-04-20T07:35:01.344883+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
+    "scannedProducts": 4428145,
     "matchedProducts": 97,
     "mappedProducts": 71,
     "dedupedProducts": 0,
     "discoveredItemCount": 71,
-    "discoveredBytes": 14637
+    "discoveredBytes": 14659
   }
 }

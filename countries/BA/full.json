@@ -13,7 +13,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Pasta Girandole 500g Barilla",
+    "name": "Pasta Barilla",
     "brand": "Barilla",
     "barcode": "8076809512268",
     "calories": 0.0,
@@ -27,7 +27,7 @@
   },
   {
     "name": "Original",
-    "brand": "wasa",
+    "brand": "Wasa",
     "barcode": "7300400118101",
     "calories": 0.0,
     "protein": 0.0,
@@ -131,7 +131,7 @@
   },
   {
     "name": "Protein pudding",
-    "brand": "Zott",
+    "brand": "20th Protein",
     "barcode": "4014500519180",
     "calories": 0.0,
     "protein": 0.0,
@@ -299,6 +299,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "CECI SOTTOVUOTO",
+    "brand": "Bonduelle",
+    "barcode": "3083681003949",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 200.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Jamnica",
     "brand": "Jamnica",
     "barcode": "3859888152045",
@@ -308,19 +321,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kichererbsen",
-    "brand": "Bonduelle",
-    "barcode": "3083681003949",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 200.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -520,6 +520,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Chicken Crispy Burger",
+    "brand": "Erpilic",
+    "barcode": "8696024602263",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Chili Poli Pate",
     "brand": "Poli",
     "barcode": "3838977044935",
@@ -621,6 +634,19 @@
     "servingSize": 1.0,
     "servingUnit": "bar",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Dvojni C orange",
+    "brand": null,
+    "barcode": "3838945038904",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -1231,6 +1257,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Mozzarella",
+    "brand": "Meggle",
+    "barcode": "9009301007924",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 18.75,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -2483,6 +2522,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Toast Seeds",
+    "brand": "Your Minutes",
+    "barcode": "8606018730490",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 2.0,
+    "servingUnit": "slice",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Visocanka Govedja kobasica",
     "brand": "Semic",
     "barcode": "3871611000386",
@@ -2499,25 +2551,12 @@
     "name": "White Choco Mini Stars",
     "brand": "Milka",
     "barcode": "7622202318672",
-    "calories": 509.0,
-    "protein": 6.9,
-    "carbs": 63.0,
-    "fat": 25.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "your minutes",
-    "brand": "Your 5 Minutes",
-    "barcode": "8606018730490",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 2.0,
-    "servingUnit": "slice",
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -3266,10 +3305,10 @@
     "name": "Harry Potter",
     "brand": "Haribo",
     "barcode": "4001686017890",
-    "calories": 338.0,
-    "protein": 5.7,
-    "carbs": 77.0,
-    "fat": 0.5,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "bag",
     "isLiquid": false,
@@ -3874,12 +3913,12 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Ice Tea Peach",
+    "name": "Ice Tea Peach 0.5",
     "brand": "Jana",
     "barcode": "3856028504160",
-    "calories": 28.0,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 7.0,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "bottle",
@@ -4667,6 +4706,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Air Fryer Cheesy Crispy Chicken",
+    "brand": "Maggi",
+    "barcode": "8445292010849",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Ajvar",
     "brand": "K Plus",
     "barcode": "3875001032148",
@@ -4962,19 +5014,6 @@
     "fat": 15.0,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Cheesy Crispy Chicken Spice",
-    "brand": "Maggi",
-    "barcode": "8445292010849",
-    "calories": 407.0,
-    "protein": 13.9,
-    "carbs": 60.6,
-    "fat": 11.4,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -9269,6 +9308,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Chunky Protein With Cocoa Beans",
+    "brand": "BiotechUSA",
+    "barcode": "5999076926435",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "bar",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Cipiripi",
     "brand": "Nestle",
     "barcode": "3858890176759",
@@ -11232,6 +11284,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Morale Doskonate",
+    "brand": "Dolce Dorre",
+    "barcode": "5902175840113",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Nacho Cheese",
     "brand": "El Grito",
     "barcode": "3877002435034",
@@ -11813,6 +11878,19 @@
     "fat": 9.4,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Podloga Za Pizzu",
+    "brand": "Bingo",
+    "barcode": "3873508895082",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "podloga",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -13052,6 +13130,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Vitality Vitamin D3 & Vitamin K2",
+    "brand": "Applied Nutrition",
+    "barcode": "5056555210161",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "capsule",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Whey Protein - Vanilla 100% Isolate",
     "brand": "Muscle Freak",
     "barcode": "6394395548266",
@@ -13068,7 +13159,7 @@
     "name": "XIXO Cola Zero",
     "brand": "XIXO",
     "barcode": "5999885747764",
-    "calories": 0.3,
+    "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,

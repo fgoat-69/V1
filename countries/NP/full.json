@@ -117,6 +117,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "BRU GOLD Edition",
+    "brand": "Hindustan Unilever Limited",
+    "barcode": "4901038934656",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Century panipuri masala",
     "brand": null,
     "barcode": "8906057901814",

@@ -1,14 +1,14 @@
 {
   "countryIso2": "JP",
   "slug": "japan",
-  "version": 1776181423,
-  "generatedAt": "2026-04-14T15:43:43.472448+00:00",
+  "version": 1776670488,
+  "generatedAt": "2026-04-20T07:34:48.578729+00:00",
   "strategy": "main_fill",
-  "itemCountDiscovered": 36584,
-  "bytesDiscovered": 8351974,
-  "itemCountTotal": 30701,
-  "itemCountMain": 22210,
-  "itemCountFill": 8491,
+  "itemCountDiscovered": 36915,
+  "bytesDiscovered": 8427302,
+  "itemCountTotal": 30708,
+  "itemCountMain": 22214,
+  "itemCountFill": 8494,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
@@ -16,19 +16,19 @@
       "name": "main.json",
       "path": "countries/JP/main.json",
       "kind": "main",
-      "itemCount": 22210,
-      "bytes": 4999940
+      "itemCount": 22214,
+      "bytes": 4999973
     },
     {
       "name": "fill.json",
       "path": "countries/JP/fill.json",
       "kind": "fill",
-      "itemCount": 8491,
-      "bytes": 1999900
+      "itemCount": 8494,
+      "bytes": 1999958
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T15:43:43.472448+00:00",
+    "generatedAt": "2026-04-20T07:34:48.578729+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -36,11 +36,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 37418,
-    "mappedProducts": 36584,
+    "scannedProducts": 4428145,
+    "matchedProducts": 37756,
+    "mappedProducts": 36915,
     "dedupedProducts": 0,
-    "discoveredItemCount": 36584,
-    "discoveredBytes": 8351974
+    "discoveredItemCount": 36915,
+    "discoveredBytes": 8427302
   }
 }

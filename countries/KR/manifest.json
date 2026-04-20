@@ -1,13 +1,13 @@
 {
   "countryIso2": "KR",
   "slug": "south-korea",
-  "version": 1776181424,
-  "generatedAt": "2026-04-14T15:43:44.433867+00:00",
+  "version": 1776670489,
+  "generatedAt": "2026-04-20T07:34:49.546392+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 2583,
-  "bytesDiscovered": 564400,
-  "itemCountTotal": 2583,
-  "itemCountMain": 2583,
+  "itemCountDiscovered": 2599,
+  "bytesDiscovered": 567834,
+  "itemCountTotal": 2599,
+  "itemCountMain": 2599,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/KR/full.json",
       "kind": "full",
-      "itemCount": 2583,
-      "bytes": 564400
+      "itemCount": 2599,
+      "bytes": 567834
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T15:43:44.433867+00:00",
+    "generatedAt": "2026-04-20T07:34:49.546392+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 2862,
-    "mappedProducts": 2583,
+    "scannedProducts": 4428145,
+    "matchedProducts": 2878,
+    "mappedProducts": 2599,
     "dedupedProducts": 0,
-    "discoveredItemCount": 2583,
-    "discoveredBytes": 564400
+    "discoveredItemCount": 2599,
+    "discoveredBytes": 567834
   }
 }

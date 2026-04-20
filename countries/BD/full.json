@@ -3302,6 +3302,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Sepnil",
+    "brand": null,
+    "barcode": "0321241601246",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "shahi jarda",
     "brand": "aci pure",
     "barcode": "8169003010033",
@@ -7436,6 +7449,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Arong dairy strawberry uht",
+    "brand": null,
+    "barcode": "8941159000454",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "baghabari premium gawa",
     "brand": null,
     "barcode": "00099393",
@@ -9174,6 +9200,19 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "scoop",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Kasundi Mustard Sauce",
+    "brand": "Radhuni",
+    "barcode": "8941100371763",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },

@@ -1,13 +1,13 @@
 {
   "countryIso2": "LY",
   "slug": "libya",
-  "version": 1776182803,
-  "generatedAt": "2026-04-14T16:06:43.655323+00:00",
+  "version": 1776670501,
+  "generatedAt": "2026-04-20T07:35:01.300288+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 533,
-  "bytesDiscovered": 111435,
-  "itemCountTotal": 533,
-  "itemCountMain": 533,
+  "itemCountDiscovered": 534,
+  "bytesDiscovered": 111583,
+  "itemCountTotal": 534,
+  "itemCountMain": 534,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/LY/full.json",
       "kind": "full",
-      "itemCount": 533,
-      "bytes": 111435
+      "itemCount": 534,
+      "bytes": 111583
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T16:06:43.655323+00:00",
+    "generatedAt": "2026-04-20T07:35:01.300288+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 696,
-    "mappedProducts": 533,
+    "scannedProducts": 4428145,
+    "matchedProducts": 698,
+    "mappedProducts": 534,
     "dedupedProducts": 0,
-    "discoveredItemCount": 533,
-    "discoveredBytes": 111435
+    "discoveredItemCount": 534,
+    "discoveredBytes": 111583
   }
 }

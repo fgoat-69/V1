@@ -754,6 +754,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Alpenbacher",
+    "brand": "Heumilch",
+    "barcode": "2805259002250",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Arborio Risotto",
     "brand": "Mara",
     "barcode": "8000066449180",

@@ -1,13 +1,13 @@
 {
   "countryIso2": "MY",
   "slug": "malaysia",
-  "version": 1776181424,
-  "generatedAt": "2026-04-14T15:43:44.905826+00:00",
+  "version": 1776670490,
+  "generatedAt": "2026-04-20T07:34:50.058854+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 4759,
-  "bytesDiscovered": 1013913,
-  "itemCountTotal": 4759,
-  "itemCountMain": 4759,
+  "itemCountDiscovered": 4777,
+  "bytesDiscovered": 1017793,
+  "itemCountTotal": 4777,
+  "itemCountMain": 4777,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/MY/full.json",
       "kind": "full",
-      "itemCount": 4759,
-      "bytes": 1013913
+      "itemCount": 4777,
+      "bytes": 1017793
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T15:43:44.905826+00:00",
+    "generatedAt": "2026-04-20T07:34:50.058854+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 5248,
-    "mappedProducts": 4759,
+    "scannedProducts": 4428145,
+    "matchedProducts": 5272,
+    "mappedProducts": 4777,
     "dedupedProducts": 0,
-    "discoveredItemCount": 4759,
-    "discoveredBytes": 1013913
+    "discoveredItemCount": 4777,
+    "discoveredBytes": 1017793
   }
 }

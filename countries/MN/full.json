@@ -286,7 +286,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Assortment elegant roshen",
+    "name": "Chocolate candies Roshen Compliment",
     "brand": "Roshen",
     "barcode": "4823077625879",
     "calories": 0.0,
@@ -294,8 +294,8 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -325,7 +325,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Gum",
+    "name": "Gum ментос свежая мята 🌿",
     "brand": "Mentos",
     "barcode": "46070326",
     "calories": 0.0,
@@ -874,12 +874,12 @@
     "name": "Pistachio Protein Cup",
     "brand": "Fit Kit",
     "barcode": "4610196202728",
-    "calories": 443.0,
-    "protein": 21.4,
-    "carbs": 21.4,
-    "fat": 28.6,
-    "servingSize": 2.0,
-    "servingUnit": "pieces",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1573,6 +1573,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "HELLO SMOKED CHICKEN",
+    "brand": "HELLO",
+    "barcode": "8658000158539",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Honey Roasted Nuts",
     "brand": "Big Nuts",
     "barcode": "8656000806344",
@@ -1868,19 +1881,6 @@
     "fat": 6.11,
     "servingSize": 6.0,
     "servingUnit": "dumplings",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Smoked Chicken Breast",
-    "brand": "Duuren Food",
-    "barcode": "8658000158539",
-    "calories": 173.19,
-    "protein": 21.67,
-    "carbs": 14.27,
-    "fat": 3.27,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },

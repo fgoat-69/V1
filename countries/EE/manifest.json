@@ -1,13 +1,13 @@
 {
   "countryIso2": "EE",
   "slug": "estonia",
-  "version": 1776176169,
-  "generatedAt": "2026-04-14T14:16:09.787930+00:00",
+  "version": 1776669300,
+  "generatedAt": "2026-04-20T07:15:00.695767+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 4687,
-  "bytesDiscovered": 1022722,
-  "itemCountTotal": 4687,
-  "itemCountMain": 4687,
+  "itemCountDiscovered": 4734,
+  "bytesDiscovered": 1032785,
+  "itemCountTotal": 4734,
+  "itemCountMain": 4734,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/EE/full.json",
       "kind": "full",
-      "itemCount": 4687,
-      "bytes": 1022722
+      "itemCount": 4734,
+      "bytes": 1032785
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-14T14:16:09.787930+00:00",
+    "generatedAt": "2026-04-20T07:15:00.695767+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4411648,
-    "matchedProducts": 5434,
-    "mappedProducts": 4687,
+    "scannedProducts": 4428145,
+    "matchedProducts": 5485,
+    "mappedProducts": 4734,
     "dedupedProducts": 0,
-    "discoveredItemCount": 4687,
-    "discoveredBytes": 1022722
+    "discoveredItemCount": 4734,
+    "discoveredBytes": 1032785
   }
 }

@@ -1508,6 +1508,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Whey Protein Isolate",
+    "brand": "ProLab",
+    "barcode": "0850008777172",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "scoop",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "yum vainilla",
     "brand": "amulya",
     "barcode": "8906071265756",

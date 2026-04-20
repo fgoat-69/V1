@@ -39,6 +39,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Ajo Molido",
+    "brand": null,
+    "barcode": "7411000216040",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Aloe",
     "brand": null,
     "barcode": "7441045706015",
@@ -286,6 +299,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Candela La Valenciana",
+    "brand": null,
+    "barcode": "7410010619018",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Cerezq",
     "brand": null,
     "barcode": "0748757002129",
@@ -442,9 +468,35 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Crema de hongos",
+    "brand": "Maggi",
+    "barcode": "0082169030982",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Dilce cremoso",
     "brand": null,
     "barcode": "0660756017297",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Don Fino Salmon",
+    "brand": null,
+    "barcode": "7410030773714",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -715,6 +767,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Jabón Max Poder",
+    "brand": null,
+    "barcode": "7421001643509",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Jabón Zixx",
     "brand": null,
     "barcode": "0750894640676",
@@ -858,6 +923,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Lejia Blanco Sol",
+    "brand": null,
+    "barcode": "7415000523337",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Lejía Fardito",
     "brand": null,
     "barcode": "7410030774797",
@@ -906,6 +984,19 @@
     "fat": 34.0,
     "servingSize": 33.3,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Mascon Alabrill",
+    "brand": null,
+    "barcode": "0757962009854",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1575,6 +1666,19 @@
   {
     "name": "Sal con ajo",
     "brand": null,
+    "barcode": "7411000216644",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Sal con ajo",
+    "brand": null,
     "barcode": "7411000216668",
     "calories": 0.0,
     "protein": 0.0,
@@ -1781,6 +1885,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Texturized Soy Protein",
+    "brand": "Protemás",
+    "barcode": "7406007080886",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Toalla húmeda",
     "brand": null,
     "barcode": "7404004205691",
@@ -1875,6 +1992,19 @@
     "name": "Vandeja de orejitas(sinai)",
     "brand": null,
     "barcode": "7413402800858",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Vela de vaso",
+    "brand": null,
+    "barcode": "7410031470582",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -2863,10 +2993,10 @@
     "name": "Avena Mosh Nutremas",
     "brand": "Quaker Oats",
     "barcode": "0803275305876",
-    "calories": 400.0,
-    "protein": 12.5,
-    "carbs": 65.0,
-    "fat": 8.75,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
@@ -3409,11 +3539,11 @@
     "name": "BISC RECH NEGRESCO BAUNILHA 90G NESTLE",
     "brand": "Nestlé",
     "barcode": "7891000376768",
-    "calories": 457.0,
-    "protein": 6.67,
-    "carbs": 70.0,
-    "fat": 16.3,
-    "servingSize": 90.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -4134,6 +4264,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Fécula de Maiz Sabor Fresa",
+    "brand": "Maizena",
+    "barcode": "7411000343777",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Gallet sodas",
     "brand": "GAMA",
     "barcode": "0753081008525",
@@ -4423,19 +4566,6 @@
     "name": "les &perrins salsa",
     "brand": "Heinz",
     "barcode": "10001479",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "maizena",
-    "brand": null,
-    "barcode": "7411000343777",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -8492,10 +8622,10 @@
     "name": "Yogurt",
     "brand": null,
     "barcode": "0787003000649",
-    "calories": 90.1,
-    "protein": 3.0,
-    "carbs": 16.0,
-    "fat": 2.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
@@ -9777,7 +9907,7 @@
   },
   {
     "name": "Clara Líquida Pasteurizada",
-    "brand": "GRANJAZUL",
+    "brand": "Granjazul",
     "barcode": "7402000018352",
     "calories": 0.0,
     "protein": 0.0,
@@ -10127,19 +10257,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Delikatess Potatis",
-    "brand": "Eldorado",
-    "barcode": "7340083448416",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Diet Sparkling Couldy Lemonade",
     "brand": "M&s",
     "barcode": "74159001060000",
@@ -10332,6 +10449,19 @@
     "servingSize": 500.0,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Ensalada Spring Mix",
+    "brand": "Express",
+    "barcode": "7401068211743",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 70.0,
+    "servingUnit": "g",
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -11111,6 +11241,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Hamburguesa (Pan Blanco)",
+    "brand": "Monarca",
+    "barcode": "7441029524277",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -14678,11 +14821,11 @@
   },
   {
     "name": "Whole Strawberries",
-    "brand": "Vidassa",
+    "brand": "Vidasso",
     "barcode": "7401142605284",
-    "calories": 25.0,
-    "protein": 0.71,
-    "carbs": 7.86,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",

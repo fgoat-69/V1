@@ -2172,14 +2172,14 @@
   },
   {
     "name": "meiji. Bulgaria",
-    "brand": null,
+    "brand": "Bulgaria Yoghurt",
     "barcode": "8850329066797",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },

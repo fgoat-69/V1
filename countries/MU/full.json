@@ -1,15 +1,15 @@
 [
   {
-    "name": "Lindt Excellence 90% Cocoa Super Dark",
+    "name": "Cioccolato fondente extra",
     "brand": "Lindt",
     "barcode": "3046920029759",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 10.0,
-    "servingUnit": "g",
-    "isLiquid": false,
+    "servingSize": 1.0,
+    "servingUnit": "piece",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -4225,13 +4225,13 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Corn flakes",
-    "brand": null,
+    "name": "Corn Flakes",
+    "brand": "BOKOMO",
     "barcode": "6001052001506",
     "calories": 0.0,
-    "protein": 7.4,
-    "carbs": 82.0,
-    "fat": 1.1,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
