@@ -1,8 +1,8 @@
 {
   "countryIso2": "RU",
   "slug": "russia",
-  "version": 1776669301,
-  "generatedAt": "2026-04-20T07:15:01.040948+00:00",
+  "version": 1777274693,
+  "generatedAt": "2026-04-27T07:24:53.248543+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 29452,
   "bytesDiscovered": 6878487,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-20T07:15:01.040948+00:00",
+    "generatedAt": "2026-04-27T07:24:53.248543+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
