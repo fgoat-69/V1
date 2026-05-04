@@ -1,8 +1,8 @@
 {
   "countryIso2": "BE",
   "slug": "belgium",
-  "version": 1777273475,
-  "generatedAt": "2026-04-27T07:04:34.449959+00:00",
+  "version": 1777880968,
+  "generatedAt": "2026-05-04T07:49:27.531034+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 92705,
   "bytesDiscovered": 19594435,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-27T07:04:34.449959+00:00",
+    "generatedAt": "2026-05-04T07:49:27.531034+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

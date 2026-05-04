@@ -1,8 +1,8 @@
 {
   "countryIso2": "CV",
   "slug": "cape-verde",
-  "version": 1777277131,
-  "generatedAt": "2026-04-27T08:05:31.548675+00:00",
+  "version": 1777884598,
+  "generatedAt": "2026-05-04T08:49:58.496479+00:00",
   "strategy": "full",
   "itemCountDiscovered": 37,
   "bytesDiscovered": 7606,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-27T08:05:31.548675+00:00",
+    "generatedAt": "2026-05-04T08:49:58.496479+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

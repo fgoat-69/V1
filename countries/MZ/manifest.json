@@ -1,8 +1,8 @@
 {
   "countryIso2": "MZ",
   "slug": "mozambique",
-  "version": 1777277200,
-  "generatedAt": "2026-04-27T08:06:40.574503+00:00",
+  "version": 1777884674,
+  "generatedAt": "2026-05-04T08:51:14.964846+00:00",
   "strategy": "full",
   "itemCountDiscovered": 64,
   "bytesDiscovered": 13469,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-27T08:06:40.574503+00:00",
+    "generatedAt": "2026-05-04T08:51:14.964846+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

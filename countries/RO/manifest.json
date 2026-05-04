@@ -1,8 +1,8 @@
 {
   "countryIso2": "RO",
   "slug": "romania",
-  "version": 1777274711,
-  "generatedAt": "2026-04-27T07:25:11.308283+00:00",
+  "version": 1777882194,
+  "generatedAt": "2026-05-04T08:09:54.257275+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 26683,
   "bytesDiscovered": 5652539,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-04-27T07:25:11.308283+00:00",
+    "generatedAt": "2026-05-04T08:09:54.257275+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
