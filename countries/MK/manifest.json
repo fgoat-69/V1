@@ -1,13 +1,13 @@
 {
   "countryIso2": "MK",
   "slug": "north-macedonia",
-  "version": 1777882196,
-  "generatedAt": "2026-05-04T08:09:56.070035+00:00",
+  "version": 1778489103,
+  "generatedAt": "2026-05-11T08:45:03.248433+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 1023,
-  "bytesDiscovered": 215306,
-  "itemCountTotal": 1023,
-  "itemCountMain": 1023,
+  "itemCountDiscovered": 1055,
+  "bytesDiscovered": 221964,
+  "itemCountTotal": 1055,
+  "itemCountMain": 1055,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/MK/full.json",
       "kind": "full",
-      "itemCount": 1023,
-      "bytes": 215306
+      "itemCount": 1055,
+      "bytes": 221964
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-04T08:09:56.070035+00:00",
+    "generatedAt": "2026-05-11T08:45:03.248433+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4428145,
-    "matchedProducts": 1272,
-    "mappedProducts": 1023,
+    "scannedProducts": 4479013,
+    "matchedProducts": 1306,
+    "mappedProducts": 1055,
     "dedupedProducts": 0,
-    "discoveredItemCount": 1023,
-    "discoveredBytes": 215306
+    "discoveredItemCount": 1055,
+    "discoveredBytes": 221964
   }
 }

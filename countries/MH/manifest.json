@@ -1,8 +1,8 @@
 {
   "countryIso2": "MH",
   "slug": "marshall-islands",
-  "version": 1777887045,
-  "generatedAt": "2026-05-04T09:30:45.429840+00:00",
+  "version": 1778493993,
+  "generatedAt": "2026-05-11T10:06:33.817915+00:00",
   "strategy": "full",
   "itemCountDiscovered": 2,
   "bytesDiscovered": 408,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-04T09:30:45.429840+00:00",
+    "generatedAt": "2026-05-11T10:06:33.817915+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

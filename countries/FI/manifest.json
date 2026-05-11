@@ -1,8 +1,8 @@
 {
   "countryIso2": "FI",
   "slug": "finland",
-  "version": 1777880964,
-  "generatedAt": "2026-05-04T07:49:24.556041+00:00",
+  "version": 1778487471,
+  "generatedAt": "2026-05-11T08:17:50.979539+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 17873,
   "bytesDiscovered": 3867891,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-04T07:49:24.556041+00:00",
+    "generatedAt": "2026-05-11T08:17:50.979539+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

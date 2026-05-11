@@ -39,7 +39,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Original ethiopian",
+    "name": "Original Taste",
     "brand": "Coca-Cola",
     "barcode": "54491472",
     "calories": 0.0,
@@ -117,8 +117,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Samyang habanero lime buldak hot chicken flavor ramen",
-    "brand": null,
+    "name": "Buldak Spicy Ramen",
+    "brand": "Samyang",
     "barcode": "8801073115514",
     "calories": 0.0,
     "protein": 0.0,
@@ -127,6 +127,19 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "White Chocolate Aerated Roshen",
+    "brand": "Roshen",
+    "barcode": "4823077626364",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -172,10 +185,10 @@
     "name": "Ореховая паста",
     "brand": "Milka",
     "barcode": "7622201459826",
-    "calories": 555.0,
-    "protein": 3.8,
-    "carbs": 58.0,
-    "fat": 34.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 12.5,
     "servingUnit": "g",
     "isLiquid": false,
@@ -208,9 +221,9 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Fuse Tea Mango - Ananas",
-    "brand": "fuse tea",
-    "barcode": "5449000189356",
+    "name": "Dark Chocolate",
+    "brand": "Kazakhstan",
+    "barcode": "4870036001205",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -221,9 +234,9 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Kazakh Traditional Taste Herbal Dark Chocolate",
-    "brand": "Kazakhstan",
-    "barcode": "4870036001205",
+    "name": "Fuse Tea Mango - Ananas",
+    "brand": "fuse tea",
+    "barcode": "5449000189356",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -416,19 +429,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Makfa un",
-    "brand": "Makfa",
-    "barcode": "4601780014759",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Milaf cola",
     "brand": "Milaf",
     "barcode": "6288004001030",
@@ -490,6 +490,19 @@
     "fat": 6.25,
     "servingSize": 0.33,
     "servingUnit": "cup",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Pomegranate Cherry Ice Cream",
+    "brand": "Bahroma",
+    "barcode": "4870233468870",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -627,10 +640,10 @@
     "name": "Бобруйская яблочная пастила",
     "brand": null,
     "barcode": "4810411020438",
-    "calories": 310.0,
-    "protein": 0.5,
-    "carbs": 78.0,
-    "fat": 0.5,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 25.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -793,6 +806,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Охотничьи Колбаски Говяжьи",
+    "brand": "Ал Халал",
+    "barcode": "4700027091451",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "степ mix",
     "brand": "славянка",
     "barcode": "4605142045306",
@@ -839,6 +865,19 @@
     "protein": 7.8,
     "carbs": 67.9,
     "fat": 16.4,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Makfa un",
+    "brand": "Makfa",
+    "barcode": "4601780014759",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -900,9 +939,9 @@
     "name": "Негазированный безалкогольный напиток с экстрактом чая и со вкусом персика",
     "brand": "Fuse Tea",
     "barcode": "5449000189332",
-    "calories": 29.0,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 6.9,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
@@ -2139,6 +2178,19 @@
     "protein": 10.0,
     "carbs": 68.0,
     "fat": 15.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Бекон черкизово",
+    "brand": null,
+    "barcode": "4605025024602",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -4839,10 +4891,10 @@
     "name": "Хлопья 5 злаков увелка",
     "brand": "Увелка",
     "barcode": "4607016245348",
-    "calories": 85.0,
-    "protein": 3.0,
-    "carbs": 16.0,
-    "fat": 0.6,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 50.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -5421,19 +5473,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Pop corn Lightly salted",
-    "brand": "Holy Corn",
-    "barcode": "4607963690604",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 20.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Salus Чечевица красная",
     "brand": "ТОО &quot;Income company&quot;",
     "barcode": "4870003180759",
@@ -5915,6 +5954,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Клубничное Мороженое",
+    "brand": "Kulikov",
+    "barcode": "4700004144354",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 90.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Кокосовый Батончик С Малиной",
     "brand": "Вкусвилл",
     "barcode": "2100100536565",
@@ -6123,6 +6175,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Овсяное Печенье",
+    "brand": "Аксайнан",
+    "barcode": "4870144670782",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Овсяные хлопья",
     "brand": null,
     "barcode": "2500100457752",
@@ -6222,6 +6287,19 @@
     "carbs": 17.0,
     "fat": 23.0,
     "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "попкорн морская соль чуть-чуть",
+    "brand": "holy corn",
+    "barcode": "4607963690604",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 20.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"

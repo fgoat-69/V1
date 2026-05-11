@@ -14,11 +14,11 @@
   },
   {
     "name": "Mojo drink",
-    "brand": null,
+    "brand": "Mojo",
     "barcode": "8941189600044",
-    "calories": 46.8,
+    "calories": 0.0,
     "protein": 0.0,
-    "carbs": 11.7,
+    "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": "ml",
@@ -387,19 +387,6 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "baby Ultra Soothing Lotion Baby's Sensitive Skin Cetaphil Soothes and protects dry sensitive Cetaphi Baby's Sensitive Slkin Soothes and protects dry sensitie",
-    "brand": null,
-    "barcode": "0302993936183",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -3887,6 +3874,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "সিনথেটিক ভিনেগার",
+    "brand": "The chef",
+    "barcode": "0841165123445",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "স্বাদ আটা",
     "brand": null,
     "barcode": "0075111002000",
@@ -5268,19 +5268,6 @@
     "name": "Baking Powder",
     "brand": "অর্গানিক",
     "barcode": "0000987654129",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Be my beard",
-    "brand": null,
-    "barcode": "50046089",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -7319,6 +7306,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "AGE PERFECT PARIS L'ORÉAL",
+    "brand": null,
+    "barcode": "3600523216642",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Ahmed Rock Salt",
     "brand": null,
     "barcode": "8943122000669",
@@ -8112,19 +8112,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cotrim",
-    "brand": "160",
-    "barcode": "8941100962077",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Crystal premium drinking water",
     "brand": "pran",
     "barcode": "0841165108978",
@@ -8840,6 +8827,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Green Chilli Sauce",
+    "brand": "Pran",
+    "barcode": "0846656014318",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Gummy krabby patties candy",
     "brand": null,
     "barcode": "0041376104077",
@@ -9120,6 +9120,19 @@
     "protein": 9.16,
     "carbs": 63.42,
     "fat": 24.13,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Ispahani cha",
+    "brand": null,
+    "barcode": "8941193314524",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -11362,19 +11375,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "TRESemmé KERATIN SMOOTH USED BY PROFESSIONALS WITH MARULA OIL 5BENEFITS 1SYSTEM Up to 72 hours ofFrizz",
-    "brand": "Shampoo",
-    "barcode": "8710447223413",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Turkiye",
     "brand": null,
     "barcode": "8697463155143",
@@ -11391,19 +11391,6 @@
     "name": "Turkiye",
     "brand": null,
     "barcode": "8697463197143",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Ultra Sheer SUNBLOCK",
-    "brand": null,
-    "barcode": "8901012185209",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,

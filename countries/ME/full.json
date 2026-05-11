@@ -40,7 +40,7 @@
   },
   {
     "name": "Original",
-    "brand": "Wasa",
+    "brand": "wasa",
     "barcode": "7300400118101",
     "calories": 0.0,
     "protein": 0.0,
@@ -52,20 +52,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Ferrero collection",
-    "brand": "Ferrero",
-    "barcode": "8000500247150",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kinder Pingui",
+    "name": "kinder pinguin",
     "brand": "Kinder",
     "barcode": "4008400290126",
     "calories": 0.0,
@@ -144,7 +131,7 @@
   },
   {
     "name": "Пълнозърнести бисквити с мед, лешници и шоколад",
-    "brand": "belVita",
+    "brand": "belVita BREAKFAST",
     "barcode": "7622210899255",
     "calories": 0.0,
     "protein": 0.0,
@@ -364,6 +351,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Classic Nutty Flips",
+    "brand": "Chips Way",
+    "barcode": "8606108282564",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Crnogorski Rezani Prsut",
     "brand": "Mianja Cetinje",
     "barcode": "3890000438036",
@@ -439,6 +439,19 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Isola Protein Vanilla",
+    "brand": "?",
+    "barcode": "5032085009703",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -569,6 +582,19 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "paracetamol",
+    "brand": null,
+    "barcode": "3870010002045",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -822,10 +848,10 @@
     "name": "Corn Flakes",
     "brand": "Cerealitalia",
     "barcode": "8023637200485",
-    "calories": 387.0,
-    "protein": 6.63,
-    "carbs": 83.0,
-    "fat": 2.5,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -958,19 +984,6 @@
     "fat": 3.4,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kajmak",
-    "brand": null,
-    "barcode": "8600742010361",
-    "calories": 240.0,
-    "protein": 6.1,
-    "carbs": 1.1,
-    "fat": 23.5,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1392,7 +1405,7 @@
   },
   {
     "name": "Stelline 74",
-    "brand": "Divella",
+    "brand": "Pastina DIVELLA",
     "barcode": "8005121000740",
     "calories": 0.0,
     "protein": 0.0,
@@ -1658,8 +1671,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "servingSize": 1.0,
+    "servingUnit": "bar",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1667,10 +1680,10 @@
     "name": "Albeni Bar Cake",
     "brand": "Ülker",
     "barcode": "8690504063803",
-    "calories": 438.0,
-    "protein": 4.7,
-    "carbs": 56.0,
-    "fat": 21.0,
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -2067,19 +2080,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cioccolato",
-    "brand": "Milka",
-    "barcode": "7622201125752",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Cokolada za kuhanje",
     "brand": null,
     "barcode": "3858881040298",
@@ -2090,6 +2090,19 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "crema bisc milka",
+    "brand": "Milka",
+    "barcode": "7622201125752",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -3251,7 +3264,7 @@
   },
   {
     "name": "Jogood voćni jogurt Kajsija",
-    "brand": "Imlek",
+    "brand": "imlek",
     "barcode": "8601500130413",
     "calories": 0.0,
     "protein": 0.0,
@@ -4706,6 +4719,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Cocoa Halva",
+    "brand": "Donia",
+    "barcode": "5319990181688",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Colagen",
     "brand": null,
     "barcode": "5318000024823",
@@ -4778,6 +4804,32 @@
     "protein": 2.0,
     "carbs": 65.3,
     "fat": 28.6,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Cupavci",
+    "brand": "Miranis",
+    "barcode": "3890000156114",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Cupavci",
+    "brand": "Slatko Srce",
+    "barcode": "3890000519162",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -5123,6 +5175,19 @@
   },
   {
     "name": "Jogurt",
+    "brand": "Lazine",
+    "barcode": "3890000067014",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 180.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Jogurt",
     "brand": "Srna",
     "barcode": "3890000076139",
     "calories": 62.0,
@@ -5145,6 +5210,19 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Jogurt Lazine",
+    "brand": "Lazine Mljekara",
+    "barcode": "3890000067021",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -5675,6 +5753,32 @@
     "protein": 13.0,
     "carbs": 1.3,
     "fat": 16.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Pilaci Narezak",
+    "brand": "Pekabesko",
+    "barcode": "5310276004707",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Pileca Extra",
+    "brand": "Pekabesko",
+    "barcode": "5310276002451",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -6227,6 +6331,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Svjezi Sir",
+    "brand": "Srna",
+    "barcode": "3890000076184",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Toast Integrale",
     "brand": "Your 5 Minutes",
     "barcode": "8606028302106",
@@ -6280,7 +6397,7 @@
   },
   {
     "name": "Tuna Fileti U Maslinovom Ulju",
-    "brand": "Eva",
+    "brand": "EVA",
     "barcode": "3856020263126",
     "calories": 0.0,
     "protein": 0.0,

@@ -1,8 +1,8 @@
 {
   "countryIso2": "SL",
   "slug": "sierra-leone",
-  "version": 1777884598,
-  "generatedAt": "2026-05-04T08:49:58.444402+00:00",
+  "version": 1778491528,
+  "generatedAt": "2026-05-11T09:25:28.549737+00:00",
   "strategy": "full",
   "itemCountDiscovered": 110,
   "bytesDiscovered": 22432,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-04T08:49:58.444402+00:00",
+    "generatedAt": "2026-05-11T09:25:28.549737+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

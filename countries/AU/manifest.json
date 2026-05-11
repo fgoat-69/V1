@@ -1,8 +1,8 @@
 {
   "countryIso2": "AU",
   "slug": "australia",
-  "version": 1777887044,
-  "generatedAt": "2026-05-04T09:30:43.798807+00:00",
+  "version": 1778493992,
+  "generatedAt": "2026-05-11T10:06:32.182777+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 69379,
   "bytesDiscovered": 15247042,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-04T09:30:43.798807+00:00",
+    "generatedAt": "2026-05-11T10:06:32.182777+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
