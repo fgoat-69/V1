@@ -1,8 +1,8 @@
 {
   "countryIso2": "FR",
   "slug": "france",
-  "version": 1778487450,
-  "generatedAt": "2026-05-11T08:17:21.745985+00:00",
+  "version": 1779093542,
+  "generatedAt": "2026-05-18T08:38:53.349372+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 1094791,
   "bytesDiscovered": 234945499,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-11T08:17:21.745985+00:00",
+    "generatedAt": "2026-05-18T08:38:53.349372+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

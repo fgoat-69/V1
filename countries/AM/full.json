@@ -33,8 +33,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
+    "servingSize": 30.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -218,19 +218,6 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Mozzarella",
-    "brand": "Yeremyan",
-    "barcode": "4850041790424",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -1524,9 +1511,9 @@
     "name": "Peach green iced tea",
     "brand": "Lipton",
     "barcode": "4780022621051",
-    "calories": 0.0,
+    "calories": 35.0,
     "protein": 0.0,
-    "carbs": 0.0,
+    "carbs": 8.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": "ml",
@@ -1807,6 +1794,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Wholegrain Oat Flakes and Oat Bran",
+    "brand": "Nordic",
+    "barcode": "4612758100077",
+    "calories": 332.0,
+    "protein": 12.4,
+    "carbs": 54.6,
+    "fat": 7.2,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Варенье из инжира Թզի մուրաբա",
     "brand": "Арцах Фрут",
     "barcode": "4850006480193",
@@ -2080,19 +2080,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Ajica",
-    "brand": "Yerevan City",
-    "barcode": "2900000256583",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Ararat",
     "brand": null,
     "barcode": "4850008980462",
@@ -2314,19 +2301,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cottage Cheese 9%",
-    "brand": "Milkin",
-    "barcode": "4850034410186",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Crepes",
     "brand": "Miratorg",
     "barcode": "4610095483983",
@@ -2454,32 +2428,6 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Fried Veg Mix",
-    "brand": "Artfood",
-    "barcode": "4850017002230",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Garlic And Herb Beef Sizzle Steaks",
-    "brand": "Sainsbury's",
-    "barcode": "5063334039325",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -3146,19 +3094,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Supreme Whey narural taste",
-    "brand": "pure.",
-    "barcode": "8720615790203",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "scoop",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Sweet Sour Lavash",
     "brand": "Sam's Sweet Line",
     "barcode": "5852710100151",
@@ -3536,19 +3471,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Желе Пломбир-латте",
-    "brand": "Gurmina",
-    "barcode": "4815477013769",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 15.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Женгял",
     "brand": "Home Made",
     "barcode": "2900000207356",
@@ -3744,19 +3666,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Пряники",
-    "brand": "Севанский Хлебный Завод",
-    "barcode": "2900000154926",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 40.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Рис Жасмин",
     "brand": "Мистраль",
     "barcode": "4601916000373",
@@ -3851,25 +3760,12 @@
     "name": "Творог 7%",
     "brand": "Ani",
     "barcode": "4850003100339",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 135.0,
+    "protein": 16.0,
+    "carbs": 2.0,
+    "fat": 7.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Творожный Сыр Марианна",
-    "brand": "Marianna",
-    "barcode": "4850001264132",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 15.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },

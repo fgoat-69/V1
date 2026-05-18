@@ -7,13 +7,13 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 12.5,
-    "servingUnit": "g",
+    "servingSize": 1.0,
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
   {
-    "name": "Coke Original Taste",
+    "name": "Original Taste",
     "brand": "Coca-Cola",
     "barcode": "5449000000996",
     "calories": 0.0,
@@ -40,7 +40,7 @@
   },
   {
     "name": "Alpro smooth subtle creamy oat",
-    "brand": "alpro",
+    "brand": null,
     "barcode": "5411188115366",
     "calories": 0.0,
     "protein": 0.0,
@@ -156,19 +156,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Candies Raffaello",
-    "brand": "Ferrero",
-    "barcode": "8000500023976",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "piece",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Cake & Choc",
     "brand": "Milka",
     "barcode": "7622300784751",
@@ -182,20 +169,20 @@
     "source": "github_country_pack"
   },
   {
-    "name": "SCHOKOLADE",
-    "brand": "kinder",
+    "name": "Kinder Chocolate",
+    "brand": "Kinder",
     "barcode": "80177609",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 12.5,
-    "servingUnit": "g",
-    "isLiquid": false,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
-    "name": "бисквити шокочип без глутен",
+    "name": "Cookies sin glúten sin azúcares añadidos",
     "brand": "Gullón",
     "barcode": "8410376037883",
     "calories": 0.0,
@@ -208,7 +195,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Buldak Hot Chicken Flavor Ramen",
+    "name": "Buldak HOT Chicken Flavour Ramen Carbonara Flavour",
     "brand": "Samyang",
     "barcode": "8801073116467",
     "calories": 0.0,
@@ -248,14 +235,14 @@
   },
   {
     "name": "Tortilla Wraps",
-    "brand": "pack Day",
+    "brand": "Snack Day",
     "barcode": "4056489018636",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 75.0,
-    "servingUnit": "g",
+    "servingSize": 2.0,
+    "servingUnit": "slices",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -325,8 +312,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Mint Chocolate",
-    "brand": "J. D. GROSS",
+    "name": "Mints",
+    "brand": "J.D. Gross",
     "barcode": "20706852",
     "calories": 0.0,
     "protein": 0.0,
@@ -334,7 +321,7 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": true,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -364,7 +351,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Tomato Ketchup",
+    "name": "Ketchup",
     "brand": "Heinz",
     "barcode": "87157239",
     "calories": 0.0,
@@ -404,7 +391,7 @@
   },
   {
     "name": "Sante Baton Proteinowy Go On Kakaowy",
-    "brand": "GO ON",
+    "brand": "Go On",
     "barcode": "5900617013064",
     "calories": 0.0,
     "protein": 0.0,
@@ -456,7 +443,7 @@
   },
   {
     "name": "Tvarohová tyčinka Protein",
-    "brand": "Lidl",
+    "brand": "Pilos",
     "barcode": "20955427",
     "calories": 0.0,
     "protein": 0.0,
@@ -709,8 +696,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
+    "servingSize": 1.0,
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -995,8 +982,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 330.0,
-    "servingUnit": "g",
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1053,22 +1040,22 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Kārums biezpiena sieriņš VANILLA",
-    "brand": "Kārums",
-    "barcode": "4750050341405",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "name": "Sour cream 18%",
+    "brand": "Pilos",
+    "barcode": "20082260",
+    "calories": 187.0,
+    "protein": 2.4,
+    "carbs": 3.9,
+    "fat": 18.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
   {
-    "name": "Sour cream 18%",
-    "brand": "Pilos",
-    "barcode": "20082260",
+    "name": "VANILLA BIEZPIENA SIERSĪPĪGS",
+    "brand": "Kārums",
+    "barcode": "4750050341405",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -1407,9 +1394,9 @@
     "name": "Carbonated aromatic drink with sugar and sweeteners",
     "brand": "PepsiCo Inc.",
     "barcode": "4770477231615",
-    "calories": 0.0,
+    "calories": 28.0,
     "protein": 0.0,
-    "carbs": 0.0,
+    "carbs": 7.0,
     "fat": 0.0,
     "servingSize": 250.0,
     "servingUnit": "ml",
@@ -1547,6 +1534,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Würzpulver",
+    "brand": "Kuljanka",
+    "barcode": "20360887",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "100% Išrūgų Baltymas (whey protein)",
     "brand": "Healthy Choice",
     "barcode": "4779031860636",
@@ -1554,6 +1554,19 @@
     "protein": 77.0,
     "carbs": 7.4,
     "fat": 7.13,
+    "servingSize": 30.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "100% Whey Protein Concentrate",
+    "brand": "Healthy Choice",
+    "barcode": "4779031860223",
+    "calories": 393.0,
+    "protein": 80.0,
+    "carbs": 6.5,
+    "fat": 5.9,
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -1634,19 +1647,6 @@
     "fat": 1.6,
     "servingSize": 37.5,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Aguonu idaras su dziovintais vaisiais",
-    "brand": "Prospona",
-    "barcode": "5901491800245",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1964,19 +1964,6 @@
   },
   {
     "name": "alus",
-    "brand": "volfas engelman",
-    "barcode": "4770301237219",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "alus",
     "brand": "Švyturys",
     "barcode": "4770349225254",
     "calories": 0.0,
@@ -2204,19 +2191,6 @@
     "protein": 11.0,
     "carbs": 22.1,
     "fat": 9.6,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Apkeptas Kiaulienos Karbonadas Su Pikantišku Padažu",
-    "brand": "MAXIMA",
-    "barcode": "2902351500032",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -2548,6 +2522,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Balance šampūnas vaikų",
+    "brand": null,
+    "barcode": "4770495350732",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Baltagrūdžių Kopūstų Salotos",
     "brand": "Maxima",
     "barcode": "2904498800013",
@@ -2557,19 +2544,6 @@
     "fat": 12.8,
     "servingSize": 300.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Baltakojės krevetės, virtos, be kliatų su uodegelėmis",
-    "brand": null,
-    "barcode": "4771390117864",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -2590,32 +2564,6 @@
     "name": "Baltasis erelis kvietinis",
     "brand": "Joalda",
     "barcode": "4779036700241",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Balti Grikių Miltai",
-    "brand": "Biorina",
-    "barcode": "4771138393970",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "baltijos",
-    "brand": "Švyturys",
-    "barcode": "4770349224073",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -2687,19 +2635,6 @@
     "fat": 14.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Bandelė",
-    "brand": "Trejos Girnos",
-    "barcode": "4770697197173",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 56.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -3227,10 +3162,10 @@
     "name": "Bulvių Trapučiai Giretinės Ir Svogūnų Skonio",
     "brand": "Snack Day",
     "barcode": "4335619158122",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 429.0,
+    "protein": 5.2,
+    "carbs": 66.9,
+    "fat": 14.6,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -3415,19 +3350,6 @@
     "fat": 0.0,
     "servingSize": 30.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Cashews, Unsalted",
-    "brand": "Nice Bites",
-    "barcode": "9008684055751",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -3783,6 +3705,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Citrininiai Ledai",
+    "brand": "Pols",
+    "barcode": "4770167004895",
+    "calories": 288.0,
+    "protein": 2.1,
+    "carbs": 26.0,
+    "fat": 20.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Classic (sugar free)",
     "brand": "Selga",
     "barcode": "4750007899355",
@@ -3874,19 +3809,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cookies And Cream Whey Protein",
-    "brand": "Nutrend",
-    "barcode": "8594017423003",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Corn Flakes",
     "brand": "Obst",
     "barcode": "5907731603621",
@@ -3926,19 +3848,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Crashews With Skin. Roasted, Salted",
-    "brand": "Alvo",
-    "barcode": "4770082330529",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Cream of rice",
     "brand": "Ostrovit",
     "barcode": "5903933905013",
@@ -3947,19 +3856,6 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 40.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Creamy Peanut Butter",
-    "brand": "HY-Top",
-    "barcode": "0050700009308",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 15.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -3988,19 +3884,6 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Crimson cherry",
-    "brand": "Fanta",
-    "barcode": "5000112694796",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 850.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -4052,19 +3935,6 @@
     "fat": 28.0,
     "servingSize": 60.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Croissant With Cocoa Cream Filling",
-    "brand": "Mon Mio",
-    "barcode": "5425032885282",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -4199,6 +4069,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Dates with belgian milk chocolate and coconut",
+    "brand": "RIMI",
+    "barcode": "4752050034394",
+    "calories": 405.0,
+    "protein": 3.9,
+    "carbs": 63.0,
+    "fat": 14.0,
+    "servingSize": 100.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Davra Daujotų Gira",
     "brand": "Davra",
     "barcode": "4779040740141",
@@ -4291,7 +4174,7 @@
   },
   {
     "name": "doritos",
-    "brand": "Doritos",
+    "brand": null,
     "barcode": "5900259142108",
     "calories": 0.0,
     "protein": 0.0,
@@ -4310,6 +4193,19 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Dried Jackfruit",
+    "brand": "Alesto",
+    "barcode": "4056489838111",
+    "calories": 439.0,
+    "protein": 4.5,
+    "carbs": 62.1,
+    "fat": 17.1,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -4449,19 +4345,6 @@
     "name": "dzemas",
     "brand": null,
     "barcode": "8690585571020",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "dziov spanguoles wel done",
-    "brand": "Well Done",
-    "barcode": "2098766004200",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -4641,19 +4524,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Fermentuoti Kopūstai Su Ridikais Ir Avietėm",
-    "brand": "Kvėdarų Ūkis",
-    "barcode": "4771535001102",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Fish Filets",
     "brand": "Well Done",
     "barcode": "2098766025748",
@@ -4664,19 +4534,6 @@
     "servingSize": 440.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Fish Oil",
-    "brand": "Möller’s",
-    "barcode": "7070866003906",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -4716,19 +4573,6 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Fresh Still Cherry Flavor Drink",
-    "brand": "Vichy",
-    "barcode": "4770349231507",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 255.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -4849,19 +4693,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Gefriergetrocknetes Eis - Kakao",
-    "brand": "Star Candies",
-    "barcode": "4779057570151",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 16.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Giminių Daktariška Dešra 250g (pjaustyta)",
     "brand": "UTENOS MĖSA",
     "barcode": "4770081172106",
@@ -4914,19 +4745,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "gira",
-    "brand": null,
-    "barcode": "2000305312660",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "GLAISTYTAS VARSKES SŪRELIS su kakava",
     "brand": null,
     "barcode": "4779024795235",
@@ -4975,19 +4793,6 @@
     "fat": 68.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Granola",
-    "brand": "Biržų Duona",
-    "barcode": "4770078195910",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5096,19 +4901,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Grikių Kruopos",
-    "brand": "Fasma",
-    "barcode": "4770584944262",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "grillworst",
     "brand": "hoogvliet",
     "barcode": "4065019039195",
@@ -5187,19 +4979,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Guava Radler 0%",
-    "brand": "Utenos",
-    "barcode": "4770349234560",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "can",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Gubernija Extra Non Alcoholic Lager",
     "brand": "Gubernija",
     "barcode": "4770395228711",
@@ -5239,32 +5018,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "gurmanų vytinta dešra",
-    "brand": null,
-    "barcode": "4770609183300",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Halloumi Sūris",
-    "brand": "Rimi Planet",
-    "barcode": "4752050026672",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "halvarine",
     "brand": "ah",
     "barcode": "3756587086025",
@@ -5291,22 +5044,9 @@
     "source": "github_country_pack"
   },
   {
-    "name": "hello almonds draze",
+    "name": "hello hazelnuts salfainiai mio rio",
     "brand": null,
-    "barcode": "2098766079253",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "helo raisins zsaldainiai",
-    "brand": null,
-    "barcode": "2098766079239",
+    "barcode": "2098766079246",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -5352,32 +5092,6 @@
     "fat": 8.2,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "High Protein Peanut butter ice cream",
-    "brand": "Gelatelli",
-    "barcode": "4335619362628",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "High Protein Strawberry Ice Cream",
-    "brand": "Gelatelli",
-    "barcode": "4335619362635",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5430,19 +5144,6 @@
     "fat": 2.8,
     "servingSize": 1.0,
     "servingUnit": "roll",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Hot Smoked Ham",
-    "brand": "Vitasia",
-    "barcode": "4335619223905",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 150.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5551,6 +5252,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Ice Cream Sandwich",
+    "brand": "Oreo",
+    "barcode": "8051369005337",
+    "calories": 291.0,
+    "protein": 5.2,
+    "carbs": 41.0,
+    "fat": 11.0,
+    "servingSize": 70.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Iced Bubble Tea Ice Cream",
     "brand": "Dadu",
     "barcode": "4770166224485",
@@ -5559,19 +5273,6 @@
     "carbs": 27.7,
     "fat": 0.1,
     "servingSize": 110.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Iced Tea With Peach Flavor",
-    "brand": "AriZona",
-    "barcode": "4000533961263",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 355.0,
     "servingUnit": "ml",
     "isLiquid": true,
     "source": "github_country_pack"
@@ -5655,6 +5356,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Instant Noodles Spicy Chicken Flavour",
+    "brand": "Sun Yan",
+    "barcode": "4770107259149",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 120.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Instant Tea Raspberry",
     "brand": "Lord Nelson",
     "barcode": "20900069",
@@ -5690,19 +5404,6 @@
     "fat": 0.0,
     "servingSize": 400.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Itališkas Padažas",
-    "brand": "Daumantų",
-    "barcode": "4770491218388",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -5931,19 +5632,6 @@
     "name": "kalendra malta",
     "brand": null,
     "barcode": "4770173814518",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "kambučia",
-    "brand": "Būk Čia",
-    "barcode": "4779045920425",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -6488,19 +6176,6 @@
   },
   {
     "name": "Kiaušiniai",
-    "brand": "Barn Eggs",
-    "barcode": "2098765907427",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kiaušiniai",
     "brand": "Rido",
     "barcode": "4772093000514",
     "calories": 130.0,
@@ -6529,45 +6204,6 @@
     "name": "KIETOJO SŪRIO UŽTEPĖLĖ su bazilikais",
     "brand": null,
     "barcode": "4056489084013",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kietųjų Kviečių Makaronai Orecchiette",
-    "brand": "Billa Premium",
-    "barcode": "9008684060373",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kimchi",
-    "brand": "Kvedarų ūkis",
-    "barcode": "4771535001089",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kimchi Fermentuotos Daržovės Su Ananasais",
-    "brand": "Kvėdarų Ūkis",
-    "barcode": "4771535001096",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -6916,6 +6552,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "krienai",
+    "brand": "spilva",
+    "barcode": "4770135216893",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Krokuvos Pierogi",
     "brand": "Lenkiski",
     "barcode": "4745010692673",
@@ -6925,19 +6574,6 @@
     "fat": 3.0,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Kukurūzai Su Aitriosiomis Paprikomis",
-    "brand": "Bonduelle",
-    "barcode": "3083680975162",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "can",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -7072,22 +6708,22 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Ledai Su Migdolais",
-    "brand": "Iki",
-    "barcode": "4779040600674",
+    "name": "ledai well done caramel",
+    "brand": null,
+    "barcode": "2098765870271",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
   {
-    "name": "ledai well done caramel",
+    "name": "lemin souffle",
     "brand": null,
-    "barcode": "2098765870271",
+    "barcode": "2098766078973",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -7319,32 +6955,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "majonezas",
-    "brand": null,
-    "barcode": "2098765770939",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Majonezas",
-    "brand": "Extra Line",
-    "barcode": "2098765770922",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 450.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Majonezas be konservantų lietuviškas",
     "brand": "Kėdainių konservai",
     "barcode": "4770583201410",
@@ -7354,19 +6964,6 @@
     "fat": 61.0,
     "servingSize": 30.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Malsena Aviziniai Dribsniai",
-    "brand": "Malsena",
-    "barcode": "4779028201923",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -7436,16 +7033,16 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Mango & chia bar",
-    "brand": "Mangų mangas",
-    "barcode": "4779049731072",
-    "calories": 0.0,
+    "name": "Mandarin Juice",
+    "brand": "Well Done",
+    "barcode": "2098766091606",
+    "calories": 46.37,
     "protein": 0.0,
-    "carbs": 0.0,
+    "carbs": 11.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -7458,19 +7055,6 @@
     "fat": 0.45,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Mango ledai",
-    "brand": "Pirulo",
-    "barcode": "8606018619764",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -7657,19 +7241,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "MARINUOTI AGURKAI 340g",
-    "brand": null,
-    "barcode": "8697406274405",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Marinuoti Agurkai Be Pridėtinio Cukraus",
     "brand": "Kėdainių",
     "barcode": "4770583000242",
@@ -7751,19 +7322,6 @@
     "name": "Mascara",
     "brand": "Lash affair",
     "barcode": "8028997015175",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Mascarpone and lincolnberries ice cream",
-    "brand": "Dadu",
-    "barcode": "4770166219818",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -7886,19 +7444,6 @@
     "carbs": 0.0,
     "fat": 66.0,
     "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Mermaid Jewels",
-    "brand": "AMOS",
-    "barcode": "6936756285061",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 65.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -8099,27 +7644,14 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Mouse Salted Caramel",
-    "brand": "Mcennedy",
-    "barcode": "4335619132597",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 350.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Mousse Cheesecake",
-    "brand": "Mcenny",
-    "barcode": "4335619132580",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 350.0,
+    "name": "mozzarella",
+    "brand": "lidl",
+    "barcode": "4056489780489",
+    "calories": 251.0,
+    "protein": 19.0,
+    "carbs": 1.0,
+    "fat": 19.0,
+    "servingSize": 62.5,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -8212,19 +7744,6 @@
     "fat": 2.5,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Naminė Varškė 9%",
-    "brand": "Rokiškio",
-    "barcode": "4770245151954",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -8437,8 +7956,8 @@
     "source": "github_country_pack"
   },
   {
-    "name": "NEXTGEN PLANT PROTEIN",
-    "brand": "NARA HEALTH",
+    "name": "NextGen Plant Protein",
+    "brand": "NaraHealth",
     "barcode": "4779060960253",
     "calories": 0.0,
     "protein": 0.0,
@@ -8484,19 +8003,6 @@
     "carbs": 26.2,
     "fat": 26.9,
     "servingSize": 63.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Nugarinės Pjausniai",
-    "brand": "Lidl",
-    "barcode": "20111205",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -8632,6 +8138,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "orbit",
+    "brand": null,
+    "barcode": "4009900552400",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Organic Passion Fruit & Pineapple With Juice",
     "brand": "RASA",
     "barcode": "4770063235911",
@@ -8745,19 +8264,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Palmier Cookies",
-    "brand": "Акульчев",
-    "barcode": "4604386002014",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -8900,19 +8406,6 @@
     "carbs": 53.0,
     "fat": 9.1,
     "servingSize": 65.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Peanut Butter Cups Minis Unwrapped",
-    "brand": "Reese's",
-    "barcode": "8710998537526",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -9126,19 +8619,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Pickles",
-    "brand": "Spilva",
-    "barcode": "4770135205156",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "picu paplotis šaldt",
     "brand": "Well Done",
     "barcode": "2098765943630",
@@ -9178,19 +8658,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Pieniskas Sokoladas",
-    "brand": "Ruta",
-    "barcode": "4770123208619",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 18.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Pieniskos Virtos Frankfurto Dešrelės",
     "brand": "Vikis",
     "barcode": "4770058161379",
@@ -9226,19 +8693,6 @@
     "fat": 1.4,
     "servingSize": 250.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Pikantiškos dūzgės",
-    "brand": "Krekenavos",
-    "barcode": "4770609180415",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -9855,19 +9309,6 @@
   },
   {
     "name": "Pusriebė Varškė",
-    "brand": "Žemaitijos",
-    "barcode": "2333545810154",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Pusriebė Varškė",
     "brand": "Žemaitijos pienas",
     "barcode": "2130906010389",
     "calories": 157.0,
@@ -10123,32 +9564,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Red Bull Sugar Free",
-    "brand": "Red Bull",
-    "barcode": "9002490267414",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Red Pesto",
-    "brand": "Santolino",
-    "barcode": "4779050970620",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 15.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -10446,8 +9861,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
+    "servingSize": 220.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -10539,58 +9954,6 @@
     "fat": 11.0,
     "servingSize": 45.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "sampanas",
-    "brand": null,
-    "barcode": "4770047233971",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "sampanas",
-    "brand": null,
-    "barcode": "4770595229778",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "sampanas",
-    "brand": null,
-    "barcode": "4770595232396",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "sampas",
-    "brand": null,
-    "barcode": "4770595230194",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -10738,19 +10101,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "sidras",
-    "brand": null,
-    "barcode": "4770301237097",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Silkės Filė",
     "brand": "Edega",
     "barcode": "4770432200953",
@@ -10773,19 +10123,6 @@
     "fat": 0.7,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "SKILANDINĖ karštai rūkyta dešra",
-    "brand": "Samsonas",
-    "barcode": "4770369391113",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -10894,6 +10231,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "soufle vanila",
+    "brand": null,
+    "barcode": "2098766078997",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Sour Cherries Pitted Quick Frozen",
     "brand": "Well done",
     "barcode": "2098766078584",
@@ -10946,19 +10296,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Spaghetti",
-    "brand": "Armando",
-    "barcode": "8005709400054",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 90.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Spaghetti Pasta",
     "brand": "Well Done",
     "barcode": "2098765886029",
@@ -10967,19 +10304,6 @@
     "carbs": 71.0,
     "fat": 1.0,
     "servingSize": 500.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Spicy Cheese Flavoured Korean Style Noodles",
-    "brand": "Maggi",
-    "barcode": "8445292302166",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 130.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -10998,19 +10322,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Spring Mini Rolls With Vegetables",
-    "brand": "Billa",
-    "barcode": "9008684061660",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "spring rolls",
     "brand": "Nordic Seafood",
     "barcode": "5702008213813",
@@ -11019,19 +10330,6 @@
     "carbs": 35.0,
     "fat": 2.0,
     "servingSize": 900.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Spurga",
-    "brand": "Mantinga",
-    "barcode": "4771033018794",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 60.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -11059,19 +10357,6 @@
     "fat": 2.7,
     "servingSize": 1.0,
     "servingUnit": "pack",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Strawberry Whey Protein",
-    "brand": "Element",
-    "barcode": "4603320537964",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -11157,19 +10442,6 @@
     "name": "su zolelem ir cesnaku santa maria",
     "brand": null,
     "barcode": "6418474148922",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "sultys",
-    "brand": null,
-    "barcode": "2098766091934",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -11518,19 +10790,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Toaster Waffles Chocolate chips",
-    "brand": "Mcennedy",
-    "barcode": "4335619382862",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 240.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "tofifee",
     "brand": null,
     "barcode": "4010044900576",
@@ -11839,19 +11098,6 @@
     "fat": 5.05,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "utenos",
-    "brand": "Utenos",
-    "barcode": "4770075022554",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -12441,6 +11687,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Vysniu uogiene",
+    "brand": "Maribel",
+    "barcode": "4056489328261",
+    "calories": 230.0,
+    "protein": 0.5,
+    "carbs": 56.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Vytinta Jautiena Dūmo Skonio",
     "brand": "Ypatingai Liesa Jautiena",
     "barcode": "4779027972213",
@@ -12541,19 +11800,6 @@
     "fat": 0.4,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Wafle ryżowe",
-    "brand": "EuroWafel",
-    "barcode": "5906203909063",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -12787,19 +12033,6 @@
     "carbs": 0.04,
     "fat": 0.9,
     "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Yellow curry bowl",
-    "brand": "Activus",
-    "barcode": "4779039733079",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 283.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -13507,19 +12740,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Фарш Говяжий 4%",
-    "brand": "Мясо Есть",
-    "barcode": "4670199892777",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Хлеб «Фруктовый» нарезанный в упаковке",
     "brand": "Дятьково хлеб",
     "barcode": "4603450930475",
@@ -13528,19 +12748,6 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 300.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Шин рамен",
-    "brand": "Nongshim",
-    "barcode": "8801043263191",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 114.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -13566,8 +12773,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "piece",
+    "servingSize": 11.3,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -13735,8 +12942,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -13988,19 +13195,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "krienai",
-    "brand": "spilva",
-    "barcode": "4770135216893",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Kubus raspberry water",
     "brand": "Kubus",
     "barcode": "5901067400237",
@@ -14021,19 +13215,6 @@
     "protein": 15.0,
     "carbs": 6.0,
     "fat": 63.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "lemin souffle",
-    "brand": null,
-    "barcode": "2098766078973",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -14270,32 +13451,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "soufle vanila",
-    "brand": null,
-    "barcode": "2098766078997",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Spicy Chicken Style",
-    "brand": "Sun Yan Noodzie",
-    "barcode": "4770107259149",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 120.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -14612,19 +13767,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Citrininiai Ledai",
-    "brand": "Pols",
-    "barcode": "4770167004895",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Coca-Cola",
     "brand": "Coca-Cola",
     "barcode": "5000112614466",
@@ -14794,6 +13936,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Jacobs selection",
+    "brand": "Jacobs",
+    "barcode": "8711000844717",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Jamon Serrano",
     "brand": "Cserrano",
     "barcode": "8411030039618",
@@ -14872,19 +14027,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Mandarin Juice",
-    "brand": "Well Done",
-    "barcode": "2098766091606",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Mild chedeer",
     "brand": "Well done",
     "barcode": "2098765933167",
@@ -14914,19 +14056,6 @@
     "name": "monte pero tirpi kav",
     "brand": null,
     "barcode": "2098765704088",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "orbit",
-    "brand": null,
-    "barcode": "4009900552400",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -15054,6 +14183,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "sultyscappy",
+    "brand": null,
+    "barcode": "5449000337511",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Superior Pulled Pork Pizza",
     "brand": "Food Luck",
     "barcode": "4770190156646",
@@ -15102,19 +14244,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "konservas",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Vysniu uogiene",
-    "brand": "Maribel",
-    "barcode": "4056489328261",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -15179,19 +14308,6 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 40.0,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "100% Peanut Butter, crunchy",
-    "brand": "Maribel",
-    "barcode": "4056489642398",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
@@ -15496,19 +14612,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "hello hazelnuts salfainiai mio rio",
-    "brand": null,
-    "barcode": "2098766079246",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Irish Cheddar",
     "brand": "Dublin Dairy",
     "barcode": "5902431278483",
@@ -15531,19 +14634,6 @@
     "fat": 17.0,
     "servingSize": 225.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Jacobs selection intense 500g",
-    "brand": "Jacobs",
-    "barcode": "8711000844717",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -15639,19 +14729,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "mozzarella",
-    "brand": "Milbona",
-    "barcode": "4056489780489",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 62.5,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Multifruit mango flavoured still drink",
     "brand": "Tymbark",
     "barcode": "5900334007780",
@@ -15674,6 +14751,19 @@
     "fat": 5.1,
     "servingSize": 80.0,
     "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Peanut Butter Crunchy",
+    "brand": "Maribel",
+    "barcode": "4056489642398",
+    "calories": 620.0,
+    "protein": 26.3,
+    "carbs": 18.9,
+    "fat": 49.9,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -15990,19 +15080,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Hard Cheese Grated",
-    "brand": "Dziugas",
-    "barcode": "4770299046152",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Hazelnut & Nougat protein bar",
     "brand": "Barebells",
     "barcode": "37088019",
@@ -16097,10 +15174,10 @@
     "name": "Klasikiniai Sausainiai",
     "brand": "Orkla",
     "barcode": "4750007689512",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 440.0,
+    "protein": 8.4,
+    "carbs": 71.0,
+    "fat": 13.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -16415,6 +15492,19 @@
     "fat": 0.79,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "siers Dziugas rīvēts 100g",
+    "brand": "Džiugas",
+    "barcode": "4770299046152",
+    "calories": 366.0,
+    "protein": 33.0,
+    "carbs": 0.0,
+    "fat": 26.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -16952,13 +16042,13 @@
     "source": "github_country_pack"
   },
   {
-    "name": "COTTAGE CHEESE",
-    "brand": "Pik's",
-    "barcode": "5902495002178",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "name": "Cookies & Cream Protein",
+    "brand": "GymOn",
+    "barcode": "4770207052176",
+    "calories": 391.0,
+    "protein": 70.0,
+    "carbs": 14.0,
+    "fat": 5.9,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -17128,6 +16218,19 @@
     "protein": 7.2,
     "carbs": 13.8,
     "fat": 3.1,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Graudainais biezpiens LIDL",
+    "brand": "Pedaços",
+    "barcode": "5902495002178",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -17700,8 +16803,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 48.0,
-    "servingUnit": "g",
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -17728,6 +16831,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Salsa Max Deep Cut",
+    "brand": "Lay's",
+    "barcode": "5900259135834",
+    "calories": 517.0,
+    "protein": 6.8,
+    "carbs": 51.0,
+    "fat": 30.0,
+    "servingSize": 1.0,
+    "servingUnit": "bag",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -17806,19 +16922,6 @@
     "fat": 7.61,
     "servingSize": 1.0,
     "servingUnit": "pizza",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "sultyscappy",
-    "brand": null,
-    "barcode": "5449000337511",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -18239,19 +17342,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "CREAM CHEESE WITH HERBS",
-    "brand": "VILVI",
-    "barcode": "4770207042795",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "crema coffee",
     "brand": "Bellarom",
     "barcode": "20818715",
@@ -18285,19 +17375,6 @@
     "protein": 0.5,
     "carbs": 4.5,
     "fat": 2.7,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Fanem ketchup",
-    "brand": null,
-    "barcode": "5900854000629",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -18710,12 +17787,12 @@
     "name": "Samin Dates",
     "brand": "Borna",
     "barcode": "6262058000324",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
+    "calories": 304.0,
+    "protein": 1.7,
+    "carbs": 35.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -18980,6 +18057,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Varškės užtepėlė",
+    "brand": "Vilkyškių pieninė",
+    "barcode": "4770207042795",
+    "calories": 214.0,
+    "protein": 6.1,
+    "carbs": 5.5,
+    "fat": 18.6,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Viso  grūdo duona skrudinimui",
     "brand": "Toste",
     "barcode": "4770163836124",
@@ -19035,10 +18125,10 @@
     "name": "Või",
     "brand": "FarmMilk",
     "barcode": "4770148229378",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 733.27,
+    "protein": 1.0,
+    "carbs": 1.0,
+    "fat": 82.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -19633,10 +18723,10 @@
     "name": "Noodles Chicken Taste",
     "brand": "knorr",
     "barcode": "8714100750582",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 477.0,
+    "protein": 9.02,
+    "carbs": 60.7,
+    "fat": 21.3,
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
@@ -19665,19 +18755,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Peanut butter",
-    "brand": "Maribel",
-    "barcode": "4056489642374",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 10.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -19942,6 +19019,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Sampanas",
+    "brand": null,
+    "barcode": "4770595229778",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "saulėgrąžų sėklos",
     "brand": "yes",
     "barcode": "4770266129598",
@@ -20014,8 +19104,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "tablet",
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -20306,6 +19396,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Žemės riešutu kremas glotnus",
+    "brand": "Maribel",
+    "barcode": "4056489642374",
+    "calories": 620.0,
+    "protein": 26.3,
+    "carbs": 18.9,
+    "fat": 49.9,
+    "servingSize": 10.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Пуканки с аромат на масло",
     "brand": "Pitso",
     "barcode": "3800230253019",
@@ -20514,19 +19617,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Bezl cestoviny šošovica",
-    "brand": "Sam Mills",
-    "barcode": "5941634004710",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Bifi kefyras",
     "brand": "Pilos",
     "barcode": "4056489642763",
@@ -20691,19 +19781,6 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Dates with belgian milk chocolate and coconut",
-    "brand": "RIMI",
-    "barcode": "4752050034394",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
     "source": "github_country_pack"
@@ -21490,7 +20567,7 @@
   },
   {
     "name": "Pieniškas šokoladas &quot;Lacmi Milk Filling & Cocoa Wafers&quot;, su pieniniu įdaru ir vafliais",
-    "brand": "Lacmi",
+    "brand": "Roshen",
     "barcode": "4823077633195",
     "calories": 0.0,
     "protein": 0.0,
@@ -21593,6 +20670,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Red Lentil Fusilli Pasta",
+    "brand": "Sam Mills",
+    "barcode": "5941634004710",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Rich Coconut Cream",
     "brand": "Santa Maria",
     "barcode": "7311312005489",
@@ -21680,19 +20770,6 @@
     "fat": 0.0,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Salsa Max Deep Cut",
-    "brand": "Lay's",
-    "barcode": "5900259135834",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bag",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -22090,9 +21167,9 @@
     "name": "Vitamineral Performance",
     "brand": "Boost Performance",
     "barcode": "4770301233044",
-    "calories": 0.0,
+    "calories": 20.0,
     "protein": 0.0,
-    "carbs": 0.0,
+    "carbs": 4.8,
     "fat": 0.0,
     "servingSize": 7.5,
     "servingUnit": "portion",
@@ -22239,19 +21316,6 @@
     "fat": 30.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "100% Whey Protein Concentrate",
-    "brand": "Healthy Choice",
-    "barcode": "4779031860223",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -23621,19 +22685,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Ice Cream Sandwich",
-    "brand": "Oreo",
-    "barcode": "8051369005337",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "sandwich",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "JAFFA APELSINU SK SAUS",
     "brand": null,
     "barcode": "2098765773893",
@@ -24833,10 +23884,10 @@
     "name": "sausainiai",
     "brand": "McVities",
     "barcode": "5941664011658",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 500.0,
+    "protein": 6.5,
+    "carbs": 62.0,
+    "fat": 24.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -25561,10 +24612,10 @@
     "name": "Žaliųjų svogūnų skonio bulvių traškučiai",
     "brand": "lay's",
     "barcode": "5900259128928",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 524.0,
+    "protein": 6.7,
+    "carbs": 51.0,
+    "fat": 32.0,
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -25990,19 +25041,6 @@
     "name": "Alus LIMBURGSE WITTE 5.0%, 0,33l",
     "brand": null,
     "barcode": "4779039700750",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Amestec de legume imperial",
-    "brand": "Bonduelle",
-    "barcode": "3083681063332",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -27404,7 +26442,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Corny",
+    "name": "Corny Big Milk Classic",
     "brand": "Corny",
     "barcode": "4011800569112",
     "calories": 0.0,
@@ -27412,8 +26450,8 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 40.0,
-    "servingUnit": "g",
-    "isLiquid": false,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -27521,7 +26559,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Dairy Milk Freddo Caramel",
+    "name": "Dairy milk freddo caramel",
     "brand": "Cadbury",
     "barcode": "7622202262616",
     "calories": 0.0,
@@ -27537,6 +26575,19 @@
     "name": "danoniki",
     "brand": null,
     "barcode": "59005322",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "daržovių mišinys",
+    "brand": "Bonduelle",
+    "barcode": "3083681063332",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -27756,7 +26807,7 @@
   },
   {
     "name": "dziovinti mangai wxtra",
-    "brand": "Extra Line",
+    "brand": null,
     "barcode": "2098766049140",
     "calories": 0.0,
     "protein": 0.0,
@@ -28847,19 +27898,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Jacobs kronung 1kg",
-    "brand": "Jacobs",
-    "barcode": "8711000539330",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Jacobs pupelės",
     "brand": "jacobs",
     "barcode": "8711000895788",
@@ -29201,6 +28239,19 @@
     "name": "Kava pupelesPupa",
     "brand": null,
     "barcode": "4770855350785",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Kavos pupelės",
+    "brand": "Jacobs",
+    "barcode": "8711000539330",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -29682,10 +28733,10 @@
     "name": "Lakmi badem",
     "brand": "roshen",
     "barcode": "4823077632587",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 564.0,
+    "protein": 10.7,
+    "carbs": 42.2,
+    "fat": 37.8,
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -29773,10 +28824,10 @@
     "name": "Liesą varškė",
     "brand": "Pilos",
     "barcode": "4056489328315",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 98.0,
+    "protein": 19.8,
+    "carbs": 3.5,
+    "fat": 0.5,
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -29825,12 +28876,12 @@
     "name": "Light Mozzarella cheese",
     "brand": "FarmMilk",
     "barcode": "2098765933327",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 125.0,
-    "servingUnit": "g",
+    "calories": 164.67,
+    "protein": 21.0,
+    "carbs": 1.5,
+    "fat": 8.5,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -30121,7 +29172,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "meduoliai",
+    "name": "Meduoliai",
     "brand": "Jungtinis duonos centras",
     "barcode": "4779019990652",
     "calories": 0.0,
@@ -30449,9 +29500,9 @@
     "name": "Monster Juiced Monarch",
     "brand": "Monster Energy",
     "barcode": "5060896622910",
-    "calories": 0.0,
+    "calories": 44.0,
     "protein": 0.0,
-    "carbs": 0.0,
+    "carbs": 11.0,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": "ml",
@@ -31528,9 +30579,9 @@
     "name": "Pomidoru kecupas",
     "brand": "Suslauiciaus",
     "barcode": "4770135217708",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
+    "calories": 50.0,
+    "protein": 1.6,
+    "carbs": 9.8,
     "fat": 0.0,
     "servingSize": 100.0,
     "servingUnit": "g",
@@ -32828,10 +31879,10 @@
     "name": "Tattel gr. ir sv. skonio",
     "brand": "Taffel",
     "barcode": "4750024002868",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 550.0,
+    "protein": 7.9,
+    "carbs": 61.0,
+    "fat": 30.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -32893,10 +31944,10 @@
     "name": "Toast Cheese",
     "brand": "Clever",
     "barcode": "9008684028922",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 233.0,
+    "protein": 15.0,
+    "carbs": 5.9,
+    "fat": 16.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -32906,10 +31957,10 @@
     "name": "Tomato Ketchup Smoky Bacon Flavour",
     "brand": "Heinz",
     "barcode": "8715700127736",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 109.0,
+    "protein": 1.2,
+    "carbs": 25.0,
+    "fat": 0.3,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -33309,10 +32360,10 @@
     "name": "Vingiuoto pjaustymo pomidorų, svogūnų, sūrio, česnakų ir grietinės skonio bulvių traškučiai",
     "brand": "Estrella",
     "barcode": "4779028345856",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 540.0,
+    "protein": 5.7,
+    "carbs": 48.0,
+    "fat": 35.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -33469,6 +32520,19 @@
     "protein": 1.0,
     "carbs": 1.0,
     "fat": 80.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Volume million lashes mascara",
+    "brand": "L'Oréal",
+    "barcode": "3600521821152",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -34265,19 +33329,6 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "abrikosai",
-    "brand": "Arimex",
-    "barcode": "4771249820075",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -37183,10 +36234,10 @@
     "name": "Cherry Tomato Rice Crispies",
     "brand": "Chazz",
     "barcode": "4779047981516",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 517.0,
+    "protein": 4.2,
+    "carbs": 62.3,
+    "fat": 27.8,
     "servingSize": 1.0,
     "servingUnit": "pack",
     "isLiquid": false,
@@ -37261,12 +36312,12 @@
     "name": "Chicken Sausages Classic",
     "brand": "Well Done",
     "barcode": "2098765854097",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 6.0,
-    "servingUnit": "sausage",
+    "calories": 211.0,
+    "protein": 12.0,
+    "carbs": 0.9,
+    "fat": 18.0,
+    "servingSize": 45.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -37423,6 +36474,19 @@
     "fat": 49.9,
     "servingSize": 100.0,
     "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Chocolate And Biscuit Flavour Quark Bar",
+    "brand": "Magija",
+    "barcode": "4770299400732",
+    "calories": 340.34,
+    "protein": 12.4,
+    "carbs": 23.3,
+    "fat": 21.6,
+    "servingSize": 1.0,
+    "servingUnit": "bar",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -38402,6 +37466,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "dantų pasta",
+    "brand": "Edeka",
+    "barcode": "4311501453018",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Dark Agave Syrup",
     "brand": "Amrita",
     "barcode": "4771544222321",
@@ -39208,6 +38285,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Dziovinti abrikosai Arimex",
+    "brand": "Arimex",
+    "barcode": "4771249820075",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Dziovintos datules ARIMEX PREMIUM",
     "brand": "Arimex",
     "barcode": "4771249816054",
@@ -39352,7 +38442,7 @@
   },
   {
     "name": "Eko moliugu seklu brand. ALVO",
-    "brand": "Alvo",
+    "brand": null,
     "barcode": "4770082320148",
     "calories": 0.0,
     "protein": 0.0,
@@ -40049,6 +39139,19 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "serving",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Frozen peas",
+    "brand": "Bonduelle",
+    "barcode": "3083681036800",
+    "calories": 72.0,
+    "protein": 5.2,
+    "carbs": 8.5,
+    "fat": 0.7,
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -40914,12 +40017,12 @@
     "name": "Green peas",
     "brand": "Kėdainių Konservai",
     "barcode": "4770583214687",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
+    "calories": 74.0,
+    "protein": 5.0,
+    "carbs": 8.0,
+    "fat": 1.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -41652,19 +40755,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "HUVUDROLL Meatballs",
-    "brand": "IKEA",
-    "barcode": "7315121928694",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Hühnerfleisch",
     "brand": null,
     "barcode": "8595153900601",
@@ -42029,7 +41119,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Jacobs Barista 1 kg",
+    "name": "Jacobs Batista pupelės",
     "brand": "Jacobs",
     "barcode": "8711000856000",
     "calories": 0.0,
@@ -42284,19 +41374,6 @@
     "carbs": 26.0,
     "fat": 28.0,
     "servingSize": 28.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "jo jogurtas",
-    "brand": "JO",
-    "barcode": "4770265044250",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -42881,19 +41958,6 @@
     "protein": 15.0,
     "carbs": 1.9,
     "fat": 7.9,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "kambucia",
-    "brand": null,
-    "barcode": "4779045920418",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -43804,7 +42868,7 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 400.0,
+    "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -44122,6 +43186,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Kombūčia",
+    "brand": null,
+    "barcode": "4779045920418",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Koncervuoti saldieji kukurūzai",
     "brand": "Billa",
     "barcode": "9008684028687",
@@ -44398,10 +43475,10 @@
     "name": "Kriu-Kriu vanilinis ledai",
     "brand": "KarKar",
     "barcode": "4770175485570",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 272.0,
+    "protein": 3.0,
+    "carbs": 25.6,
+    "fat": 17.4,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -46049,10 +45126,10 @@
     "name": "Marinuoti Agurkai",
     "brand": "Rimi",
     "barcode": "4752050006018",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 42.0,
+    "protein": 1.0,
+    "carbs": 7.7,
+    "fat": 0.4,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -46224,6 +45301,19 @@
     "fat": 11.0,
     "servingSize": 1.0,
     "servingUnit": "package",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Meatballs",
+    "brand": "Ikea",
+    "barcode": "7315121928694",
+    "calories": 244.0,
+    "protein": 13.0,
+    "carbs": 5.3,
+    "fat": 19.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -46621,10 +45711,10 @@
     "name": "Milk Chocolate",
     "brand": "Karl Fazer",
     "barcode": "6416453095014",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 550.0,
+    "protein": 11.0,
+    "carbs": 49.0,
+    "fat": 33.0,
     "servingSize": 5.62,
     "servingUnit": "ml",
     "isLiquid": true,
@@ -47814,19 +46904,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Norfa Pomidorų Sultys",
-    "brand": "norfa",
-    "barcode": "4770119204625",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Nowaco zuvis",
     "brand": null,
     "barcode": "4771390114016",
@@ -48406,8 +47483,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -49065,10 +48142,10 @@
     "name": "Peanut Cream Cups",
     "brand": "Yummer’s",
     "barcode": "5907178133576",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 552.0,
+    "protein": 8.3,
+    "carbs": 50.0,
+    "fat": 35.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -49097,19 +48174,6 @@
     "fat": 50.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Peas",
-    "brand": "Bonduelle",
-    "barcode": "3083681036800",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -49439,19 +48503,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Pienas",
-    "brand": "Well done",
-    "barcode": "2098765852505",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Pienas 2.5%",
     "brand": "Auga",
     "barcode": "4779055950375",
@@ -49459,6 +48510,19 @@
     "protein": 3.0,
     "carbs": 4.7,
     "fat": 2.5,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Pienas 3.5%",
+    "brand": "Well Done",
+    "barcode": "2098765852505",
+    "calories": 62.0,
+    "protein": 3.2,
+    "carbs": 4.5,
+    "fat": 3.5,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -49998,6 +49062,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Pomidorų Pasta",
+    "brand": "Rimi",
+    "barcode": "4752050210545",
+    "calories": 101.0,
+    "protein": 3.3,
+    "carbs": 19.9,
+    "fat": 0.4,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Pomidorų sultys SANDORA su drusk., 100 %, 0,95I",
     "brand": "Sandora",
     "barcode": "4823063125918",
@@ -50318,7 +49395,7 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.0,
-    "servingUnit": "bar",
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -50609,26 +49686,13 @@
     "source": "github_country_pack"
   },
   {
-    "name": "quark bar",
-    "brand": "Magija",
-    "barcode": "4770299400732",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Quark bar strawberry flavour",
     "brand": "žemaitijos pienas",
     "barcode": "4770299402583",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 274.0,
+    "protein": 25.0,
+    "carbs": 16.9,
+    "fat": 14.2,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -51002,10 +50066,10 @@
     "name": "Redfish",
     "brand": "Sea Snacks",
     "barcode": "4779053650239",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 352.0,
+    "protein": 30.0,
+    "carbs": 0.1,
+    "fat": 10.1,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -54291,9 +53355,9 @@
     "name": "Suslav.padazas",
     "brand": "Suslavičiaus",
     "barcode": "4770135217821",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
+    "calories": 45.0,
+    "protein": 0.2,
+    "carbs": 11.0,
     "fat": 0.0,
     "servingSize": 100.0,
     "servingUnit": "g",
@@ -54902,9 +53966,9 @@
     "name": "The summer edition: forest fruits",
     "brand": "RedBull",
     "barcode": "90474279",
-    "calories": 0.0,
+    "calories": 45.0,
     "protein": 0.0,
-    "carbs": 0.0,
+    "carbs": 11.0,
     "fat": 0.0,
     "servingSize": 250.0,
     "servingUnit": "ml",
@@ -55156,19 +54220,6 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Tomato paste",
-    "brand": "Rimi",
-    "barcode": "4752050210545",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -55705,19 +54756,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "utenos",
-    "brand": "Utenos",
-    "barcode": "4770349229047",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Utenos Radler — Melon 0,0% non alcoholic beer mix",
     "brand": "Utenos",
     "barcode": "4770349233907",
@@ -55728,6 +54766,19 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Utenos šviesusis alus",
+    "brand": "Utenos",
+    "barcode": "4770349229047",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -56342,19 +55393,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Vegetables",
-    "brand": "Hortex",
-    "barcode": "5900477000297",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Vegetables for Cream Soup Sweet Pumpkin Mix",
     "brand": "Bonduelle",
     "barcode": "3083681068801",
@@ -56559,6 +55597,19 @@
     "fat": 25.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "VIP MIX",
+    "brand": "Hortex",
+    "barcode": "5900477000297",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -58438,10 +57489,10 @@
     "name": "Žemės riešutų kremas uldukas",
     "brand": "uldukas",
     "barcode": "4779043700364",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 620.0,
+    "protein": 26.3,
+    "carbs": 18.9,
+    "fat": 49.9,
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -58867,19 +57918,6 @@
     "name": "2496960103505",
     "brand": null,
     "barcode": "2496960103505",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "250+ Manuka Honey",
-    "brand": "H&B",
-    "barcode": "5059604659881",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -59462,19 +58500,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Aliaskinių Menkių Filė Be Odos",
-    "brand": "Lidl",
-    "barcode": "2178517004007",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Aliejus",
     "brand": null,
     "barcode": "0051465770878",
@@ -59601,19 +58626,6 @@
     "fat": 32.0,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Almond Barista",
-    "brand": "Well Done",
-    "barcode": "2098765967889",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -60801,19 +59813,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Apkeptas Picos Sumuštinis Su Saliamiu",
-    "brand": "Iki",
-    "barcode": "4779050743798",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "apkeptas prancüziškassumuštinis su kumpiuir bešamelio padažu",
     "brand": "IKI",
     "barcode": "4775050743781",
@@ -61133,8 +60132,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -61971,19 +60970,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Bake Cutlets Jūratė",
-    "brand": "Done Cookin",
-    "barcode": "4779033978117",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Baked Beans",
     "brand": "Auga",
     "barcode": "4779039730351",
@@ -62075,6 +61061,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Baltakojės krevetės, virtos, be kliatų su uodegelėmis",
+    "brand": null,
+    "barcode": "4771390117864",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Baltas",
     "brand": "Vilkmergės",
     "barcode": "4770477232612",
@@ -62147,6 +61146,19 @@
     "protein": 6.4,
     "carbs": 51.8,
     "fat": 37.7,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Balti Grikių Miltai",
+    "brand": "Biorina",
+    "barcode": "4771138393970",
+    "calories": 359.0,
+    "protein": 8.5,
+    "carbs": 74.9,
+    "fat": 1.5,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -62335,19 +61347,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Bananas",
-    "brand": "Vidal",
-    "barcode": "8413178402682",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "bananiniai grybukai",
     "brand": "Pyraginė",
     "barcode": "4779039230141",
@@ -62377,19 +61376,6 @@
     "name": "Bandelė trikampėlis",
     "brand": null,
     "barcode": "4770217444213",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Bandelės Su Aguonomis",
-    "brand": "Kanrugė",
-    "barcode": "4779037861408",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -62498,19 +61484,6 @@
     "protein": 9.4,
     "carbs": 77.0,
     "fat": 1.1,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Basmati Sella Rice",
-    "brand": "Gralla Premium",
-    "barcode": "4779044822317",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -62764,26 +61737,13 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Beef Jerkey",
-    "brand": "Klaipėdos Mėsa",
-    "barcode": "4770952442567",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Beef Jerky",
     "brand": "Well Done",
     "barcode": "2098765965939",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 296.0,
+    "protein": 45.0,
+    "carbs": 22.0,
+    "fat": 3.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -63271,19 +62231,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "blueberry - Lemon Ice Cream",
-    "brand": "Junga",
-    "barcode": "4770175049321",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Blueberry Blackcurrant Flavor",
     "brand": "Red Bull",
     "barcode": "4779055882126",
@@ -63440,19 +62387,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Boiled Red Beans",
-    "brand": "SKONIO LINIJA",
-    "barcode": "4779023972972",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Boiled Sausages",
     "brand": "Krekenavos",
     "barcode": "4770609186998",
@@ -63505,19 +62439,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Boneless Skinless Chicken Breast Fillets",
-    "brand": "Big Y",
-    "barcode": "0202629908556",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Boneless, Skinless Chicken Thighs",
     "brand": "Boulder Valley Meats",
     "barcode": "2547140010202",
@@ -63566,19 +62487,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Bratwurst Original Hot Smoked Sausages",
-    "brand": "Biovela",
-    "barcode": "0720097173714",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 66.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -63931,6 +62839,19 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Brown Rice Bar with Coconut Milk Chocolate",
+    "brand": "FreeUP",
+    "barcode": "90448881",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "can",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -64974,19 +63895,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cheddar VINTAGE",
-    "brand": "Well done",
-    "barcode": "2098765968107",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Cheese",
     "brand": "Cheese",
     "barcode": "4751015450026",
@@ -65182,19 +64090,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cherry jello",
-    "brand": "Klingai",
-    "barcode": "4770855351218",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "CHEWITS braškinis",
     "brand": null,
     "barcode": "0850996683868",
@@ -65269,32 +64164,6 @@
     "fat": 5.7,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Chicken Chips",
-    "brand": "Ji",
-    "barcode": "4770952442581",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Chicken Chips",
-    "brand": "Klaipėdos Maistas",
-    "barcode": "4170952442541",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -65640,12 +64509,12 @@
     "name": "Chicken wings buffalo spicy",
     "brand": "Lidl",
     "barcode": "4056489641971",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
+    "calories": 153.0,
+    "protein": 13.0,
+    "carbs": 2.0,
+    "fat": 10.4,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -65750,19 +64619,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Chips",
-    "brand": "Vytauto Didziojo",
-    "barcode": "4779047981486",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -66339,19 +65195,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Clown Ice Cream",
-    "brand": "Pols",
-    "barcode": "4770167004574",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 56.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "cocacola",
     "brand": "Coca-Cola",
     "barcode": "4779026911701",
@@ -66404,19 +65247,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "cocolino",
-    "brand": null,
-    "barcode": "8720181410642",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Coconut Cookied",
     "brand": "Šlapaberžės Konditerija",
     "barcode": "4779033420234",
@@ -66456,19 +65286,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Coconut Milk + Kernel Extract",
-    "brand": "Billa",
-    "barcode": "9008684062858",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Cold noodles",
     "brand": "Paldo",
     "barcode": "4571571060015",
@@ -66491,19 +65308,6 @@
     "fat": 23.9,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Cold smoked salmon",
-    "brand": "Saldoga",
-    "barcode": "4770486163488",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -66544,19 +65348,6 @@
     "servingSize": 1.0,
     "servingUnit": "bottle",
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Collagrn Drink Cherrytini",
-    "brand": "Alldeynn",
-    "barcode": "5902837758848",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -66713,19 +65504,6 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Cookies Chocolate Ice Cream Bar",
-    "brand": "Super Viva",
-    "barcode": "8711327636378",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -66950,19 +65728,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cranberries In White Chocolate",
-    "brand": "Nice Bites",
-    "barcode": "9008684055294",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "crazy kveik IPA",
     "brand": "forever brewing",
     "barcode": "4820183001702",
@@ -67023,6 +65788,19 @@
     "carbs": 50.1,
     "fat": 31.7,
     "servingSize": 90.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Creamy Peanut Butter",
+    "brand": "HY-Top",
+    "barcode": "0050700009308",
+    "calories": 580.0,
+    "protein": 20.0,
+    "carbs": 25.0,
+    "fat": 47.0,
+    "servingSize": 15.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -67210,19 +65988,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Cult game changer",
-    "brand": "Cult",
-    "barcode": "4770477234609",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 500.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Cupcakes",
     "brand": null,
     "barcode": "4699302155523",
@@ -67271,19 +66036,6 @@
     "fat": 22.8,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Curd Cheese",
-    "brand": "FarmMilk",
-    "barcode": "2521504002355",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -68861,6 +67613,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "dziov spanguoles wel done",
+    "brand": null,
+    "barcode": "2098766004200",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Dziov. vaisiu mis. ALIS",
     "brand": null,
     "barcode": "4750195023877",
@@ -69397,19 +68162,6 @@
     "name": "ekologiškas jogurtas su obuoliais ir grūdais",
     "brand": "dobilas",
     "barcode": "4770299392211",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 300.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Ekologiškas Jogurtas Su Vanile",
-    "brand": "Dobilas",
-    "barcode": "4770299393836",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -69966,19 +68718,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Extra Jam Raspberry",
-    "brand": "Billa",
-    "barcode": "9008684038174",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Extra Mature Cheddar Cheese",
     "brand": "Crunch",
     "barcode": "5020379143264",
@@ -70144,6 +68883,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Fermentuoti Kopūstai Su Ridikais Ir Avietėm",
+    "brand": "Kvėdarų Ūkis",
+    "barcode": "4771535001102",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -70521,19 +69273,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Fried Kiev Cutlets",
-    "brand": "Done Cooking",
-    "barcode": "4779033977950",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 145.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -71852,6 +70591,19 @@
   },
   {
     "name": "Granola",
+    "brand": "Biržų Duona",
+    "barcode": "4770078195910",
+    "calories": 536.0,
+    "protein": 12.7,
+    "carbs": 60.7,
+    "fat": 25.5,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Granola",
     "brand": "KETO",
     "barcode": "4770078198362",
     "calories": 0.0,
@@ -71860,19 +70612,6 @@
     "fat": 0.0,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Grantortelli with Porcini Mushrooms",
-    "brand": "Rimi",
-    "barcode": "4752050039252",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "package",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -72371,19 +71110,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Grūdėta Varškė Su Mangais",
-    "brand": "Pieno Žvaigždės",
-    "barcode": "4770237060851",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Guminukai meškučiai",
     "brand": null,
     "barcode": "4779023620545",
@@ -72566,9 +71292,9 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Gyoza With BBQ Meat",
-    "brand": "Vici",
-    "barcode": "4779059025529",
+    "name": "gurmanų vytinta dešra",
+    "brand": null,
+    "barcode": "4770609183300",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -72627,6 +71353,19 @@
     "fat": 0.7,
     "servingSize": 1.0,
     "servingUnit": "bag",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Halloumi Sūris",
+    "brand": "Rimi Planet",
+    "barcode": "4752050026672",
+    "calories": 317.0,
+    "protein": 20.0,
+    "carbs": 3.0,
+    "fat": 25.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -72761,6 +71500,32 @@
     "source": "github_country_pack"
   },
   {
+    "name": "hello almonds draze",
+    "brand": null,
+    "barcode": "2098766079253",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "helo raisins zsaldainiai",
+    "brand": null,
+    "barcode": "2098766079239",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Herbal tea with honey - JAUKIEMS ŽIEMOS VAKARAMS",
     "brand": "ETNO",
     "barcode": "4771645224071",
@@ -72846,19 +71611,6 @@
     "protein": 10.0,
     "carbs": 6.2,
     "fat": 1.8,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "High quality Protein WPC80 cookies and cream",
-    "brand": "GYMON",
-    "barcode": "4770207052176",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
@@ -73112,19 +71864,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Hydrate10",
-    "brand": "Lidl Freeway",
-    "barcode": "4304493271258",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "i'm flying hazy DIPA",
     "brand": "forever brewing",
     "barcode": "4820183001696",
@@ -73141,12 +71880,12 @@
     "name": "Ice Biscuit",
     "brand": "Mio Rio",
     "barcode": "2098766093730",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 304.0,
+    "protein": 4.2,
+    "carbs": 41.0,
+    "fat": 14.0,
     "servingSize": 1.0,
-    "servingUnit": "biscuit",
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -73173,19 +71912,6 @@
     "fat": 11.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Ice Cream Blueberry Cookie Sandwich",
-    "brand": "Aurum",
-    "barcode": "4779040603552",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "sandwich",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -73226,6 +71952,19 @@
     "servingSize": 1.0,
     "servingUnit": "stick",
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Ice Cream That Doesn’t Melt Chocolate",
+    "brand": "Star Candies",
+    "barcode": "4779057570151",
+    "calories": 523.0,
+    "protein": 7.94,
+    "carbs": 60.4,
+    "fat": 28.15,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -73341,19 +72080,6 @@
     "carbs": 29.8,
     "fat": 23.9,
     "servingSize": 58.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Iki Kiaušiniai",
-    "brand": "Iki",
-    "barcode": "4779050744023",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -73531,6 +72257,19 @@
     "name": "indian coffe",
     "brand": null,
     "barcode": "4750536003544",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Indu pl.putos FAIDY FOAM",
+    "brand": null,
+    "barcode": "8006540089569",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -73853,19 +72592,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "JACKFRUIT DRIED",
-    "brand": "Alesto",
-    "barcode": "4056489838111",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "jacobs 3 in 1",
     "brand": null,
     "barcode": "8711000571972",
@@ -73983,19 +72709,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "jautiena",
-    "brand": null,
-    "barcode": "4751006980419",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Jautiena",
     "brand": "Maxima",
     "barcode": "2528688009842",
@@ -74109,19 +72822,6 @@
     "fat": 1.7,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Jautiena, riebumas &lt;10%",
-    "brand": "Maxima",
-    "barcode": "2528688006841",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -74542,19 +73242,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Jogurto Gėrimas Su Mangais Ir Persikais",
-    "brand": "Smilga",
-    "barcode": "4770237059633",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Juicy Berries Mixed Frozen",
     "brand": "Well Done",
     "barcode": "2098766094065",
@@ -74597,19 +73284,6 @@
     "name": "Juodasis alus",
     "brand": "Germania",
     "barcode": "4054500144227",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Juodojo šokolado granulės",
-    "brand": "Sanitex",
-    "barcode": "4771459075647",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -75127,19 +73801,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Karališki Minis",
-    "brand": "Ingman",
-    "barcode": "8711327522893",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Karameliniai Iki Ledai",
     "brand": "Iki",
     "barcode": "4770166222887",
@@ -75329,6 +73990,19 @@
     "protein": 20.0,
     "carbs": 1.8,
     "fat": 4.5,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "karsiu  gabaliukai",
+    "brand": null,
+    "barcode": "4779053650727",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -75673,19 +74347,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Karštai Rūkytas Kiaulienos Kumpis",
-    "brand": "Biovela",
-    "barcode": "2328624403136",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Karštai Rūkytas Kleboniškas Saliamis",
     "brand": "Samsonas",
     "barcode": "4770369393636",
@@ -75702,19 +74363,6 @@
     "name": "karštai rūkytas saliamis",
     "brand": "well done",
     "barcode": "2098765748341",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Karštai Rūkytas Servelatas",
-    "brand": "Giminių",
-    "barcode": "4770081181030",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -76648,19 +75296,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Kepti Vištienos Blynai",
-    "brand": "Iki",
-    "barcode": "2102416004752",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Kepti vištienos filė kepsneliai",
     "brand": "Vilniaus Paukštynas",
     "barcode": "4770513126677",
@@ -77337,19 +75972,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Kiaulienos Traškučiai",
-    "brand": "Delikatesas",
-    "barcode": "4770058161492",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Kiaulienos Vytinta Nugarine, Tradicinė",
     "brand": "Dorų Rankų darbo",
     "barcode": "4779027971346",
@@ -77454,19 +76076,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Kietasis Sūris 40%, tarkuotas",
-    "brand": "Džiugas",
-    "barcode": "0710299046152",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Kietojo sūrio užtepėlė",
     "brand": "Kėdainių konservai",
     "barcode": "4770583223627",
@@ -77502,6 +76111,19 @@
     "fat": 1.7,
     "servingSize": 1.0,
     "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Kietųjų Kviečių Makaronai Orecchiette",
+    "brand": "Billa Premium",
+    "barcode": "9008684060373",
+    "calories": 357.0,
+    "protein": 14.0,
+    "carbs": 70.0,
+    "fat": 1.5,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -77558,6 +76180,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Kimchi",
+    "brand": "Kvedarų ūkis",
+    "barcode": "4771535001089",
+    "calories": 39.0,
+    "protein": 1.6,
+    "carbs": 6.0,
+    "fat": 0.5,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Kimchi cashews",
     "brand": "BakaDOr",
     "barcode": "5900587047991",
@@ -77567,6 +76202,19 @@
     "fat": 49.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Kimchi Fermentuotos Daržovės Su Ananasais",
+    "brand": "Kvėdarų Ūkis",
+    "barcode": "4771535001096",
+    "calories": 40.0,
+    "protein": 1.2,
+    "carbs": 6.8,
+    "fat": 0.5,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -77818,19 +76466,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Kleboniška Tirapolio Alpės Vytinta Dešra",
-    "brand": "Samsonas",
-    "barcode": "4770369394558",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Kleboniška Vytinta Nugarine Sausai Sūdyta",
     "brand": "Samsonas",
     "barcode": "2302724102908",
@@ -78078,19 +76713,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Koldūnai Su Jautiena",
-    "brand": "Taurusis Koldūnas",
-    "barcode": "4779053680113",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Koldūnai Su Mėsa Ir Habanero Paprika",
     "brand": "Viči",
     "barcode": "4779059020548",
@@ -78192,6 +76814,19 @@
     "servingSize": 3.3,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Kombūčia",
+    "brand": "Būk Čia",
+    "barcode": "4779045920425",
+    "calories": 19.2,
+    "protein": 0.0,
+    "carbs": 4.8,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -78871,6 +77506,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Kukurūzai Su Aitriosiomis Paprikomis",
+    "brand": "Bonduelle",
+    "barcode": "3083680975162",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "can",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Kukurūzų Lazdelės Su Glaistu",
     "brand": "Mario",
     "barcode": "4750163003290",
@@ -79157,19 +77805,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Kviečiai su medumi",
-    "brand": "Sodžiaus",
-    "barcode": "4770119207091",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Kviečių gemalai",
     "brand": "Malsena",
     "barcode": "4779028203019",
@@ -79420,19 +78055,6 @@
     "name": "latte macchiato",
     "brand": "aroma gold",
     "barcode": "4771632312705",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Lavašas Su Prieskoniais",
-    "brand": "Zapa",
-    "barcode": "4779037390199",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -80041,19 +78663,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Liesas Varškės Sūris 0,5%",
-    "brand": "Piemenėlio",
-    "barcode": "2351481503244",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Lietiniai Blynai",
     "brand": "Dobele",
     "barcode": "4750020041212",
@@ -80522,19 +79131,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Low Far Cottage Cheese",
-    "brand": "Norfa",
-    "barcode": "4770119213788",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Low fat curd",
     "brand": "Saules pienas",
     "barcode": "4770148228197",
@@ -80960,6 +79556,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Majonezas",
+    "brand": "Extra Line",
+    "barcode": "2098765770922",
+    "calories": 206.0,
+    "protein": 0.1,
+    "carbs": 6.8,
+    "fat": 19.0,
+    "servingSize": 450.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -81523,6 +80132,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "MARINUOTI AGURKAI 340g",
+    "brand": null,
+    "barcode": "8697406274405",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Marinuoti Agurkai Su Medumi Ir Garstyčiomis",
     "brand": "Kėdainių Konservai",
     "barcode": "4770583000679",
@@ -81751,19 +80373,6 @@
     "protein": 4.4,
     "carbs": 2.5,
     "fat": 35.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Masdamo Sūris",
-    "brand": "Farm Milk",
-    "barcode": "2098765851997",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -82212,19 +80821,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Meduoliai Su Idaru",
-    "brand": "Riestlita",
-    "barcode": "0770545195801",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 30.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Meduoliai su medumi",
     "brand": null,
     "barcode": "4779019990065",
@@ -82394,19 +80990,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Medžiotojų Rūkytos Dešrelės",
-    "brand": "Biovela",
-    "barcode": "4770081178382",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Medžiotojų Sūtis",
     "brand": "Rambyno",
     "barcode": "2333550902608",
@@ -82485,32 +81068,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Melon Flavor Drink with Kata de Coco",
-    "brand": "MAIKAI",
-    "barcode": "4779040224337",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 280.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Melted cheese spread with chimichurri spices",
-    "brand": "Rokiškio",
-    "barcode": "4770535047769",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Melted Mozzarella",
     "brand": "Rokiškio",
     "barcode": "4770471047571",
@@ -82572,6 +81129,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Mermaid Jewels",
+    "brand": "4d",
+    "barcode": "6936756285061",
+    "calories": 317.0,
+    "protein": 6.6,
+    "carbs": 72.2,
+    "fat": 0.2,
+    "servingSize": 65.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -82706,19 +81276,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Microwave rice",
-    "brand": "duc de coeur",
-    "barcode": "4335619272897",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Microwave rice lemon and rosemary",
     "brand": "Duc De Coeur",
     "barcode": "4335619272880",
@@ -82726,7 +81283,7 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 100.0,
+    "servingSize": 125.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -82787,19 +81344,6 @@
     "name": "Mieles",
     "brand": null,
     "barcode": "8712248868237",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Mieliniai blynai",
-    "brand": "Duobele",
-    "barcode": "4750020041199",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -83008,12 +81552,12 @@
     "name": "Milk Buns With Chocolate",
     "brand": "Trejos Girnos",
     "barcode": "0060410029831",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "ml",
+    "calories": 366.0,
+    "protein": 8.8,
+    "carbs": 52.0,
+    "fat": 13.0,
+    "servingSize": 1.0,
+    "servingUnit": "bun",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -83734,7 +82278,7 @@
   },
   {
     "name": "Morka daržas fas",
-    "brand": "Crispy",
+    "brand": "Sun Crisp",
     "barcode": "4751006960169",
     "calories": 0.0,
     "protein": 0.0,
@@ -83755,19 +82299,6 @@
     "fat": 0.3,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Morkų Kimchi",
-    "brand": "Skonio Linija",
-    "barcode": "4779023973092",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -84091,19 +82622,6 @@
     "protein": 13.7,
     "carbs": 4.26,
     "fat": 2.58,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Mwat",
-    "brand": "Judra",
-    "barcode": "2354689003561",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -85176,19 +83694,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Nextgen Plant Protein",
-    "brand": "NARA",
-    "barcode": "4779060960291",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "nežinomas krantas",
     "brand": "nežinomas krantas",
     "barcode": "4770349227296",
@@ -85276,19 +83781,6 @@
     "fat": 12.0,
     "servingSize": 1.0,
     "servingUnit": "bar",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Noodzie Spicy Bulgogi Beef",
-    "brand": "Sun Yan",
-    "barcode": "4770107259132",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -85640,19 +84132,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "packet",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Onion Nuts",
-    "brand": "Jega",
-    "barcode": "4771173211680",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -86434,19 +84913,6 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Panettone Ice Cream with Belgian Chocolate Filling",
-    "brand": "Aurum",
-    "barcode": "4779040602852",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -87256,19 +85722,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Pickled Cucumber Soup with Beef",
-    "brand": "Beata",
-    "barcode": "4770107259439",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 400.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Picos pagrindas",
     "brand": "KETO lengvai",
     "barcode": "4770078197006",
@@ -87386,6 +85839,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Pieniskas Sokoladas",
+    "brand": "Ruta",
+    "barcode": "4770123208619",
+    "calories": 542.0,
+    "protein": 5.5,
+    "carbs": 56.9,
+    "fat": 31.8,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "pieniskos desreles",
     "brand": "Biovela",
     "barcode": "4770081178429",
@@ -87474,19 +85940,6 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Pikachu Gummy Candy Cola Flavor",
-    "brand": "Zed 3D Gummy",
-    "barcode": "4779055882560",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 9.0,
-    "servingUnit": "gummy",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -87646,6 +86099,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "pilsner 4.7%",
+    "brand": "volfas engelman",
+    "barcode": "4770301237219",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "pilsner magnum",
     "brand": "Kalnapilis",
     "barcode": "4770477232810",
@@ -87746,19 +86212,6 @@
     "fat": 10.3,
     "servingSize": 1.0,
     "servingUnit": "pack",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Pink Soup Sandwich",
-    "brand": "Food On Foot",
-    "barcode": "4771033037672",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -87961,10 +86414,10 @@
     "name": "Pizza Salami",
     "brand": "Clever",
     "barcode": "9008684057144",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 259.0,
+    "protein": 10.0,
+    "carbs": 31.0,
+    "fat": 10.0,
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
@@ -88071,19 +86524,6 @@
     "fat": 26.0,
     "servingSize": 1.0,
     "servingUnit": "lapelis",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Plakamoji Grietinele",
-    "brand": "Pilos",
-    "barcode": "4056489642787",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -88292,19 +86732,6 @@
     "fat": 21.5,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Plombyras Sokoladiniai Ledai",
-    "brand": "Klasika",
-    "barcode": "4740093006270",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 65.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -88902,7 +87329,7 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.0,
-    "servingUnit": "portion",
+    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -89362,7 +87789,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "PROTEIN LUNCH BOX WITH CHICKEN",
+    "name": "Protein Lunch Box with Chicken",
     "brand": "Fit & Easy",
     "barcode": "4779027041704",
     "calories": 0.0,
@@ -89488,19 +87915,6 @@
     "fat": 0.1,
     "servingSize": 1.0,
     "servingUnit": "bottle",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Protein Yogurt, Blueberry",
-    "brand": "Well Done",
-    "barcode": "2098766111427",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 150.0,
-    "servingUnit": "ml",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -90363,19 +88777,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Ramen Noodle",
-    "brand": "Taste Me",
-    "barcode": "6977753610111",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Rankų Darbo Pistacijų Ledai",
     "brand": "Nerijaus Ledai",
     "barcode": "4779049440141",
@@ -90623,19 +89024,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Ravioli su baravykais",
-    "brand": "Bravopasta",
-    "barcode": "4779036731498",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Ravioli Truffle",
     "brand": "Well Done",
     "barcode": "2098766092962",
@@ -90727,15 +89115,15 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Red Bull ZERO",
+    "name": "Red Bull Sugar Free",
     "brand": "Red Bull",
-    "barcode": "90448881",
-    "calories": 0.0,
+    "barcode": "9002490267414",
+    "calories": 3.0,
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.0,
-    "servingUnit": "can",
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -90788,6 +89176,19 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Rice Cakes With Sunflower Seeds",
+    "brand": "EuroWafel",
+    "barcode": "5906203909063",
+    "calories": 396.75,
+    "protein": 8.5,
+    "carbs": 76.0,
+    "fat": 5.4,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -90897,7 +89298,7 @@
   },
   {
     "name": "riesutai mio rio papriks",
-    "brand": "Mio & Rio",
+    "brand": null,
     "barcode": "2098765932573",
     "calories": 0.0,
     "protein": 0.0,
@@ -91143,13 +89544,13 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Round Rice (Virtų santykis 1:2,5)",
-    "brand": "Gralla Premium",
+    "name": "Round rice",
+    "brand": "Gralla",
     "barcode": "4779044821013",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 346.0,
+    "protein": 5.7,
+    "carbs": 78.3,
+    "fat": 0.4,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -91527,19 +89928,6 @@
     "protein": 7.5,
     "carbs": 76.1,
     "fat": 2.9,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Ryžių Ir Krabų Skonio Lazdelių Salotos",
-    "brand": "Meistro Kokybė",
-    "barcode": "2573699010141",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -92417,19 +90805,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Salotos Su Jautiena Ir Stikliniais Makaronais",
-    "brand": "Iki Šefai",
-    "barcode": "4779050743828",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 290.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Salotos Su Karštai Rūkytu Kumpiu",
     "brand": "Chef Select",
     "barcode": "4056489083788",
@@ -92706,11 +91081,11 @@
     "name": "Sandwich with Ham",
     "brand": "Fresh Walk",
     "barcode": "4771069192932",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 190.0,
+    "calories": 166.0,
+    "protein": 4.74,
+    "carbs": 17.9,
+    "fat": 8.21,
+    "servingSize": 195.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -93782,6 +92157,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Sidras clasik s mojito zalias",
+    "brand": null,
+    "barcode": "4770301237097",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Sienofen Pizza Lachs",
     "brand": "Ballino",
     "barcode": "20252243",
@@ -94627,19 +93015,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Smulkinta Jūrinio Ešerio Filė",
-    "brand": "Jūros Vėjais",
-    "barcode": "4779038360245",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Smulkinta Kiauliena ir Jautiena",
     "brand": "Rimi",
     "barcode": "4752050007824",
@@ -94714,19 +93089,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Snacks Bacon Flavoured",
-    "brand": "Mr Check",
-    "barcode": "4771173210430",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -95118,6 +93480,19 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Spaghetti",
+    "brand": "Armando",
+    "barcode": "8005709400054",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -95771,19 +94146,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Stracciatella",
-    "brand": "Well Done",
-    "barcode": "2098766076788",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 150.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Strawberries",
     "brand": "bauer",
     "barcode": "5903154542073",
@@ -95940,19 +94302,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Su Kiauliena",
-    "brand": "Rivona",
-    "barcode": "9952807000008",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "SU SALTALANKIAIS IR IMBIERU arbatos koncentratas 750 ml",
     "brand": null,
     "barcode": "4771645223289",
@@ -95962,19 +94311,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Su Vištienos Kebabu",
-    "brand": "Rivona",
-    "barcode": "9952867000000",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -96222,19 +94558,6 @@
     "fat": 6.6,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Sumuštinių duona su sėklomis ir grūdais",
-    "brand": "Duončiaus",
-    "barcode": "4770119220748",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "slice",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -96814,10 +95137,10 @@
     "name": "Sūrelis Su Avietėmis",
     "brand": "Pole",
     "barcode": "4770167004055",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 353.0,
+    "protein": 10.8,
+    "carbs": 26.2,
+    "fat": 22.7,
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -96963,19 +95286,6 @@
     "fat": 23.3,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Sūris Premium",
-    "brand": "Žagarės",
-    "barcode": "2302614303101",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -97487,19 +95797,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Tilapia Fillets Honey Hemp Seed Marinade",
-    "brand": "Well Done",
-    "barcode": "2098766023652",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Tilsit",
     "brand": "Milbona",
     "barcode": "4056489176756",
@@ -97548,19 +95845,6 @@
     "fat": 1.3,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Tingibarščiai",
-    "brand": "Activus",
-    "barcode": "4770107260220",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -98306,19 +96590,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Treat Chocolate Cookies",
-    "brand": "Selga",
-    "barcode": "4750007000560",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Trikampis Sumuštinis Cezaris Su Šonine Ir Vištiena",
     "brand": "Iki",
     "barcode": "2202336000015",
@@ -98693,19 +96964,6 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Unlimited",
-    "brand": "Dynamit",
-    "barcode": "4770301234782",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -99107,7 +97365,7 @@
     "carbs": 0.0,
     "fat": 0.0,
     "servingSize": 1.0,
-    "servingUnit": "sandwich",
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -99121,19 +97379,6 @@
     "fat": 9.2,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Vanilla Flavored Ice Cream With Truffle Filling And Cocoa Pieces",
-    "brand": "Aurum",
-    "barcode": "4779040602869",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -99385,19 +97630,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Varškė",
-    "brand": "-",
-    "barcode": "4770119209460",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Varškė 9%",
     "brand": "Rimi",
     "barcode": "4752050021240",
@@ -99509,19 +97741,6 @@
     "protein": 16.0,
     "carbs": 2.7,
     "fat": 9.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Varškė, Pusriebė, 9%",
-    "brand": "Auga",
-    "barcode": "4779055950146",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -99730,19 +97949,6 @@
     "protein": 20.0,
     "carbs": 2.4,
     "fat": 22.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Varškės Sūris",
-    "brand": "Ilzenbergo Dvaro Ūkis",
-    "barcode": "4779039357800",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -100265,19 +98471,6 @@
     "fat": 1.5,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Virtas &quot;Kleboniškas ausų-liežuvių&quot; slėgtainis",
-    "brand": "Samsonas",
-    "barcode": "2436932003945",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -101049,19 +99242,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Vištienos Paplotėliai Su Voveraitėmis",
-    "brand": "Vilniaus Paukštynas",
-    "barcode": "4770513131886",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Vištienos Salotos Su Garstyčių Padažu",
     "brand": "Maxima",
     "barcode": "2904488200014",
@@ -101283,19 +99463,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Viščiukų broilerių vidinė filė",
-    "brand": "Lidl",
-    "barcode": "20396978",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Viščiukų broilerių vidinė filė XXL",
     "brand": "Skonio Ženklas (Lidl)",
     "barcode": "2145190010724",
@@ -101448,19 +99615,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Vysniu Dzemas",
-    "brand": "Kedainiu",
-    "barcode": "4770583221760",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 100.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -101695,19 +99849,6 @@
     "fat": 34.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "vytinta žuvus",
-    "brand": null,
-    "barcode": "4779053650727",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -102232,19 +100373,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Whey Protein &quot;Pistachio Donut&quot;",
-    "brand": "Hito.Lab",
-    "barcode": "5060727123036",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 30.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Whey Protein (cookies and cream)",
     "brand": "Levrosupplements",
     "barcode": "5903719201582",
@@ -102521,10 +100649,10 @@
     "name": "Wokmix Orient",
     "brand": "Bauer",
     "barcode": "5903154545012",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 30.0,
+    "protein": 2.3,
+    "carbs": 3.3,
+    "fat": 0.3,
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -102723,19 +100851,6 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Yogurt Strawberry",
-    "brand": "Mio&Rio",
-    "barcode": "2098765967988",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -103242,19 +101357,6 @@
     "fat": 0.0,
     "servingSize": 1000.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Šakotis",
-    "brand": "Pamario Kepykla",
-    "barcode": "2354531710425",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -103948,19 +102050,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Šokoladinis Tortas Su Kataifi Ir Pistacijų Įdaru",
-    "brand": "Beatričės saldumynai",
-    "barcode": "4779035240311",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Šokoladinių Saldainių Rinkinys",
     "brand": "Rūta",
     "barcode": "4770123215167",
@@ -104263,6 +102352,19 @@
     "name": "šviesusis",
     "brand": "leffe",
     "barcode": "4779039700125",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "šviesusis",
+    "brand": "Utenos",
+    "barcode": "4770075022554",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -104620,6 +102722,19 @@
     "fat": 9.0,
     "servingSize": 1.0,
     "servingUnit": "sausage",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Švyturys",
+    "brand": "Švyturys",
+    "barcode": "4770349224073",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -105654,10 +103769,10 @@
     "name": "Рогалик с вишней",
     "brand": "вв",
     "barcode": "2100100677176",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 343.5,
+    "protein": 4.0,
+    "carbs": 74.9,
+    "fat": 3.1,
     "servingSize": 80.0,
     "servingUnit": "g",
     "isLiquid": false,

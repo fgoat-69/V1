@@ -39,19 +39,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "LIT ENERGY",
-    "brand": null,
-    "barcode": "4680232931080",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Milk 2.5%",
     "brand": "Весёлый Молочник",
     "barcode": "4610082840454",
@@ -208,19 +195,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Памир",
-    "brand": null,
-    "barcode": "4700004000049",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Пельмени С Говядиной Ручной Работы",
     "brand": "Kaynar Food",
     "barcode": "4700022890066",
@@ -282,19 +256,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "tbsp",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "султан чай",
-    "brand": null,
-    "barcode": "4702963440034",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -367,9 +328,9 @@
     "name": "Негазированный безалкогольный напиток с экстрактом чая и со вкусом персика",
     "brand": "Fuse Tea",
     "barcode": "5449000189332",
-    "calories": 0.0,
+    "calories": 29.0,
     "protein": 0.0,
-    "carbs": 0.0,
+    "carbs": 6.9,
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
@@ -475,6 +436,19 @@
     "protein": 6.0,
     "carbs": 53.0,
     "fat": 32.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Nivea",
+    "brand": "NIVEA",
+    "barcode": "4005808158003",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,

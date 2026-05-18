@@ -26,6 +26,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "09233JU40",
+    "brand": null,
+    "barcode": "0305210071148",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "6RANGE CRUSY",
     "brand": null,
     "barcode": "4791066003079",
@@ -218,6 +231,19 @@
     "servingSize": 20.0,
     "servingUnit": "ml",
     "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "CeraVe SA Cleanser",
+    "brand": null,
+    "barcode": "3606000537552",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -491,19 +517,6 @@
     "servingSize": 15.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Corn flakes",
-    "brand": "Nutrimate",
-    "barcode": "4796006940728",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 300.0,
-    "servingUnit": "g",
-    "isLiquid": false,
     "source": "github_country_pack"
   },
   {
@@ -1082,19 +1095,6 @@
     "name": "maliban milk sorties box",
     "brand": "maliban",
     "barcode": "14791034032213",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Maliban Real Chocolate 315g",
-    "brand": "Maliban",
-    "barcode": "4791034074124",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -3094,6 +3094,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "manchee chocolate cream biuscits",
+    "brand": "manchee",
+    "barcode": "4792192851701",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Mirinda",
     "brand": "pepsi",
     "barcode": "4792241000708",
@@ -4134,6 +4147,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Maliban Real Chocolate",
+    "brand": "Maliban",
+    "barcode": "4791034070546",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Maliban Wefers Vanilla Cteam",
     "brand": "Maliban",
     "barcode": "4791034071826",
@@ -4212,6 +4238,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Chocolate cream biscuits",
+    "brand": "manchee",
+    "barcode": "4792192845366",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Chocolate fingers",
     "brand": "CBL",
     "barcode": "4792192526210",
@@ -4287,6 +4326,19 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "maliban real chocolate cream biscuit",
+    "brand": "maliban",
+    "barcode": "4791034072366",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -4680,32 +4732,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Maliban Real Chocolate",
-    "brand": "Maliban",
-    "barcode": "4791034070546",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "manchee chocolate cream biuscits",
-    "brand": "manchee",
-    "barcode": "4792192851701",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "MUNCHEE Hawaian Cookies",
     "brand": "munchee",
     "barcode": "8888101080204",
@@ -4989,19 +5015,6 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Chocolate cream biscuits",
-    "brand": "manchee",
-    "barcode": "4792192845366",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -5499,19 +5512,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "maliban real chocolate cream biscuit",
-    "brand": "maliban",
-    "barcode": "4791034072366",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Maliban Smart Cream Cracker",
     "brand": "Maliban",
     "barcode": "4791034042215",
@@ -5821,19 +5821,6 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Rusk milk",
-    "brand": "Parle",
-    "barcode": "8901719902567",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
@@ -6884,6 +6871,19 @@
     "protein": 6.8,
     "carbs": 25.8,
     "fat": 58.8,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "johnson and johnson",
+    "brand": null,
+    "barcode": "8712561384841",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,

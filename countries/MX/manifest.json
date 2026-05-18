@@ -1,8 +1,8 @@
 {
   "countryIso2": "MX",
   "slug": "mexico",
-  "version": 1778492791,
-  "generatedAt": "2026-05-11T09:46:31.768255+00:00",
+  "version": 1779098327,
+  "generatedAt": "2026-05-18T09:58:47.693688+00:00",
   "strategy": "full",
   "itemCountDiscovered": 14914,
   "bytesDiscovered": 3198078,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-11T09:46:31.768255+00:00",
+    "generatedAt": "2026-05-18T09:58:47.693688+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

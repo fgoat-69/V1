@@ -1,8 +1,8 @@
 {
   "countryIso2": "BR",
   "slug": "brazil",
-  "version": 1778493483,
-  "generatedAt": "2026-05-11T09:58:03.459169+00:00",
+  "version": 1779098539,
+  "generatedAt": "2026-05-18T10:02:19.205959+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 31799,
   "bytesDiscovered": 6991154,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-11T09:58:03.459169+00:00",
+    "generatedAt": "2026-05-18T10:02:19.205959+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

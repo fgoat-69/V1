@@ -13,7 +13,7 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Original Taste",
+    "name": "Original ethiopian",
     "brand": "Coca-Cola",
     "barcode": "54491472",
     "calories": 0.0,
@@ -186,11 +186,11 @@
     "brand": "Spartak",
     "barcode": "4810067104230",
     "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
+    "protein": 6.0,
+    "carbs": 51.0,
+    "fat": 33.0,
+    "servingSize": null,
+    "servingUnit": "ml",
     "isLiquid": true,
     "source": "github_country_pack"
   },
@@ -215,19 +215,6 @@
     "protein": 11.5,
     "carbs": 72.5,
     "fat": 1.2,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Conchiglie Rotate №128",
-    "brand": "Pasteroni",
-    "barcode": "4660000326164",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
@@ -269,19 +256,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Meat Chips Острые",
-    "brand": "Cabandos",
-    "barcode": "4810953031558",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bag",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -442,19 +416,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Булиба solomka Tailand garimdorisi",
-    "brand": "Белпродукт",
-    "barcode": "4810279006278",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Булочка Для Бургера",
     "brand": "Соседи",
     "barcode": "00051592",
@@ -464,45 +425,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "bun",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Вафельный Батончик Vitba.by С Воздушным Рисом В Молочной Глазури",
-    "brand": "Витьба",
-    "barcode": "4810128005117",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Вафельный Батончик С Арахисом В Молочной Глазури",
-    "brand": "Витьба",
-    "barcode": "4810128006053",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Вафельный Батончик Со Вкусом Миндаля",
-    "brand": "Витьба",
-    "barcode": "4810128010944",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -676,6 +598,19 @@
     "source": "github_country_pack"
   },
   {
+    "name": "Йогурт High-Pro Черника-Малина",
+    "brand": "Exponenta",
+    "barcode": "4811485041732",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
     "name": "Карамельный Рафт",
     "brand": "Топ",
     "barcode": "4810268055836",
@@ -806,19 +741,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Колбаса &quot;Милано&quot; Из мяса Цыплят-Бройлеров",
-    "brand": "Петруха",
-    "barcode": "4810953026288",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "stick",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Колбаса &quot;Пеперони&quot;",
     "brand": "Петруха",
     "barcode": "4810953038144",
@@ -854,19 +776,6 @@
     "fat": 11.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Крекер &quot;С Солью&quot;",
-    "brand": "Слодыч",
-    "barcode": "4810064021899",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bag",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -997,19 +906,6 @@
     "fat": 2.0,
     "servingSize": 120.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Макароны Цельнозерновые &quot;Спиральки&quot;",
-    "brand": "Столичная Мельница",
-    "barcode": "4810047004048",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bag",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1170,19 +1066,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Орешки",
-    "brand": "Булочная Мануфактура",
-    "barcode": "2070148006668",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "nut",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Паста Арахисовая",
     "brand": "Красный Пищевик",
     "barcode": "4810411020032",
@@ -1244,19 +1127,6 @@
     "fat": 7.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Печенье Сдобное &quot;Шоко-Шок&quot; Глазированное",
-    "brand": "Слодыч",
-    "barcode": "4810064028188",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "cookie",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1361,19 +1231,6 @@
     "fat": 26.3,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Сладости Мучные &quot;Барские&quot; Глазированные",
-    "brand": "Булочная Мануфактура",
-    "barcode": "4813252002243",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bagel",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1608,19 +1465,6 @@
     "fat": 21.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Трубочки Со Сгущёнкой",
-    "brand": "Caramel",
-    "barcode": "00072905",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "serving",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1911,19 +1755,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Шоколад Горький С Малиной И Дроблёным Фундуком",
-    "brand": "Спартак",
-    "barcode": "4810067104223",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Шоколад Молочный",
     "brand": "Коммунарка",
     "barcode": "4810410037505",
@@ -1946,19 +1777,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "stick",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Шоколад Молочный Взрывной Микс",
-    "brand": "Спартак",
-    "barcode": "4810067104308",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 1.0,
-    "servingUnit": "bar",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -2115,19 +1933,6 @@
     "fat": 0.0,
     "servingSize": 1.0,
     "servingUnit": "portion",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Йогурт High-Pro Черника-Малина",
-    "brand": "Exponenta",
-    "barcode": "4811485041732",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 160.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -2639,19 +2444,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Слобода",
-    "brand": null,
-    "barcode": "4600699512097",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Театральная Карамель",
     "brand": "Слодыч",
     "barcode": "4810064022360",
@@ -2932,8 +2724,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 230.0,
-    "servingUnit": "g",
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -3120,28 +2912,28 @@
     "source": "github_country_pack"
   },
   {
-    "name": "творог",
-    "brand": "Савушкин",
-    "barcode": "4810268030178",
-    "calories": 0.0,
-    "protein": 0.0,
+    "name": "сыр творожный &quot;Кремчиз Воздушный&quot; с наполнителем &quot;Песто и базилик&quot; 65%",
+    "brand": "Bonfesto",
+    "barcode": "4810898002491",
+    "calories": 200.0,
+    "protein": 5.2,
     "carbs": 0.0,
-    "fat": 0.0,
+    "fat": 20.4,
     "servingSize": 100.0,
-    "servingUnit": null,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
   {
-    "name": "творожный сыр зелень",
-    "brand": "Bonfesto",
-    "barcode": "4810898002491",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "name": "творог",
+    "brand": "Савушкин",
+    "barcode": "4810268030178",
+    "calories": 117.0,
+    "protein": 16.5,
+    "carbs": 1.5,
+    "fat": 5.0,
     "servingSize": 100.0,
-    "servingUnit": "g",
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -3669,10 +3461,10 @@
     "name": "масло сладкосливочное несоленое Брест-Литовск 82,5% высший сорт",
     "brand": "Брест-Литовск",
     "barcode": "4810268042966",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
+    "calories": 747.7,
+    "protein": 0.5,
+    "carbs": 0.8,
+    "fat": 82.5,
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
@@ -3998,8 +3790,8 @@
     "protein": 0.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": 380.0,
-    "servingUnit": "g",
+    "servingSize": null,
+    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -4013,19 +3805,6 @@
     "fat": 0.0,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "сыр дружба",
-    "brand": null,
-    "barcode": "4810767015423",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -4280,6 +4059,19 @@
     "name": "4810450002518",
     "brand": null,
     "barcode": "4810450002518",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "4810898000503",
+    "brand": null,
+    "barcode": "4810898000503",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -5408,19 +5200,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Зефир Чародей",
-    "brand": "Красный пищевик",
-    "barcode": "4810411010422",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": 25.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "имбирь молотый",
     "brand": "CYKORIA S.A.",
     "barcode": "5900288102197",
@@ -5720,19 +5499,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Крим чиз креветки и зелень",
-    "brand": null,
-    "barcode": "4810898002668",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "круасан",
     "brand": "7days",
     "barcode": "5201360543472",
@@ -5892,19 +5658,6 @@
     "name": "марыля",
     "brand": null,
     "barcode": "4811108000016",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "маскарпоне",
-    "brand": null,
-    "barcode": "4810898000503",
     "calories": 0.0,
     "protein": 0.0,
     "carbs": 0.0,
@@ -7267,19 +7020,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "хлопья кукурузные золотистые",
-    "brand": null,
-    "barcode": "4810128002895",
-    "calories": 0.0,
-    "protein": 0.0,
-    "carbs": 0.0,
-    "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "хлопья овсяные Геркулес",
     "brand": "Алтайская крупа",
     "barcode": "4813559001840",
@@ -8225,6 +7965,19 @@
     "fat": 0.5,
     "servingSize": null,
     "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Бульба",
+    "brand": "Белпродукт",
+    "barcode": "4810279006278",
+    "calories": 0.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
     "isLiquid": false,
     "source": "github_country_pack"
   },

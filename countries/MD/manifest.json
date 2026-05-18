@@ -1,13 +1,13 @@
 {
   "countryIso2": "MD",
   "slug": "moldova",
-  "version": 1778489697,
-  "generatedAt": "2026-05-11T08:54:57.181449+00:00",
+  "version": 1779094759,
+  "generatedAt": "2026-05-18T08:59:19.553252+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 1143,
-  "bytesDiscovered": 243568,
-  "itemCountTotal": 1143,
-  "itemCountMain": 1143,
+  "itemCountDiscovered": 1126,
+  "bytesDiscovered": 240024,
+  "itemCountTotal": 1126,
+  "itemCountMain": 1126,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,12 +16,12 @@
       "name": "full.json",
       "path": "countries/MD/full.json",
       "kind": "full",
-      "itemCount": 1143,
-      "bytes": 243568
+      "itemCount": 1126,
+      "bytes": 240024
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-11T08:54:57.181449+00:00",
+    "generatedAt": "2026-05-18T08:59:19.553252+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
@@ -29,11 +29,11 @@
     "fullPackMaxItems": 15000,
     "targetTotalBytes": 7000000,
     "targetMainBytes": 5000000,
-    "scannedProducts": 4479013,
-    "matchedProducts": 1704,
-    "mappedProducts": 1143,
+    "scannedProducts": 4428145,
+    "matchedProducts": 1686,
+    "mappedProducts": 1126,
     "dedupedProducts": 0,
-    "discoveredItemCount": 1143,
-    "discoveredBytes": 243568
+    "discoveredItemCount": 1126,
+    "discoveredBytes": 240024
   }
 }
