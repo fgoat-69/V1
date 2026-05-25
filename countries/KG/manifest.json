@@ -1,8 +1,8 @@
 {
   "countryIso2": "KG",
   "slug": "kyrgyzstan",
-  "version": 1779095788,
-  "generatedAt": "2026-05-18T09:16:28.995393+00:00",
+  "version": 1779702240,
+  "generatedAt": "2026-05-25T09:44:00.818024+00:00",
   "strategy": "full",
   "itemCountDiscovered": 118,
   "bytesDiscovered": 26707,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-18T09:16:28.995393+00:00",
+    "generatedAt": "2026-05-25T09:44:00.818024+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

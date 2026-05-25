@@ -1,8 +1,8 @@
 {
   "countryIso2": "CO",
   "slug": "colombia",
-  "version": 1779098540,
-  "generatedAt": "2026-05-18T10:02:20.278032+00:00",
+  "version": 1779704685,
+  "generatedAt": "2026-05-25T10:24:45.727314+00:00",
   "strategy": "full",
   "itemCountDiscovered": 5988,
   "bytesDiscovered": 1284084,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-18T10:02:20.278032+00:00",
+    "generatedAt": "2026-05-25T10:24:45.727314+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
