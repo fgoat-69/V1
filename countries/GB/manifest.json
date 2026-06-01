@@ -1,8 +1,8 @@
 {
   "countryIso2": "GB",
   "slug": "united-kingdom",
-  "version": 1779699797,
-  "generatedAt": "2026-05-25T09:03:16.504963+00:00",
+  "version": 1780307938,
+  "generatedAt": "2026-06-01T09:58:56.990225+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 166748,
   "bytesDiscovered": 35942331,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-25T09:03:16.504963+00:00",
+    "generatedAt": "2026-06-01T09:58:56.990225+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

@@ -1,8 +1,8 @@
 {
   "countryIso2": "JP",
   "slug": "japan",
-  "version": 1779702270,
-  "generatedAt": "2026-05-25T09:44:29.848726+00:00",
+  "version": 1780310100,
+  "generatedAt": "2026-06-01T10:34:59.996946+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 36915,
   "bytesDiscovered": 8427302,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-25T09:44:29.848726+00:00",
+    "generatedAt": "2026-06-01T10:34:59.996946+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

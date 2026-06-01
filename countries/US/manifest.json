@@ -1,8 +1,8 @@
 {
   "countryIso2": "US",
   "slug": "united-states",
-  "version": 1779704692,
-  "generatedAt": "2026-05-25T10:24:45.516846+00:00",
+  "version": 1780312620,
+  "generatedAt": "2026-06-01T11:16:52.180257+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 875690,
   "bytesDiscovered": 196123071,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-05-25T10:24:45.516846+00:00",
+    "generatedAt": "2026-06-01T11:16:52.180257+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
