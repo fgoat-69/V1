@@ -1,8 +1,8 @@
 {
   "countryIso2": "IL",
   "slug": "israel",
-  "version": 1780309020,
-  "generatedAt": "2026-06-01T10:16:59.958023+00:00",
+  "version": 1781522595,
+  "generatedAt": "2026-06-15T11:23:15.870545+00:00",
   "strategy": "full",
   "itemCountDiscovered": 6661,
   "bytesDiscovered": 1482841,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-06-01T10:16:59.958023+00:00",
+    "generatedAt": "2026-06-15T11:23:15.870545+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

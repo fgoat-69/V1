@@ -1,8 +1,8 @@
 {
   "countryIso2": "CN",
   "slug": "china",
-  "version": 1780310099,
-  "generatedAt": "2026-06-01T10:34:59.792226+00:00",
+  "version": 1781523730,
+  "generatedAt": "2026-06-15T11:42:10.862473+00:00",
   "strategy": "full",
   "itemCountDiscovered": 1269,
   "bytesDiscovered": 272000,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-06-01T10:34:59.792226+00:00",
+    "generatedAt": "2026-06-15T11:42:10.862473+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
