@@ -1,8 +1,8 @@
 {
   "countryIso2": "EG",
   "slug": "egypt",
-  "version": 1781523858,
-  "generatedAt": "2026-06-15T11:44:18.352205+00:00",
+  "version": 1782728128,
+  "generatedAt": "2026-06-29T10:15:28.468758+00:00",
   "strategy": "full",
   "itemCountDiscovered": 2986,
   "bytesDiscovered": 637440,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-06-15T11:44:18.352205+00:00",
+    "generatedAt": "2026-06-29T10:15:28.468758+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",

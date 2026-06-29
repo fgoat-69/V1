@@ -1,8 +1,8 @@
 {
   "countryIso2": "ZA",
   "slug": "south-africa",
-  "version": 1781525075,
-  "generatedAt": "2026-06-15T12:04:35.023099+00:00",
+  "version": 1782729354,
+  "generatedAt": "2026-06-29T10:35:54.517134+00:00",
   "strategy": "full",
   "itemCountDiscovered": 8861,
   "bytesDiscovered": 1902594,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-06-15T12:04:35.023099+00:00",
+    "generatedAt": "2026-06-29T10:35:54.517134+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
