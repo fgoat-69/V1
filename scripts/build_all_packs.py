@@ -378,6 +378,7 @@ def init_country_state(iso2, slug):
         "matchedProducts": 0,
         "mappedProducts": 0,
         "dedupedProducts": 0,
+        "skippedNoNutrition": 0,
     }
 
 
@@ -423,6 +424,8 @@ def single_pass_collect(countries_to_build):
             states[iso2]["matchedProducts"] += 1
 
         if not mapped:
+            for iso2 in matched_isos:
+                states[iso2]["skippedNoNutrition"] += 1
             continue
 
         key = normalize_key(mapped)
@@ -452,9 +455,10 @@ def build_meta_for_country(dump_path, scanned_products, state):
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": (
             "This build is generated from a single pass over the OFF JSONL dump with "
-            "country filtering, app-field reduction, and per-country deduplication. "
-            "Large countries are popularity-sorted using OFF popularity fields when available "
-            "before budget-based packaging."
+            "country filtering, app-field reduction, nutrition filtering, and per-country "
+            "deduplication. Products with completely empty calories/protein/carbs/fat are "
+            "skipped unless they appear to be plain water. Large countries are popularity-sorted "
+            "using OFF popularity fields when available before budget-based packaging."
         ),
         "dumpUrl": DUMP_URL,
         "dumpCachePath": dump_path,
@@ -465,6 +469,7 @@ def build_meta_for_country(dump_path, scanned_products, state):
         "matchedProducts": state["matchedProducts"],
         "mappedProducts": state["mappedProducts"],
         "dedupedProducts": state["dedupedProducts"],
+        "skippedNoNutrition": state.get("skippedNoNutrition", 0),
         "discoveredItemCount": len(discovered_items),
         "discoveredBytes": json_bytes(discovered_items),
     }
