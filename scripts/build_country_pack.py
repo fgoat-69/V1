@@ -77,11 +77,11 @@ def parse_serving_size(raw):
 
     if unit in {"l", "liter", "litre", "liters", "litres"}:
         return size_value * 1000.0, "ml"
-    if unit in {"dl"}:
+    if unit == "dl":
         return size_value * 100.0, "ml"
-    if unit in {"cl"}:
+    if unit == "cl":
         return size_value * 10.0, "ml"
-    if unit in {"ml"}:
+    if unit == "ml":
         return size_value, "ml"
 
     if unit in {"kg", "kilogram", "kilograms"}:
@@ -98,6 +98,36 @@ def looks_liquid(name, serving_unit):
 
     lowered = normalize_text(name)
     return any(token in lowered for token in LIQUID_HINTS)
+
+
+def is_plain_water_product(product, name):
+    category_tags = product.get("categories_tags") or []
+    if not isinstance(category_tags, list):
+        category_tags = []
+
+    text = normalize_text(
+        " ".join([
+            name or "",
+            str(product.get("categories") or ""),
+            str(product.get("categories_en") or ""),
+            " ".join(str(x) for x in category_tags),
+        ])
+    )
+
+    water_terms = {
+        "water",
+        "waters",
+        "mineral-water",
+        "mineral-waters",
+        "spring-water",
+        "spring-waters",
+        "natural-mineral-water",
+        "natural-mineral-waters",
+        "eau",
+        "wasser",
+    }
+
+    return any(term in text for term in water_terms)
 
 
 def first_brand(brands):
@@ -122,6 +152,13 @@ def to_float(value):
         return float(value)
     except (TypeError, ValueError):
         return None
+
+
+def first_number(*values):
+    for value in values:
+        if value is not None:
+            return value
+    return None
 
 
 def get_nutriments(product):
@@ -209,46 +246,52 @@ def map_product(product):
 
     nutr = get_nutriments(product)
 
-    kcal = (
-    to_float(nutr.get("energy-kcal_100g"))
-    or to_float(nutr.get("energy-kcal"))
-    or to_float(nutr.get("energy-kcal_serving"))
-)
+    kcal = first_number(
+        to_float(nutr.get("energy-kcal_100g")),
+        to_float(nutr.get("energy-kcal")),
+        to_float(nutr.get("energy-kcal_serving")),
+    )
 
-energy_kj = (
-    to_float(nutr.get("energy_100g"))
-    or to_float(nutr.get("energy"))
-    or to_float(nutr.get("energy_serving"))
-)
+    energy_kj = first_number(
+        to_float(nutr.get("energy-kj_100g")),
+        to_float(nutr.get("energy-kj")),
+        to_float(nutr.get("energy-kj_serving")),
+        to_float(nutr.get("energy_100g")),
+        to_float(nutr.get("energy")),
+        to_float(nutr.get("energy_serving")),
+    )
 
-if kcal is None and energy_kj is not None:
-    kcal = energy_kj / 4.184
+    if kcal is None and energy_kj is not None:
+        kcal = energy_kj / 4.184
 
-protein = (
-    to_float(nutr.get("proteins_100g"))
-    or to_float(nutr.get("proteins"))
-    or to_float(nutr.get("proteins_serving"))
-)
+    protein = first_number(
+        to_float(nutr.get("proteins_100g")),
+        to_float(nutr.get("proteins")),
+        to_float(nutr.get("proteins_serving")),
+    )
 
-carbs = (
-    to_float(nutr.get("carbohydrates_100g"))
-    or to_float(nutr.get("carbohydrates"))
-    or to_float(nutr.get("carbohydrates_serving"))
-)
+    carbs = first_number(
+        to_float(nutr.get("carbohydrates_100g")),
+        to_float(nutr.get("carbohydrates")),
+        to_float(nutr.get("carbohydrates_serving")),
+    )
 
-fat = (
-    to_float(nutr.get("fat_100g"))
-    or to_float(nutr.get("fat"))
-    or to_float(nutr.get("fat_serving"))
-)
+    fat = first_number(
+        to_float(nutr.get("fat_100g")),
+        to_float(nutr.get("fat")),
+        to_float(nutr.get("fat_serving")),
+    )
 
-kcal = 0.0 if kcal is None else kcal
-protein = 0.0 if protein is None else protein
-carbs = 0.0 if carbs is None else carbs
-fat = 0.0 if fat is None else fat
+    kcal = 0.0 if kcal is None else kcal
+    protein = 0.0 if protein is None else protein
+    carbs = 0.0 if carbs is None else carbs
+    fat = 0.0 if fat is None else fat
 
-if kcal == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
-    return None
+    # Skip products with completely missing/empty macro data.
+    # Exception: true plain water is valid at zero calories/macros.
+    if kcal == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
+        if not is_plain_water_product(product, name):
+            return None
 
     brand = first_brand(product.get("brands"))
     barcode = (product.get("code") or "").strip() or None
@@ -457,6 +500,7 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
     deduped_products = 0
     skipped_no_name = 0
     skipped_no_key = 0
+    skipped_no_nutrition = 0
 
     for _, product in iter_dump_products(dump_path):
         scanned_products += 1
@@ -468,7 +512,7 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
 
         mapped = map_product(product)
         if not mapped:
-            skipped_no_name += 1
+            skipped_no_nutrition += 1
             continue
 
         mapped_products += 1
@@ -496,9 +540,10 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
         "discoveryMethod": "off_jsonl_dump_country_filter",
         "coverageNote": (
             "This build is generated from the OFF JSONL dump with country filtering, "
-            "app-field reduction, and deduplication. Macro-less items are retained if they "
-            "have a usable product name and dedupe key. Large countries are popularity-sorted "
-            "using OFF popularity fields when available before budget-based packaging."
+            "app-field reduction, nutrition filtering, and deduplication. Products with "
+            "completely empty calories/protein/carbs/fat are skipped unless they appear "
+            "to be plain water. Large countries are popularity-sorted using OFF popularity "
+            "fields when available before budget-based packaging."
         ),
         "dumpUrl": DUMP_URL,
         "dumpCachePath": dump_path,
@@ -511,6 +556,7 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
         "dedupedProducts": deduped_products,
         "skippedNoName": skipped_no_name,
         "skippedNoKey": skipped_no_key,
+        "skippedNoNutrition": skipped_no_nutrition,
         "discoveredItemCount": discovered_count,
         "discoveredBytes": discovered_size,
     }
