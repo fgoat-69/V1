@@ -209,15 +209,46 @@ def map_product(product):
 
     nutr = get_nutriments(product)
 
-    kcal = to_float(nutr.get("energy-kcal_100g"))
-    protein = to_float(nutr.get("proteins_100g"))
-    carbs = to_float(nutr.get("carbohydrates_100g"))
-    fat = to_float(nutr.get("fat_100g"))
+    kcal = (
+    to_float(nutr.get("energy-kcal_100g"))
+    or to_float(nutr.get("energy-kcal"))
+    or to_float(nutr.get("energy-kcal_serving"))
+)
 
-    kcal = 0.0 if kcal is None else kcal
-    protein = 0.0 if protein is None else protein
-    carbs = 0.0 if carbs is None else carbs
-    fat = 0.0 if fat is None else fat
+energy_kj = (
+    to_float(nutr.get("energy_100g"))
+    or to_float(nutr.get("energy"))
+    or to_float(nutr.get("energy_serving"))
+)
+
+if kcal is None and energy_kj is not None:
+    kcal = energy_kj / 4.184
+
+protein = (
+    to_float(nutr.get("proteins_100g"))
+    or to_float(nutr.get("proteins"))
+    or to_float(nutr.get("proteins_serving"))
+)
+
+carbs = (
+    to_float(nutr.get("carbohydrates_100g"))
+    or to_float(nutr.get("carbohydrates"))
+    or to_float(nutr.get("carbohydrates_serving"))
+)
+
+fat = (
+    to_float(nutr.get("fat_100g"))
+    or to_float(nutr.get("fat"))
+    or to_float(nutr.get("fat_serving"))
+)
+
+kcal = 0.0 if kcal is None else kcal
+protein = 0.0 if protein is None else protein
+carbs = 0.0 if carbs is None else carbs
+fat = 0.0 if fat is None else fat
+
+if kcal == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
+    return None
 
     brand = first_brand(product.get("brands"))
     barcode = (product.get("code") or "").strip() or None
