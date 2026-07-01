@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T11:17:18.761177+00:00",
+  "generatedAt": "2026-07-01T20:34:56.188933+00:00",
   "countryCount": 179,
   "countries": [
     {
@@ -923,36 +923,29 @@
     {
       "countryIso2": "CA",
       "slug": "canada",
-      "version": 1782730495,
-      "generatedAt": "2026-06-29T10:54:54.124524+00:00",
-      "strategy": "main_fill",
-      "itemCountDiscovered": 115736,
-      "bytesDiscovered": 24765923,
-      "itemCountTotal": 32268,
-      "itemCountMain": 22960,
-      "itemCountFill": 9308,
+      "version": 1782937989,
+      "generatedAt": "2026-07-01T20:33:09.007405+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 2396,
+      "bytesDiscovered": 517279,
+      "itemCountTotal": 2396,
+      "itemCountMain": 2396,
+      "itemCountFill": 0,
       "targetTotalBytes": 7000000,
       "targetMainBytes": 5000000,
       "packFiles": [
         {
-          "name": "main.json",
-          "path": "countries/CA/main.json",
-          "kind": "main",
-          "itemCount": 22960,
-          "bytes": 4999929
-        },
-        {
-          "name": "fill.json",
-          "path": "countries/CA/fill.json",
-          "kind": "fill",
-          "itemCount": 9308,
-          "bytes": 1999956
+          "name": "full.json",
+          "path": "countries/CA/full.json",
+          "kind": "full",
+          "itemCount": 2396,
+          "bytes": 517279
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-06-29T10:54:54.124524+00:00",
+        "generatedAt": "2026-07-01T20:33:09.007405+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
-        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
         "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
         "fullPackMaxItems": 15000,
@@ -960,10 +953,11 @@
         "targetMainBytes": 5000000,
         "scannedProducts": 4428145,
         "matchedProducts": 118680,
-        "mappedProducts": 115736,
+        "mappedProducts": 2396,
         "dedupedProducts": 0,
-        "discoveredItemCount": 115736,
-        "discoveredBytes": 24765923
+        "skippedNoNutrition": 116284,
+        "discoveredItemCount": 2396,
+        "discoveredBytes": 517279
       }
     },
     {
@@ -4457,13 +4451,13 @@
     {
       "countryIso2": "MX",
       "slug": "mexico",
-      "version": 1782730495,
-      "generatedAt": "2026-06-29T10:54:55.864854+00:00",
+      "version": 1782937989,
+      "generatedAt": "2026-07-01T20:33:09.210635+00:00",
       "strategy": "full",
-      "itemCountDiscovered": 14914,
-      "bytesDiscovered": 3198078,
-      "itemCountTotal": 14914,
-      "itemCountMain": 14914,
+      "itemCountDiscovered": 259,
+      "bytesDiscovered": 55354,
+      "itemCountTotal": 259,
+      "itemCountMain": 259,
       "itemCountFill": 0,
       "targetTotalBytes": 7000000,
       "targetMainBytes": 5000000,
@@ -4472,14 +4466,14 @@
           "name": "full.json",
           "path": "countries/MX/full.json",
           "kind": "full",
-          "itemCount": 14914,
-          "bytes": 3198078
+          "itemCount": 259,
+          "bytes": 55354
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-06-29T10:54:55.864854+00:00",
+        "generatedAt": "2026-07-01T20:33:09.210635+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
-        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
         "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
         "fullPackMaxItems": 15000,
@@ -4487,10 +4481,11 @@
         "targetMainBytes": 5000000,
         "scannedProducts": 4428145,
         "matchedProducts": 16622,
-        "mappedProducts": 14914,
+        "mappedProducts": 259,
         "dedupedProducts": 0,
-        "discoveredItemCount": 14914,
-        "discoveredBytes": 3198078
+        "skippedNoNutrition": 16363,
+        "discoveredItemCount": 259,
+        "discoveredBytes": 55354
       }
     },
     {
@@ -6598,14 +6593,14 @@
     {
       "countryIso2": "US",
       "slug": "united-states",
-      "version": 1782730492,
-      "generatedAt": "2026-06-29T10:54:45.724788+00:00",
+      "version": 1782937988,
+      "generatedAt": "2026-07-01T20:33:02.793926+00:00",
       "strategy": "main_fill",
-      "itemCountDiscovered": 875690,
-      "bytesDiscovered": 196123071,
-      "itemCountTotal": 31431,
-      "itemCountMain": 22431,
-      "itemCountFill": 9000,
+      "itemCountDiscovered": 683397,
+      "bytesDiscovered": 154437921,
+      "itemCountTotal": 30967,
+      "itemCountMain": 22122,
+      "itemCountFill": 8845,
       "targetTotalBytes": 7000000,
       "targetMainBytes": 5000000,
       "packFiles": [
@@ -6613,21 +6608,21 @@
           "name": "main.json",
           "path": "countries/US/main.json",
           "kind": "main",
-          "itemCount": 22431,
-          "bytes": 4999858
+          "itemCount": 22122,
+          "bytes": 4999907
         },
         {
           "name": "fill.json",
           "path": "countries/US/fill.json",
           "kind": "fill",
-          "itemCount": 9000,
-          "bytes": 2000046
+          "itemCount": 8845,
+          "bytes": 1999896
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-06-29T10:54:45.724788+00:00",
+        "generatedAt": "2026-07-01T20:33:02.793926+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
-        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
         "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
         "fullPackMaxItems": 15000,
@@ -6635,10 +6630,11 @@
         "targetMainBytes": 5000000,
         "scannedProducts": 4428145,
         "matchedProducts": 892422,
-        "mappedProducts": 875693,
-        "dedupedProducts": 3,
-        "discoveredItemCount": 875690,
-        "discoveredBytes": 196123071
+        "mappedProducts": 683397,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 209025,
+        "discoveredItemCount": 683397,
+        "discoveredBytes": 154437921
       }
     },
     {

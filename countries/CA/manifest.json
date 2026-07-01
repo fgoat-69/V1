@@ -1,36 +1,29 @@
 {
   "countryIso2": "CA",
   "slug": "canada",
-  "version": 1782730495,
-  "generatedAt": "2026-06-29T10:54:54.124524+00:00",
-  "strategy": "main_fill",
-  "itemCountDiscovered": 115736,
-  "bytesDiscovered": 24765923,
-  "itemCountTotal": 32268,
-  "itemCountMain": 22960,
-  "itemCountFill": 9308,
+  "version": 1782937989,
+  "generatedAt": "2026-07-01T20:33:09.007405+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 2396,
+  "bytesDiscovered": 517279,
+  "itemCountTotal": 2396,
+  "itemCountMain": 2396,
+  "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
   "packFiles": [
     {
-      "name": "main.json",
-      "path": "countries/CA/main.json",
-      "kind": "main",
-      "itemCount": 22960,
-      "bytes": 4999929
-    },
-    {
-      "name": "fill.json",
-      "path": "countries/CA/fill.json",
-      "kind": "fill",
-      "itemCount": 9308,
-      "bytes": 1999956
+      "name": "full.json",
+      "path": "countries/CA/full.json",
+      "kind": "full",
+      "itemCount": 2396,
+      "bytes": 517279
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-06-29T10:54:54.124524+00:00",
+    "generatedAt": "2026-07-01T20:33:09.007405+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
-    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
     "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
     "fullPackMaxItems": 15000,
@@ -38,9 +31,10 @@
     "targetMainBytes": 5000000,
     "scannedProducts": 4428145,
     "matchedProducts": 118680,
-    "mappedProducts": 115736,
+    "mappedProducts": 2396,
     "dedupedProducts": 0,
-    "discoveredItemCount": 115736,
-    "discoveredBytes": 24765923
+    "skippedNoNutrition": 116284,
+    "discoveredItemCount": 2396,
+    "discoveredBytes": 517279
   }
 }

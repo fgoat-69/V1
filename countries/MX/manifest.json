@@ -1,13 +1,13 @@
 {
   "countryIso2": "MX",
   "slug": "mexico",
-  "version": 1782730495,
-  "generatedAt": "2026-06-29T10:54:55.864854+00:00",
+  "version": 1782937989,
+  "generatedAt": "2026-07-01T20:33:09.210635+00:00",
   "strategy": "full",
-  "itemCountDiscovered": 14914,
-  "bytesDiscovered": 3198078,
-  "itemCountTotal": 14914,
-  "itemCountMain": 14914,
+  "itemCountDiscovered": 259,
+  "bytesDiscovered": 55354,
+  "itemCountTotal": 259,
+  "itemCountMain": 259,
   "itemCountFill": 0,
   "targetTotalBytes": 7000000,
   "targetMainBytes": 5000000,
@@ -16,14 +16,14 @@
       "name": "full.json",
       "path": "countries/MX/full.json",
       "kind": "full",
-      "itemCount": 14914,
-      "bytes": 3198078
+      "itemCount": 259,
+      "bytes": 55354
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-06-29T10:54:55.864854+00:00",
+    "generatedAt": "2026-07-01T20:33:09.210635+00:00",
     "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
-    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
     "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
     "fullPackMaxItems": 15000,
@@ -31,9 +31,10 @@
     "targetMainBytes": 5000000,
     "scannedProducts": 4428145,
     "matchedProducts": 16622,
-    "mappedProducts": 14914,
+    "mappedProducts": 259,
     "dedupedProducts": 0,
-    "discoveredItemCount": 14914,
-    "discoveredBytes": 3198078
+    "skippedNoNutrition": 16363,
+    "discoveredItemCount": 259,
+    "discoveredBytes": 55354
   }
 }
