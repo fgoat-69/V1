@@ -1,0 +1,27 @@
+name: Cleanup country packs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Delete generated country pack files
+        run: |
+          find countries -mindepth 2 -maxdepth 2 \( -name "full.json" -o -name "main.json" -o -name "fill.json" -o -name "manifest.json" \) -delete
+
+      - name: Commit cleanup
+        run: |
+          git config user.name "actions-user"
+          git config user.email "actions@github.com"
+          git add countries
+          git commit -m "Clean stale generated country packs" || echo "No changes to commit"
+          git push
