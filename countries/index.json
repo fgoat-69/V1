@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T09:10:03.271963+00:00",
+  "generatedAt": "2026-07-02T09:42:43.204195+00:00",
   "countryCount": 179,
   "countries": [
     {
@@ -1438,8 +1438,8 @@
     {
       "countryIso2": "DE",
       "slug": "germany",
-      "version": 1782983279,
-      "generatedAt": "2026-07-02T09:07:59.261460+00:00",
+      "version": 1782985236,
+      "generatedAt": "2026-07-02T09:40:36.424791+00:00",
       "strategy": "full",
       "itemCountDiscovered": 94,
       "bytesDiscovered": 20049,
@@ -1458,7 +1458,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-02T09:07:59.261460+00:00",
+        "generatedAt": "2026-07-02T09:40:36.424791+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
