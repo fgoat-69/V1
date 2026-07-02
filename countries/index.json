@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T09:42:43.204195+00:00",
+  "generatedAt": "2026-07-02T17:51:17.065724+00:00",
   "countryCount": 179,
   "countries": [
     {
@@ -1438,13 +1438,13 @@
     {
       "countryIso2": "DE",
       "slug": "germany",
-      "version": 1782985236,
-      "generatedAt": "2026-07-02T09:40:36.424791+00:00",
+      "version": 1783014555,
+      "generatedAt": "2026-07-02T17:49:15.931622+00:00",
       "strategy": "full",
-      "itemCountDiscovered": 94,
-      "bytesDiscovered": 20049,
-      "itemCountTotal": 94,
-      "itemCountMain": 94,
+      "itemCountDiscovered": 86,
+      "bytesDiscovered": 18337,
+      "itemCountTotal": 86,
+      "itemCountMain": 86,
       "itemCountFill": 0,
       "targetTotalBytes": 7000000,
       "targetMainBytes": 5000000,
@@ -1453,26 +1453,26 @@
           "name": "full.json",
           "path": "countries/DE/full.json",
           "kind": "full",
-          "itemCount": 94,
-          "bytes": 20049
+          "itemCount": 86,
+          "bytes": 18337
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-02T09:40:36.424791+00:00",
+        "generatedAt": "2026-07-02T17:49:15.931622+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
-        "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+        "dumpUrl": "https://openfoodfacts-ds.s3.eu-west-3.amazonaws.com/openfoodfacts-products.jsonl.gz",
         "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
         "fullPackMaxItems": 15000,
         "targetTotalBytes": 7000000,
         "targetMainBytes": 5000000,
-        "scannedProducts": 4428145,
-        "matchedProducts": 402121,
-        "mappedProducts": 94,
+        "scannedProducts": 4593735,
+        "matchedProducts": 414179,
+        "mappedProducts": 86,
         "dedupedProducts": 0,
-        "skippedNoNutrition": 402027,
-        "discoveredItemCount": 94,
-        "discoveredBytes": 20049
+        "skippedNoNutrition": 414093,
+        "discoveredItemCount": 86,
+        "discoveredBytes": 18337
       }
     },
     {

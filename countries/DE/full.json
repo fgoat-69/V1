@@ -1,14 +1,14 @@
 [
   {
-    "name": "Corn Flour Chips with Sesame",
-    "brand": "Camy",
+    "name": "Creatina Monohidratada",
+    "brand": "JungleFit",
     "barcode": "9780201379624",
     "calories": 371.0,
     "protein": 0.0,
     "carbs": 74.7,
     "fat": 1.53,
-    "servingSize": 1.0,
-    "servingUnit": "portion",
+    "servingSize": 5.0,
+    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -85,8 +85,8 @@
     "protein": 20.0,
     "carbs": 0.0,
     "fat": 0.0,
-    "servingSize": null,
-    "servingUnit": null,
+    "servingSize": 0.12,
+    "servingUnit": "tsp",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -165,32 +165,6 @@
     "fat": 0.0,
     "servingSize": null,
     "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "dentalux Zahncreme complex 5",
-    "brand": null,
-    "barcode": "20006891",
-    "calories": 284.0,
-    "protein": 10.3,
-    "carbs": 48.0,
-    "fat": 4.6,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Omega 3",
-    "brand": "Mivolis",
-    "barcode": "4058172695896",
-    "calories": 753.0,
-    "protein": 21.0,
-    "carbs": 4.5,
-    "fat": 73.0,
-    "servingSize": 1.0,
-    "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -780,19 +754,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "No Duck Donburi",
-    "brand": "Wagamama",
-    "barcode": "4015400623496",
-    "calories": 501.0,
-    "protein": 29.19,
-    "carbs": 56.22,
-    "fat": 14.82,
-    "servingSize": 500.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Organic white mulberry tea",
     "brand": "Grappa",
     "barcode": "00000408",
@@ -919,19 +880,6 @@
     "fat": 6.1,
     "servingSize": 100.0,
     "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Schweinemett gewürzt",
-    "brand": null,
-    "barcode": "20251970",
-    "calories": 237.0,
-    "protein": 16.5,
-    "carbs": 0.0,
-    "fat": 19.0,
-    "servingSize": null,
-    "servingUnit": null,
     "isLiquid": false,
     "source": "github_country_pack"
   },
@@ -1066,19 +1014,6 @@
     "source": "github_country_pack"
   },
   {
-    "name": "Bierwurst",
-    "brand": "Penny",
-    "barcode": "20344863",
-    "calories": 208.0,
-    "protein": 15.0,
-    "carbs": 1.0,
-    "fat": 16.0,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
     "name": "Bio Chia Samen",
     "brand": "Tilia",
     "barcode": "00000971",
@@ -1100,32 +1035,6 @@
     "carbs": 0.5,
     "fat": 0.7,
     "servingSize": 40.0,
-    "servingUnit": "g",
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Eier",
-    "brand": "Bauern",
-    "barcode": "3253581595213",
-    "calories": 74.0,
-    "protein": 6.5,
-    "carbs": 0.8,
-    "fat": 5.1,
-    "servingSize": null,
-    "servingUnit": null,
-    "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Joghurt Mit Der Ecke Mandel Crunch",
-    "brand": "Müller",
-    "barcode": "5704947005368",
-    "calories": 182.0,
-    "protein": 5.9,
-    "carbs": 16.0,
-    "fat": 10.1,
-    "servingSize": 113.0,
     "servingUnit": "g",
     "isLiquid": false,
     "source": "github_country_pack"
@@ -1154,19 +1063,6 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
-  },
-  {
-    "name": "Sportness Protein Shake Vegan Cookies and Cream",
-    "brand": null,
-    "barcode": "4066447600889",
-    "calories": 367.0,
-    "protein": 74.0,
-    "carbs": 8.8,
-    "fat": 3.6,
-    "servingSize": 30.0,
-    "servingUnit": "ml",
-    "isLiquid": true,
     "source": "github_country_pack"
   },
   {
