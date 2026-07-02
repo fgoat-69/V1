@@ -452,7 +452,7 @@ def build_meta_for_country(dump_path, scanned_products, state):
 
     return discovered_items, {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": (
             "This build is generated from a single pass over the OFF JSONL dump with "
             "country filtering, app-field reduction, nutrition filtering, and per-country "
