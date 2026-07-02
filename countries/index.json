@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T20:34:56.188933+00:00",
+  "generatedAt": "2026-07-02T08:25:07.013139+00:00",
   "countryCount": 179,
   "countries": [
     {
@@ -1438,36 +1438,29 @@
     {
       "countryIso2": "DE",
       "slug": "germany",
-      "version": 1782725553,
-      "generatedAt": "2026-06-29T09:32:30.870250+00:00",
-      "strategy": "main_fill",
-      "itemCountDiscovered": 379500,
-      "bytesDiscovered": 80385844,
-      "itemCountTotal": 33083,
-      "itemCountMain": 23607,
-      "itemCountFill": 9476,
+      "version": 1782980653,
+      "generatedAt": "2026-07-02T08:24:13.328196+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 5248,
+      "bytesDiscovered": 1129835,
+      "itemCountTotal": 5248,
+      "itemCountMain": 5248,
+      "itemCountFill": 0,
       "targetTotalBytes": 7000000,
       "targetMainBytes": 5000000,
       "packFiles": [
         {
-          "name": "main.json",
-          "path": "countries/DE/main.json",
-          "kind": "main",
-          "itemCount": 23607,
-          "bytes": 4999970
-        },
-        {
-          "name": "fill.json",
-          "path": "countries/DE/fill.json",
-          "kind": "fill",
-          "itemCount": 9476,
-          "bytes": 1999821
+          "name": "full.json",
+          "path": "countries/DE/full.json",
+          "kind": "full",
+          "itemCount": 5248,
+          "bytes": 1129835
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-06-29T09:32:30.870250+00:00",
+        "generatedAt": "2026-07-02T08:24:13.328196+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
-        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, and per-country deduplication. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
         "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
         "fullPackMaxItems": 15000,
@@ -1475,10 +1468,11 @@
         "targetMainBytes": 5000000,
         "scannedProducts": 4428145,
         "matchedProducts": 402121,
-        "mappedProducts": 379500,
+        "mappedProducts": 5248,
         "dedupedProducts": 0,
-        "discoveredItemCount": 379500,
-        "discoveredBytes": 80385844
+        "skippedNoNutrition": 396873,
+        "discoveredItemCount": 5248,
+        "discoveredBytes": 1129835
       }
     },
     {
