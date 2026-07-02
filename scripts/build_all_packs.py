@@ -454,7 +454,7 @@ def build_meta_for_country(dump_path, scanned_products, state):
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": (
-            "This build is generated from a single pass over the OFF JSONL dump with "
+            "This build is generated from a single pass over the OFF CSV dump with "
             "country filtering, app-field reduction, nutrition filtering, and per-country "
             "deduplication. Products with completely empty calories/protein/carbs/fat are "
             "skipped unless they appear to be plain water. Large countries are popularity-sorted "
