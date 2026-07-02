@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T17:51:17.065724+00:00",
+  "generatedAt": "2026-07-02T19:15:13.880344+00:00",
   "countryCount": 179,
   "countries": [
     {
@@ -1438,41 +1438,48 @@
     {
       "countryIso2": "DE",
       "slug": "germany",
-      "version": 1783014555,
-      "generatedAt": "2026-07-02T17:49:15.931622+00:00",
-      "strategy": "full",
-      "itemCountDiscovered": 86,
-      "bytesDiscovered": 18337,
-      "itemCountTotal": 86,
-      "itemCountMain": 86,
-      "itemCountFill": 0,
+      "version": 1783019586,
+      "generatedAt": "2026-07-02T19:13:04.007128+00:00",
+      "strategy": "main_fill",
+      "itemCountDiscovered": 222871,
+      "bytesDiscovered": 48421498,
+      "itemCountTotal": 31992,
+      "itemCountMain": 22854,
+      "itemCountFill": 9138,
       "targetTotalBytes": 7000000,
       "targetMainBytes": 5000000,
       "packFiles": [
         {
-          "name": "full.json",
-          "path": "countries/DE/full.json",
-          "kind": "full",
-          "itemCount": 86,
-          "bytes": 18337
+          "name": "main.json",
+          "path": "countries/DE/main.json",
+          "kind": "main",
+          "itemCount": 22854,
+          "bytes": 4999856
+        },
+        {
+          "name": "fill.json",
+          "path": "countries/DE/fill.json",
+          "kind": "fill",
+          "itemCount": 9138,
+          "bytes": 2000075
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-02T17:49:15.931622+00:00",
+        "generatedAt": "2026-07-02T19:13:04.007128+00:00",
         "discoveryMethod": "off_jsonl_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF JSONL dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
-        "dumpUrl": "https://openfoodfacts-ds.s3.eu-west-3.amazonaws.com/openfoodfacts-products.jsonl.gz",
-        "dumpCachePath": ".cache/openfoodfacts-products.jsonl.gz",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
         "fullPackMaxItems": 15000,
         "targetTotalBytes": 7000000,
         "targetMainBytes": 5000000,
-        "scannedProducts": 4593735,
-        "matchedProducts": 414179,
-        "mappedProducts": 86,
+        "scannedProducts": 4532767,
+        "matchedProducts": 408720,
+        "mappedProducts": 222871,
         "dedupedProducts": 0,
-        "skippedNoNutrition": 414093,
-        "discoveredItemCount": 86,
-        "discoveredBytes": 18337
+        "skippedNoNutrition": 185849,
+        "discoveredItemCount": 222871,
+        "discoveredBytes": 48421498
       }
     },
     {
