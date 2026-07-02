@@ -1,3 +1,4 @@
+import csv
 import gzip
 import json
 import os
@@ -10,7 +11,7 @@ import requests
 
 DUMP_URL = os.getenv(
     "OFF_DUMP_URL",
-    "https://openfoodfacts-ds.s3.eu-west-3.amazonaws.com/openfoodfacts-products.jsonl.gz",
+    "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
 )
 DOWNLOAD_STALL_TIMEOUT_SECONDS = int(os.getenv("OFF_DOWNLOAD_STALL_TIMEOUT_SECONDS", "120"))
 DOWNLOAD_CHUNK_SIZE = 1024 * 1024
@@ -20,11 +21,11 @@ TARGET_MAIN_BYTES = 5_000_000
 FULL_PACK_MAX_ITEMS = 15_000
 
 CACHE_DIR = ".cache"
-DUMP_FILENAME = os.getenv("OFF_DUMP_FILENAME", "openfoodfacts-products.jsonl.gz")
+DUMP_FILENAME = os.getenv("OFF_DUMP_FILENAME", "en.openfoodfacts.org.products.csv.gz")
 DUMP_PATH = os.path.join(CACHE_DIR, DUMP_FILENAME)
 
 DEBUG_BARCODES = {
-    "8000500082379",  # Nutella from your screenshot
+    "8000500082379",
 }
 
 USER_AGENT = os.getenv(
@@ -55,6 +56,47 @@ def normalize_key(item):
         return f"nb:{name}|{brand}"
 
     return None
+
+
+def split_csv_like_string(value):
+    if not value:
+        return []
+    return [part.strip() for part in str(value).split(",") if part.strip()]
+
+
+def to_float(value):
+    if value in (None, ""):
+        return None
+
+    text = str(value).strip().replace(",", ".")
+    if not text:
+        return None
+
+    try:
+        return float(text)
+    except (TypeError, ValueError):
+        return None
+
+
+def first_number(*values):
+    for value in values:
+        if value is not None:
+            return value
+    return None
+
+
+def first_text(*values):
+    for value in values:
+        text = str(value or "").strip()
+        if text:
+            return text
+    return ""
+
+
+def first_brand(brands):
+    if not brands:
+        return None
+    return str(brands).split(",")[0].strip() or None
 
 
 def parse_serving_size(raw):
@@ -99,44 +141,6 @@ def looks_liquid(name, serving_unit):
     return any(token in lowered for token in LIQUID_HINTS)
 
 
-def first_brand(brands):
-    if not brands:
-        return None
-
-    if isinstance(brands, list):
-        for value in brands:
-            text = str(value).strip()
-            if text:
-                return text
-        return None
-
-    return str(brands).split(",")[0].strip() or None
-
-
-def to_float(value):
-    if value in (None, ""):
-        return None
-
-    try:
-        return float(str(value).replace(",", "."))
-    except (TypeError, ValueError):
-        return None
-
-
-def first_number(*values):
-    for value in values:
-        if value is not None:
-            return value
-    return None
-
-
-def get_nutriments(product):
-    nutr = product.get("nutriments")
-    if isinstance(nutr, dict):
-        return nutr
-    return {}
-
-
 def get_popularity_score(product):
     for key in (
         "unique_scans_n",
@@ -156,13 +160,6 @@ def get_popularity_score(product):
     return 0
 
 
-def split_csv_like_string(value):
-    if not value:
-        return []
-
-    return [part.strip() for part in str(value).split(",") if part.strip()]
-
-
 def product_country_tokens(product):
     values = []
 
@@ -170,7 +167,7 @@ def product_country_tokens(product):
         "countries",
         "countries_en",
         "countries_tags",
-        "countries_tags_en",
+        "main_countries_tags",
     ):
         raw = product.get(key)
 
@@ -215,59 +212,66 @@ def debug_product(product, reason, values=None):
     print("Countries:", product.get("countries"))
     print("Countries tags:", product.get("countries_tags"))
     print("Calculated values:", json.dumps(values or {}, indent=2, ensure_ascii=False))
-    print("Top-level keys:", sorted(list(product.keys()))[:200])
-    print("Nutriments:")
-    print(json.dumps(product.get("nutriments", {}), indent=2, ensure_ascii=False))
+    print("Available nutrient fields:")
+    nutrient_keys = [
+        key for key in product.keys()
+        if any(x in key for x in ["energy", "protein", "carbohydrate", "fat"])
+    ]
+    print(json.dumps(sorted(nutrient_keys), indent=2, ensure_ascii=False))
     print("===================================\n")
 
 
 def map_product(product):
-    name = (product.get("product_name") or "").strip()
+    name = first_text(
+        product.get("product_name"),
+        product.get("product_name_en"),
+        product.get("generic_name"),
+        product.get("generic_name_en"),
+    )
+
     if not name:
         return None
 
-    nutr = get_nutriments(product)
-
     kcal = first_number(
-        to_float(nutr.get("energy-kcal_100g")),
-        to_float(nutr.get("energy-kcal")),
-        to_float(nutr.get("energy-kcal_value")),
-        to_float(nutr.get("energy-kcal_serving")),
+        to_float(product.get("energy-kcal_100g")),
+        to_float(product.get("energy-kcal")),
+        to_float(product.get("energy-kcal_value")),
+        to_float(product.get("energy-kcal_serving")),
     )
 
     energy_kj = first_number(
-        to_float(nutr.get("energy-kj_100g")),
-        to_float(nutr.get("energy-kj")),
-        to_float(nutr.get("energy-kj_value")),
-        to_float(nutr.get("energy-kj_serving")),
-        to_float(nutr.get("energy_100g")),
-        to_float(nutr.get("energy")),
-        to_float(nutr.get("energy_value")),
-        to_float(nutr.get("energy_serving")),
+        to_float(product.get("energy-kj_100g")),
+        to_float(product.get("energy-kj")),
+        to_float(product.get("energy-kj_value")),
+        to_float(product.get("energy-kj_serving")),
+        to_float(product.get("energy_100g")),
+        to_float(product.get("energy")),
+        to_float(product.get("energy_value")),
+        to_float(product.get("energy_serving")),
     )
 
     if kcal is None and energy_kj is not None:
         kcal = energy_kj / 4.184
 
     protein = first_number(
-        to_float(nutr.get("proteins_100g")),
-        to_float(nutr.get("proteins")),
-        to_float(nutr.get("proteins_value")),
-        to_float(nutr.get("proteins_serving")),
+        to_float(product.get("proteins_100g")),
+        to_float(product.get("proteins")),
+        to_float(product.get("proteins_value")),
+        to_float(product.get("proteins_serving")),
     )
 
     carbs = first_number(
-        to_float(nutr.get("carbohydrates_100g")),
-        to_float(nutr.get("carbohydrates")),
-        to_float(nutr.get("carbohydrates_value")),
-        to_float(nutr.get("carbohydrates_serving")),
+        to_float(product.get("carbohydrates_100g")),
+        to_float(product.get("carbohydrates")),
+        to_float(product.get("carbohydrates_value")),
+        to_float(product.get("carbohydrates_serving")),
     )
 
     fat = first_number(
-        to_float(nutr.get("fat_100g")),
-        to_float(nutr.get("fat")),
-        to_float(nutr.get("fat_value")),
-        to_float(nutr.get("fat_serving")),
+        to_float(product.get("fat_100g")),
+        to_float(product.get("fat")),
+        to_float(product.get("fat_value")),
+        to_float(product.get("fat_serving")),
     )
 
     kcal = 0.0 if kcal is None else kcal
@@ -280,7 +284,6 @@ def map_product(product):
         "protein": protein,
         "carbs": carbs,
         "fat": fat,
-        "nutriment_keys": sorted(list(nutr.keys()))[:200],
     }
 
     if kcal == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
@@ -290,7 +293,7 @@ def map_product(product):
     debug_product(product, "Accepted", values)
 
     brand = first_brand(product.get("brands"))
-    barcode = (product.get("code") or "").strip() or None
+    barcode = str(product.get("code") or "").strip() or None
 
     serving_size = None
     serving_unit = None
@@ -346,10 +349,10 @@ def ensure_dump(download_if_missing=True, force_download=False):
 
     if not download_if_missing:
         raise FileNotFoundError(
-            f"OFF dump not found at {DUMP_PATH}. Download it first or allow auto-download."
+            f"OFF CSV dump not found at {DUMP_PATH}. Download it first or allow auto-download."
         )
 
-    print(f"Downloading OFF JSONL dump from {DUMP_URL}")
+    print(f"Downloading OFF CSV dump from {DUMP_URL}")
     temp_path = f"{DUMP_PATH}.part"
 
     if os.path.exists(temp_path):
@@ -369,7 +372,7 @@ def ensure_dump(download_if_missing=True, force_download=False):
         last_reported_mb = -1
 
         if total_bytes > 0:
-            print(f"OFF dump size: {round(total_bytes / (1024 * 1024), 2)} MB")
+            print(f"OFF CSV dump size: {round(total_bytes / (1024 * 1024), 2)} MB")
 
         with open(temp_path, "wb") as f:
             for chunk in response.iter_content(chunk_size=DOWNLOAD_CHUNK_SIZE):
@@ -405,16 +408,10 @@ def ensure_dump(download_if_missing=True, force_download=False):
 
 
 def iter_dump_products(dump_path):
-    with gzip.open(dump_path, "rt", encoding="utf-8") as f:
-        for line_number, line in enumerate(f, start=1):
-            line = line.strip()
-            if not line:
-                continue
-
-            try:
-                yield line_number, json.loads(line)
-            except json.JSONDecodeError:
-                continue
+    with gzip.open(dump_path, "rt", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        for line_number, row in enumerate(reader, start=1):
+            yield line_number, row
 
 
 def strip_internal_fields(items):
@@ -479,7 +476,7 @@ def sort_discovered_items(items):
 
 
 def build_country(country_iso2, slug, download_if_missing=True, force_download=False):
-    print(f"Building {country_iso2} ({slug}) from dump")
+    print(f"Building {country_iso2} ({slug}) from CSV dump")
 
     dump_path = ensure_dump(
         download_if_missing=download_if_missing,
@@ -532,9 +529,9 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
 
     build_meta = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "discoveryMethod": "off_jsonl_dump_country_filter",
+        "discoveryMethod": "off_csv_dump_country_filter",
         "coverageNote": (
-            "This build is generated from the OFF JSONL dump with country filtering, "
+            "This build is generated from the OFF CSV dump with country filtering, "
             "app-field reduction, nutrition filtering, and deduplication. Products with "
             "completely empty calories/protein/carbs/fat are skipped. Large countries are "
             "popularity-sorted using OFF popularity fields when available before budget-based packaging."
