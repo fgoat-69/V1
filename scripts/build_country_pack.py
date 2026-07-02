@@ -12,22 +12,17 @@ DUMP_URL = os.getenv(
     "OFF_DUMP_URL",
     "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
 )
-REQUEST_TIMEOUT_SECONDS = int(os.getenv("OFF_REQUEST_TIMEOUT_SECONDS", "120"))
 DOWNLOAD_STALL_TIMEOUT_SECONDS = int(os.getenv("OFF_DOWNLOAD_STALL_TIMEOUT_SECONDS", "120"))
 DOWNLOAD_CHUNK_SIZE = 1024 * 1024
 
-# Packaging rules
 TARGET_TOTAL_BYTES = 7_000_000
 TARGET_MAIN_BYTES = 5_000_000
 FULL_PACK_MAX_ITEMS = 15_000
 
-# Local cache
 CACHE_DIR = ".cache"
 DUMP_FILENAME = os.getenv("OFF_DUMP_FILENAME", "openfoodfacts-products.jsonl.gz")
 DUMP_PATH = os.path.join(CACHE_DIR, DUMP_FILENAME)
 
-# Use a real contact in CI/local shell:
-# export OFF_USER_AGENT="MostoFitCountryPackBuilder/1.0 (your-email@example.com)"
 USER_AGENT = os.getenv(
     "OFF_USER_AGENT",
     "MostoFitCountryPackBuilder/1.0 (contact-required-set-OFF_USER_AGENT)",
@@ -41,11 +36,11 @@ LIQUID_HINTS = {
 
 
 def normalize_text(value):
-    return re.sub(r"\s+", " ", (value or "").strip().lower())
+    return re.sub(r"\s+", " ", str(value or "").strip().lower())
 
 
 def normalize_key(item):
-    barcode = (item.get("barcode") or "").strip()
+    barcode = str(item.get("barcode") or "").strip()
     if barcode:
         return f"bc:{barcode}"
 
@@ -100,36 +95,6 @@ def looks_liquid(name, serving_unit):
     return any(token in lowered for token in LIQUID_HINTS)
 
 
-def is_plain_water_product(product, name):
-    category_tags = product.get("categories_tags") or []
-    if not isinstance(category_tags, list):
-        category_tags = []
-
-    text = normalize_text(
-        " ".join([
-            name or "",
-            str(product.get("categories") or ""),
-            str(product.get("categories_en") or ""),
-            " ".join(str(x) for x in category_tags),
-        ])
-    )
-
-    water_terms = {
-        "water",
-        "waters",
-        "mineral-water",
-        "mineral-waters",
-        "spring-water",
-        "spring-waters",
-        "natural-mineral-water",
-        "natural-mineral-waters",
-        "eau",
-        "wasser",
-    }
-
-    return any(term in text for term in water_terms)
-
-
 def first_brand(brands):
     if not brands:
         return None
@@ -149,7 +114,7 @@ def to_float(value):
         return None
 
     try:
-        return float(value)
+        return float(str(value).replace(",", "."))
     except (TypeError, ValueError):
         return None
 
@@ -230,13 +195,7 @@ def product_matches_country(product, country_iso2, slug):
     iso2 = (country_iso2 or "").strip().lower()
     slug = (slug or "").strip().lower()
 
-    if slug and slug in tokens:
-        return True
-
-    if iso2 and iso2 in tokens:
-        return True
-
-    return False
+    return (slug and slug in tokens) or (iso2 and iso2 in tokens)
 
 
 def map_product(product):
@@ -249,15 +208,18 @@ def map_product(product):
     kcal = first_number(
         to_float(nutr.get("energy-kcal_100g")),
         to_float(nutr.get("energy-kcal")),
+        to_float(nutr.get("energy-kcal_value")),
         to_float(nutr.get("energy-kcal_serving")),
     )
 
     energy_kj = first_number(
         to_float(nutr.get("energy-kj_100g")),
         to_float(nutr.get("energy-kj")),
+        to_float(nutr.get("energy-kj_value")),
         to_float(nutr.get("energy-kj_serving")),
         to_float(nutr.get("energy_100g")),
         to_float(nutr.get("energy")),
+        to_float(nutr.get("energy_value")),
         to_float(nutr.get("energy_serving")),
     )
 
@@ -267,18 +229,21 @@ def map_product(product):
     protein = first_number(
         to_float(nutr.get("proteins_100g")),
         to_float(nutr.get("proteins")),
+        to_float(nutr.get("proteins_value")),
         to_float(nutr.get("proteins_serving")),
     )
 
     carbs = first_number(
         to_float(nutr.get("carbohydrates_100g")),
         to_float(nutr.get("carbohydrates")),
+        to_float(nutr.get("carbohydrates_value")),
         to_float(nutr.get("carbohydrates_serving")),
     )
 
     fat = first_number(
         to_float(nutr.get("fat_100g")),
         to_float(nutr.get("fat")),
+        to_float(nutr.get("fat_value")),
         to_float(nutr.get("fat_serving")),
     )
 
@@ -287,13 +252,11 @@ def map_product(product):
     carbs = 0.0 if carbs is None else carbs
     fat = 0.0 if fat is None else fat
 
-    # Skip products with completely missing/empty macro data.
-    # Exception: true plain water is valid at zero calories/macros.
+    # Hard filter: do not include any all-zero macro product in OFF packs.
+    # This removes bad OFF rows like zero-macro Nutella/cheese/milk/etc.
     if kcal == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
-        if not is_plain_water_product(product, name):
-            return None
-    if kcal == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
-            return None
+        return None
+
     brand = first_brand(product.get("brands"))
     barcode = (product.get("code") or "").strip() or None
 
@@ -305,8 +268,7 @@ def map_product(product):
         serving_size, serving_unit = parse_serving_size(raw_serving)
 
     if serving_size is None:
-        quantity = product.get("serving_quantity")
-        quantity_value = to_float(quantity)
+        quantity_value = to_float(product.get("serving_quantity"))
         if quantity_value is not None:
             serving_size = quantity_value
 
@@ -542,9 +504,8 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
         "coverageNote": (
             "This build is generated from the OFF JSONL dump with country filtering, "
             "app-field reduction, nutrition filtering, and deduplication. Products with "
-            "completely empty calories/protein/carbs/fat are skipped unless they appear "
-            "to be plain water. Large countries are popularity-sorted using OFF popularity "
-            "fields when available before budget-based packaging."
+            "completely empty calories/protein/carbs/fat are skipped. Large countries are "
+            "popularity-sorted using OFF popularity fields when available before budget-based packaging."
         ),
         "dumpUrl": DUMP_URL,
         "dumpCachePath": dump_path,
