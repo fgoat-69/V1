@@ -10,7 +10,7 @@ import requests
 
 DUMP_URL = os.getenv(
     "OFF_DUMP_URL",
-    "https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz",
+    "https://openfoodfacts-ds.s3.eu-west-3.amazonaws.com/openfoodfacts-products.jsonl.gz",
 )
 DOWNLOAD_STALL_TIMEOUT_SECONDS = int(os.getenv("OFF_DOWNLOAD_STALL_TIMEOUT_SECONDS", "120"))
 DOWNLOAD_CHUNK_SIZE = 1024 * 1024
