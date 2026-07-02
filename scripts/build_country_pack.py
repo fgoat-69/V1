@@ -292,7 +292,8 @@ def map_product(product):
     if kcal == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
         if not is_plain_water_product(product, name):
             return None
-
+    if kcal == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
+            return None
     brand = first_brand(product.get("brands"))
     barcode = (product.get("code") or "").strip() or None
 
