@@ -4,10 +4,13 @@ import json
 import os
 import re
 import shutil
+import sys
 import time
 from datetime import datetime, timezone
 
 import requests
+
+csv.field_size_limit(sys.maxsize)
 
 DUMP_URL = os.getenv(
     "OFF_DUMP_URL",
