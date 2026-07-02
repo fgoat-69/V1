@@ -27,9 +27,6 @@ CACHE_DIR = ".cache"
 DUMP_FILENAME = os.getenv("OFF_DUMP_FILENAME", "en.openfoodfacts.org.products.csv.gz")
 DUMP_PATH = os.path.join(CACHE_DIR, DUMP_FILENAME)
 
-DEBUG_BARCODES = {
-    "8000500082379",
-}
 
 USER_AGENT = os.getenv(
     "OFF_USER_AGENT",
@@ -201,29 +198,6 @@ def product_matches_country(product, country_iso2, slug):
 
     return (slug and slug in tokens) or (iso2 and iso2 in tokens)
 
-
-def debug_product(product, reason, values=None):
-    code = str(product.get("code") or "").strip()
-    if code not in DEBUG_BARCODES:
-        return
-
-    print("\n========== DEBUG PRODUCT ==========")
-    print("Reason:", reason)
-    print("Product:", product.get("product_name"))
-    print("Barcode:", code)
-    print("Brands:", product.get("brands"))
-    print("Countries:", product.get("countries"))
-    print("Countries tags:", product.get("countries_tags"))
-    print("Calculated values:", json.dumps(values or {}, indent=2, ensure_ascii=False))
-    print("Available nutrient fields:")
-    nutrient_keys = [
-        key for key in product.keys()
-        if any(x in key for x in ["energy", "protein", "carbohydrate", "fat"])
-    ]
-    print(json.dumps(sorted(nutrient_keys), indent=2, ensure_ascii=False))
-    print("===================================\n")
-
-
 def map_product(product):
     name = first_text(
         product.get("product_name"),
@@ -282,18 +256,8 @@ def map_product(product):
     carbs = 0.0 if carbs is None else carbs
     fat = 0.0 if fat is None else fat
 
-    values = {
-        "kcal": kcal,
-        "protein": protein,
-        "carbs": carbs,
-        "fat": fat,
-    }
-
     if kcal == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
-        debug_product(product, "Rejected as all-zero macros", values)
         return None
-
-    debug_product(product, "Accepted", values)
 
     brand = first_brand(product.get("brands"))
     barcode = str(product.get("code") or "").strip() or None
