@@ -1,0 +1,40 @@
+{
+  "countryIso2": "PL",
+  "slug": "poland",
+  "version": 1783090871,
+  "generatedAt": "2026-07-03T15:01:11.617529+00:00",
+  "strategy": "main_fill",
+  "itemCountDiscovered": 21447,
+  "bytesDiscovered": 4707458,
+  "itemCountTotal": 21447,
+  "itemCountMain": 21447,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "main.json",
+      "path": "countries/PL/main.json",
+      "kind": "main",
+      "itemCount": 21447,
+      "bytes": 4707458
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-07-03T15:01:11.617529+00:00",
+    "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+    "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4532767,
+    "matchedProducts": 34542,
+    "mappedProducts": 21447,
+    "dedupedProducts": 0,
+    "skippedNoNutrition": 13095,
+    "discoveredItemCount": 21447,
+    "discoveredBytes": 4707458
+  }
+}
