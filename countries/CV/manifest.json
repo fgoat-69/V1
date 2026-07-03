@@ -1,0 +1,40 @@
+{
+  "countryIso2": "CV",
+  "slug": "cape-verde",
+  "version": 1783097708,
+  "generatedAt": "2026-07-03T16:55:08.303413+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 4,
+  "bytesDiscovered": 892,
+  "itemCountTotal": 4,
+  "itemCountMain": 4,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/CV/full.json",
+      "kind": "full",
+      "itemCount": 4,
+      "bytes": 892
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-07-03T16:55:08.303413+00:00",
+    "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+    "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4532767,
+    "matchedProducts": 47,
+    "mappedProducts": 4,
+    "dedupedProducts": 0,
+    "skippedNoNutrition": 43,
+    "discoveredItemCount": 4,
+    "discoveredBytes": 892
+  }
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Puck spreadable processed cream cheese analogue 500g",
+    "brand": "Puck",
+    "barcode": "5760466738040",
+    "calories": 287.0,
+    "protein": 9.3,
+    "carbs": 2.0,
+    "fat": 27.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Real mayonnaise",
+    "brand": "Bama",
+    "barcode": "8410300363446",
+    "calories": 752.0,
+    "protein": 0.9,
+    "carbs": 2.5,
+    "fat": 82.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Nectar d'orange",
+    "brand": "Belle France",
+    "barcode": "3258561300429",
+    "calories": 38.0,
+    "protein": 0.3,
+    "carbs": 9.3,
+    "fat": 0.0,
+    "servingSize": 200.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Jus de fruit tropical",
+    "brand": null,
+    "barcode": "8718226323132",
+    "calories": 44.0,
+    "protein": 0.6,
+    "carbs": 10.3,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "فول مدمس حر",
+    "brand": null,
+    "barcode": "5285001400164",
+    "calories": 101.0,
+    "protein": 7.4,
+    "carbs": 16.6,
+    "fat": 0.6,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Jus d'Orange",
+    "brand": "Sunland",
+    "barcode": "8718226323118",
+    "calories": 41.0,
+    "protein": 0.8,
+    "carbs": 9.5,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Sipa Couscous fin 2yrs prod",
+    "brand": "Sipa",
+    "barcode": "3660861000648",
+    "calories": 347.99,
+    "protein": 10.9,
+    "carbs": 71.6,
+    "fat": 1.25,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  }
+]

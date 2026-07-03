@@ -1,0 +1,41 @@
+[
+  {
+    "name": "strawberry & Camilla yoghurt drink 0% fat",
+    "brand": "Melkunie protein",
+    "barcode": "8718166738188",
+    "calories": 66.0,
+    "protein": 6.4,
+    "carbs": 7.7,
+    "fat": 0.18,
+    "servingSize": 100.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Strawberry Cream-Filled Crackers Sandwich",
+    "brand": "Rebisco",
+    "barcode": "4800092110047",
+    "calories": 500.0,
+    "protein": 6.25,
+    "carbs": 65.62,
+    "fat": 21.88,
+    "servingSize": 32.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Surtido",
+    "brand": "Bon Bon Bum",
+    "barcode": "7702011147813",
+    "calories": 380.0,
+    "protein": 0.0,
+    "carbs": 95.0,
+    "fat": 0.06,
+    "servingSize": 1.0,
+    "servingUnit": "piece",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  }
+]
