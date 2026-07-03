@@ -1,0 +1,40 @@
+{
+  "countryIso2": "SM",
+  "slug": "san-marino",
+  "version": 1783092848,
+  "generatedAt": "2026-07-03T15:34:08.380304+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 14,
+  "bytesDiscovered": 3094,
+  "itemCountTotal": 14,
+  "itemCountMain": 14,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/SM/full.json",
+      "kind": "full",
+      "itemCount": 14,
+      "bytes": 3094
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-07-03T15:34:08.380304+00:00",
+    "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+    "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4532767,
+    "matchedProducts": 94,
+    "mappedProducts": 14,
+    "dedupedProducts": 0,
+    "skippedNoNutrition": 80,
+    "discoveredItemCount": 14,
+    "discoveredBytes": 3094
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "countryIso2": "ES",
+  "slug": "spain",
+  "version": 1783092843,
+  "generatedAt": "2026-07-03T15:34:01.854641+00:00",
+  "strategy": "main_fill",
+  "itemCountDiscovered": 256135,
+  "bytesDiscovered": 55392643,
+  "itemCountTotal": 32038,
+  "itemCountMain": 22866,
+  "itemCountFill": 9172,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "main.json",
+      "path": "countries/ES/main.json",
+      "kind": "main",
+      "itemCount": 22866,
+      "bytes": 4999979
+    },
+    {
+      "name": "fill.json",
+      "path": "countries/ES/fill.json",
+      "kind": "fill",
+      "itemCount": 9172,
+      "bytes": 1999839
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-07-03T15:34:01.854641+00:00",
+    "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+    "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4532767,
+    "matchedProducts": 353966,
+    "mappedProducts": 256135,
+    "dedupedProducts": 0,
+    "skippedNoNutrition": 97831,
+    "discoveredItemCount": 256135,
+    "discoveredBytes": 55392643
+  }
+}
