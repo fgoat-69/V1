@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Nido",
+    "brand": "Nestlé",
+    "barcode": "8717896007021",
+    "calories": 508.0,
+    "protein": 23.6,
+    "carbs": 39.9,
+    "fat": 28.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Sahara Gold Biere",
+    "brand": "Sahara Gold",
+    "barcode": "8423453902035",
+    "calories": 50.0,
+    "protein": 0.3,
+    "carbs": 3.3,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Cerelac Plein De Fruit",
+    "brand": "Nestlé",
+    "barcode": "6033000083043",
+    "calories": 418.0,
+    "protein": 15.0,
+    "carbs": 67.1,
+    "fat": 10.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  }
+]

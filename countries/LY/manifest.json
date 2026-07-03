@@ -1,0 +1,40 @@
+{
+  "countryIso2": "LY",
+  "slug": "libya",
+  "version": 1783096985,
+  "generatedAt": "2026-07-03T16:43:05.983172+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 63,
+  "bytesDiscovered": 13700,
+  "itemCountTotal": 63,
+  "itemCountMain": 63,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/LY/full.json",
+      "kind": "full",
+      "itemCount": 63,
+      "bytes": 13700
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-07-03T16:43:05.983172+00:00",
+    "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+    "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4532767,
+    "matchedProducts": 726,
+    "mappedProducts": 63,
+    "dedupedProducts": 0,
+    "skippedNoNutrition": 663,
+    "discoveredItemCount": 63,
+    "discoveredBytes": 13700
+  }
+}
