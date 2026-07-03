@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-03T16:23:19.765777+00:00",
-  "countryCount": 59,
+  "generatedAt": "2026-07-03T16:28:29.372541+00:00",
+  "countryCount": 69,
   "countries": [
     {
       "countryIso2": "AE",
@@ -240,6 +240,46 @@
         "skippedNoNutrition": 1092,
         "discoveredItemCount": 248,
         "discoveredBytes": 53574
+      }
+    },
+    {
+      "countryIso2": "BD",
+      "slug": "bangladesh",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.607408+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 29,
+      "bytesDiscovered": 6395,
+      "itemCountTotal": 29,
+      "itemCountMain": 29,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/BD/full.json",
+          "kind": "full",
+          "itemCount": 29,
+          "bytes": 6395
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.607408+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 1093,
+        "mappedProducts": 29,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 1064,
+        "discoveredItemCount": 29,
+        "discoveredBytes": 6395
       }
     },
     {
@@ -1092,6 +1132,46 @@
       }
     },
     {
+      "countryIso2": "IN",
+      "slug": "india",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.562604+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 1737,
+      "bytesDiscovered": 380481,
+      "itemCountTotal": 1737,
+      "itemCountMain": 1737,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/IN/full.json",
+          "kind": "full",
+          "itemCount": 1737,
+          "bytes": 380481
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.562604+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 21188,
+        "mappedProducts": 1737,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 19451,
+        "discoveredItemCount": 1737,
+        "discoveredBytes": 380481
+      }
+    },
+    {
       "countryIso2": "IQ",
       "slug": "iraq",
       "version": 1783095785,
@@ -1259,6 +1339,46 @@
       }
     },
     {
+      "countryIso2": "KG",
+      "slug": "kyrgyzstan",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.624710+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 26,
+      "bytesDiscovered": 6174,
+      "itemCountTotal": 26,
+      "itemCountMain": 26,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/KG/full.json",
+          "kind": "full",
+          "itemCount": 26,
+          "bytes": 6174
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.624710+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 196,
+        "mappedProducts": 26,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 170,
+        "discoveredItemCount": 26,
+        "discoveredBytes": 6174
+      }
+    },
+    {
       "countryIso2": "KW",
       "slug": "kuwait",
       "version": 1783095785,
@@ -1296,6 +1416,46 @@
         "skippedNoNutrition": 2558,
         "discoveredItemCount": 349,
         "discoveredBytes": 76689
+      }
+    },
+    {
+      "countryIso2": "KZ",
+      "slug": "kazakhstan",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.619277+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 113,
+      "bytesDiscovered": 26649,
+      "itemCountTotal": 113,
+      "itemCountMain": 113,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/KZ/full.json",
+          "kind": "full",
+          "itemCount": 113,
+          "bytes": 26649
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.619277+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 816,
+        "mappedProducts": 113,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 703,
+        "discoveredItemCount": 113,
+        "discoveredBytes": 26649
       }
     },
     {
@@ -1376,6 +1536,46 @@
         "skippedNoNutrition": 83,
         "discoveredItemCount": 32,
         "discoveredBytes": 6979
+      }
+    },
+    {
+      "countryIso2": "LK",
+      "slug": "sri-lanka",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.611252+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 65,
+      "bytesDiscovered": 14099,
+      "itemCountTotal": 65,
+      "itemCountMain": 65,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/LK/full.json",
+          "kind": "full",
+          "itemCount": 65,
+          "bytes": 14099
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.611252+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 782,
+        "mappedProducts": 65,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 717,
+        "discoveredItemCount": 65,
+        "discoveredBytes": 14099
       }
     },
     {
@@ -1739,6 +1939,46 @@
       }
     },
     {
+      "countryIso2": "NP",
+      "slug": "nepal",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.615444+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 14,
+      "bytesDiscovered": 3054,
+      "itemCountTotal": 14,
+      "itemCountMain": 14,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/NP/full.json",
+          "kind": "full",
+          "itemCount": 14,
+          "bytes": 3054
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.615444+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 276,
+        "mappedProducts": 14,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 262,
+        "discoveredItemCount": 14,
+        "discoveredBytes": 3054
+      }
+    },
+    {
       "countryIso2": "OM",
       "slug": "oman",
       "version": 1783095785,
@@ -1776,6 +2016,46 @@
         "skippedNoNutrition": 703,
         "discoveredItemCount": 68,
         "discoveredBytes": 15015
+      }
+    },
+    {
+      "countryIso2": "PK",
+      "slug": "pakistan",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.601558+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 76,
+      "bytesDiscovered": 16512,
+      "itemCountTotal": 76,
+      "itemCountMain": 76,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/PK/full.json",
+          "kind": "full",
+          "itemCount": 76,
+          "bytes": 16512
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.601558+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 1599,
+        "mappedProducts": 76,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 1523,
+        "discoveredItemCount": 76,
+        "discoveredBytes": 16512
       }
     },
     {
@@ -2259,6 +2539,86 @@
       }
     },
     {
+      "countryIso2": "TJ",
+      "slug": "tajikistan",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.628306+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 5,
+      "bytesDiscovered": 1242,
+      "itemCountTotal": 5,
+      "itemCountMain": 5,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/TJ/full.json",
+          "kind": "full",
+          "itemCount": 5,
+          "bytes": 1242
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.628306+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 36,
+        "mappedProducts": 5,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 31,
+        "discoveredItemCount": 5,
+        "discoveredBytes": 1242
+      }
+    },
+    {
+      "countryIso2": "TM",
+      "slug": "turkmenistan",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.631358+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 0,
+      "bytesDiscovered": 2,
+      "itemCountTotal": 0,
+      "itemCountMain": 0,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/TM/full.json",
+          "kind": "full",
+          "itemCount": 0,
+          "bytes": 2
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.631358+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 6,
+        "mappedProducts": 0,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 6,
+        "discoveredItemCount": 0,
+        "discoveredBytes": 2
+      }
+    },
+    {
       "countryIso2": "TR",
       "slug": "turkey",
       "version": 1783095785,
@@ -2336,6 +2696,46 @@
         "skippedNoNutrition": 5243,
         "discoveredItemCount": 1211,
         "discoveredBytes": 288506
+      }
+    },
+    {
+      "countryIso2": "UZ",
+      "slug": "uzbekistan",
+      "version": 1783096092,
+      "generatedAt": "2026-07-03T16:28:12.634572+00:00",
+      "strategy": "full",
+      "itemCountDiscovered": 45,
+      "bytesDiscovered": 10282,
+      "itemCountTotal": 45,
+      "itemCountMain": 45,
+      "itemCountFill": 0,
+      "targetTotalBytes": 7000000,
+      "targetMainBytes": 5000000,
+      "packFiles": [
+        {
+          "name": "full.json",
+          "path": "countries/UZ/full.json",
+          "kind": "full",
+          "itemCount": 45,
+          "bytes": 10282
+        }
+      ],
+      "buildMeta": {
+        "generatedAt": "2026-07-03T16:28:12.634572+00:00",
+        "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+        "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+        "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+        "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+        "fullPackMaxItems": 15000,
+        "targetTotalBytes": 7000000,
+        "targetMainBytes": 5000000,
+        "scannedProducts": 4532767,
+        "matchedProducts": 1571,
+        "mappedProducts": 45,
+        "dedupedProducts": 0,
+        "skippedNoNutrition": 1526,
+        "discoveredItemCount": 45,
+        "discoveredBytes": 10282
       }
     },
     {
