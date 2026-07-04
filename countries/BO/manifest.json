@@ -1,0 +1,40 @@
+{
+  "countryIso2": "BO",
+  "slug": "bolivia",
+  "version": 1783189906,
+  "generatedAt": "2026-07-04T18:31:46.284823+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 1710,
+  "bytesDiscovered": 376656,
+  "itemCountTotal": 1710,
+  "itemCountMain": 1710,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/BO/full.json",
+      "kind": "full",
+      "itemCount": 1710,
+      "bytes": 376656
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-07-04T18:31:46.284823+00:00",
+    "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+    "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4532767,
+    "matchedProducts": 4333,
+    "mappedProducts": 1710,
+    "dedupedProducts": 0,
+    "skippedNoNutrition": 2623,
+    "discoveredItemCount": 1710,
+    "discoveredBytes": 376656
+  }
+}

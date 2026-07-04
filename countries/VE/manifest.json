@@ -1,0 +1,40 @@
+{
+  "countryIso2": "VE",
+  "slug": "venezuela",
+  "version": 1783189907,
+  "generatedAt": "2026-07-04T18:31:47.455930+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 235,
+  "bytesDiscovered": 50682,
+  "itemCountTotal": 235,
+  "itemCountMain": 235,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/VE/full.json",
+      "kind": "full",
+      "itemCount": 235,
+      "bytes": 50682
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-07-04T18:31:47.455930+00:00",
+    "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+    "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4532767,
+    "matchedProducts": 1600,
+    "mappedProducts": 235,
+    "dedupedProducts": 0,
+    "skippedNoNutrition": 1365,
+    "discoveredItemCount": 235,
+    "discoveredBytes": 50682
+  }
+}

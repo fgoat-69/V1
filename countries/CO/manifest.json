@@ -1,0 +1,40 @@
+{
+  "countryIso2": "CO",
+  "slug": "colombia",
+  "version": 1783189907,
+  "generatedAt": "2026-07-04T18:31:47.361529+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 986,
+  "bytesDiscovered": 216359,
+  "itemCountTotal": 986,
+  "itemCountMain": 986,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/CO/full.json",
+      "kind": "full",
+      "itemCount": 986,
+      "bytes": 216359
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-07-04T18:31:47.361529+00:00",
+    "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+    "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4532767,
+    "matchedProducts": 6838,
+    "mappedProducts": 986,
+    "dedupedProducts": 0,
+    "skippedNoNutrition": 5852,
+    "discoveredItemCount": 986,
+    "discoveredBytes": 216359
+  }
+}
