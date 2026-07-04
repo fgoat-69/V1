@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-04T17:29:08.318287+00:00",
+  "generatedAt": "2026-07-04T17:34:58.533157+00:00",
   "countryCount": 117,
   "countries": [
     {
       "countryIso2": "AE",
       "slug": "united-arab-emirates",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.267277+00:00",
+      "version": 1783186488,
+      "generatedAt": "2026-07-04T17:34:48.031801+00:00",
       "strategy": "full",
       "itemCountDiscovered": 877,
       "bytesDiscovered": 194072,
@@ -25,7 +25,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.267277+00:00",
+        "generatedAt": "2026-07-04T17:34:48.031801+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -412,8 +412,8 @@
     {
       "countryIso2": "BH",
       "slug": "bahrain",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.318688+00:00",
+      "version": 1783186488,
+      "generatedAt": "2026-07-04T17:34:48.094257+00:00",
       "strategy": "full",
       "itemCountDiscovered": 92,
       "bytesDiscovered": 20306,
@@ -432,7 +432,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.318688+00:00",
+        "generatedAt": "2026-07-04T17:34:48.094257+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -1814,8 +1814,8 @@
     {
       "countryIso2": "IL",
       "slug": "israel",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.160831+00:00",
+      "version": 1783186487,
+      "generatedAt": "2026-07-04T17:34:47.904814+00:00",
       "strategy": "full",
       "itemCountDiscovered": 1098,
       "bytesDiscovered": 247509,
@@ -1834,7 +1834,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.160831+00:00",
+        "generatedAt": "2026-07-04T17:34:47.904814+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -1894,8 +1894,8 @@
     {
       "countryIso2": "IQ",
       "slug": "iraq",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.207672+00:00",
+      "version": 1783186487,
+      "generatedAt": "2026-07-04T17:34:47.963520+00:00",
       "strategy": "full",
       "itemCountDiscovered": 196,
       "bytesDiscovered": 43337,
@@ -1914,7 +1914,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.207672+00:00",
+        "generatedAt": "2026-07-04T17:34:47.963520+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -2021,8 +2021,8 @@
     {
       "countryIso2": "JO",
       "slug": "jordan",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.187261+00:00",
+      "version": 1783186487,
+      "generatedAt": "2026-07-04T17:34:47.934295+00:00",
       "strategy": "full",
       "itemCountDiscovered": 104,
       "bytesDiscovered": 22803,
@@ -2041,7 +2041,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.187261+00:00",
+        "generatedAt": "2026-07-04T17:34:47.934295+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -2261,8 +2261,8 @@
     {
       "countryIso2": "KW",
       "slug": "kuwait",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.303423+00:00",
+      "version": 1783186488,
+      "generatedAt": "2026-07-04T17:34:48.073698+00:00",
       "strategy": "full",
       "itemCountDiscovered": 349,
       "bytesDiscovered": 76689,
@@ -2281,7 +2281,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.303423+00:00",
+        "generatedAt": "2026-07-04T17:34:48.073698+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -2381,8 +2381,8 @@
     {
       "countryIso2": "LB",
       "slug": "lebanon",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.193862+00:00",
+      "version": 1783186487,
+      "generatedAt": "2026-07-04T17:34:47.943969+00:00",
       "strategy": "full",
       "itemCountDiscovered": 363,
       "bytesDiscovered": 79949,
@@ -2401,7 +2401,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.193862+00:00",
+        "generatedAt": "2026-07-04T17:34:47.943969+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -3301,8 +3301,8 @@
     {
       "countryIso2": "OM",
       "slug": "oman",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.313922+00:00",
+      "version": 1783186488,
+      "generatedAt": "2026-07-04T17:34:48.086920+00:00",
       "strategy": "full",
       "itemCountDiscovered": 68,
       "bytesDiscovered": 15015,
@@ -3321,7 +3321,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.313922+00:00",
+        "generatedAt": "2026-07-04T17:34:48.086920+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -3501,8 +3501,8 @@
     {
       "countryIso2": "QA",
       "slug": "qatar",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.290312+00:00",
+      "version": 1783186488,
+      "generatedAt": "2026-07-04T17:34:48.058074+00:00",
       "strategy": "full",
       "itemCountDiscovered": 431,
       "bytesDiscovered": 94910,
@@ -3521,7 +3521,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.290312+00:00",
+        "generatedAt": "2026-07-04T17:34:48.058074+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -3701,8 +3701,8 @@
     {
       "countryIso2": "SA",
       "slug": "saudi-arabia",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.222686+00:00",
+      "version": 1783186487,
+      "generatedAt": "2026-07-04T17:34:47.982489+00:00",
       "strategy": "full",
       "itemCountDiscovered": 1808,
       "bytesDiscovered": 399667,
@@ -3721,7 +3721,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.222686+00:00",
+        "generatedAt": "2026-07-04T17:34:47.982489+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -4101,8 +4101,8 @@
     {
       "countryIso2": "SY",
       "slug": "syria",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.203706+00:00",
+      "version": 1783186487,
+      "generatedAt": "2026-07-04T17:34:47.956736+00:00",
       "strategy": "full",
       "itemCountDiscovered": 13,
       "bytesDiscovered": 2787,
@@ -4121,7 +4121,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.203706+00:00",
+        "generatedAt": "2026-07-04T17:34:47.956736+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -4381,8 +4381,8 @@
     {
       "countryIso2": "TR",
       "slug": "turkey",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.124535+00:00",
+      "version": 1783186487,
+      "generatedAt": "2026-07-04T17:34:47.868731+00:00",
       "strategy": "full",
       "itemCountDiscovered": 1215,
       "bytesDiscovered": 265157,
@@ -4401,7 +4401,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.124535+00:00",
+        "generatedAt": "2026-07-04T17:34:47.868731+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -4701,8 +4701,8 @@
     {
       "countryIso2": "YE",
       "slug": "yemen",
-      "version": 1783095785,
-      "generatedAt": "2026-07-03T16:23:05.323461+00:00",
+      "version": 1783186488,
+      "generatedAt": "2026-07-04T17:34:48.101635+00:00",
       "strategy": "full",
       "itemCountDiscovered": 7,
       "bytesDiscovered": 1501,
@@ -4721,7 +4721,7 @@
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-03T16:23:05.323461+00:00",
+        "generatedAt": "2026-07-04T17:34:48.101635+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
