@@ -1,8 +1,8 @@
 {
   "countryIso2": "CZ",
   "slug": "czech-republic",
-  "version": 1783090871,
-  "generatedAt": "2026-07-03T15:01:11.397118+00:00",
+  "version": 1783185116,
+  "generatedAt": "2026-07-04T17:11:56.286841+00:00",
   "strategy": "full",
   "itemCountDiscovered": 4196,
   "bytesDiscovered": 919482,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-07-03T15:01:11.397118+00:00",
+    "generatedAt": "2026-07-04T17:11:56.286841+00:00",
     "discoveryMethod": "off_csv_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
