@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Ducales",
+    "brand": "Noel",
+    "barcode": "7702025133161",
+    "calories": 474.0,
+    "protein": 8.1,
+    "carbs": 70.0,
+    "fat": 18.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Popcorn kettle",
+    "brand": "nood",
+    "barcode": "0098493232633",
+    "calories": 444.44,
+    "protein": 1.0,
+    "carbs": 14.0,
+    "fat": 2.5,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Saltín Noel Integral",
+    "brand": "Noel",
+    "barcode": "7702025189243",
+    "calories": 451.61,
+    "protein": 10.32,
+    "carbs": 69.03,
+    "fat": 14.68,
+    "servingSize": 4.0,
+    "servingUnit": "galletas",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Anchor Cheddar Chesse",
+    "brand": "Anchor",
+    "barcode": "9414832116302",
+    "calories": 428.57,
+    "protein": 7.0,
+    "carbs": 0.0,
+    "fat": 10.0,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Nestle Sweetened Condensed Full Cream Milk (Tin)",
+    "brand": "Nestle",
+    "barcode": "7891000108000",
+    "calories": 325.0,
+    "protein": 0.0,
+    "carbs": 56.07,
+    "fat": 8.21,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Peanut Butter",
+    "brand": "VALRICO",
+    "barcode": "0038344581084",
+    "calories": 650.0,
+    "protein": 8.0,
+    "carbs": 6.0,
+    "fat": 17.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  }
+]

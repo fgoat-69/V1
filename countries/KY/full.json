@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Vanilla Whey Protein",
+    "brand": "Wellmix",
+    "barcode": "4068134024213",
+    "calories": 375.0,
+    "protein": 75.0,
+    "carbs": 9.6,
+    "fat": 3.4,
+    "servingSize": 30.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Choco Butter Sprits",
+    "brand": "Biscotto",
+    "barcode": "4068264010339",
+    "calories": 534.0,
+    "protein": 5.5,
+    "carbs": 61.0,
+    "fat": 30.0,
+    "servingSize": 25.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Aladdin Gourmet Sandwich Wraps",
+    "brand": "Aladdin",
+    "barcode": "0074203150152",
+    "calories": 483.33,
+    "protein": 7.78,
+    "carbs": 51.11,
+    "fat": 8.89,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Crunch Peanut Butter",
+    "brand": "Shoppers Value",
+    "barcode": "0041130803246",
+    "calories": 562.5,
+    "protein": 21.88,
+    "carbs": 25.0,
+    "fat": 46.88,
+    "servingSize": 2.0,
+    "servingUnit": "tbsp",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Might Mix",
+    "brand": "Oh So Good",
+    "barcode": "0810164970190",
+    "calories": 150.0,
+    "protein": 4.0,
+    "carbs": 15.0,
+    "fat": 9.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  },
+  {
+    "name": "Oats",
+    "brand": "Oh So Good",
+    "barcode": "0670164970077",
+    "calories": 375.0,
+    "protein": 12.5,
+    "carbs": 67.5,
+    "fat": 7.5,
+    "servingSize": 0.5,
+    "servingUnit": "cup",
+    "isLiquid": false,
+    "source": "github_country_pack"
+  }
+]

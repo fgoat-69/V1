@@ -1,0 +1,40 @@
+{
+  "countryIso2": "KY",
+  "slug": "cayman-islands",
+  "version": 1783189597,
+  "generatedAt": "2026-07-04T18:26:37.493099+00:00",
+  "strategy": "full",
+  "itemCountDiscovered": 6,
+  "bytesDiscovered": 1306,
+  "itemCountTotal": 6,
+  "itemCountMain": 6,
+  "itemCountFill": 0,
+  "targetTotalBytes": 7000000,
+  "targetMainBytes": 5000000,
+  "packFiles": [
+    {
+      "name": "full.json",
+      "path": "countries/KY/full.json",
+      "kind": "full",
+      "itemCount": 6,
+      "bytes": 1306
+    }
+  ],
+  "buildMeta": {
+    "generatedAt": "2026-07-04T18:26:37.493099+00:00",
+    "discoveryMethod": "off_csv_dump_single_pass_country_filter",
+    "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
+    "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
+    "dumpCachePath": ".cache/en.openfoodfacts.org.products.csv.gz",
+    "fullPackMaxItems": 15000,
+    "targetTotalBytes": 7000000,
+    "targetMainBytes": 5000000,
+    "scannedProducts": 4532767,
+    "matchedProducts": 50,
+    "mappedProducts": 6,
+    "dedupedProducts": 0,
+    "skippedNoNutrition": 44,
+    "discoveredItemCount": 6,
+    "discoveredBytes": 1306
+  }
+}
