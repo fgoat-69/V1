@@ -1,0 +1,15 @@
+[
+  {
+    "name": "NZ Isolate",
+    "brand": "Xplosiv",
+    "barcode": "0602835281991",
+    "calories": 111.38,
+    "protein": 23.9,
+    "carbs": 1.3,
+    "fat": 0.8,
+    "servingSize": 100.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "github_country_pack"
+  }
+]
