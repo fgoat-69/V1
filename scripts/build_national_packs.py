@@ -2,6 +2,7 @@ import json
 import os
 import re
 import tempfile
+import unicodedata
 from datetime import datetime, timezone
 from urllib.parse import quote
 from urllib.request import Request, urlopen
@@ -20,6 +21,13 @@ USER_AGENT = "MostoFitNationalPackBuilder/1.0"
 
 def normalize_text(value):
     return re.sub(r"\s+", " ", str(value or "").strip())
+
+
+def normalize_for_match(value):
+    text = normalize_text(value).lower()
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    return text
 
 
 def normalize_key(item):
@@ -229,38 +237,48 @@ def build_france_ciqual():
     rows = sheet.iter_rows(values_only=True)
     headers = list(next(rows))
 
-    normalized_headers = {
-        normalize_text(header).lower(): header
-        for header in headers
-    }
-
     def header_contains(*tokens):
         for header in headers:
-            text = normalize_text(header).lower()
-            if all(token.lower() in text for token in tokens):
+            text = normalize_for_match(header)
+            if all(normalize_for_match(token) in text for token in tokens):
                 return header
         return None
 
     name_header = (
-        header_contains("alim", "nom", "fr")
+        header_contains("alim_grp_nom_fr")
+        or header_contains("alim", "nom", "fr")
         or header_contains("nom", "fr")
         or header_contains("aliment")
     )
 
-    kcal_header = header_contains("energie", "kcal")
-        protein_header = (
+    kcal_header = (
+        header_contains("energie", "kcal")
+        or header_contains("energie")
+    )
+
+    protein_header = (
         header_contains("proteines")
         or header_contains("protéines")
+        or header_contains("protein")
         or header_contains("prot")
     )
-    fat_header = header_contains("lipides")
-    carbs_header = header_contains("glucides")
+
+    fat_header = (
+        header_contains("lipides")
+        or header_contains("fat")
+    )
+
+    carbs_header = (
+        header_contains("glucides")
+        or header_contains("carbohydrates")
+    )
 
     if not name_header or not kcal_header or not protein_header or not fat_header or not carbs_header:
         raise RuntimeError(
             "Could not find required CIQUAL columns. "
             f"name={name_header}, kcal={kcal_header}, protein={protein_header}, "
-            f"fat={fat_header}, carbs={carbs_header}"
+            f"fat={fat_header}, carbs={carbs_header}. "
+            f"Available headers: {headers}"
         )
 
     index = {header: i for i, header in enumerate(headers)}
