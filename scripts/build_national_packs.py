@@ -3,7 +3,6 @@ import os
 import re
 import tempfile
 import unicodedata
-import zipfile
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from urllib.parse import quote
@@ -80,7 +79,7 @@ def download_file(url, output_path):
             f.write(response.read())
 
 
-def find_latest_ciqual_zip_file():
+def get_ciqual_dataset_files():
     encoded_doi = quote(CIQUAL_DATASET_DOI, safe=":")
     url = (
         f"{CIQUAL_API_BASE}/datasets/export"
@@ -88,57 +87,70 @@ def find_latest_ciqual_zip_file():
     )
 
     payload = fetch_json(url)
-    files = payload.get("datasetVersion", {}).get("files", [])
+    return payload.get("datasetVersion", {}).get("files", [])
 
-    zip_files = []
+
+def find_ciqual_file(files, starts_with, ends_with=".xml"):
+    matches = []
 
     for file_entry in files:
         data_file = file_entry.get("dataFile", {})
         filename = data_file.get("filename", "")
         persistent_id = data_file.get("persistentId", "")
 
-        if filename.lower().endswith(".zip") and persistent_id:
-            zip_files.append({
+        filename_l = filename.lower()
+
+        if filename_l.startswith(starts_with) and filename_l.endswith(ends_with) and persistent_id:
+            matches.append({
                 "filename": filename,
                 "persistentId": persistent_id,
             })
 
-    if not zip_files:
-        raise RuntimeError("Could not find CIQUAL ZIP file in dataset metadata.")
+    if not matches:
+        available = [
+            file_entry.get("dataFile", {}).get("filename", "")
+            for file_entry in files
+        ]
+        raise RuntimeError(
+            f"Could not find CIQUAL file starting with '{starts_with}'. "
+            f"Available files: {available}"
+        )
 
-    zip_files.sort(key=lambda item: item["filename"], reverse=True)
-    return zip_files[0]
+    matches.sort(key=lambda item: item["filename"], reverse=True)
+    return matches[0]
 
 
-def download_latest_ciqual_zip():
-    latest = find_latest_ciqual_zip_file()
-
+def download_ciqual_xml_files():
+    files = get_ciqual_dataset_files()
     temp_dir = tempfile.mkdtemp(prefix="ciqual_")
-    output_path = os.path.join(temp_dir, latest["filename"])
 
-    encoded_file_doi = quote(latest["persistentId"], safe=":")
-    download_url = (
-        f"{CIQUAL_API_BASE}/access/datafile/:persistentId"
-        f"?persistentId={encoded_file_doi}"
-    )
+    wanted = {
+        "alim": find_ciqual_file(files, "alim_"),
+        "const": find_ciqual_file(files, "const_"),
+        "compo": find_ciqual_file(files, "compo_"),
+    }
 
-    print(f"Downloading CIQUAL ZIP file: {latest['filename']}")
-    download_file(download_url, output_path)
+    downloaded = {}
 
-    return output_path, latest
+    for key, file_info in wanted.items():
+        encoded_file_doi = quote(file_info["persistentId"], safe=":")
+        download_url = (
+            f"{CIQUAL_API_BASE}/access/datafile/:persistentId"
+            f"?persistentId={encoded_file_doi}"
+        )
 
+        output_path = os.path.join(temp_dir, file_info["filename"])
 
-def local_name(path):
-    return os.path.basename(path).lower()
+        print(f"Downloading CIQUAL {key} file: {file_info['filename']}")
+        download_file(download_url, output_path)
 
+        downloaded[key] = {
+            "path": output_path,
+            "filename": file_info["filename"],
+            "persistentId": file_info["persistentId"],
+        }
 
-def find_zip_member(zip_file, starts_with, ends_with=".xml"):
-    for name in zip_file.namelist():
-        base = local_name(name)
-        if base.startswith(starts_with) and base.endswith(ends_with):
-            return name
-
-    raise RuntimeError(f"Could not find CIQUAL file starting with {starts_with}")
+    return downloaded
 
 
 def xml_text(parent, tag_name):
@@ -250,12 +262,10 @@ def build_germany_bls():
     print(f"Saved Germany BLS national pack: {len(items)} items")
 
 
-def parse_ciqual_alim(zip_file):
-    member = find_zip_member(zip_file, "alim_")
+def parse_ciqual_alim(path):
     foods = {}
 
-    with zip_file.open(member) as f:
-        root = ET.parse(f).getroot()
+    root = ET.parse(path).getroot()
 
     for alim in root.findall("ALIM"):
         code = xml_text(alim, "alim_code")
@@ -274,12 +284,10 @@ def parse_ciqual_alim(zip_file):
     return foods
 
 
-def parse_ciqual_const(zip_file):
-    member = find_zip_member(zip_file, "const_")
+def parse_ciqual_const(path):
     nutrients = {}
 
-    with zip_file.open(member) as f:
-        root = ET.parse(f).getroot()
+    root = ET.parse(path).getroot()
 
     for const in root.findall("CONST"):
         code = xml_text(const, "const_code")
@@ -352,15 +360,14 @@ def identify_ciqual_macro_codes(nutrients):
     }
 
 
-def parse_ciqual_compo(zip_file, macro_codes):
-    member = find_zip_member(zip_file, "compo_")
+def parse_ciqual_compo(path, macro_codes):
     wanted_codes = set(macro_codes.values())
     reverse_codes = {value: key for key, value in macro_codes.items()}
 
     values_by_food = {}
 
-    with zip_file.open(member) as f:
-        text = f.read().decode("utf-8", errors="replace")
+    with open(path, "r", encoding="utf-8", errors="replace") as f:
+        text = f.read()
 
     tokens = text.split()
 
@@ -386,13 +393,12 @@ def parse_ciqual_compo(zip_file, macro_codes):
 
 
 def build_france_ciqual():
-    ciqual_zip_path, ciqual_file = download_latest_ciqual_zip()
+    ciqual_files = download_ciqual_xml_files()
 
-    with zipfile.ZipFile(ciqual_zip_path, "r") as zip_file:
-        foods = parse_ciqual_alim(zip_file)
-        nutrients = parse_ciqual_const(zip_file)
-        macro_codes = identify_ciqual_macro_codes(nutrients)
-        values_by_food = parse_ciqual_compo(zip_file, macro_codes)
+    foods = parse_ciqual_alim(ciqual_files["alim"]["path"])
+    nutrients = parse_ciqual_const(ciqual_files["const"]["path"])
+    macro_codes = identify_ciqual_macro_codes(nutrients)
+    values_by_food = parse_ciqual_compo(ciqual_files["compo"]["path"], macro_codes)
 
     items = []
     seen = set()
@@ -443,8 +449,20 @@ def build_france_ciqual():
         "owner": "ANSES",
         "license": "Etalab Open License 2.0",
         "datasetPersistentId": CIQUAL_DATASET_DOI,
-        "filePersistentId": ciqual_file["persistentId"],
-        "sourceFileName": ciqual_file["filename"],
+        "sourceFiles": {
+            "alim": {
+                "filename": ciqual_files["alim"]["filename"],
+                "persistentId": ciqual_files["alim"]["persistentId"],
+            },
+            "const": {
+                "filename": ciqual_files["const"]["filename"],
+                "persistentId": ciqual_files["const"]["persistentId"],
+            },
+            "compo": {
+                "filename": ciqual_files["compo"]["filename"],
+                "persistentId": ciqual_files["compo"]["persistentId"],
+            },
+        },
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "itemCount": len(items),
         "file": "countries/FR/national.json",
