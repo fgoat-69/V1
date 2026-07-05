@@ -100,7 +100,21 @@ def find_ciqual_file(files, starts_with, ends_with=".xml"):
 
         filename_l = filename.lower()
 
-        if filename_l.startswith(starts_with) and filename_l.endswith(ends_with) and persistent_id:
+        if not persistent_id:
+            continue
+
+        if not filename_l.endswith(ends_with):
+            continue
+
+        if starts_with == "alim_":
+            if filename_l.startswith("alim_") and not filename_l.startswith("alim_grp_"):
+                matches.append({
+                    "filename": filename,
+                    "persistentId": persistent_id,
+                })
+            continue
+
+        if filename_l.startswith(starts_with):
             matches.append({
                 "filename": filename,
                 "persistentId": persistent_id,
@@ -116,10 +130,16 @@ def find_ciqual_file(files, starts_with, ends_with=".xml"):
             f"Available files: {available}"
         )
 
-    matches.sort(key=lambda item: item["filename"], reverse=True)
-    return matches[0]
+    matches.sort(key=lambda item: item["filename"])
 
+    # Prefer the exact file "alim_..." over "alim_grp_..."
+    if starts_with == "alim_":
+        for item in matches:
+            if os.path.basename(item["filename"]).lower().startswith("alim_") and \
+               not os.path.basename(item["filename"]).lower().startswith("alim_grp_"):
+                return item
 
+    return matches[-1]
 def download_ciqual_xml_files():
     files = get_ciqual_dataset_files()
     temp_dir = tempfile.mkdtemp(prefix="ciqual_")
