@@ -248,7 +248,11 @@ def build_france_ciqual():
     )
 
     kcal_header = header_contains("energie", "kcal")
-    protein_header = header_contains("proteines")
+        protein_header = (
+        header_contains("proteines")
+        or header_contains("protéines")
+        or header_contains("prot")
+    )
     fat_header = header_contains("lipides")
     carbs_header = header_contains("glucides")
 
