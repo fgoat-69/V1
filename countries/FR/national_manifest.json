@@ -1,0 +1,25 @@
+{
+  "countryIso2": "FR",
+  "source": "france_ciqual",
+  "sourceName": "Table de composition nutritionnelle des aliments Ciqual",
+  "owner": "ANSES",
+  "license": "Etalab Open License 2.0",
+  "datasetPersistentId": "doi:10.57745/RDMHWY",
+  "sourceFiles": {
+    "alim": {
+      "filename": "alim_grp_2025_11_03.xml",
+      "persistentId": "doi:10.57745/FMNIUZ"
+    },
+    "const": {
+      "filename": "const_2025_11_03.xml",
+      "persistentId": "doi:10.57745/FWSPCX"
+    },
+    "compo": {
+      "filename": "compo_2025_11_03.xml",
+      "persistentId": "doi:10.57745/O73GDX"
+    }
+  },
+  "generatedAt": "2026-07-05T09:18:20.903901+00:00",
+  "itemCount": 0,
+  "file": "countries/FR/national.json"
+}
