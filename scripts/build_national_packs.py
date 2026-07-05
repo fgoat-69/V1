@@ -371,27 +371,57 @@ def parse_ciqual_compo(path, macro_codes):
 
     tokens = text.split()
 
-    if len(tokens) % 5 != 0:
-        print(f"Warning: CIQUAL composition token count is not divisible by 5: {len(tokens)}")
+    i = 0
+    parsed_records = 0
+    parsed_macro_values = 0
 
-    for i in range(0, len(tokens) - 4, 5):
+    while i < len(tokens) - 2:
         food_code = tokens[i]
         nutrient_code = tokens[i + 1]
         raw_value = tokens[i + 2]
 
-        if nutrient_code not in wanted_codes:
+        if not food_code.isdigit() or not nutrient_code.isdigit():
+            i += 1
             continue
 
-        value = to_float(raw_value)
-        if value is None:
-            continue
+        parsed_records += 1
 
-        field = reverse_codes[nutrient_code]
-        values_by_food.setdefault(food_code, {})[field] = value
+        if nutrient_code in wanted_codes:
+            value = to_float(raw_value)
+            if value is not None:
+                field = reverse_codes[nutrient_code]
+                values_by_food.setdefault(food_code, {})[field] = value
+                parsed_macro_values += 1
+
+        # Move to the start of the next record.
+        # A new record starts with: food_code nutrient_code value
+        # In CIQUAL, food codes are 4 digits and nutrient codes are numeric.
+        j = i + 3
+
+        while j < len(tokens) - 2:
+            next_food_code = tokens[j]
+            next_nutrient_code = tokens[j + 1]
+
+            if (
+                next_food_code.isdigit()
+                and len(next_food_code) == 4
+                and next_nutrient_code.isdigit()
+            ):
+                break
+
+            j += 1
+
+        if j <= i + 3:
+            i += 3
+        else:
+            i = j
+
+    print(
+        "CIQUAL composition parsed: "
+        f"records={parsed_records}, macroValues={parsed_macro_values}, foodsWithMacros={len(values_by_food)}"
+    )
 
     return values_by_food
-
-
 def build_france_ciqual():
     ciqual_files = download_ciqual_xml_files()
 
