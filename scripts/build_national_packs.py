@@ -3,6 +3,8 @@ import os
 import re
 import tempfile
 import unicodedata
+import zipfile
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from urllib.parse import quote
 from urllib.request import Request, urlopen
@@ -78,7 +80,7 @@ def download_file(url, output_path):
             f.write(response.read())
 
 
-def find_latest_ciqual_xlsx_file():
+def find_latest_ciqual_zip_file():
     encoded_doi = quote(CIQUAL_DATASET_DOI, safe=":")
     url = (
         f"{CIQUAL_API_BASE}/datasets/export"
@@ -88,28 +90,28 @@ def find_latest_ciqual_xlsx_file():
     payload = fetch_json(url)
     files = payload.get("datasetVersion", {}).get("files", [])
 
-    xlsx_files = []
+    zip_files = []
 
     for file_entry in files:
         data_file = file_entry.get("dataFile", {})
         filename = data_file.get("filename", "")
         persistent_id = data_file.get("persistentId", "")
 
-        if filename.lower().endswith(".xlsx") and persistent_id:
-            xlsx_files.append({
+        if filename.lower().endswith(".zip") and persistent_id:
+            zip_files.append({
                 "filename": filename,
                 "persistentId": persistent_id,
             })
 
-    if not xlsx_files:
-        raise RuntimeError("Could not find CIQUAL XLSX file in dataset metadata.")
+    if not zip_files:
+        raise RuntimeError("Could not find CIQUAL ZIP file in dataset metadata.")
 
-    xlsx_files.sort(key=lambda item: item["filename"], reverse=True)
-    return xlsx_files[0]
+    zip_files.sort(key=lambda item: item["filename"], reverse=True)
+    return zip_files[0]
 
 
-def download_latest_ciqual_xlsx():
-    latest = find_latest_ciqual_xlsx_file()
+def download_latest_ciqual_zip():
+    latest = find_latest_ciqual_zip_file()
 
     temp_dir = tempfile.mkdtemp(prefix="ciqual_")
     output_path = os.path.join(temp_dir, latest["filename"])
@@ -120,10 +122,30 @@ def download_latest_ciqual_xlsx():
         f"?persistentId={encoded_file_doi}"
     )
 
-    print(f"Downloading CIQUAL file: {latest['filename']}")
+    print(f"Downloading CIQUAL ZIP file: {latest['filename']}")
     download_file(download_url, output_path)
 
     return output_path, latest
+
+
+def local_name(path):
+    return os.path.basename(path).lower()
+
+
+def find_zip_member(zip_file, starts_with, ends_with=".xml"):
+    for name in zip_file.namelist():
+        base = local_name(name)
+        if base.startswith(starts_with) and base.endswith(ends_with):
+            return name
+
+    raise RuntimeError(f"Could not find CIQUAL file starting with {starts_with}")
+
+
+def xml_text(parent, tag_name):
+    child = parent.find(tag_name)
+    if child is None or child.text is None:
+        return ""
+    return normalize_text(child.text)
 
 
 def build_germany_bls():
@@ -228,81 +250,167 @@ def build_germany_bls():
     print(f"Saved Germany BLS national pack: {len(items)} items")
 
 
-def build_france_ciqual():
-    ciqual_path, ciqual_file = download_latest_ciqual_xlsx()
+def parse_ciqual_alim(zip_file):
+    member = find_zip_member(zip_file, "alim_")
+    foods = {}
 
-    workbook = load_workbook(ciqual_path, read_only=True, data_only=True)
-    sheet = workbook.active
+    with zip_file.open(member) as f:
+        root = ET.parse(f).getroot()
 
-    rows = sheet.iter_rows(values_only=True)
-    headers = list(next(rows))
+    for alim in root.findall("ALIM"):
+        code = xml_text(alim, "alim_code")
+        name_fr = xml_text(alim, "alim_nom_fr")
+        name_en = xml_text(alim, "alim_nom_eng")
 
-    def header_contains(*tokens):
-        for header in headers:
-            text = normalize_for_match(header)
-            if all(normalize_for_match(token) in text for token in tokens):
-                return header
-        return None
+        if not code or not name_fr:
+            continue
 
-    name_header = (
-        header_contains("alim_grp_nom_fr")
-        or header_contains("alim", "nom", "fr")
-        or header_contains("nom", "fr")
-        or header_contains("aliment")
-    )
+        final_name = name_fr
+        if name_en and name_en.lower() != name_fr.lower():
+            final_name = f"{name_fr} / {name_en}"
 
-    kcal_header = (
-        header_contains("energie", "kcal")
-        or header_contains("energie")
-    )
+        foods[code] = final_name
 
-    protein_header = (
-        header_contains("proteines")
-        or header_contains("protéines")
-        or header_contains("protein")
-        or header_contains("prot")
-    )
+    return foods
 
-    fat_header = (
-        header_contains("lipides")
-        or header_contains("fat")
-    )
 
-    carbs_header = (
-        header_contains("glucides")
-        or header_contains("carbohydrates")
-    )
+def parse_ciqual_const(zip_file):
+    member = find_zip_member(zip_file, "const_")
+    nutrients = {}
 
-    if not name_header or not kcal_header or not protein_header or not fat_header or not carbs_header:
-        raise RuntimeError(
-            "Could not find required CIQUAL columns. "
-            f"name={name_header}, kcal={kcal_header}, protein={protein_header}, "
-            f"fat={fat_header}, carbs={carbs_header}. "
-            f"Available headers: {headers}"
+    with zip_file.open(member) as f:
+        root = ET.parse(f).getroot()
+
+    for const in root.findall("CONST"):
+        code = xml_text(const, "const_code")
+        name_fr = xml_text(const, "const_nom_fr")
+        name_en = xml_text(const, "const_nom_eng")
+        infoods = xml_text(const, "code_INFOODS")
+
+        if code:
+            nutrients[code] = {
+                "name_fr": name_fr,
+                "name_en": name_en,
+                "infoods": infoods,
+            }
+
+    return nutrients
+
+
+def identify_ciqual_macro_codes(nutrients):
+    kcal_code = None
+    protein_code = None
+    fat_code = None
+    carbs_code = None
+
+    for code, meta in nutrients.items():
+        infoods = normalize_for_match(meta.get("infoods", ""))
+        name = normalize_for_match(
+            " ".join([
+                meta.get("name_fr", ""),
+                meta.get("name_en", ""),
+                meta.get("infoods", ""),
+            ])
         )
 
-    index = {header: i for i, header in enumerate(headers)}
+        if not kcal_code and "kcal" in name:
+            kcal_code = code
+
+        if not protein_code and (
+            "proteines" in name or "protein" in name or infoods == "prot"
+        ):
+            protein_code = code
+
+        if not fat_code and (
+            "lipides" in name or "fat" in name or infoods == "fat"
+        ):
+            fat_code = code
+
+        if not carbs_code and (
+            "glucides" in name
+            or "carbohydrate" in name
+            or infoods in {"choavl", "chocdf"}
+        ):
+            carbs_code = code
+
+    if not kcal_code or not protein_code or not fat_code or not carbs_code:
+        raise RuntimeError(
+            "Could not identify CIQUAL macro codes. "
+            f"kcal={kcal_code}, protein={protein_code}, fat={fat_code}, carbs={carbs_code}"
+        )
+
+    print(
+        "CIQUAL macro codes: "
+        f"kcal={kcal_code}, protein={protein_code}, fat={fat_code}, carbs={carbs_code}"
+    )
+
+    return {
+        "calories": kcal_code,
+        "protein": protein_code,
+        "fat": fat_code,
+        "carbs": carbs_code,
+    }
+
+
+def parse_ciqual_compo(zip_file, macro_codes):
+    member = find_zip_member(zip_file, "compo_")
+    wanted_codes = set(macro_codes.values())
+    reverse_codes = {value: key for key, value in macro_codes.items()}
+
+    values_by_food = {}
+
+    with zip_file.open(member) as f:
+        text = f.read().decode("utf-8", errors="replace")
+
+    tokens = text.split()
+
+    if len(tokens) % 5 != 0:
+        print(f"Warning: CIQUAL composition token count is not divisible by 5: {len(tokens)}")
+
+    for i in range(0, len(tokens) - 4, 5):
+        food_code = tokens[i]
+        nutrient_code = tokens[i + 1]
+        raw_value = tokens[i + 2]
+
+        if nutrient_code not in wanted_codes:
+            continue
+
+        value = to_float(raw_value)
+        if value is None:
+            continue
+
+        field = reverse_codes[nutrient_code]
+        values_by_food.setdefault(food_code, {})[field] = value
+
+    return values_by_food
+
+
+def build_france_ciqual():
+    ciqual_zip_path, ciqual_file = download_latest_ciqual_zip()
+
+    with zipfile.ZipFile(ciqual_zip_path, "r") as zip_file:
+        foods = parse_ciqual_alim(zip_file)
+        nutrients = parse_ciqual_const(zip_file)
+        macro_codes = identify_ciqual_macro_codes(nutrients)
+        values_by_food = parse_ciqual_compo(zip_file, macro_codes)
 
     items = []
     seen = set()
 
-    for row in rows:
-        name = normalize_text(row[index[name_header]])
+    for food_code, name in foods.items():
+        values = values_by_food.get(food_code, {})
 
-        if not name:
-            continue
-
-        calories = to_float(row[index[kcal_header]]) or 0.0
-        protein = to_float(row[index[protein_header]]) or 0.0
-        fat = to_float(row[index[fat_header]]) or 0.0
-        carbs = to_float(row[index[carbs_header]]) or 0.0
+        calories = values.get("calories", 0.0)
+        protein = values.get("protein", 0.0)
+        fat = values.get("fat", 0.0)
+        carbs = values.get("carbs", 0.0)
 
         if calories == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
             continue
 
         item = {
             "name": name,
-            "brand": "CIQUAL 2025",
+            "brand": "CIQUAL",
             "barcode": None,
             "calories": round(calories, 2),
             "protein": round(protein, 2),
