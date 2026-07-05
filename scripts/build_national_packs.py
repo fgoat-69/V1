@@ -386,55 +386,31 @@ def parse_ciqual_compo(path, macro_codes):
 
     values_by_food = {}
 
-    with open(path, "r", encoding="utf-8", errors="replace") as f:
-        text = f.read()
+    root = ET.parse(path).getroot()
 
-    tokens = text.split()
-
-    i = 0
     parsed_records = 0
     parsed_macro_values = 0
 
-    while i < len(tokens) - 2:
-        food_code = tokens[i]
-        nutrient_code = tokens[i + 1]
-        raw_value = tokens[i + 2]
+    for compo in root.findall("COMPO"):
+        food_code = xml_text(compo, "alim_code")
+        nutrient_code = xml_text(compo, "const_code")
+        raw_value = xml_text(compo, "teneur")
 
-        if not food_code.isdigit() or not nutrient_code.isdigit():
-            i += 1
+        if not food_code or not nutrient_code:
             continue
 
         parsed_records += 1
 
-        if nutrient_code in wanted_codes:
-            value = to_float(raw_value)
-            if value is not None:
-                field = reverse_codes[nutrient_code]
-                values_by_food.setdefault(food_code, {})[field] = value
-                parsed_macro_values += 1
+        if nutrient_code not in wanted_codes:
+            continue
 
-        # Move to the start of the next record.
-        # A new record starts with: food_code nutrient_code value
-        # In CIQUAL, food codes are 4 digits and nutrient codes are numeric.
-        j = i + 3
+        value = to_float(raw_value)
+        if value is None:
+            continue
 
-        while j < len(tokens) - 2:
-            next_food_code = tokens[j]
-            next_nutrient_code = tokens[j + 1]
-
-            if (
-                next_food_code.isdigit()
-                and len(next_food_code) == 4
-                and next_nutrient_code.isdigit()
-            ):
-                break
-
-            j += 1
-
-        if j <= i + 3:
-            i += 3
-        else:
-            i = j
+        field = reverse_codes[nutrient_code]
+        values_by_food.setdefault(food_code, {})[field] = value
+        parsed_macro_values += 1
 
     print(
         "CIQUAL composition parsed: "
