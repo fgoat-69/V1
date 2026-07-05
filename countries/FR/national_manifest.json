@@ -7,8 +7,8 @@
   "datasetPersistentId": "doi:10.57745/RDMHWY",
   "sourceFiles": {
     "alim": {
-      "filename": "alim_grp_2025_11_03.xml",
-      "persistentId": "doi:10.57745/FMNIUZ"
+      "filename": "alim_2025_11_03.xml",
+      "persistentId": "doi:10.57745/OH8KXC"
     },
     "const": {
       "filename": "const_2025_11_03.xml",
@@ -19,7 +19,7 @@
       "persistentId": "doi:10.57745/O73GDX"
     }
   },
-  "generatedAt": "2026-07-05T10:22:05.015497+00:00",
+  "generatedAt": "2026-07-05T10:30:54.774145+00:00",
   "itemCount": 0,
   "file": "countries/FR/national.json"
 }
