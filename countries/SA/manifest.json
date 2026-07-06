@@ -1,8 +1,8 @@
 {
   "countryIso2": "SA",
   "slug": "saudi-arabia",
-  "version": 1783186487,
-  "generatedAt": "2026-07-04T17:34:47.982489+00:00",
+  "version": 1783327967,
+  "generatedAt": "2026-07-06T08:52:47.898212+00:00",
   "strategy": "full",
   "itemCountDiscovered": 1808,
   "bytesDiscovered": 399667,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-07-04T17:34:47.982489+00:00",
+    "generatedAt": "2026-07-06T08:52:47.898212+00:00",
     "discoveryMethod": "off_csv_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",

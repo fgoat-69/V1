@@ -1,8 +1,8 @@
 {
   "countryIso2": "MN",
   "slug": "mongolia",
-  "version": 1783190553,
-  "generatedAt": "2026-07-04T18:42:33.045990+00:00",
+  "version": 1783328940,
+  "generatedAt": "2026-07-06T09:09:00.401953+00:00",
   "strategy": "full",
   "itemCountDiscovered": 34,
   "bytesDiscovered": 7598,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-07-04T18:42:33.045990+00:00",
+    "generatedAt": "2026-07-06T09:09:00.401953+00:00",
     "discoveryMethod": "off_csv_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
