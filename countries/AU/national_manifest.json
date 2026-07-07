@@ -1,0 +1,15 @@
+{
+  "countryIso2": "AU",
+  "source": "australia_afcd",
+  "sourceName": "Australian Food Composition Database Release 3",
+  "owner": "Food Standards Australia New Zealand",
+  "license": "Food Standards Australia New Zealand data files",
+  "sourceFiles": {
+    "foodDetails": "national_sources/AU/AFCD Release 3 - Food Details.xlsx",
+    "nutrientProfiles": "national_sources/AU/AFCD Release 3 - Nutrient profiles.xlsx"
+  },
+  "energyConversion": "kcal = kJ / 4.184",
+  "generatedAt": "2026-07-07T19:19:09.504580+00:00",
+  "itemCount": 1577,
+  "file": "countries/AU/national.json"
+}
