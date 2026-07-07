@@ -766,7 +766,6 @@ def build_australia_afcd():
     food_sheet = food_workbook["Food details"]
 
     food_rows = food_sheet.iter_rows(values_only=True)
-
     next(food_rows, None)
     next(food_rows, None)
 
@@ -795,7 +794,6 @@ def build_australia_afcd():
     nutrient_sheet = nutrient_workbook["All solids & liquids per 100 g"]
 
     nutrient_rows = nutrient_sheet.iter_rows(values_only=True)
-
     next(nutrient_rows, None)
     next(nutrient_rows, None)
 
@@ -804,7 +802,7 @@ def build_australia_afcd():
 
     nutrient_food_key_header = find_header_by_tokens(nutrient_headers, "public", "food", "key")
     nutrient_food_name_header = find_header_by_tokens(nutrient_headers, "food", "name")
-    kcal_header = find_header_by_tokens(nutrient_headers, "energy", "kcal")
+    kj_header = find_header_by_tokens(nutrient_headers, "energy", "without dietary fibre", "kj")
     protein_header = find_header_by_tokens(nutrient_headers, "protein")
     fat_header = find_header_by_tokens(nutrient_headers, "fat", "total")
     carbs_header = find_header_by_tokens(nutrient_headers, "carbohydrate")
@@ -812,7 +810,7 @@ def build_australia_afcd():
     if (
         not nutrient_food_key_header
         or not nutrient_food_name_header
-        or not kcal_header
+        or not kj_header
         or not protein_header
         or not fat_header
         or not carbs_header
@@ -820,7 +818,7 @@ def build_australia_afcd():
         raise RuntimeError(
             "Could not find required AFCD nutrient columns. "
             f"foodKey={nutrient_food_key_header}, foodName={nutrient_food_name_header}, "
-            f"kcal={kcal_header}, protein={protein_header}, fat={fat_header}, carbs={carbs_header}"
+            f"kj={kj_header}, protein={protein_header}, fat={fat_header}, carbs={carbs_header}"
         )
 
     items = []
@@ -837,7 +835,8 @@ def build_australia_afcd():
         if not name:
             continue
 
-        calories = to_float(row[nutrient_index[kcal_header]]) or 0.0
+        energy_kj = to_float(row[nutrient_index[kj_header]]) or 0.0
+        calories = energy_kj / 4.184
         protein = to_float(row[nutrient_index[protein_header]]) or 0.0
         fat = to_float(row[nutrient_index[fat_header]]) or 0.0
         carbs = to_float(row[nutrient_index[carbs_header]]) or 0.0
@@ -870,14 +869,14 @@ def build_australia_afcd():
             "foodDetails": AU_AFCD_FOOD_DETAILS_SOURCE,
             "nutrientProfiles": AU_AFCD_NUTRIENT_PROFILES_SOURCE,
         },
+        "energyConversion": "kcal = kJ / 4.184",
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "itemCount": len(items),
         "file": "countries/AU/national.json",
     })
 
     print(f"Saved Australia AFCD national pack: {len(items)} items")
-
-
+    
 # ============================================================
 # Entry point
 # ============================================================
