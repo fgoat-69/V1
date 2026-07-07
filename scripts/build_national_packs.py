@@ -24,6 +24,97 @@ CIQUAL_DATASET_DOI = "doi:10.57745/RDMHWY"
 CIQUAL_API_BASE = "https://entrepot.recherche.data.gouv.fr/api"
 USER_AGENT = "MostoFitNationalPackBuilder/1.0"
 
+GB_COFID_SOURCE = "national_sources/GB/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021.xlsx"
+
+def build_united_kingdom_cofid():
+    if not os.path.exists(GB_COFID_SOURCE):
+        raise FileNotFoundError(f"Missing CoFID source file: {GB_COFID_SOURCE}")
+
+    workbook = load_workbook(GB_COFID_SOURCE, read_only=True, data_only=True)
+    sheet = workbook["1.3 Proximates"]
+
+    rows = sheet.iter_rows(values_only=True)
+    headers = list(next(rows))
+
+    index = {header: i for i, header in enumerate(headers)}
+
+    required_headers = {
+        "Food Code",
+        "Food Name",
+        "Protein (g)",
+        "Fat (g)",
+        "Carbohydrate (g)",
+        "Energy (kcal) (kcal)",
+    }
+
+    missing = required_headers - set(headers)
+    if missing:
+        raise RuntimeError(f"Missing required CoFID headers: {missing}")
+
+    items = []
+    seen = set()
+
+    # Skip rows 2 and 3: short nutrient codes + display labels
+    next(rows, None)
+    next(rows, None)
+
+    for row in rows:
+        code = row[index["Food Code"]]
+        name = row[index["Food Name"]]
+
+        if not code or not name:
+            continue
+
+        calories = to_float(row[index["Energy (kcal) (kcal)"]]) or 0.0
+        protein = to_float(row[index["Protein (g)"]]) or 0.0
+        fat = to_float(row[index["Fat (g)"]]) or 0.0
+        carbs = to_float(row[index["Carbohydrate (g)"]]) or 0.0
+
+        if calories == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
+            continue
+
+        item = {
+            "name": normalize_text(name),
+            "brand": "CoFID 2021",
+            "barcode": None,
+            "calories": round(calories, 2),
+            "protein": round(protein, 2),
+            "carbs": round(carbs, 2),
+            "fat": round(fat, 2),
+            "servingSize": 100.0,
+            "servingUnit": "g",
+            "isLiquid": False,
+            "source": "uk_cofid",
+        }
+
+        key = normalize_key(item)
+        if key in seen:
+            continue
+
+        seen.add(key)
+        items.append(item)
+
+    items.sort(key=lambda item: item["name"].lower())
+
+    output_path = os.path.join(OUTPUT_ROOT, "GB", "national.json")
+    manifest_path = os.path.join(OUTPUT_ROOT, "GB", "national_manifest.json")
+
+    write_json(output_path, items)
+
+    write_json(manifest_path, {
+        "countryIso2": "GB",
+        "source": "uk_cofid",
+        "sourceName": "McCance and Widdowson's Composition of Foods Integrated Dataset 2021",
+        "owner": "UK Government / Public Health England",
+        "license": "Open Government Licence",
+        "sourceFile": GB_COFID_SOURCE,
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "itemCount": len(items),
+        "file": "countries/GB/national.json",
+    })
+
+    print(f"Saved UK CoFID national pack: {len(items)} items")
+
 def download_canada_cnf_zip():
     url = f"{OPEN_CANADA_API_BASE}/resource_show?id={CANADA_CNF_RESOURCE_ID}"
     payload = fetch_json(url)
@@ -654,6 +745,7 @@ def main():
     build_germany_bls()
     build_france_ciqual()
     build_canada_cnf()
+    build_united_kingdom_cofid()
 
 if __name__ == "__main__":
     main()
