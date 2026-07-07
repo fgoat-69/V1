@@ -1,0 +1,11 @@
+{
+  "countryIso2": "GB",
+  "source": "uk_cofid",
+  "sourceName": "McCance and Widdowson's Composition of Foods Integrated Dataset 2021",
+  "owner": "UK Government / Public Health England",
+  "license": "Open Government Licence",
+  "sourceFile": "national_sources/GB/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021.xlsx",
+  "generatedAt": "2026-07-07T14:30:55.355154+00:00",
+  "itemCount": 2881,
+  "file": "countries/GB/national.json"
+}
