@@ -7,6 +7,8 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from urllib.parse import quote
 from urllib.request import Request, urlopen
+import csv
+import zipfile
 
 from openpyxl import load_workbook
 
@@ -15,10 +17,161 @@ OUTPUT_ROOT = "countries"
 
 DE_BLS_SOURCE = "national_sources/DE/BLS_4_0_Daten_2025_DE.xlsx"
 
+CANADA_CNF_RESOURCE_ID = "019f2a90-e3a9-489d-b6e1-f74f4ba1d006"
+OPEN_CANADA_API_BASE = "https://open.canada.ca/data/api/action"
+
 CIQUAL_DATASET_DOI = "doi:10.57745/RDMHWY"
 CIQUAL_API_BASE = "https://entrepot.recherche.data.gouv.fr/api"
 USER_AGENT = "MostoFitNationalPackBuilder/1.0"
 
+def download_canada_cnf_zip():
+    url = f"{OPEN_CANADA_API_BASE}/resource_show?id={CANADA_CNF_RESOURCE_ID}"
+    payload = fetch_json(url)
+
+    result = payload.get("result", {})
+    download_url = result.get("url")
+    filename = result.get("name") or result.get("title") or "canada_cnf_2026.zip"
+
+    if not download_url:
+        raise RuntimeError("Could not find Canada CNF download URL from Open Canada API.")
+
+    temp_dir = tempfile.mkdtemp(prefix="canada_cnf_")
+    output_path = os.path.join(temp_dir, "canada_cnf_2026.zip")
+
+    print(f"Downloading Canada CNF ZIP: {filename}")
+    download_file(download_url, output_path)
+
+    return output_path, {
+        "resourceId": CANADA_CNF_RESOURCE_ID,
+        "sourceUrl": download_url,
+        "filename": filename,
+    }
+
+
+def find_zip_csv(zip_file, filename):
+    target = filename.lower()
+
+    for name in zip_file.namelist():
+        if os.path.basename(name).lower() == target:
+            return name
+
+    raise RuntimeError(f"Could not find {filename} in Canada CNF ZIP")
+
+
+def read_csv_from_zip(zip_file, member):
+    with zip_file.open(member) as f:
+        text = f.read().decode("utf-8-sig", errors="replace").splitlines()
+    return list(csv.DictReader(text))
+
+
+def build_canada_cnf():
+    zip_path, source_info = download_canada_cnf_zip()
+
+    with zipfile.ZipFile(zip_path, "r") as zip_file:
+        food_rows = read_csv_from_zip(zip_file, find_zip_csv(zip_file, "Food_Name.csv"))
+        nutrient_rows = read_csv_from_zip(zip_file, find_zip_csv(zip_file, "Nutrient_Amount.csv"))
+
+    foods = {}
+
+    for row in food_rows:
+        code = normalize_text(row.get("Food_Code"))
+        name_en = normalize_text(row.get("Food_Description_EN"))
+        name_fr = normalize_text(row.get("Food_Description_FR"))
+
+        if not code or not name_en:
+            continue
+
+        final_name = name_en
+        if name_fr and name_fr.lower() != name_en.lower():
+            final_name = f"{name_en} / {name_fr}"
+
+        foods[code] = final_name
+
+    macro_codes = {
+        "protein": "203",
+        "fat": "204",
+        "carbs": "205",
+        "calories": "208",
+    }
+
+    values_by_food = {}
+
+    for row in nutrient_rows:
+        food_code = normalize_text(row.get("Food_Code"))
+        nutrient_code = normalize_text(row.get("Nutrient_Code"))
+
+        if not food_code or nutrient_code not in macro_codes.values():
+            continue
+
+        value = to_float(row.get("Nutrient_Amount"))
+        if value is None:
+            continue
+
+        field = next(
+            field_name
+            for field_name, code in macro_codes.items()
+            if code == nutrient_code
+        )
+
+        values_by_food.setdefault(food_code, {})[field] = value
+
+    items = []
+    seen = set()
+
+    for food_code, name in foods.items():
+        values = values_by_food.get(food_code, {})
+
+        calories = values.get("calories", 0.0)
+        protein = values.get("protein", 0.0)
+        fat = values.get("fat", 0.0)
+        carbs = values.get("carbs", 0.0)
+
+        if calories == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
+            continue
+
+        item = {
+            "name": name,
+            "brand": "CNF 2026",
+            "barcode": None,
+            "calories": round(calories, 2),
+            "protein": round(protein, 2),
+            "carbs": round(carbs, 2),
+            "fat": round(fat, 2),
+            "servingSize": 100.0,
+            "servingUnit": "g",
+            "isLiquid": False,
+            "source": "canada_cnf",
+        }
+
+        key = normalize_key(item)
+        if key in seen:
+            continue
+
+        seen.add(key)
+        items.append(item)
+
+    items.sort(key=lambda item: item["name"].lower())
+
+    output_path = os.path.join(OUTPUT_ROOT, "CA", "national.json")
+    manifest_path = os.path.join(OUTPUT_ROOT, "CA", "national_manifest.json")
+
+    write_json(output_path, items)
+
+    write_json(manifest_path, {
+        "countryIso2": "CA",
+        "source": "canada_cnf",
+        "sourceName": "Canadian Nutrient File 2026",
+        "owner": "Health Canada",
+        "license": "Open Government Licence - Canada",
+        "resourceId": source_info["resourceId"],
+        "sourceUrl": source_info["sourceUrl"],
+        "sourceFileName": source_info["filename"],
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "itemCount": len(items),
+        "file": "countries/CA/national.json",
+    })
+
+    print(f"Saved Canada CNF national pack: {len(items)} items")
 
 def normalize_text(value):
     return re.sub(r"\s+", " ", str(value or "").strip())
@@ -500,7 +653,7 @@ def build_france_ciqual():
 def main():
     build_germany_bls()
     build_france_ciqual()
-
+    build_canada_cnf()
 
 if __name__ == "__main__":
     main()
