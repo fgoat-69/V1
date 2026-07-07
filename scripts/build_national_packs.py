@@ -24,6 +24,142 @@ CIQUAL_DATASET_DOI = "doi:10.57745/RDMHWY"
 CIQUAL_API_BASE = "https://entrepot.recherche.data.gouv.fr/api"
 USER_AGENT = "MostoFitNationalPackBuilder/1.0"
 
+AU_AFCD_FOOD_DETAILS_SOURCE = "national_sources/AU/AFCD Release 3 - Food Details.xlsx"
+AU_AFCD_NUTRIENT_PROFILES_SOURCE = "national_sources/AU/AFCD Release 3 - Nutrient profiles.xlsx"
+def find_header_by_tokens(headers, *tokens):
+    for header in headers:
+        text = normalize_for_match(header)
+        if all(normalize_for_match(token) in text for token in tokens):
+            return header
+    return None
+def build_australia_afcd():
+    if not os.path.exists(AU_AFCD_FOOD_DETAILS_SOURCE):
+        raise FileNotFoundError(f"Missing AFCD food details file: {AU_AFCD_FOOD_DETAILS_SOURCE}")
+
+    if not os.path.exists(AU_AFCD_NUTRIENT_PROFILES_SOURCE):
+        raise FileNotFoundError(f"Missing AFCD nutrient profiles file: {AU_AFCD_NUTRIENT_PROFILES_SOURCE}")
+
+    food_workbook = load_workbook(AU_AFCD_FOOD_DETAILS_SOURCE, read_only=True, data_only=True)
+    food_sheet = food_workbook["Food details"]
+
+    food_rows = food_sheet.iter_rows(values_only=True)
+
+    # Skip title/blank rows. Row 3 is the header.
+    next(food_rows, None)
+    next(food_rows, None)
+
+    food_headers = list(next(food_rows))
+    food_index = {header: i for i, header in enumerate(food_headers)}
+
+    required_food_headers = {
+        "Public Food Key",
+        "Food Name",
+    }
+
+    missing_food = required_food_headers - set(food_headers)
+    if missing_food:
+        raise RuntimeError(f"Missing required AFCD food headers: {missing_food}")
+
+    food_names = {}
+
+    for row in food_rows:
+        food_key = normalize_text(row[food_index["Public Food Key"]])
+        food_name = normalize_text(row[food_index["Food Name"]])
+
+        if food_key and food_name:
+            food_names[food_key] = food_name
+
+    nutrient_workbook = load_workbook(AU_AFCD_NUTRIENT_PROFILES_SOURCE, read_only=True, data_only=True)
+    nutrient_sheet = nutrient_workbook["All solids & liquids per 100 g"]
+
+    nutrient_rows = nutrient_sheet.iter_rows(values_only=True)
+
+    # Skip title/blank rows. Row 3 is the header.
+    next(nutrient_rows, None)
+    next(nutrient_rows, None)
+
+    nutrient_headers = list(next(nutrient_rows))
+    nutrient_index = {header: i for i, header in enumerate(nutrient_headers)}
+
+    food_key_header = "Public Food Key"
+    food_name_header = "Food Name"
+    kcal_header = find_header_by_tokens(nutrient_headers, "energy", "kcal")
+    protein_header = find_header_by_tokens(nutrient_headers, "protein")
+    fat_header = find_header_by_tokens(nutrient_headers, "fat", "total")
+    carbs_header = find_header_by_tokens(nutrient_headers, "carbohydrate")
+
+    if not food_key_header or not food_name_header or not kcal_header or not protein_header or not fat_header or not carbs_header:
+        raise RuntimeError(
+            "Could not find required AFCD nutrient columns. "
+            f"kcal={kcal_header}, protein={protein_header}, fat={fat_header}, carbs={carbs_header}"
+        )
+
+    items = []
+    seen = set()
+
+    for row in nutrient_rows:
+        food_key = normalize_text(row[nutrient_index[food_key_header]])
+
+        if not food_key:
+            continue
+
+        name = food_names.get(food_key) or normalize_text(row[nutrient_index[food_name_header]])
+
+        if not name:
+            continue
+
+        calories = to_float(row[nutrient_index[kcal_header]]) or 0.0
+        protein = to_float(row[nutrient_index[protein_header]]) or 0.0
+        fat = to_float(row[nutrient_index[fat_header]]) or 0.0
+        carbs = to_float(row[nutrient_index[carbs_header]]) or 0.0
+
+        if calories == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0:
+            continue
+
+        item = {
+            "name": name,
+            "brand": "AFCD Release 3",
+            "barcode": None,
+            "calories": round(calories, 2),
+            "protein": round(protein, 2),
+            "carbs": round(carbs, 2),
+            "fat": round(fat, 2),
+            "servingSize": 100.0,
+            "servingUnit": "g",
+            "isLiquid": False,
+            "source": "australia_afcd",
+        }
+
+        key = normalize_key(item)
+        if key in seen:
+            continue
+
+        seen.add(key)
+        items.append(item)
+
+    items.sort(key=lambda item: item["name"].lower())
+
+    output_path = os.path.join(OUTPUT_ROOT, "AU", "national.json")
+    manifest_path = os.path.join(OUTPUT_ROOT, "AU", "national_manifest.json")
+
+    write_json(output_path, items)
+
+    write_json(manifest_path, {
+        "countryIso2": "AU",
+        "source": "australia_afcd",
+        "sourceName": "Australian Food Composition Database Release 3",
+        "owner": "Food Standards Australia New Zealand",
+        "license": "Food Standards Australia New Zealand data files",
+        "sourceFiles": {
+            "foodDetails": AU_AFCD_FOOD_DETAILS_SOURCE,
+            "nutrientProfiles": AU_AFCD_NUTRIENT_PROFILES_SOURCE,
+        },
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "itemCount": len(items),
+        "file": "countries/AU/national.json",
+    })
+
+    print(f"Saved Australia AFCD national pack: {len(items)} items")
 GB_COFID_SOURCE = "national_sources/GB/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021.xlsx"
 
 def build_united_kingdom_cofid():
@@ -746,6 +882,7 @@ def main():
     build_france_ciqual()
     build_canada_cnf()
     build_united_kingdom_cofid()
+    build_australia_afcd()
 
 if __name__ == "__main__":
     main()
