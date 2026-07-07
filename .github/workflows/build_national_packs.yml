@@ -40,7 +40,7 @@ jobs:
             countries/CA/national.json \
             countries/CA/national_manifest.json \
             countries/GB/national.json \
-            countries/GB/national_manifest.json
+            countries/GB/national_manifest.json \
             countries/AU/national.json \
             countries/AU/national_manifest.json
 
