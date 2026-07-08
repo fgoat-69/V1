@@ -7,7 +7,7 @@ import unicodedata
 import xml.etree.ElementTree as ET
 import zipfile
 from datetime import datetime, timezone
-from urllib.parse import quote
+from urllib.parse import quote, urljoin
 from urllib.request import Request, urlopen
 
 from openpyxl import load_workbook
@@ -15,7 +15,7 @@ from openpyxl import load_workbook
 
 OUTPUT_ROOT = "countries"
 USER_AGENT = "MostoFitNationalPackBuilder/1.0"
-
+NL_NEVO_PAGE_URL = "https://www.rivm.nl/documenten/nevo-online-versie"
 DE_BLS_SOURCE = "national_sources/DE/BLS_4_0_Daten_2025_DE.xlsx"
 
 CIQUAL_DATASET_DOI = "doi:10.57745/RDMHWY"
@@ -82,7 +82,10 @@ def download_file(url, output_path):
     with urlopen(request, timeout=180) as response:
         with open(output_path, "wb") as f:
             f.write(response.read())
-
+def fetch_text(url):
+    request = Request(url, headers={"User-Agent": USER_AGENT})
+    with urlopen(request, timeout=60) as response:
+        return response.read().decode("utf-8", errors="replace")
 
 def find_header(headers, starts_with):
     for header in headers:
@@ -128,7 +131,134 @@ def add_unique_item(items, seen, item):
 def is_empty_macro_row(calories, protein, carbs, fat):
     return calories == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0
 
+# ============================================================
+# Netherlands — NEVO
+# ============================================================
 
+def find_nevo_zip_url(html):
+    matches = re.findall(r'href=["\']([^"\']+\.zip(?:\?[^"\']*)?)["\']', html, flags=re.IGNORECASE)
+
+    if not matches:
+        raise RuntimeError("Could not find NEVO ZIP link on RIVM page.")
+
+    return urljoin(NL_NEVO_PAGE_URL, matches[0])
+
+
+def download_nevo_xlsx():
+    html = fetch_text(NL_NEVO_PAGE_URL)
+    zip_url = find_nevo_zip_url(html)
+
+    temp_dir = tempfile.mkdtemp(prefix="nevo_")
+    zip_path = os.path.join(temp_dir, "nevo.zip")
+
+    print(f"Downloading Netherlands NEVO ZIP: {zip_url}")
+    download_file(zip_url, zip_path)
+
+    with zipfile.ZipFile(zip_path, "r") as zip_file:
+        xlsx_members = [
+            name for name in zip_file.namelist()
+            if os.path.basename(name).lower().endswith(".xlsx")
+        ]
+
+        if not xlsx_members:
+            raise RuntimeError("Could not find NEVO XLSX file in ZIP.")
+
+        xlsx_members.sort()
+        xlsx_member = xlsx_members[0]
+        output_path = os.path.join(temp_dir, os.path.basename(xlsx_member))
+
+        with zip_file.open(xlsx_member) as source, open(output_path, "wb") as target:
+            target.write(source.read())
+
+    return output_path, {
+        "sourcePageUrl": NL_NEVO_PAGE_URL,
+        "sourceZipUrl": zip_url,
+        "sourceXlsxFile": os.path.basename(output_path),
+    }
+
+
+def build_netherlands_nevo():
+    xlsx_path, source_info = download_nevo_xlsx()
+
+    workbook = load_workbook(xlsx_path, read_only=True, data_only=True)
+    sheet = workbook["NEVO2025"]
+
+    rows = sheet.iter_rows(values_only=True)
+    headers = list(next(rows))
+    index = {header: i for i, header in enumerate(headers)}
+
+    required_headers = {
+        "NEVO-code",
+        "Voedingsmiddelnaam/Dutch food name",
+        "Engelse naam/Food name",
+        "Hoeveelheid/Quantity",
+        "ENERCC (kcal)",
+        "PROT (g)",
+        "CHO (g)",
+        "FAT (g)",
+    }
+
+    missing = required_headers - set(headers)
+    if missing:
+        raise RuntimeError(f"Missing required NEVO headers: {missing}")
+
+    items = []
+    seen = set()
+
+    for row in rows:
+        code = row[index["NEVO-code"]]
+        name_nl = normalize_text(row[index["Voedingsmiddelnaam/Dutch food name"]])
+        name_en = normalize_text(row[index["Engelse naam/Food name"]])
+        quantity = normalize_for_match(row[index["Hoeveelheid/Quantity"]])
+
+        if not code or not name_nl:
+            continue
+
+        if quantity and quantity != "per 100g":
+            continue
+
+        calories = to_float(row[index["ENERCC (kcal)"]]) or 0.0
+        protein = to_float(row[index["PROT (g)"]]) or 0.0
+        carbs = to_float(row[index["CHO (g)"]]) or 0.0
+        fat = to_float(row[index["FAT (g)"]]) or 0.0
+
+        if is_empty_macro_row(calories, protein, carbs, fat):
+            continue
+
+        final_name = name_nl
+        if name_en and name_en.lower() != name_nl.lower():
+            final_name = f"{name_nl} / {name_en}"
+
+        item = make_pack_item(
+            name=final_name,
+            brand="NEVO 2025",
+            calories=calories,
+            protein=protein,
+            carbs=carbs,
+            fat=fat,
+            source="netherlands_nevo",
+        )
+
+        add_unique_item(items, seen, item)
+
+    items.sort(key=lambda item: item["name"].lower())
+
+    write_json(os.path.join(OUTPUT_ROOT, "NL", "national.json"), items)
+    write_json(os.path.join(OUTPUT_ROOT, "NL", "national_manifest.json"), {
+        "countryIso2": "NL",
+        "source": "netherlands_nevo",
+        "sourceName": "NEVO-online versie 2025 9.0",
+        "owner": "RIVM",
+        "license": "NEVO-online dataset conditions",
+        "sourcePageUrl": source_info["sourcePageUrl"],
+        "sourceZipUrl": source_info["sourceZipUrl"],
+        "sourceXlsxFile": source_info["sourceXlsxFile"],
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "itemCount": len(items),
+        "file": "countries/NL/national.json",
+    })
+
+    print(f"Saved Netherlands NEVO national pack: {len(items)} items")
 # ============================================================
 # Germany — BLS 4.0
 # ============================================================
@@ -887,7 +1017,7 @@ def main():
     build_canada_cnf()
     build_united_kingdom_cofid()
     build_australia_afcd()
-
+    build_netherlands_nevo()
 
 if __name__ == "__main__":
     main()
