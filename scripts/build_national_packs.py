@@ -98,7 +98,8 @@ def safe_url(url):
 
 def fetch_text_any_encoding(url):
     request = Request(safe_url(url), headers={"User-Agent": USER_AGENT})
-    with urlopen(request, timeout=60) as response:
+
+    with urlopen(request, timeout=120) as response:
         raw = response.read()
 
     for encoding in ("utf-8", "iso-8859-2", "windows-1250"):
@@ -1104,8 +1105,16 @@ def build_hungary():
     items = []
     seen = set()
 
+        failed_urls = []
+
     for url in urls:
-        html = fetch_text_any_encoding(url)
+        try:
+            html = fetch_text_any_encoding(url)
+        except Exception as exc:
+            print(f"WARNING: Skipping KalóriaGuru URL after fetch failure: {url} ({exc})")
+            failed_urls.append(url)
+            continue
+
         for item in parse_kaloriaguru_table(html, url):
             add_unique_item(items, seen, item)
 
