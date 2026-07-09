@@ -1104,8 +1104,7 @@ def build_hungary():
 
     items = []
     seen = set()
-
-        failed_urls = []
+    failed_urls = []
 
     for url in urls:
         try:
@@ -1129,6 +1128,7 @@ def build_hungary():
         "license": "Website data; verify reuse terms before public redistribution",
         "sourceFile": HU_KALORIAGURU_URLS_SOURCE,
         "sourceUrls": urls,
+        "failedUrls": failed_urls,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "itemCount": len(items),
         "file": "countries/HU/national.json",
