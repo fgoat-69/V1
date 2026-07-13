@@ -1,8 +1,8 @@
 {
   "countryIso2": "AO",
   "slug": "angola",
-  "version": 1783328478,
-  "generatedAt": "2026-07-06T09:01:18.195668+00:00",
+  "version": 1783929789,
+  "generatedAt": "2026-07-13T08:03:09.196308+00:00",
   "strategy": "full",
   "itemCountDiscovered": 4,
   "bytesDiscovered": 857,
@@ -21,7 +21,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-07-06T09:01:18.195668+00:00",
+    "generatedAt": "2026-07-13T08:03:09.196308+00:00",
     "discoveryMethod": "off_csv_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
