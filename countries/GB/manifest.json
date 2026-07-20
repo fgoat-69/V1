@@ -1,8 +1,8 @@
 {
   "countryIso2": "GB",
   "slug": "united-kingdom",
-  "version": 1783929045,
-  "generatedAt": "2026-07-13T07:50:44.597199+00:00",
+  "version": 1784533240,
+  "generatedAt": "2026-07-20T07:40:39.761967+00:00",
   "strategy": "main_fill",
   "itemCountDiscovered": 141548,
   "bytesDiscovered": 31164798,
@@ -28,7 +28,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-07-13T07:50:44.597199+00:00",
+    "generatedAt": "2026-07-20T07:40:39.761967+00:00",
     "discoveryMethod": "off_csv_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
