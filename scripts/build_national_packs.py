@@ -343,18 +343,65 @@ def build_germany_bls():
 
     items.sort(key=lambda item: item["name"].lower())
 
-    write_json(os.path.join(OUTPUT_ROOT, "DE", "national.json"), items)
-    write_json(os.path.join(OUTPUT_ROOT, "DE", "national_manifest.json"), {
-        "countryIso2": "DE",
-        "source": "germany_bls",
-        "sourceName": "Bundeslebensmittelschlüssel BLS Version 4.0",
-        "owner": "Max Rubner-Institut",
-        "license": "CC BY 4.0",
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "itemCount": len(items),
-        "file": "countries/DE/national.json",
-    })
+       national_path = os.path.join(OUTPUT_ROOT, "DE", "national.json")
+    national_relative_path = "countries/DE/national.json"
+    manifest_path = os.path.join(
+        OUTPUT_ROOT,
+        "DE",
+        "national_manifest.json",
+    )
 
+    write_json(national_path, items)
+
+    file_entry = build_file_entry(
+        file_path=national_path,
+        relative_path=national_relative_path,
+        kind="national",
+        record_count=len(items),
+    )
+
+    manifest = build_standard_manifest(
+        pack_id="bls_de_4_0",
+        pack_type="national",
+        country_iso2="DE",
+        source="germany_bls",
+        source_name=(
+            "Bundeslebensmittelschlüssel (BLS), Version 4.0 "
+            "- Deutsche Nährstoffdatenbank"
+        ),
+        publisher="Max Rubner-Institut",
+        dataset_version="4.0",
+        license_id="CC-BY-4.0",
+        source_url="https://blsdb.de/download",
+        license_url="https://creativecommons.org/licenses/by/4.0/",
+        modified=True,
+        modifications=[
+            "selected energy, protein, carbohydrate and fat fields",
+            "combined German and English food names where available",
+            "normalized text and nutrient values to the MostoFit food schema",
+            "removed records with no energy or macronutrient values",
+            "deduplicated records by normalized food name",
+            "sorted records by food name",
+            "converted the source XLSX workbook to JSON",
+        ],
+        generated_at=utc_now_iso(),
+        record_count=len(items),
+        files=[file_entry],
+        extra_fields={
+            "owner": "Max Rubner-Institut",
+            "itemCount": len(items),
+            "file": national_relative_path,
+            "sourceFile": DE_BLS_SOURCE,
+            "doi": "10.25826/Data20251217-134202-0",
+            "attribution": (
+                "Max Rubner-Institut (2025): "
+                "Bundeslebensmittelschlüssel (BLS), Version 4.0 "
+                "- Deutsche Nährstoffdatenbank. Karlsruhe."
+            ),
+        },
+    )
+
+    write_json(manifest_path, manifest)
     print(f"Saved Germany BLS national pack: {len(items)} items")
 
 
