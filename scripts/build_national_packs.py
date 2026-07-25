@@ -359,7 +359,7 @@ def build_germany_bls():
 
     items.sort(key=lambda item: item["name"].lower())
 
-       national_path = os.path.join(OUTPUT_ROOT, "DE", "national.json")
+    national_path = os.path.join(OUTPUT_ROOT, "DE", "national.json")
     national_relative_path = "countries/DE/national.json"
     manifest_path = os.path.join(
         OUTPUT_ROOT,
