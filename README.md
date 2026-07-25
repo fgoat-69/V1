@@ -64,5 +64,5 @@ Each item is written in a simplified app-facing format:
   "servingSize": 30.0,
   "servingUnit": "g",
   "isLiquid": false,
-  "source": "github_country_pack"
+  "source": "openfoodfacts"
 }
