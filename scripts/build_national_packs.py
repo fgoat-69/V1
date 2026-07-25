@@ -346,7 +346,7 @@ def build_germany_bls():
 
         item = make_pack_item(
             name=final_name,
-            brand="BLS 4.0",
+            brand=None,
             calories=calories,
             protein=protein,
             carbs=carbs,
