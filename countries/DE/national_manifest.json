@@ -1,10 +1,41 @@
 {
+  "schemaVersion": 1,
+  "packId": "bls_de_4_0",
+  "packType": "national",
   "countryIso2": "DE",
   "source": "germany_bls",
-  "sourceName": "Bundeslebensmittelschlüssel BLS Version 4.0",
+  "sourceName": "Bundeslebensmittelschlüssel (BLS), Version 4.0 - Deutsche Nährstoffdatenbank",
+  "publisher": "Max Rubner-Institut",
+  "datasetVersion": "4.0",
+  "license": "CC-BY-4.0",
+  "sourceUrl": "https://blsdb.de/download",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "modified": true,
+  "modifications": [
+    "selected energy, protein, carbohydrate and fat fields",
+    "combined German and English food names where available",
+    "normalized text and nutrient values to the MostoFit food schema",
+    "removed records with no energy or macronutrient values",
+    "deduplicated records by normalized food name",
+    "sorted records by food name",
+    "converted the source XLSX workbook to JSON"
+  ],
+  "generatedAt": "2026-07-25T18:21:47.111770+00:00",
+  "recordCount": 7112,
+  "files": [
+    {
+      "name": "national.json",
+      "path": "countries/DE/national.json",
+      "kind": "national",
+      "recordCount": 7112,
+      "bytes": 2483471,
+      "sha256": "4f163c0d44cdf815aeb11261bc648914bdbfa584963ea6af2c4d81c839e9e977"
+    }
+  ],
   "owner": "Max Rubner-Institut",
-  "license": "CC BY 4.0",
-  "generatedAt": "2026-07-20T08:26:07.228860+00:00",
   "itemCount": 7112,
-  "file": "countries/DE/national.json"
+  "file": "countries/DE/national.json",
+  "sourceFile": "national_sources/DE/BLS_4_0_Daten_2025_DE.xlsx",
+  "doi": "10.25826/Data20251217-134202-0",
+  "attribution": "Max Rubner-Institut (2025): Bundeslebensmittelschlüssel (BLS), Version 4.0 - Deutsche Nährstoffdatenbank. Karlsruhe."
 }
