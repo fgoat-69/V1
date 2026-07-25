@@ -109,8 +109,17 @@ def find_header_by_tokens(headers, *tokens):
     return None
 
 
-def make_pack_item(name, brand, calories, protein, carbs, fat, source):
-    return {
+def make_pack_item(
+    name,
+    brand,
+    calories,
+    protein,
+    carbs,
+    fat,
+    source,
+    source_item_id=None,
+):
+    item = {
         "name": normalize_text(name),
         "brand": brand,
         "barcode": None,
@@ -124,6 +133,12 @@ def make_pack_item(name, brand, calories, protein, carbs, fat, source):
         "source": source,
     }
 
+    normalized_source_item_id = normalize_text(source_item_id)
+
+    if normalized_source_item_id:
+        item["sourceItemId"] = normalized_source_item_id
+
+    return item
 
 def add_unique_item(items, seen, item):
     key = normalize_key(item)
@@ -337,6 +352,7 @@ def build_germany_bls():
             carbs=carbs,
             fat=fat,
             source="germany_bls",
+            source_item_id=code,
         )
 
         add_unique_item(items, seen, item)
