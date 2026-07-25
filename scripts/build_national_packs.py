@@ -7,7 +7,7 @@ import unicodedata
 import xml.etree.ElementTree as ET
 import zipfile
 from datetime import datetime, timezone
-from urllib.parse import quote, urljoin, urlsplit, urlunsplit
+from urllib.parse import quote, urljoin
 from urllib.request import Request, urlopen
 
 from openpyxl import load_workbook
@@ -17,8 +17,6 @@ OUTPUT_ROOT = "countries"
 USER_AGENT = "MostoFitNationalPackBuilder/1.0"
 NL_NEVO_PAGE_URL = "https://www.rivm.nl/documenten/nevo-online-versie"
 DE_BLS_SOURCE = "national_sources/DE/BLS_4_0_Daten_2025_DE.xlsx"
-
-HU_KALORIAGURU_URLS_SOURCE = "national_sources/HU/kaloriaguru_urls.txt"
 
 CIQUAL_DATASET_DOI = "doi:10.57745/RDMHWY"
 CIQUAL_API_BASE = "https://entrepot.recherche.data.gouv.fr/api"
@@ -88,27 +86,6 @@ def fetch_text(url):
     request = Request(url, headers={"User-Agent": USER_AGENT})
     with urlopen(request, timeout=60) as response:
         return response.read().decode("utf-8", errors="replace")
-def safe_url(url):
-    parts = urlsplit(url)
-    netloc = parts.netloc.encode("idna").decode("ascii")
-    path = quote(parts.path, safe="/%")
-    query = quote(parts.query, safe="=&%")
-    return urlunsplit((parts.scheme, netloc, path, query, parts.fragment))
-
-
-def fetch_text_any_encoding(url):
-    request = Request(safe_url(url), headers={"User-Agent": USER_AGENT})
-
-    with urlopen(request, timeout=120) as response:
-        raw = response.read()
-
-    for encoding in ("utf-8", "iso-8859-2", "windows-1250"):
-        try:
-            return raw.decode(encoding)
-        except UnicodeDecodeError:
-            pass
-
-    return raw.decode("utf-8", errors="replace")
     
 def find_header(headers, starts_with):
     for header in headers:
@@ -1029,112 +1006,6 @@ def build_australia_afcd():
     })
 
     print(f"Saved Australia AFCD national pack: {len(items)} items")
-    # ============================================================
-# Hungary — KalóriaGuru
-# ============================================================
-
-def html_to_text(value):
-    value = re.sub(r"<br\s*/?>", " ", value, flags=re.IGNORECASE)
-    value = re.sub(r"<[^>]+>", " ", value)
-    value = value.replace("&nbsp;", " ")
-    value = value.replace("&aacute;", "á").replace("&eacute;", "é")
-    value = value.replace("&iacute;", "í").replace("&oacute;", "ó")
-    value = value.replace("&ouml;", "ö").replace("&otilde;", "ő")
-    value = value.replace("&uacute;", "ú").replace("&uuml;", "ü")
-    value = value.replace("&ucirc;", "ű")
-    return normalize_text(value)
-
-
-def parse_kaloriaguru_table(html, url):
-    rows = re.findall(r"<tr[^>]*>(.*?)</tr>", html, flags=re.IGNORECASE | re.DOTALL)
-
-    items = []
-
-    for row_html in rows:
-        cells = re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row_html, flags=re.IGNORECASE | re.DOTALL)
-        cells = [html_to_text(cell) for cell in cells]
-
-        if len(cells) < 5:
-            continue
-
-        name = cells[0]
-        calories = to_float(cells[1])
-        protein = to_float(cells[2])
-        fat = to_float(cells[3])
-        carbs = to_float(cells[4])
-
-        if not name or calories is None:
-            continue
-
-        header_text = normalize_for_match(" ".join(cells))
-        if "energia" in header_text or "feherje" in header_text:
-            continue
-
-        protein = protein or 0.0
-        fat = fat or 0.0
-        carbs = carbs or 0.0
-
-        if is_empty_macro_row(calories, protein, carbs, fat):
-            continue
-
-        items.append(make_pack_item(
-            name=name,
-            brand="KalóriaGuru",
-            calories=calories,
-            protein=protein,
-            carbs=carbs,
-            fat=fat,
-            source="hungary_kaloriaguru",
-        ))
-
-    print(f"Parsed KalóriaGuru page: {len(items)} items from {url}")
-    return items
-
-
-def build_hungary():
-    if not os.path.exists(HU_KALORIAGURU_URLS_SOURCE):
-        raise FileNotFoundError(f"Missing Hungary KalóriaGuru URL source file: {HU_KALORIAGURU_URLS_SOURCE}")
-
-    with open(HU_KALORIAGURU_URLS_SOURCE, "r", encoding="utf-8") as f:
-        urls = [
-            normalize_text(line)
-            for line in f
-            if normalize_text(line) and not normalize_text(line).startswith("#")
-        ]
-
-    items = []
-    seen = set()
-    failed_urls = []
-
-    for url in urls:
-        try:
-            html = fetch_text_any_encoding(url)
-        except Exception as exc:
-            print(f"WARNING: Skipping KalóriaGuru URL after fetch failure: {url} ({exc})")
-            failed_urls.append(url)
-            continue
-
-        for item in parse_kaloriaguru_table(html, url):
-            add_unique_item(items, seen, item)
-
-    items.sort(key=lambda item: item["name"].lower())
-
-    write_json(os.path.join(OUTPUT_ROOT, "HU", "national.json"), items)
-    write_json(os.path.join(OUTPUT_ROOT, "HU", "national_manifest.json"), {
-        "countryIso2": "HU",
-        "source": "hungary_kaloriaguru",
-        "sourceName": "KalóriaGuru kalóriatáblázat",
-        "owner": "KalóriaGuru",
-        "license": "Website data; verify reuse terms before public redistribution",
-        "sourceFile": HU_KALORIAGURU_URLS_SOURCE,
-        "sourceUrls": urls,
-        "failedUrls": failed_urls,
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "itemCount": len(items),
-        "file": "countries/HU/national.json",
-    })
-
-    print(f"Saved Hungary KalóriaGuru national pack: {len(items)} items")
 # ============================================================
 # Entry point
 # ============================================================
@@ -1146,7 +1017,7 @@ def main():
     build_united_kingdom_cofid()
     build_australia_afcd()
     build_netherlands_nevo()
-    build_hungary()
+
 
 if __name__ == "__main__":
     main()
