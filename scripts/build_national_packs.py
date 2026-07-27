@@ -24,6 +24,15 @@ USER_AGENT = "MostoFitNationalPackBuilder/1.0"
 NL_NEVO_PAGE_URL = "https://www.rivm.nl/documenten/nevo-online-versie"
 DE_BLS_SOURCE = "national_sources/DE/BLS_4_0_Daten_2025_DE.xlsx"
 
+USDA_FDC_RELEASE_DATE = "2025-12-18"
+USDA_FDC_VERSION = "14.0"
+USDA_FDC_ZIP_URL = (
+    "https://fdc.nal.usda.gov/fdc-datasets/"
+    "FoodData_Central_foundation_food_json_2025-12-18.zip"
+)
+USDA_FDC_SOURCE_PAGE_URL = "https://fdc.nal.usda.gov/download-datasets/"
+USDA_FDC_LICENSE_URL = "https://creativecommons.org/publicdomain/zero/1.0/"
+
 CIQUAL_DATASET_DOI = "doi:10.57745/RDMHWY"
 CIQUAL_API_BASE = "https://entrepot.recherche.data.gouv.fr/api"
 
@@ -34,7 +43,204 @@ GB_COFID_SOURCE = "national_sources/GB/McCance_Widdowsons_Composition_of_Foods_I
 
 AU_AFCD_FOOD_DETAILS_SOURCE = "national_sources/AU/AFCD Release 3 - Food Details.xlsx"
 AU_AFCD_NUTRIENT_PROFILES_SOURCE = "national_sources/AU/AFCD Release 3 - Nutrient profiles.xlsx"
+# ============================================================
+# United States — USDA FoodData Central Foundation Foods
+# ============================================================
 
+def download_usda_fdc_json():
+    temp_dir = tempfile.mkdtemp(prefix="usda_fdc_")
+    zip_path = os.path.join(temp_dir, "usda_fdc.zip")
+
+    print(f"Downloading USDA FoodData Central: {USDA_FDC_ZIP_URL}")
+    download_file(USDA_FDC_ZIP_URL, zip_path)
+
+    with zipfile.ZipFile(zip_path, "r") as archive:
+        json_members = [
+            member
+            for member in archive.namelist()
+            if member.lower().endswith(".json")
+            and not member.endswith("/")
+        ]
+
+        if not json_members:
+            raise RuntimeError(
+                "The USDA FoodData Central archive contains no JSON file."
+            )
+
+        preferred_members = [
+            member
+            for member in json_members
+            if "foundation_food" in os.path.basename(member).lower()
+        ]
+
+        candidates = preferred_members or json_members
+
+        json_member = max(
+            candidates,
+            key=lambda member: archive.getinfo(member).file_size,
+        )
+
+        output_path = os.path.join(
+            temp_dir,
+            os.path.basename(json_member),
+        )
+
+        with archive.open(json_member) as source, open(output_path, "wb") as target:
+            target.write(source.read())
+
+    return output_path, os.path.basename(json_member)
+
+
+def get_usda_nutrient_amount(food, nutrient_number):
+    for food_nutrient in food.get("foodNutrients", []):
+        nutrient = food_nutrient.get("nutrient") or {}
+
+        number = normalize_text(nutrient.get("number"))
+
+        if number != nutrient_number:
+            continue
+
+        return to_float(food_nutrient.get("amount"))
+
+    return None
+
+
+def build_usda_fdc():
+    json_path, source_filename = download_usda_fdc_json()
+
+    with open(json_path, "r", encoding="utf-8") as source_file:
+        payload = json.load(source_file)
+
+    source_foods = payload.get("FoundationFoods")
+
+    if not isinstance(source_foods, list):
+        raise RuntimeError(
+            "USDA JSON does not contain a FoundationFoods array."
+        )
+
+    items = []
+    seen_source_ids = set()
+
+    for food in source_foods:
+        source_item_id = normalize_text(food.get("fdcId"))
+        name = normalize_text(food.get("description"))
+
+        if not source_item_id or not name:
+            continue
+
+        if source_item_id in seen_source_ids:
+            raise RuntimeError(
+                f"Duplicate USDA fdcId found: {source_item_id}"
+            )
+
+        seen_source_ids.add(source_item_id)
+
+        # USDA nutrient numbers:
+        # 208 = Energy in kcal
+        # 203 = Protein
+        # 205 = Carbohydrate, by difference
+        # 204 = Total lipid (fat)
+        calories = get_usda_nutrient_amount(food, "208") or 0.0
+        protein = get_usda_nutrient_amount(food, "203") or 0.0
+        carbs = get_usda_nutrient_amount(food, "205") or 0.0
+        fat = get_usda_nutrient_amount(food, "204") or 0.0
+
+        if is_empty_macro_row(calories, protein, carbs, fat):
+            continue
+
+        item = make_pack_item(
+            name=name,
+            brand=None,
+            calories=calories,
+            protein=protein,
+            carbs=carbs,
+            fat=fat,
+            source="usda_fdc",
+            source_item_id=source_item_id,
+        )
+
+        items.append(item)
+
+    items.sort(key=lambda item: item["name"].lower())
+
+    national_path = os.path.join(
+        OUTPUT_ROOT,
+        "US",
+        "national.json",
+    )
+    national_relative_path = "countries/US/national.json"
+    manifest_path = os.path.join(
+        OUTPUT_ROOT,
+        "US",
+        "national_manifest.json",
+    )
+
+    write_json(national_path, items)
+
+    file_entry = build_file_entry(
+        file_path=national_path,
+        relative_path=national_relative_path,
+        kind="national",
+        record_count=len(items),
+    )
+
+    manifest = build_standard_manifest(
+        pack_id="usda_fdc_us_foundation_14_0",
+        pack_type="national",
+        country_iso2="US",
+        source="usda_fdc",
+        source_name="FoodData Central Foundation Foods",
+        publisher=(
+            "U.S. Department of Agriculture, "
+            "Agricultural Research Service"
+        ),
+        dataset_version=USDA_FDC_VERSION,
+        license_id="CC0-1.0",
+        source_url=USDA_FDC_ZIP_URL,
+        license_url=USDA_FDC_LICENSE_URL,
+        modified=True,
+        modifications=[
+            "selected Foundation Foods from the official USDA JSON release",
+            "selected nutrient number 208 for energy in kilocalories",
+            "selected nutrient number 203 for protein",
+            "selected nutrient number 205 for carbohydrate by difference",
+            "selected nutrient number 204 for total lipid",
+            "set missing selected nutrient values to zero",
+            "removed records with no selected energy or macronutrient values",
+            "reduced records to the fields used by the MostoFit food schema",
+            "preserved each USDA fdcId as sourceItemId",
+            "normalized food names",
+            "sorted records by food name",
+            "converted the official USDA JSON release to app-facing JSON",
+        ],
+        generated_at=utc_now_iso(),
+        record_count=len(items),
+        files=[file_entry],
+        extra_fields={
+            "owner": (
+                "U.S. Department of Agriculture, "
+                "Agricultural Research Service"
+            ),
+            "releaseDate": USDA_FDC_RELEASE_DATE,
+            "dataType": "Foundation Foods",
+            "itemCount": len(items),
+            "file": national_relative_path,
+            "sourceFile": source_filename,
+            "sourcePageUrl": USDA_FDC_SOURCE_PAGE_URL,
+            "sourceArchiveUrl": USDA_FDC_ZIP_URL,
+            "attribution": (
+                "U.S. Department of Agriculture, "
+                "Agricultural Research Service. FoodData Central."
+            ),
+        },
+    )
+
+    write_json(manifest_path, manifest)
+
+    print(
+        "Saved USDA FoodData Central Foundation Foods pack: "
+        f"{len(items)} items"
+    )
 
 # ============================================================
 # Shared helpers
@@ -1082,6 +1288,7 @@ def build_australia_afcd():
 def main():
     build_germany_bls()
     build_france_ciqual()
+    build_usda_fdc()
     build_canada_cnf()
     build_united_kingdom_cofid()
     build_australia_afcd()
