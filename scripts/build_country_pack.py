@@ -290,7 +290,7 @@ def map_product(product):
         "servingSize": round(serving_size, 2) if isinstance(serving_size, (int, float)) else None,
         "servingUnit": serving_unit,
         "isLiquid": is_liquid,
-        "source": "github_country_pack",
+        "source": "openfoodfacts",
         "_sortScore": get_popularity_score(product),
     }
 
