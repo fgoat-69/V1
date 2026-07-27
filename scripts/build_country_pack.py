@@ -10,6 +10,12 @@ from datetime import datetime, timezone
 
 import requests
 
+from manifest_utils import (
+    build_file_entry,
+    build_standard_manifest,
+    utc_now_iso,
+)
+
 csv.field_size_limit(sys.maxsize)
 
 DUMP_URL = os.getenv(
@@ -26,6 +32,20 @@ FULL_PACK_MAX_ITEMS = 15_000
 CACHE_DIR = ".cache"
 DUMP_FILENAME = os.getenv("OFF_DUMP_FILENAME", "en.openfoodfacts.org.products.csv.gz")
 DUMP_PATH = os.path.join(CACHE_DIR, DUMP_FILENAME)
+OFF_SOURCE_NAME = "Open Food Facts"
+OFF_PUBLISHER = "Open Food Facts"
+
+OFF_DATABASE_LICENSE_ID = "ODbL-1.0"
+OFF_DATABASE_LICENSE_URL = (
+    "https://opendatacommons.org/licenses/odbl/1-0/"
+)
+
+OFF_CONTENTS_LICENSE_ID = "DbCL-1.0"
+OFF_CONTENTS_LICENSE_URL = (
+    "https://opendatacommons.org/licenses/dbcl/1-0/"
+)
+
+OFF_SOURCE_PAGE_URL = "https://world.openfoodfacts.org/data"
 
 
 USER_AGENT = os.getenv(
