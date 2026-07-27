@@ -9,7 +9,7 @@
     "nutrientProfiles": "national_sources/AU/AFCD Release 3 - Nutrient profiles.xlsx"
   },
   "energyConversion": "kcal = kJ / 4.184",
-  "generatedAt": "2026-07-25T18:22:13.259258+00:00",
+  "generatedAt": "2026-07-27T08:57:16.156261+00:00",
   "itemCount": 1577,
   "file": "countries/AU/national.json"
 }
