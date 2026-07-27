@@ -31,7 +31,6 @@ jobs:
         run: |
           git config user.name "actions-user"
           git config user.email "actions@github.com"
-
           git add \
             countries/DE/national.json \
             countries/DE/national_manifest.json \
@@ -45,8 +44,6 @@ jobs:
             countries/AU/national_manifest.json \
             countries/NL/national.json \
             countries/NL/national_manifest.json
-            countries/US/national.json \
-            countries/US/national_manifest.json \
             
           git commit -m "Build national food packs" || echo "No changes to commit"
           git push
