@@ -1082,8 +1082,5 @@ def main():
     build_france_ciqual()
     build_canada_cnf()
     build_united_kingdom_cofid()
-    build_australia_afcd()
-    build_netherlands_nevo()
-
 if __name__ == "__main__":
     main()
