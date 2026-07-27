@@ -45,6 +45,8 @@ jobs:
             countries/AU/national_manifest.json \
             countries/NL/national.json \
             countries/NL/national_manifest.json
+            countries/US/national.json \
+            countries/US/national_manifest.json \
             
           git commit -m "Build national food packs" || echo "No changes to commit"
           git push
