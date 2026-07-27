@@ -7,7 +7,7 @@ import unicodedata
 import xml.etree.ElementTree as ET
 import zipfile
 from datetime import datetime, timezone
-from urllib.parse import quote, urljoin
+from urllib.parse import quote
 from urllib.request import Request, urlopen
 
 from openpyxl import load_workbook
@@ -21,7 +21,6 @@ from manifest_utils import (
 
 OUTPUT_ROOT = "countries"
 USER_AGENT = "MostoFitNationalPackBuilder/1.0"
-NL_NEVO_PAGE_URL = "https://www.rivm.nl/documenten/nevo-online-versie"
 DE_BLS_SOURCE = "national_sources/DE/BLS_4_0_Daten_2025_DE.xlsx"
 
 CIQUAL_DATASET_DOI = "doi:10.57745/RDMHWY"
@@ -31,9 +30,6 @@ CANADA_CNF_RESOURCE_ID = "019f2a90-e3a9-489d-b6e1-f74f4ba1d006"
 OPEN_CANADA_API_BASE = "https://open.canada.ca/data/api/action"
 
 GB_COFID_SOURCE = "national_sources/GB/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021.xlsx"
-
-AU_AFCD_FOOD_DETAILS_SOURCE = "national_sources/AU/AFCD Release 3 - Food Details.xlsx"
-AU_AFCD_NUTRIENT_PROFILES_SOURCE = "national_sources/AU/AFCD Release 3 - Nutrient profiles.xlsx"
 # ============================================================
 # Shared helpers
 # ============================================================
@@ -86,10 +82,6 @@ def download_file(url, output_path):
     with urlopen(request, timeout=180) as response:
         with open(output_path, "wb") as f:
             f.write(response.read())
-def fetch_text(url):
-    request = Request(url, headers={"User-Agent": USER_AGENT})
-    with urlopen(request, timeout=60) as response:
-        return response.read().decode("utf-8", errors="replace")
     
 def find_header(headers, starts_with):
     for header in headers:
@@ -97,15 +89,6 @@ def find_header(headers, starts_with):
         if text.startswith(starts_with):
             return header
     return None
-
-
-def find_header_by_tokens(headers, *tokens):
-    for header in headers:
-        text = normalize_for_match(header)
-        if all(normalize_for_match(token) in text for token in tokens):
-            return header
-    return None
-
 
 def make_pack_item(
     name,
@@ -150,134 +133,6 @@ def add_unique_item(items, seen, item):
 def is_empty_macro_row(calories, protein, carbs, fat):
     return calories == 0.0 and protein == 0.0 and carbs == 0.0 and fat == 0.0
 
-# ============================================================
-# Netherlands — NEVO
-# ============================================================
-
-def find_nevo_zip_url(html):
-    matches = re.findall(r'href=["\']([^"\']+\.zip(?:\?[^"\']*)?)["\']', html, flags=re.IGNORECASE)
-
-    if not matches:
-        raise RuntimeError("Could not find NEVO ZIP link on RIVM page.")
-
-    return urljoin(NL_NEVO_PAGE_URL, matches[0])
-
-
-def download_nevo_xlsx():
-    html = fetch_text(NL_NEVO_PAGE_URL)
-    zip_url = find_nevo_zip_url(html)
-
-    temp_dir = tempfile.mkdtemp(prefix="nevo_")
-    zip_path = os.path.join(temp_dir, "nevo.zip")
-
-    print(f"Downloading Netherlands NEVO ZIP: {zip_url}")
-    download_file(zip_url, zip_path)
-
-    with zipfile.ZipFile(zip_path, "r") as zip_file:
-        xlsx_members = [
-            name for name in zip_file.namelist()
-            if os.path.basename(name).lower().endswith(".xlsx")
-        ]
-
-        if not xlsx_members:
-            raise RuntimeError("Could not find NEVO XLSX file in ZIP.")
-
-        xlsx_members.sort()
-        xlsx_member = xlsx_members[0]
-        output_path = os.path.join(temp_dir, os.path.basename(xlsx_member))
-
-        with zip_file.open(xlsx_member) as source, open(output_path, "wb") as target:
-            target.write(source.read())
-
-    return output_path, {
-        "sourcePageUrl": NL_NEVO_PAGE_URL,
-        "sourceZipUrl": zip_url,
-        "sourceXlsxFile": os.path.basename(output_path),
-    }
-
-
-def build_netherlands_nevo():
-    xlsx_path, source_info = download_nevo_xlsx()
-
-    workbook = load_workbook(xlsx_path, read_only=True, data_only=True)
-    sheet = workbook["NEVO2025"]
-
-    rows = sheet.iter_rows(values_only=True)
-    headers = list(next(rows))
-    index = {header: i for i, header in enumerate(headers)}
-
-    required_headers = {
-        "NEVO-code",
-        "Voedingsmiddelnaam/Dutch food name",
-        "Engelse naam/Food name",
-        "Hoeveelheid/Quantity",
-        "ENERCC (kcal)",
-        "PROT (g)",
-        "CHO (g)",
-        "FAT (g)",
-    }
-
-    missing = required_headers - set(headers)
-    if missing:
-        raise RuntimeError(f"Missing required NEVO headers: {missing}")
-
-    items = []
-    seen = set()
-
-    for row in rows:
-        code = row[index["NEVO-code"]]
-        name_nl = normalize_text(row[index["Voedingsmiddelnaam/Dutch food name"]])
-        name_en = normalize_text(row[index["Engelse naam/Food name"]])
-        quantity = normalize_for_match(row[index["Hoeveelheid/Quantity"]])
-
-        if not code or not name_nl:
-            continue
-
-        if quantity and quantity != "per 100g":
-            continue
-
-        calories = to_float(row[index["ENERCC (kcal)"]]) or 0.0
-        protein = to_float(row[index["PROT (g)"]]) or 0.0
-        carbs = to_float(row[index["CHO (g)"]]) or 0.0
-        fat = to_float(row[index["FAT (g)"]]) or 0.0
-
-        if is_empty_macro_row(calories, protein, carbs, fat):
-            continue
-
-        final_name = name_nl
-        if name_en and name_en.lower() != name_nl.lower():
-            final_name = f"{name_nl} / {name_en}"
-
-        item = make_pack_item(
-            name=final_name,
-            brand="NEVO 2025",
-            calories=calories,
-            protein=protein,
-            carbs=carbs,
-            fat=fat,
-            source="netherlands_nevo",
-        )
-
-        add_unique_item(items, seen, item)
-
-    items.sort(key=lambda item: item["name"].lower())
-
-    write_json(os.path.join(OUTPUT_ROOT, "NL", "national.json"), items)
-    write_json(os.path.join(OUTPUT_ROOT, "NL", "national_manifest.json"), {
-        "countryIso2": "NL",
-        "source": "netherlands_nevo",
-        "sourceName": "NEVO-online versie 2025 9.0",
-        "owner": "RIVM",
-        "license": "NEVO-online dataset conditions",
-        "sourcePageUrl": source_info["sourcePageUrl"],
-        "sourceZipUrl": source_info["sourceZipUrl"],
-        "sourceXlsxFile": source_info["sourceXlsxFile"],
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "itemCount": len(items),
-        "file": "countries/NL/national.json",
-    })
-
-    print(f"Saved Netherlands NEVO national pack: {len(items)} items")
 # ============================================================
 # Germany — BLS 4.0
 # ============================================================
@@ -946,133 +801,6 @@ def build_united_kingdom_cofid():
     })
 
     print(f"Saved UK CoFID national pack: {len(items)} items")
-
-
-# ============================================================
-# Australia — AFCD Release 3
-# ============================================================
-
-def build_australia_afcd():
-    if not os.path.exists(AU_AFCD_FOOD_DETAILS_SOURCE):
-        raise FileNotFoundError(f"Missing AFCD food details file: {AU_AFCD_FOOD_DETAILS_SOURCE}")
-
-    if not os.path.exists(AU_AFCD_NUTRIENT_PROFILES_SOURCE):
-        raise FileNotFoundError(f"Missing AFCD nutrient profiles file: {AU_AFCD_NUTRIENT_PROFILES_SOURCE}")
-
-    food_workbook = load_workbook(AU_AFCD_FOOD_DETAILS_SOURCE, read_only=True, data_only=True)
-    food_sheet = food_workbook["Food details"]
-
-    food_rows = food_sheet.iter_rows(values_only=True)
-    next(food_rows, None)
-    next(food_rows, None)
-
-    food_headers = list(next(food_rows))
-    food_index = {header: i for i, header in enumerate(food_headers)}
-
-    food_key_header = find_header_by_tokens(food_headers, "public", "food", "key")
-    food_name_header = find_header_by_tokens(food_headers, "food", "name")
-
-    if not food_key_header or not food_name_header:
-        raise RuntimeError(
-            "Could not find required AFCD food columns. "
-            f"foodKey={food_key_header}, foodName={food_name_header}"
-        )
-
-    food_names = {}
-
-    for row in food_rows:
-        food_key = normalize_text(row[food_index[food_key_header]])
-        food_name = normalize_text(row[food_index[food_name_header]])
-
-        if food_key and food_name:
-            food_names[food_key] = food_name
-
-    nutrient_workbook = load_workbook(AU_AFCD_NUTRIENT_PROFILES_SOURCE, read_only=True, data_only=True)
-    nutrient_sheet = nutrient_workbook["All solids & liquids per 100 g"]
-
-    nutrient_rows = nutrient_sheet.iter_rows(values_only=True)
-    next(nutrient_rows, None)
-    next(nutrient_rows, None)
-
-    nutrient_headers = list(next(nutrient_rows))
-    nutrient_index = {header: i for i, header in enumerate(nutrient_headers)}
-
-    nutrient_food_key_header = find_header_by_tokens(nutrient_headers, "public", "food", "key")
-    nutrient_food_name_header = find_header_by_tokens(nutrient_headers, "food", "name")
-    kj_header = find_header_by_tokens(nutrient_headers, "energy", "without dietary fibre", "kj")
-    protein_header = find_header_by_tokens(nutrient_headers, "protein")
-    fat_header = find_header_by_tokens(nutrient_headers, "fat", "total")
-    carbs_header = find_header_by_tokens(nutrient_headers, "carbohydrate")
-
-    if (
-        not nutrient_food_key_header
-        or not nutrient_food_name_header
-        or not kj_header
-        or not protein_header
-        or not fat_header
-        or not carbs_header
-    ):
-        raise RuntimeError(
-            "Could not find required AFCD nutrient columns. "
-            f"foodKey={nutrient_food_key_header}, foodName={nutrient_food_name_header}, "
-            f"kj={kj_header}, protein={protein_header}, fat={fat_header}, carbs={carbs_header}"
-        )
-
-    items = []
-    seen = set()
-
-    for row in nutrient_rows:
-        food_key = normalize_text(row[nutrient_index[nutrient_food_key_header]])
-
-        if not food_key:
-            continue
-
-        name = food_names.get(food_key) or normalize_text(row[nutrient_index[nutrient_food_name_header]])
-
-        if not name:
-            continue
-
-        energy_kj = to_float(row[nutrient_index[kj_header]]) or 0.0
-        calories = energy_kj / 4.184
-        protein = to_float(row[nutrient_index[protein_header]]) or 0.0
-        fat = to_float(row[nutrient_index[fat_header]]) or 0.0
-        carbs = to_float(row[nutrient_index[carbs_header]]) or 0.0
-
-        if is_empty_macro_row(calories, protein, carbs, fat):
-            continue
-
-        item = make_pack_item(
-            name=name,
-            brand="AFCD Release 3",
-            calories=calories,
-            protein=protein,
-            carbs=carbs,
-            fat=fat,
-            source="australia_afcd",
-        )
-
-        add_unique_item(items, seen, item)
-
-    items.sort(key=lambda item: item["name"].lower())
-
-    write_json(os.path.join(OUTPUT_ROOT, "AU", "national.json"), items)
-    write_json(os.path.join(OUTPUT_ROOT, "AU", "national_manifest.json"), {
-        "countryIso2": "AU",
-        "source": "australia_afcd",
-        "sourceName": "Australian Food Composition Database Release 3",
-        "owner": "Food Standards Australia New Zealand",
-        "license": "Food Standards Australia New Zealand data files",
-        "sourceFiles": {
-            "foodDetails": AU_AFCD_FOOD_DETAILS_SOURCE,
-            "nutrientProfiles": AU_AFCD_NUTRIENT_PROFILES_SOURCE,
-        },
-        "energyConversion": "kcal = kJ / 4.184",
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "itemCount": len(items),
-        "file": "countries/AU/national.json",
-    })
-
-    print(f"Saved Australia AFCD national pack: {len(items)} items")
 # ============================================================
 # Entry point
 # ============================================================
