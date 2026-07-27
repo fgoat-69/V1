@@ -518,7 +518,18 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
 
     return discovered_items, build_meta
 
+def remove_existing_off_outputs(country_path):
+    for filename in (
+        "full.json",
+        "main.json",
+        "fill.json",
+        "manifest.json",
+    ):
+        file_path = os.path.join(country_path, filename)
 
+        if os.path.isfile(file_path):
+            os.remove(file_path)
+            
 def save_country(country_iso2, slug, items, build_meta):
     country_iso2 = country_iso2.strip().upper()
 
