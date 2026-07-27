@@ -20,8 +20,6 @@ CANONICAL_SOURCE_IDS = {
     "france_ciqual",
     "canada_cnf",
     "uk_cofid_2021",
-    "australia_afcd",
-    "netherlands_nevo",
     "custom",
 }
 
