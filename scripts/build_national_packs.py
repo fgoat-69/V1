@@ -24,15 +24,6 @@ USER_AGENT = "MostoFitNationalPackBuilder/1.0"
 NL_NEVO_PAGE_URL = "https://www.rivm.nl/documenten/nevo-online-versie"
 DE_BLS_SOURCE = "national_sources/DE/BLS_4_0_Daten_2025_DE.xlsx"
 
-USDA_FDC_RELEASE_DATE = "2025-12-18"
-USDA_FDC_VERSION = "14.0"
-USDA_FDC_ZIP_URL = (
-    "https://fdc.nal.usda.gov/fdc-datasets/"
-    "FoodData_Central_foundation_food_json_2025-12-18.zip"
-)
-USDA_FDC_SOURCE_PAGE_URL = "https://fdc.nal.usda.gov/download-datasets/"
-USDA_FDC_LICENSE_URL = "https://creativecommons.org/publicdomain/zero/1.0/"
-
 CIQUAL_DATASET_DOI = "doi:10.57745/RDMHWY"
 CIQUAL_API_BASE = "https://entrepot.recherche.data.gouv.fr/api"
 
