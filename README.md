@@ -17,12 +17,12 @@ The app will eventually use these packs as a fast local country layer before fal
 
 ## Current build strategy
 
-The repository now builds packs from the Open Food Facts JSONL dump instead of bulk-crawling the search API.
+The repository builds packs from the compressed Open Food Facts CSV export instead of bulk-crawling the search API.
 
 Why:
 
 - OFF search endpoints are rate-limited and can block bulk traversal
-- OFF recommends downloading CSV / JSONL data directly for large-scale data access
+- OFF recommends downloading bulk export data directly for large-scale data access
 - this repo needs a stable country-pack publisher path, not an API-crawling script
 
 ## Current packing rules
