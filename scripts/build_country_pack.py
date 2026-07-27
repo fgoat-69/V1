@@ -47,6 +47,10 @@ OFF_CONTENTS_LICENSE_URL = (
 
 OFF_SOURCE_PAGE_URL = "https://world.openfoodfacts.org/data"
 
+OFF_ATTRIBUTION = (
+    "Contains information from Open Food Facts, which is made available "
+    "under the Open Database License (ODbL)."
+)
 
 USER_AGENT = os.getenv(
     "OFF_USER_AGENT",
@@ -229,48 +233,21 @@ def map_product(product):
     if not name:
         return None
 
-    kcal = first_number(
-        to_float(product.get("energy-kcal_100g")),
-        to_float(product.get("energy-kcal")),
-        to_float(product.get("energy-kcal_value")),
-        to_float(product.get("energy-kcal_serving")),
-    )
+    # App-facing nutrient values are always per 100 g.
+    # Do not substitute per-serving values into these fields.
+    kcal = to_float(product.get("energy-kcal_100g"))
 
     energy_kj = first_number(
         to_float(product.get("energy-kj_100g")),
-        to_float(product.get("energy-kj")),
-        to_float(product.get("energy-kj_value")),
-        to_float(product.get("energy-kj_serving")),
         to_float(product.get("energy_100g")),
-        to_float(product.get("energy")),
-        to_float(product.get("energy_value")),
-        to_float(product.get("energy_serving")),
     )
 
     if kcal is None and energy_kj is not None:
         kcal = energy_kj / 4.184
 
-    protein = first_number(
-        to_float(product.get("proteins_100g")),
-        to_float(product.get("proteins")),
-        to_float(product.get("proteins_value")),
-        to_float(product.get("proteins_serving")),
-    )
-
-    carbs = first_number(
-        to_float(product.get("carbohydrates_100g")),
-        to_float(product.get("carbohydrates")),
-        to_float(product.get("carbohydrates_value")),
-        to_float(product.get("carbohydrates_serving")),
-    )
-
-    fat = first_number(
-        to_float(product.get("fat_100g")),
-        to_float(product.get("fat")),
-        to_float(product.get("fat_value")),
-        to_float(product.get("fat_serving")),
-    )
-
+    protein = to_float(product.get("proteins_100g"))
+    carbs = to_float(product.get("carbohydrates_100g"))
+    fat = to_float(product.get("fat_100g"))
     kcal = 0.0 if kcal is None else kcal
     protein = 0.0 if protein is None else protein
     carbs = 0.0 if carbs is None else carbs
@@ -543,8 +520,12 @@ def build_country(country_iso2, slug, download_if_missing=True, force_download=F
 
 
 def save_country(country_iso2, slug, items, build_meta):
+    country_iso2 = country_iso2.strip().upper()
+
     path = os.path.join("countries", country_iso2)
     os.makedirs(path, exist_ok=True)
+
+    remove_existing_off_outputs(path)
 
     discovered_item_count = len(items)
     discovered_bytes = json_bytes(items)
@@ -554,42 +535,37 @@ def save_country(country_iso2, slug, items, build_meta):
         and discovered_bytes <= TARGET_TOTAL_BYTES
     )
 
-    manifest = {
-        "countryIso2": country_iso2,
-        "slug": slug,
-        "version": int(time.time()),
-        "generatedAt": build_meta["generatedAt"],
-        "strategy": None,
-        "itemCountDiscovered": discovered_item_count,
-        "bytesDiscovered": discovered_bytes,
-        "itemCountTotal": 0,
-        "itemCountMain": 0,
-        "itemCountFill": 0,
-        "targetTotalBytes": TARGET_TOTAL_BYTES,
-        "targetMainBytes": TARGET_MAIN_BYTES,
-        "packFiles": [],
-        "buildMeta": build_meta,
-    }
+    file_entries = []
+
+    strategy = ""
+    item_count_main = 0
+    item_count_fill = 0
 
     if can_be_full:
+        strategy = "full"
+
         full_filename = "full.json"
-        full_relative_path = f"countries/{country_iso2}/{full_filename}"
+        full_relative_path = (
+            f"countries/{country_iso2}/{full_filename}"
+        )
         full_path = os.path.join(path, full_filename)
 
         save_json(full_path, items)
 
-        manifest["strategy"] = "full"
-        manifest["itemCountTotal"] = len(items)
-        manifest["itemCountMain"] = len(items)
-        manifest["itemCountFill"] = 0
-        manifest["packFiles"].append({
-            "name": full_filename,
-            "path": full_relative_path,
-            "kind": "full",
-            "itemCount": len(items),
-            "bytes": json_bytes(items),
-        })
+        item_count_main = len(items)
+
+        file_entries.append(
+            build_file_entry(
+                file_path=full_path,
+                relative_path=full_relative_path,
+                kind="full",
+                record_count=len(items),
+            )
+        )
+
     else:
+        strategy = "main_fill"
+
         main_items, fill_items = split_items_by_budget(
             items=items,
             main_budget_bytes=TARGET_MAIN_BYTES,
@@ -597,46 +573,139 @@ def save_country(country_iso2, slug, items, build_meta):
         )
 
         main_filename = "main.json"
-        main_relative_path = f"countries/{country_iso2}/{main_filename}"
+        main_relative_path = (
+            f"countries/{country_iso2}/{main_filename}"
+        )
         main_path = os.path.join(path, main_filename)
+
         save_json(main_path, main_items)
 
-        manifest["strategy"] = "main_fill"
-        manifest["itemCountMain"] = len(main_items)
-        manifest["itemCountFill"] = len(fill_items)
-        manifest["itemCountTotal"] = len(main_items) + len(fill_items)
-        manifest["packFiles"].append({
-            "name": main_filename,
-            "path": main_relative_path,
-            "kind": "main",
-            "itemCount": len(main_items),
-            "bytes": json_bytes(main_items),
-        })
+        item_count_main = len(main_items)
+        item_count_fill = len(fill_items)
+
+        file_entries.append(
+            build_file_entry(
+                file_path=main_path,
+                relative_path=main_relative_path,
+                kind="main",
+                record_count=len(main_items),
+            )
+        )
 
         if fill_items:
             fill_filename = "fill.json"
-            fill_relative_path = f"countries/{country_iso2}/{fill_filename}"
+            fill_relative_path = (
+                f"countries/{country_iso2}/{fill_filename}"
+            )
             fill_path = os.path.join(path, fill_filename)
+
             save_json(fill_path, fill_items)
 
-            manifest["packFiles"].append({
-                "name": fill_filename,
-                "path": fill_relative_path,
-                "kind": "fill",
-                "itemCount": len(fill_items),
-                "bytes": json_bytes(fill_items),
-            })
+            file_entries.append(
+                build_file_entry(
+                    file_path=fill_path,
+                    relative_path=fill_relative_path,
+                    kind="fill",
+                    record_count=len(fill_items),
+                )
+            )
+
+    packaged_record_count = sum(
+        entry["recordCount"]
+        for entry in file_entries
+    )
+
+    generated_at = str(
+        build_meta.get("generatedAt") or utc_now_iso()
+    )
+    dataset_version = generated_at.split("T", 1)[0]
+
+    compatibility_pack_files = [
+        {
+            "name": entry["name"],
+            "path": entry["path"],
+            "kind": entry["kind"],
+            "itemCount": entry["recordCount"],
+            "recordCount": entry["recordCount"],
+            "bytes": entry["bytes"],
+            "sha256": entry["sha256"],
+        }
+        for entry in file_entries
+    ]
+
+    manifest = build_standard_manifest(
+        pack_id=(
+            f"off_{country_iso2.lower()}_"
+            f"{dataset_version.replace('-', '_')}"
+        ),
+        pack_type="openfoodfacts",
+        country_iso2=country_iso2,
+        source="openfoodfacts",
+        source_name=OFF_SOURCE_NAME,
+        publisher=OFF_PUBLISHER,
+        dataset_version=dataset_version,
+        license_id=OFF_DATABASE_LICENSE_ID,
+        source_url=OFF_SOURCE_PAGE_URL,
+        license_url=OFF_DATABASE_LICENSE_URL,
+        modified=True,
+        modifications=[
+            "filtered the Open Food Facts export by country tags",
+            "reduced records to fields used by the MostoFit food schema",
+            "selected energy, protein, carbohydrate and fat values per 100 g",
+            "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+            "set missing selected nutrient values to zero",
+            "removed products with no usable name",
+            "removed products where all selected nutrition values were zero",
+            "preserved the Open Food Facts barcode where available",
+            "normalized serving quantities and units",
+            "inferred liquid status from serving units and food-name hints",
+            "deduplicated by barcode with normalized name and brand as a fallback",
+            "sorted products using Open Food Facts popularity information where available",
+            "limited large packs to the configured app download-size budget",
+            "split large country packs into main and fill files",
+            "converted the Open Food Facts export to app-facing JSON",
+        ],
+        generated_at=generated_at,
+        record_count=packaged_record_count,
+        files=file_entries,
+        extra_fields={
+            "slug": slug,
+            "version": int(time.time()),
+            "strategy": strategy,
+            "itemCountDiscovered": discovered_item_count,
+            "bytesDiscovered": discovered_bytes,
+            "itemCountTotal": packaged_record_count,
+            "itemCountMain": item_count_main,
+            "itemCountFill": item_count_fill,
+            "targetTotalBytes": TARGET_TOTAL_BYTES,
+            "targetMainBytes": TARGET_MAIN_BYTES,
+            "packFiles": compatibility_pack_files,
+            "buildMeta": build_meta,
+            "contentsLicense": OFF_CONTENTS_LICENSE_ID,
+            "contentsLicenseUrl": OFF_CONTENTS_LICENSE_URL,
+            "attribution": OFF_ATTRIBUTION,
+            "databaseNotice": (
+                "This modified Open Food Facts country database "
+                "is distributed under ODbL 1.0."
+            ),
+            "contentsNotice": (
+                "Individual database contents are available "
+                "under DbCL 1.0."
+            ),
+            "containsProductImages": False,
+        },
+    )
 
     manifest_path = os.path.join(path, "manifest.json")
     save_json(manifest_path, manifest)
 
     print(
-        f"Saved {country_iso2}: strategy={manifest['strategy']} "
-        f"discovered={discovered_item_count} packaged={manifest['itemCountTotal']}"
+        f"Saved {country_iso2}: strategy={strategy} "
+        f"discovered={discovered_item_count} "
+        f"packaged={packaged_record_count}"
     )
 
     return manifest
-
 
 if __name__ == "__main__":
     built_items, built_meta = build_country("HU", "hungary")
