@@ -72,6 +72,18 @@ jobs:
           COUNTRY_FILTER: ${{ github.event.inputs.country_filter }}
           FORCE_DOWNLOAD: ${{ github.event.inputs.force_download }}
           SKIP_EXISTING: ${{ github.event.inputs.skip_existing }}
+          
+      - name: Validate generated OFF packs
+        run: python scripts/validate_packs.py
+        env:
+          COUNTRY_BATCH: ${{ matrix.country_batch }}
+          COUNTRY_FILTER: ""
+          
+      - name: Validate generated OFF packs
+        run: python scripts/validate_packs.py
+        env:
+          COUNTRY_BATCH: ${{ github.event.inputs.country_batch }}
+          COUNTRY_FILTER: ${{ github.event.inputs.country_filter }}
 
       - name: Stage batch output artifact
         env:
