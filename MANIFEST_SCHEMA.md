@@ -96,8 +96,6 @@ Use these stable internal source identifiers:
 | France Ciqual | `france_ciqual` |
 | Canadian Nutrient File | `canada_cnf` |
 | UK CoFID 2021 | `uk_cofid_2021` |
-| Australian Food Composition Database | `australia_afcd` |
-| Netherlands NEVO | `netherlands_nevo` |
 | User-created foods | `custom` |
 
 Source identifiers describe the original data source.
