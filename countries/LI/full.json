@@ -10,7 +10,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Spaghetti N°5",
@@ -23,7 +23,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Gemüsebouillon hefefrei, Würfel",
@@ -36,7 +36,7 @@
     "servingSize": 66.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Crispy minis choco",
@@ -49,7 +49,7 @@
     "servingSize": 40.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Protein Mix",
@@ -62,7 +62,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "thon rosé",
@@ -75,7 +75,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "BIO Rote Bonhnen",
@@ -88,7 +88,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grinder Pepper Mix 45g Niko",
@@ -101,7 +101,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Linsen Gelb",
@@ -114,7 +114,7 @@
     "servingSize": 60.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sticks",
@@ -127,7 +127,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "GF Semmelbrösel",
@@ -140,7 +140,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hörnli Extra Gross",
@@ -153,7 +153,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Linsen Topf vegetarisch",
@@ -166,7 +166,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Nouilles Au Curry Asia",
@@ -179,7 +179,7 @@
     "servingSize": 220.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Reis-Risotto Reis Carnaroli",
@@ -192,7 +192,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rösti Original",
@@ -205,7 +205,7 @@
     "servingSize": 250.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Appenzeller Fondue (2 x 400 g)",
@@ -218,7 +218,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Blattspinat",
@@ -231,7 +231,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chai Bio-Sirup",
@@ -244,7 +244,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Couscous Sachets",
@@ -257,7 +257,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Crème fraîche",
@@ -270,7 +270,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Knoblauch Pulver",
@@ -283,7 +283,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Migros Bio Hirse",
@@ -296,7 +296,7 @@
     "servingSize": 40.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Muskatnüsse gemahlen",
@@ -309,7 +309,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rösti à la bernoise, avec du lard",
@@ -322,7 +322,7 @@
     "servingSize": 250.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Salade de Chana Dal",
@@ -335,7 +335,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Salade de pommes de terre",
@@ -348,7 +348,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tipiak Wholeweat Couscous",
@@ -361,7 +361,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tiqle sticks boisson goût fraise",
@@ -374,7 +374,7 @@
     "servingSize": 7.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Brasileiro",
@@ -387,7 +387,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Fruit Fusion Heidelbeere",
@@ -400,7 +400,7 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Zack-Zack Minutensteak",
@@ -413,6 +413,6 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   }
 ]

@@ -1,11 +1,50 @@
 {
+  "schemaVersion": 1,
+  "packId": "off_cz_2026_07_28",
+  "packType": "openfoodfacts",
   "countryIso2": "CZ",
+  "source": "openfoodfacts",
+  "sourceName": "Open Food Facts",
+  "publisher": "Open Food Facts",
+  "datasetVersion": "2026-07-28",
+  "license": "ODbL-1.0",
+  "sourceUrl": "https://world.openfoodfacts.org/data",
+  "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "modified": true,
+  "modifications": [
+    "filtered the Open Food Facts export by country tags",
+    "reduced records to fields used by the MostoFit food schema",
+    "selected energy, protein, carbohydrate and fat values per 100 g",
+    "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+    "set missing selected nutrient values to zero",
+    "removed products with no usable name",
+    "removed products where all selected nutrition values were zero",
+    "preserved the Open Food Facts barcode where available",
+    "normalized serving quantities and units",
+    "inferred liquid status from serving units and food-name hints",
+    "deduplicated by barcode with normalized name and brand as a fallback",
+    "sorted products using Open Food Facts popularity information where available",
+    "limited large packs to the configured app download-size budget",
+    "split large country packs into main and fill files",
+    "converted the Open Food Facts export to app-facing JSON"
+  ],
+  "generatedAt": "2026-07-28T11:35:11.321804+00:00",
+  "recordCount": 4196,
+  "files": [
+    {
+      "name": "full.json",
+      "path": "countries/CZ/full.json",
+      "kind": "full",
+      "recordCount": 4196,
+      "bytes": 1196419,
+      "sha256": "de0015f1c86d4e3133335e92d478dcbc53d1c87a82355bc709d0829a6398b055"
+    }
+  ],
   "slug": "czech-republic",
-  "version": 1785139285,
-  "generatedAt": "2026-07-27T08:01:25.153739+00:00",
+  "version": 1785238511,
   "strategy": "full",
   "itemCountDiscovered": 4196,
-  "bytesDiscovered": 919482,
+  "bytesDiscovered": 894306,
   "itemCountTotal": 4196,
   "itemCountMain": 4196,
   "itemCountFill": 0,
@@ -17,11 +56,13 @@
       "path": "countries/CZ/full.json",
       "kind": "full",
       "itemCount": 4196,
-      "bytes": 919482
+      "recordCount": 4196,
+      "bytes": 1196419,
+      "sha256": "de0015f1c86d4e3133335e92d478dcbc53d1c87a82355bc709d0829a6398b055"
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-07-27T08:01:25.153739+00:00",
+    "generatedAt": "2026-07-28T11:35:11.321804+00:00",
     "discoveryMethod": "off_csv_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -35,6 +76,12 @@
     "dedupedProducts": 0,
     "skippedNoNutrition": 14900,
     "discoveredItemCount": 4196,
-    "discoveredBytes": 919482
-  }
+    "discoveredBytes": 894306
+  },
+  "contentsLicense": "DbCL-1.0",
+  "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+  "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+  "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+  "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+  "containsProductImages": false
 }
