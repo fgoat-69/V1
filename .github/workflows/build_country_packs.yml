@@ -72,13 +72,7 @@ jobs:
           COUNTRY_FILTER: ${{ github.event.inputs.country_filter }}
           FORCE_DOWNLOAD: ${{ github.event.inputs.force_download }}
           SKIP_EXISTING: ${{ github.event.inputs.skip_existing }}
-          
-      - name: Validate generated OFF packs
-        run: python scripts/validate_packs.py
-        env:
-          COUNTRY_BATCH: ${{ matrix.country_batch }}
-          COUNTRY_FILTER: ""
-          
+
       - name: Validate generated OFF packs
         run: python scripts/validate_packs.py
         env:
@@ -119,13 +113,21 @@ jobs:
           selected = []
 
           if country_filter:
-              selected = [token.strip().upper() for token in country_filter.split(",") if token.strip()]
+              selected = [
+                  token.strip().upper()
+                  for token in country_filter.split(",")
+                  if token.strip()
+              ]
           elif country_batch and country_batch in mod.COUNTRY_BATCHES:
               selected = list(mod.COUNTRY_BATCHES[country_batch])
           else:
               built_root = root / "countries"
               if built_root.exists():
-                  selected = [p.name for p in built_root.iterdir() if p.is_dir()]
+                  selected = [
+                      path.name
+                      for path in built_root.iterdir()
+                      if path.is_dir()
+                  ]
 
           if not selected:
               raise RuntimeError("No countries detected to stage")
@@ -201,6 +203,12 @@ jobs:
           COUNTRY_FILTER: ""
           FORCE_DOWNLOAD: "false"
           SKIP_EXISTING: "false"
+
+      - name: Validate generated OFF packs
+        run: python scripts/validate_packs.py
+        env:
+          COUNTRY_BATCH: ${{ matrix.country_batch }}
+          COUNTRY_FILTER: ""
 
       - name: Stage batch output artifact
         env:
@@ -279,9 +287,11 @@ jobs:
           for country_dir in collected.iterdir():
               if not country_dir.is_dir():
                   continue
+
               target = repo_countries / country_dir.name
               if target.exists():
                   shutil.rmtree(target)
+
               shutil.copytree(country_dir, target)
               print(f"Merged {country_dir.name}")
           PY
@@ -304,13 +314,16 @@ jobs:
               if not manifest_path.exists():
                   continue
 
-              with open(manifest_path, "r", encoding="utf-8") as f:
-                  manifests.append(json.load(f))
+              with open(manifest_path, "r", encoding="utf-8") as file:
+                  manifests.append(json.load(file))
 
           index_payload = {
               "generatedAt": datetime.now(timezone.utc).isoformat(),
               "countryCount": len(manifests),
-              "countries": sorted(manifests, key=lambda x: x["countryIso2"]),
+              "countries": sorted(
+                  manifests,
+                  key=lambda manifest: manifest["countryIso2"],
+              ),
           }
 
           failures_payload = {
@@ -319,13 +332,34 @@ jobs:
               "failures": [],
           }
 
-          with open(countries_root / "index.json", "w", encoding="utf-8") as f:
-              json.dump(index_payload, f, ensure_ascii=False, indent=2)
+          with open(
+              countries_root / "index.json",
+              "w",
+              encoding="utf-8",
+          ) as file:
+              json.dump(
+                  index_payload,
+                  file,
+                  ensure_ascii=False,
+                  indent=2,
+              )
 
-          with open(countries_root / "failures.json", "w", encoding="utf-8") as f:
-              json.dump(failures_payload, f, ensure_ascii=False, indent=2)
+          with open(
+              countries_root / "failures.json",
+              "w",
+              encoding="utf-8",
+          ) as file:
+              json.dump(
+                  failures_payload,
+                  file,
+                  ensure_ascii=False,
+                  indent=2,
+              )
 
-          print(f"Rebuilt countries/index.json with {len(manifests)} manifests")
+          print(
+              "Rebuilt countries/index.json with "
+              f"{len(manifests)} manifests"
+          )
           PY
 
       - name: Commit merged results
@@ -376,9 +410,11 @@ jobs:
           for country_dir in collected.iterdir():
               if not country_dir.is_dir():
                   continue
+
               target = repo_countries / country_dir.name
               if target.exists():
                   shutil.rmtree(target)
+
               shutil.copytree(country_dir, target)
               print(f"Merged {country_dir.name}")
           PY
@@ -401,13 +437,16 @@ jobs:
               if not manifest_path.exists():
                   continue
 
-              with open(manifest_path, "r", encoding="utf-8") as f:
-                  manifests.append(json.load(f))
+              with open(manifest_path, "r", encoding="utf-8") as file:
+                  manifests.append(json.load(file))
 
           index_payload = {
               "generatedAt": datetime.now(timezone.utc).isoformat(),
               "countryCount": len(manifests),
-              "countries": sorted(manifests, key=lambda x: x["countryIso2"]),
+              "countries": sorted(
+                  manifests,
+                  key=lambda manifest: manifest["countryIso2"],
+              ),
           }
 
           failures_payload = {
@@ -416,13 +455,34 @@ jobs:
               "failures": [],
           }
 
-          with open(countries_root / "index.json", "w", encoding="utf-8") as f:
-              json.dump(index_payload, f, ensure_ascii=False, indent=2)
+          with open(
+              countries_root / "index.json",
+              "w",
+              encoding="utf-8",
+          ) as file:
+              json.dump(
+                  index_payload,
+                  file,
+                  ensure_ascii=False,
+                  indent=2,
+              )
 
-          with open(countries_root / "failures.json", "w", encoding="utf-8") as f:
-              json.dump(failures_payload, f, ensure_ascii=False, indent=2)
+          with open(
+              countries_root / "failures.json",
+              "w",
+              encoding="utf-8",
+          ) as file:
+              json.dump(
+                  failures_payload,
+                  file,
+                  ensure_ascii=False,
+                  indent=2,
+              )
 
-          print(f"Rebuilt countries/index.json with {len(manifests)} manifests")
+          print(
+              "Rebuilt countries/index.json with "
+              f"{len(manifests)} manifests"
+          )
           PY
 
       - name: Commit merged results
