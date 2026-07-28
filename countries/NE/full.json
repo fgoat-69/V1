@@ -1,0 +1,80 @@
+[
+  {
+    "name": "NIDO",
+    "brand": "Nestlé",
+    "barcode": "8717896007007",
+    "calories": 132.0,
+    "protein": 6.1,
+    "carbs": 0.0,
+    "fat": 7.3,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "100% Juice Pineapple",
+    "brand": "Dole",
+    "barcode": "0038900009632",
+    "calories": 130.0,
+    "protein": 1.0,
+    "carbs": 32.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "can",
+    "isLiquid": true,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Arizona lemonade fruit juice cocktail",
+    "brand": null,
+    "barcode": "0613008726096",
+    "calories": 41.66,
+    "protein": 0.0,
+    "carbs": 10.0,
+    "fat": 0.0,
+    "servingSize": 240.0,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Jus d'orange",
+    "brand": "Fan",
+    "barcode": "5290074003198",
+    "calories": 51.0,
+    "protein": 0.5,
+    "carbs": 10.8,
+    "fat": 0.5,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Sipa Couscous fin 2yrs prod",
+    "brand": "Sipa",
+    "barcode": "3660861000648",
+    "calories": 347.99,
+    "protein": 10.9,
+    "carbs": 71.6,
+    "fat": 1.25,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Panettone Cioccolato e Rum",
+    "brand": "Maina",
+    "barcode": "8005190407952",
+    "calories": 386.0,
+    "protein": 7.5,
+    "carbs": 52.0,
+    "fat": 16.0,
+    "servingSize": null,
+    "servingUnit": "ml",
+    "isLiquid": true,
+    "source": "openfoodfacts"
+  }
+]
