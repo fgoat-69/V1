@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Jungle Oats",
+    "brand": "Jungle",
+    "barcode": "6009518201958",
+    "calories": 343.0,
+    "protein": 13.1,
+    "carbs": 57.0,
+    "fat": 7.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Ginger Cubes Crystalized",
+    "brand": "Grove & Seed",
+    "barcode": "9902250731967",
+    "calories": 308.0,
+    "protein": 1.9,
+    "carbs": 81.0,
+    "fat": 0.0,
+    "servingSize": 100.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Light Tuna Chunks",
+    "brand": "Spar",
+    "barcode": "6001008161193",
+    "calories": 80.39,
+    "protein": 17.64,
+    "carbs": 0.0,
+    "fat": 0.36,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Vanilla Ice Cream",
+    "brand": "Cortina",
+    "barcode": "6009651165209",
+    "calories": 180.0,
+    "protein": 3.6,
+    "carbs": 21.3,
+    "fat": 8.9,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  }
+]

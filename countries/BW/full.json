@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Peanut Butter",
+    "brand": "Black Cat",
+    "barcode": "6009522300623",
+    "calories": 550.0,
+    "protein": 23.2,
+    "carbs": 24.0,
+    "fat": 38.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Pure Canola Oil",
+    "brand": "B-well",
+    "barcode": "6009644140060",
+    "calories": 793.26,
+    "protein": 0.0,
+    "carbs": 1.0,
+    "fat": 89.7,
+    "servingSize": 1.0,
+    "servingUnit": "serving",
+    "isLiquid": true,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Breakfast Crunch Granola",
+    "brand": "Bokomo",
+    "barcode": "6001052014193",
+    "calories": 384.32,
+    "protein": 8.7,
+    "carbs": 60.0,
+    "fat": 10.2,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Chilli Sauce",
+    "brand": "Jade Bridge",
+    "barcode": "6939945101296",
+    "calories": 80.0,
+    "protein": 2.0,
+    "carbs": 18.0,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Classic Gingersnaps",
+    "brand": "Da Vinci's",
+    "barcode": "6009612682127",
+    "calories": 457.7,
+    "protein": 6.3,
+    "carbs": 70.0,
+    "fat": 16.2,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Hot Sauce Roasted Chilli, Garlic & Morula",
+    "brand": "Maungo Craft",
+    "barcode": "6001651264456",
+    "calories": 66.67,
+    "protein": 0.0,
+    "carbs": 20.0,
+    "fat": 0.0,
+    "servingSize": 15.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  }
+]
