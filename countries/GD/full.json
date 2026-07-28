@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Lower Sodium Bacon",
+    "brand": "Oscar Mayer",
+    "barcode": "0044700019917",
+    "calories": 526.32,
+    "protein": 11.9,
+    "carbs": 0.0,
+    "fat": 15.87,
+    "servingSize": 2.0,
+    "servingUnit": "skillet",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Tropical Granola",
+    "brand": "Grain",
+    "barcode": "5060043222031",
+    "calories": 385.0,
+    "protein": 7.1,
+    "carbs": 56.3,
+    "fat": 12.8,
+    "servingSize": 45.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Exotica Morning Medley",
+    "brand": "Holiday",
+    "barcode": "0098493423000",
+    "calories": 428.57,
+    "protein": 7.14,
+    "carbs": 67.86,
+    "fat": 14.29,
+    "servingSize": 28.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  }
+]

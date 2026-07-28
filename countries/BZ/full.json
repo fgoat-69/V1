@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Cocogurt",
+    "brand": "Vinut",
+    "barcode": "8935330220632",
+    "calories": 64.29,
+    "protein": 0.36,
+    "carbs": 11.79,
+    "fat": 1.61,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Crackers / Galletas",
+    "brand": "GAMA",
+    "barcode": "0753081008532",
+    "calories": 321.43,
+    "protein": 8.33,
+    "carbs": 66.67,
+    "fat": 12.5,
+    "servingSize": 1.0,
+    "servingUnit": "package",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Deluxe Mixed Nuts",
+    "brand": "Handfuel",
+    "barcode": "0628504835968",
+    "calories": 535.71,
+    "protein": 14.29,
+    "carbs": 35.71,
+    "fat": 42.86,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "ponche de fruta",
+    "brand": "tang",
+    "barcode": "7622201393359",
+    "calories": 6.0,
+    "protein": 0.0,
+    "carbs": 1.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "popcorn habanero limón",
+    "brand": "ACTll",
+    "barcode": "7501006560923",
+    "calories": 480.0,
+    "protein": 9.0,
+    "carbs": 51.0,
+    "fat": 27.0,
+    "servingSize": 1.0,
+    "servingUnit": "portion",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Whey Protein Isolate",
+    "brand": "ProLab",
+    "barcode": "0850008777172",
+    "calories": 366.67,
+    "protein": 76.67,
+    "carbs": 10.0,
+    "fat": 1.67,
+    "servingSize": 1.0,
+    "servingUnit": "scoop",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  }
+]

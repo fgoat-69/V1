@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Pate de campagne",
+    "brand": "Waitrose",
+    "barcode": "5000169207949",
+    "calories": 362.0,
+    "protein": 13.1,
+    "carbs": 3.2,
+    "fat": 32.7,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Country Mixture",
+    "brand": "Amma's Kitchen",
+    "barcode": "0723246288567",
+    "calories": 566.67,
+    "protein": 13.33,
+    "carbs": 46.67,
+    "fat": 36.67,
+    "servingSize": 0.5,
+    "servingUnit": "cup",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Lemon Lime Sports Drink",
+    "brand": "Powerade",
+    "barcode": "0049000003697",
+    "calories": 22.0,
+    "protein": 0.0,
+    "carbs": 5.75,
+    "fat": 0.0,
+    "servingSize": 1.0,
+    "servingUnit": "bottle",
+    "isLiquid": true,
+    "source": "openfoodfacts"
+  }
+]

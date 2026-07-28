@@ -1,0 +1,28 @@
+[
+  {
+    "name": "almondmilk",
+    "brand": "Blue Diamond Almonds",
+    "barcode": "0041570056219",
+    "calories": 33.33,
+    "protein": 0.42,
+    "carbs": 5.83,
+    "fat": 1.04,
+    "servingSize": 240.0,
+    "servingUnit": "m",
+    "isLiquid": true,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Tostitos Original Restaurant Style Chips",
+    "brand": "Frito-Lay",
+    "barcode": "0028400017459",
+    "calories": 500.0,
+    "protein": 7.14,
+    "carbs": 67.86,
+    "fat": 25.0,
+    "servingSize": 28.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  }
+]
