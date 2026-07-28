@@ -144,7 +144,7 @@ Examples:
 off_de_2026_07_25
 bls_de_4_0
 cofid_gb_2021
-afcd_au_release_3
+ciqual_fr_2025
 ```
 
 ### `packType`
@@ -167,8 +167,8 @@ Examples:
 ```text
 DE
 GB
-AU
-NL
+FR
+CA
 ```
 
 Keep the field name `countryIso2`. Do not replace it with `countryCode`.
@@ -200,8 +200,8 @@ Examples:
 ```text
 4.0
 2021
-Release 3
-2025 9.0
+2025
+2026
 2026-07-25
 ```
 
