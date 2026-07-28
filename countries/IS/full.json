@@ -10,7 +10,7 @@
     "servingSize": 1.0,
     "servingUnit": "can",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tortilla Nachos Original",
@@ -23,7 +23,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr sur lit aux myrtilles",
@@ -36,7 +36,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Doritos Sweet Chili",
@@ -49,7 +49,7 @@
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Caramel-Choco Protein Bar",
@@ -62,7 +62,7 @@
     "servingSize": 55.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "The Original kaurajuoma kevyt 1.5%",
@@ -75,7 +75,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Plantgurt blueberry soya",
@@ -88,7 +88,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Seaveg Crispies Original",
@@ -101,7 +101,7 @@
     "servingSize": 4.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr Lactose Free Stracciatella",
@@ -114,7 +114,7 @@
     "servingSize": 150.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Wanhanajan vanilja",
@@ -127,7 +127,7 @@
     "servingSize": 400.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Margarine huile d'olive",
@@ -140,7 +140,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Philadelphia Light Hvitløk & Urter",
@@ -153,7 +153,7 @@
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr caramel",
@@ -166,7 +166,7 @@
     "servingSize": 150.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr fruit de la passion vanille",
@@ -179,7 +179,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Dates",
@@ -192,7 +192,7 @@
     "servingSize": 12.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr Moka",
@@ -205,7 +205,7 @@
     "servingSize": 1.0,
     "servingUnit": "becher",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Protein Toastbrot",
@@ -218,7 +218,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cherry dark chocolate skyr air",
@@ -231,7 +231,7 @@
     "servingSize": 125.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr air",
@@ -244,7 +244,7 @@
     "servingSize": 125.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr Air fruit de la passion",
@@ -257,7 +257,7 @@
     "servingSize": 125.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Smjörvi",
@@ -270,7 +270,7 @@
     "servingSize": 4.7,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kornmo Med Fullkorn",
@@ -283,7 +283,7 @@
     "servingSize": 9.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tomato ketchup Stevia",
@@ -296,7 +296,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Double Max Cocoa & Vanilla Croissant",
@@ -309,7 +309,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "I?sey skyr",
@@ -322,7 +322,7 @@
     "servingSize": 140.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Monster energy",
@@ -335,7 +335,7 @@
     "servingSize": 500.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rio Punch",
@@ -348,7 +348,7 @@
     "servingSize": 500.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Strawberry Banana",
@@ -361,7 +361,7 @@
     "servingSize": 500.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "FRESH GARLIC",
@@ -374,7 +374,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Isey Apple Cinnamon",
@@ -387,7 +387,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lett mjolk",
@@ -400,7 +400,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Powerade Citrus Lime Ion4 Pet",
@@ -413,7 +413,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pringles paprika",
@@ -426,7 +426,7 @@
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Still Flavoured Mineral Water | Lemon & Lime",
@@ -439,7 +439,7 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Йогурт греческий",
@@ -452,7 +452,7 @@
     "servingSize": 230.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Bad Apple",
@@ -465,7 +465,7 @@
     "servingSize": 1.0,
     "servingUnit": "can",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Bókhveiti",
@@ -478,7 +478,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Carbonara with cheese and bacon",
@@ -491,7 +491,7 @@
     "servingSize": 314.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chicken Panang With Jasmine Rice",
@@ -504,7 +504,7 @@
     "servingSize": 350.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Energy Drink",
@@ -517,7 +517,7 @@
     "servingSize": 1.0,
     "servingUnit": "can",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Forest Berries COLLAB",
@@ -530,7 +530,7 @@
     "servingSize": 330.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Fusilli",
@@ -543,7 +543,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grísk jógúrt með súkkulaðiflögum",
@@ -556,7 +556,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Góðostur",
@@ -569,7 +569,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "HEIMILIS BRAUÐ",
@@ -582,7 +582,7 @@
     "servingSize": 50.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hleðsla með súkkulaðibragði",
@@ -595,7 +595,7 @@
     "servingSize": 265.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pitusosa",
@@ -608,7 +608,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Samlokuostur",
@@ -621,7 +621,7 @@
     "servingSize": 20.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr",
@@ -634,7 +634,7 @@
     "servingSize": 500.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "skyr framboos Granaatappel",
@@ -647,7 +647,7 @@
     "servingSize": 140.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sugar Free Energy Drink",
@@ -660,7 +660,7 @@
     "servingSize": 250.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Síríus 56% Dökkt súkkulaði",
@@ -673,7 +673,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ísey Skyr- Jarðaber",
@@ -686,7 +686,7 @@
     "servingSize": 125.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "ab-mjólk",
@@ -699,7 +699,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Appelsin",
@@ -712,7 +712,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Apple Pie Cream Of Rice",
@@ -725,7 +725,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Beef Jerky",
@@ -738,7 +738,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Bento Squid Seafood",
@@ -751,7 +751,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Big tasty burger",
@@ -764,7 +764,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Boisson Amande Calcium",
@@ -777,7 +777,7 @@
     "servingSize": 250.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Brún rúlluterta",
@@ -790,7 +790,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "butter",
@@ -803,7 +803,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Bónus Hamborgarabrauð",
@@ -816,7 +816,7 @@
     "servingSize": 4.0,
     "servingUnit": "pair",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cheesepop Gouda 65g Paahdettuja Gouda-juustopalloja",
@@ -829,7 +829,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Coppola Butter beans",
@@ -842,7 +842,7 @@
     "servingSize": 125.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Corn Flakes - Maissi-hiutaleet",
@@ -855,7 +855,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Dumle Snacks Original",
@@ -868,7 +868,7 @@
     "servingSize": 1.0,
     "servingUnit": "bar",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "E/S apple juice box",
@@ -881,7 +881,7 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "GRÆSK YOGHURT 2% FEDT",
@@ -894,7 +894,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grísk Jógúrt",
@@ -907,7 +907,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grískjógúrt",
@@ -920,7 +920,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Heida",
@@ -933,7 +933,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hrein ab-mjólk",
@@ -946,7 +946,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklingaálegg",
@@ -959,7 +959,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kolvnetnaskert Hledsla Ípóttadrykkur",
@@ -972,7 +972,7 @@
     "servingSize": 1.0,
     "servingUnit": "ferna",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kotasæla",
@@ -985,7 +985,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kremkex",
@@ -998,7 +998,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Létt mjólk",
@@ -1011,7 +1011,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ný mjólk án laktósa",
@@ -1024,7 +1024,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Original bernaisesaus",
@@ -1037,7 +1037,7 @@
     "servingSize": 0.5,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Original Tortilla Strips",
@@ -1050,7 +1050,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Papriku Smurostur",
@@ -1063,7 +1063,7 @@
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Próteindrykkur Kaffibragð",
@@ -1076,7 +1076,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Reload",
@@ -1089,7 +1089,7 @@
     "servingSize": 500.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rifinn Ostur",
@@ -1102,7 +1102,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Samlokubrauð",
@@ -1115,7 +1115,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skinkumyrja Smurostur",
@@ -1128,7 +1128,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr",
@@ -1141,7 +1141,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr - Jarðarber og hvítt súkkulaði",
@@ -1154,7 +1154,7 @@
     "servingSize": 170.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr Air  mansikka-raparperi",
@@ -1167,7 +1167,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr Bláber",
@@ -1180,7 +1180,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "SKYR Vanilla",
@@ -1193,7 +1193,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Smá Sky banana",
@@ -1206,7 +1206,7 @@
     "servingSize": 90.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sweet and Sour Pickles",
@@ -1219,7 +1219,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sýrður Rjómi 10%",
@@ -1232,7 +1232,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tiqle sticks boisson goût fraise",
@@ -1245,7 +1245,7 @@
     "servingSize": 7.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tofu L Originale Al Naturale",
@@ -1258,7 +1258,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tomato Paste",
@@ -1271,7 +1271,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tómatsósa",
@@ -1284,7 +1284,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ultra Paradise",
@@ -1297,7 +1297,7 @@
     "servingSize": 473.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Vegobullar",
@@ -1310,7 +1310,7 @@
     "servingSize": 75.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Vegoburgare",
@@ -1323,7 +1323,7 @@
     "servingSize": 1.0,
     "servingUnit": "burger",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Vegomexicana",
@@ -1336,7 +1336,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Weetos - Anneaux Multi-Céréales",
@@ -1349,7 +1349,7 @@
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ísey skyr",
@@ -1362,7 +1362,7 @@
     "servingSize": 170.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ísey Skyr Blueberry",
@@ -1375,7 +1375,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Йогурт Греческий «Клубника-Банан»",
@@ -1388,7 +1388,7 @@
     "servingSize": 125.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "100% Whey Protein - Salted Caramel",
@@ -1401,7 +1401,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "4-Kornbrauð Hálft",
@@ -1414,7 +1414,7 @@
     "servingSize": 35.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "AB Jógúrt Skvísa Vanillu",
@@ -1427,7 +1427,7 @@
     "servingSize": 125.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Air Dried Beef Jerky",
@@ -1440,7 +1440,7 @@
     "servingSize": 7.0,
     "servingUnit": "pieces",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Aka Lunático",
@@ -1453,7 +1453,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Almonds 72%",
@@ -1466,7 +1466,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Antipasto Rustico",
@@ -1479,7 +1479,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "appelsínu kjúklingur",
@@ -1492,7 +1492,7 @@
     "servingSize": 450.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Appelsínu Marmelaði",
@@ -1505,7 +1505,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Appelsínu Marmelaði",
@@ -1518,7 +1518,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Argentinskar Rækjur",
@@ -1531,7 +1531,7 @@
     "servingSize": 400.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Asísk Tom Yum Kjúklingasúpa",
@@ -1544,7 +1544,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Auður",
@@ -1557,7 +1557,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Bacon Pylsur",
@@ -1570,7 +1570,7 @@
     "servingSize": 1.0,
     "servingUnit": "sausage",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Baguette w/ garlic",
@@ -1583,7 +1583,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Baguette 🥖",
@@ -1596,7 +1596,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Baunasúpa Og Saltkjöt",
@@ -1609,7 +1609,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Beef Juice",
@@ -1622,7 +1622,7 @@
     "servingSize": 30.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Beef Quick Fry Steak",
@@ -1635,7 +1635,7 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Beikon Pasta Með Kalkúnabollum",
@@ -1648,7 +1648,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Beikon smurostur",
@@ -1661,7 +1661,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Bjúgu",
@@ -1674,7 +1674,7 @@
     "servingSize": 1.0,
     "servingUnit": "bj",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Black Lava",
@@ -1687,7 +1687,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Bláber",
@@ -1700,7 +1700,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Brauðraspur",
@@ -1713,7 +1713,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Buffaló Sósa",
@@ -1726,7 +1726,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Butter Almond",
@@ -1739,7 +1739,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Bíó Kropp Með Piparbrjóstsykri",
@@ -1752,7 +1752,7 @@
     "servingSize": 180.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Caramel Crispy Treat",
@@ -1765,7 +1765,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Caramel Popcorn Whey Protein",
@@ -1778,7 +1778,7 @@
     "servingSize": 1.0,
     "servingUnit": "scoop",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cereal Milk Flavored Whey",
@@ -1791,7 +1791,7 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cereal Milk Whey Protein",
@@ -1804,7 +1804,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cheddar",
@@ -1817,7 +1817,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chia Porridge",
@@ -1830,7 +1830,7 @@
     "servingSize": 200.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chicken Breasts Fillets",
@@ -1843,7 +1843,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chicken Thigh Deboned",
@@ -1856,7 +1856,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chili Majó",
@@ -1869,7 +1869,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chili Sulta",
@@ -1882,7 +1882,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chili Túnfisk Salat",
@@ -1895,7 +1895,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chilli Lime Vefja",
@@ -1908,7 +1908,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Choco Hazelnut Rocher Whey Protein",
@@ -1921,7 +1921,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Chocolate Milkshake Protein",
@@ -1934,7 +1934,7 @@
     "servingSize": 35.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "chokladknsppar",
@@ -1947,7 +1947,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cinnamon Roll Protein",
@@ -1960,7 +1960,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cinnamon Roll Sweet Sauce",
@@ -1973,7 +1973,7 @@
     "servingSize": 425.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Classic Sauces Tomato Sauce",
@@ -1986,7 +1986,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cocio Classic 270ml",
@@ -1999,7 +1999,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cod In Tempura",
@@ -2012,7 +2012,7 @@
     "servingSize": 8.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Collab",
@@ -2025,7 +2025,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Collagen Juice (Blue Razz)",
@@ -2038,7 +2038,7 @@
     "servingSize": 15.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cookies N’ Dream Whey Protein",
@@ -2051,7 +2051,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Corny Big - Strawberry White Choc",
@@ -2064,7 +2064,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Costco Sourdough Loaf",
@@ -2077,7 +2077,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "COXINHAS DE FRANGO",
@@ -2090,7 +2090,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cranberry",
@@ -2103,7 +2103,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Cream of Rice Blueberry Muffin",
@@ -2116,7 +2116,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Diamond Pralines",
@@ -2129,7 +2129,7 @@
     "servingSize": 27.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Doughnut Bites",
@@ -2142,7 +2142,7 @@
     "servingSize": 1.0,
     "servingUnit": "piece",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Drauma Egg Nr.9",
@@ -2155,7 +2155,7 @@
     "servingSize": 1.0,
     "servingUnit": "egg",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Dúbaí Chocolate",
@@ -2168,7 +2168,7 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Eitt Sett",
@@ -2181,7 +2181,7 @@
     "servingSize": 28.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Energised Amino Peach Mango",
@@ -2194,7 +2194,7 @@
     "servingSize": 1.0,
     "servingUnit": "scoop",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Eplalengja",
@@ -2207,7 +2207,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Extra Virgin Olive Oil",
@@ -2220,7 +2220,7 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Fish Frozen White",
@@ -2233,7 +2233,7 @@
     "servingSize": 1.0,
     "servingUnit": "one",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Fiskibollur Í Karrísósu",
@@ -2246,7 +2246,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Fiskibollur Í Karrísósu",
@@ -2259,7 +2259,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Fjölkornabrauð",
@@ -2272,7 +2272,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Fjör Egg",
@@ -2285,7 +2285,7 @@
     "servingSize": 365.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Fjörmjólk",
@@ -2298,7 +2298,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Flatkökur",
@@ -2311,7 +2311,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Flatkökur",
@@ -2324,7 +2324,7 @@
     "servingSize": 170.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Forsoðnir Kartöflu Bátar",
@@ -2337,7 +2337,7 @@
     "servingSize": 600.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Forsteiktar Fiskistangir",
@@ -2350,7 +2350,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Frosin Jarðaber",
@@ -2363,7 +2363,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Frosnar Kjúklingalundir",
@@ -2376,7 +2376,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Frozen Crossaints",
@@ -2389,7 +2389,7 @@
     "servingSize": 1.0,
     "servingUnit": "crossaint",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Griek drykkjajógurt jarðaberja",
@@ -2402,7 +2402,7 @@
     "servingSize": 250.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "GRIEK drykkjarjógúrt, mango - ástaraldin",
@@ -2415,7 +2415,7 @@
     "servingSize": 250.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grill Bringur Sítróna Og Krydd",
@@ -2428,7 +2428,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grillbringur Sítrónu & Kryddi",
@@ -2441,7 +2441,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Griskt Jogurt Kaffi Og Sukkulaði",
@@ -2454,7 +2454,7 @@
     "servingSize": 180.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grjonagrautur",
@@ -2467,7 +2467,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grontsags Blanding // Blandað Grænmeti",
@@ -2480,7 +2480,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grænar Baunir",
@@ -2493,7 +2493,7 @@
     "servingSize": 1.0,
     "servingUnit": "can",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grænmetissamloka",
@@ -2506,7 +2506,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grísa Kótilettur Hunangs Marineraðar Og Léttreyktar",
@@ -2519,7 +2519,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grísahnakki 4 Pipar",
@@ -2532,7 +2532,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grísahnakki Úrbeinaður",
@@ -2545,7 +2545,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grísakótelettur Hunangsmarineraðar",
@@ -2558,7 +2558,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Grískt Jógúrt Hindber/sítrónu",
@@ -2571,7 +2571,7 @@
     "servingSize": 180.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Gröt Puuro Apple Banana & Cinnamon",
@@ -2584,7 +2584,7 @@
     "servingSize": 120.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Gulróta Kaka",
@@ -2597,7 +2597,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "gunnars maió",
@@ -2610,7 +2610,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Góðostur",
@@ -2623,7 +2623,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hafrabrauð",
@@ -2636,7 +2636,7 @@
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hafrastykki",
@@ -2649,7 +2649,7 @@
     "servingSize": 1.0,
     "servingUnit": "stykki",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hamborgahryggur",
@@ -2662,7 +2662,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hamborgara Sósa",
@@ -2675,7 +2675,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hamborgara Sósa",
@@ -2688,7 +2688,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hamborgarhryggur",
@@ -2701,7 +2701,7 @@
     "servingSize": 90.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Harðfiskur",
@@ -2714,7 +2714,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Harðfiskur",
@@ -2727,7 +2727,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Harðfiskur Cod",
@@ -2740,7 +2740,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Havre brød",
@@ -2753,7 +2753,7 @@
     "servingSize": 44.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "hazelnut Wafers",
@@ -2766,7 +2766,7 @@
     "servingSize": 39.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hazelnuts - Roasted & Chopped",
@@ -2779,7 +2779,7 @@
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Heilsu Biti",
@@ -2792,7 +2792,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "herb spread bread",
@@ -2805,7 +2805,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "High Fiber Low GI Cookies",
@@ -2818,7 +2818,7 @@
     "servingSize": 3.0,
     "servingUnit": "cookies",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "HLEÐSLA ÍÞRÓTTADRYKKUR",
@@ -2831,7 +2831,7 @@
     "servingSize": 1.0,
     "servingUnit": "ferna",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hnetu Toppur",
@@ -2844,7 +2844,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hnetu Toppur",
@@ -2857,7 +2857,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hnetusmjör Gróft",
@@ -2870,7 +2870,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hnetusmjör hreint",
@@ -2883,7 +2883,7 @@
     "servingSize": 20.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Homie Wake Up Synbiotic",
@@ -2896,7 +2896,7 @@
     "servingSize": 330.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hraun Súkkulaðiegg",
@@ -2909,7 +2909,7 @@
     "servingSize": 1.0,
     "servingUnit": "egg",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hreinn Smurostur",
@@ -2922,7 +2922,7 @@
     "servingSize": 20.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hreinnt Grískt Jógúrt",
@@ -2935,7 +2935,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hringur",
@@ -2948,7 +2948,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hrossahakk",
@@ -2961,7 +2961,7 @@
     "servingSize": 800.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "HráSalat",
@@ -2974,7 +2974,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hrásalat",
@@ -2987,7 +2987,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hrískubbur",
@@ -3000,7 +3000,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hrískökur",
@@ -3013,7 +3013,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hummus",
@@ -3026,7 +3026,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hunangs Kjúklingur",
@@ -3039,7 +3039,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hvítlauks Jógúrtsósa",
@@ -3052,7 +3052,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hvítlauks Og Smjör Kjuklingabringur",
@@ -3065,7 +3065,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hvítlauks Toppur",
@@ -3078,7 +3078,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Hægeldaðar Sous Vide Kjúklingabringur Hvítlaukur & Smjör",
@@ -3091,7 +3091,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Indverskur Smjörkjúklingur",
@@ -3104,7 +3104,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Innbökuð Kalkúnabringa Wellington",
@@ -3117,7 +3117,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "islenskar Flúðagulrætu",
@@ -3130,7 +3130,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Jalapeno Hummus",
@@ -3143,7 +3143,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Jarðarberja Jógúrtdrykkur",
@@ -3156,7 +3156,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Jogurt Bláber",
@@ -3169,7 +3169,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Jogurt Jarðber",
@@ -3182,7 +3182,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Jógúrt Sósa",
@@ -3195,7 +3195,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kaffi",
@@ -3208,7 +3208,7 @@
     "servingSize": 1.0,
     "servingUnit": "serving",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kaffi súkkulaði",
@@ -3221,7 +3221,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kalkúnabeikon",
@@ -3234,7 +3234,7 @@
     "servingSize": 120.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kalkúnabringa",
@@ -3247,7 +3247,7 @@
     "servingSize": 13.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kanilbiti",
@@ -3260,7 +3260,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kanilstykki Með Ostakremi",
@@ -3273,7 +3273,7 @@
     "servingSize": 250.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kartöfluhamborgarabrauð",
@@ -3286,7 +3286,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kartöflukoddar",
@@ -3299,7 +3299,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kartöflukoddar",
@@ -3312,7 +3312,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kartöflur",
@@ -3325,7 +3325,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kasjúhnetur",
@@ -3338,7 +3338,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kasjúhnetur",
@@ -3351,7 +3351,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kasjúsmjör (Cashew Butter)",
@@ -3364,7 +3364,7 @@
     "servingSize": 1.0,
     "servingUnit": "jar",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kefir",
@@ -3377,7 +3377,7 @@
     "servingSize": 250.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kentucky Hjúpaðir Þorskbitar",
@@ -3390,7 +3390,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "kims",
@@ -3403,7 +3403,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjallabolla Með Osti",
@@ -3416,7 +3416,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjuklingabringur",
@@ -3429,7 +3429,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjuklingabringur Kryddlegnar ( Jalapeno Og Suðrænir Ávextir)",
@@ -3442,7 +3442,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjuklingalærakjöt",
@@ -3455,7 +3455,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjötloka",
@@ -3468,7 +3468,7 @@
     "servingSize": 1.0,
     "servingUnit": "loka",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklinga Bringur",
@@ -3481,7 +3481,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklinga Enchiladas",
@@ -3494,7 +3494,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklinga-ramen",
@@ -3507,7 +3507,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklingabringur",
@@ -3520,7 +3520,7 @@
     "servingSize": 200.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklingabringur Kryddlegnar Hvítlauk Og Krydd",
@@ -3533,7 +3533,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklingabringuálegg",
@@ -3546,7 +3546,7 @@
     "servingSize": 15.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklingalundir",
@@ -3559,7 +3559,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklingalundir",
@@ -3572,7 +3572,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklingalundir",
@@ -3585,7 +3585,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kjúklingur Alfredo",
@@ -3598,7 +3598,7 @@
     "servingSize": 1.0,
     "servingUnit": "bowl",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Klattar Saltkaramella Og Hnetur",
@@ -3611,7 +3611,7 @@
     "servingSize": 140.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kleinuhringir",
@@ -3624,7 +3624,7 @@
     "servingSize": 140.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kleinuhringir Með Lotus Kremi",
@@ -3637,7 +3637,7 @@
     "servingSize": 140.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kleinuhringur Fyltur Með Kökur Og Krem",
@@ -3650,7 +3650,7 @@
     "servingSize": 75.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kleinur",
@@ -3663,7 +3663,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kokteilsósa",
@@ -3676,7 +3676,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kolvetnaskert Brauð",
@@ -3689,7 +3689,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kondisrulle Banana",
@@ -3702,7 +3702,7 @@
     "servingSize": 30.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Korn Braup",
@@ -3715,7 +3715,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kornstangir Með Osti",
@@ -3728,7 +3728,7 @@
     "servingSize": 1.0,
     "servingUnit": "st",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kotasæla",
@@ -3741,7 +3741,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kotasæla með chili sriracha",
@@ -3754,7 +3754,7 @@
     "servingSize": 1.0,
     "servingUnit": "container",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kotasæla Með Hvítlauk Og Pipar",
@@ -3767,7 +3767,7 @@
     "servingSize": 200.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kremkex",
@@ -3780,7 +3780,7 @@
     "servingSize": 4.0,
     "servingUnit": "kex",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Krispí Kjúklingavefja",
@@ -3793,7 +3793,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kristall Plús",
@@ -3806,7 +3806,7 @@
     "servingSize": 500.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "kryddsmjör",
@@ -3819,7 +3819,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kínóa",
@@ -3832,7 +3832,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Kókómjólk",
@@ -3845,7 +3845,7 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lakkrís Karamellu Villiköttur",
@@ -3858,7 +3858,7 @@
     "servingSize": 50.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lamb Í Karrýsósu",
@@ -3871,7 +3871,7 @@
     "servingSize": 450.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lamba Prime - Buffalo Hill",
@@ -3884,7 +3884,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lambahryggur Villisveppafylltur",
@@ -3897,7 +3897,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lambainnralæri",
@@ -3910,7 +3910,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lambakonfekt Black Garlic",
@@ -3923,7 +3923,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lambalæri",
@@ -3936,7 +3936,7 @@
     "servingSize": 1.0,
     "servingUnit": "pakki",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lambalærissneiðar",
@@ -3949,7 +3949,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lambalærissneiðar Þíddar",
@@ -3962,7 +3962,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Landeldis Lax Beinlaus m/roði",
@@ -3975,7 +3975,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lasagne Bolognese",
@@ -3988,7 +3988,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lleinuhringur Fyltur Með Lotus Kexi",
@@ -4001,7 +4001,7 @@
     "servingSize": 71.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lojo Jogurt Is",
@@ -4014,7 +4014,7 @@
     "servingSize": 170.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Létt Grísk Jógúrt",
@@ -4027,7 +4027,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "LÉTTMJÓLK",
@@ -4040,7 +4040,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Léttur Skinku & Beikon Ostur",
@@ -4053,7 +4053,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lífrænt Hunang",
@@ -4066,7 +4066,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lífrænt Seitan",
@@ -4079,7 +4079,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lífskornabollur Tröllahafrar og Chia-fræ",
@@ -4092,7 +4092,7 @@
     "servingSize": 1.0,
     "servingUnit": "stk",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Lúxus Flaug",
@@ -4105,7 +4105,7 @@
     "servingSize": 50.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Makhani",
@@ -4118,7 +4118,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Mascarpone",
@@ -4131,7 +4131,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Maískorn",
@@ -4144,7 +4144,7 @@
     "servingSize": 1.0,
     "servingUnit": "can",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Maískökur",
@@ -4157,7 +4157,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Maískökur",
@@ -4170,7 +4170,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Maískökur Með Saltkaramellu",
@@ -4183,7 +4183,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Mexicana Chicken Mini Fillets",
@@ -4196,7 +4196,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Mexico Kjúklingastrimlar",
@@ -4209,7 +4209,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Mexíkósk Kjúklingasúpa",
@@ -4222,7 +4222,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Mjúkís Creme Brulee",
@@ -4235,7 +4235,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Mokka Skyr",
@@ -4248,7 +4248,7 @@
     "servingSize": 1.0,
     "servingUnit": "dolla",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Mozzarella Ostur",
@@ -4261,7 +4261,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Naan Brauð",
@@ -4274,7 +4274,7 @@
     "servingSize": 180.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Naan bread",
@@ -4287,7 +4287,7 @@
     "servingSize": 40.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Nautalund Í Truflumarineringu",
@@ -4300,7 +4300,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Nautaminutusteik",
@@ -4313,7 +4313,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Nautgripagúllas",
@@ -4326,7 +4326,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Non-stick cooking spray - coconut oil",
@@ -4339,7 +4339,7 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "nömm óðar snældur",
@@ -4352,7 +4352,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Nömm, Sólarsælur",
@@ -4365,7 +4365,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Osso Bucco",
@@ -4378,7 +4378,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pan De Queso",
@@ -4391,7 +4391,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pasta og Kjúlli",
@@ -4404,7 +4404,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pepperoni sterkt",
@@ -4417,7 +4417,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pepperóní Ostur",
@@ -4430,7 +4430,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Performance Protein Dark Chocolate Salted Caramel",
@@ -4443,7 +4443,7 @@
     "servingSize": 30.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Piparfylltur Hjup Lakkrís",
@@ -4456,7 +4456,7 @@
     "servingSize": 150.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pizza Hawaii",
@@ -4469,7 +4469,7 @@
     "servingSize": 340.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pizzu Sósa",
@@ -4482,7 +4482,7 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Platinum Whey",
@@ -4495,7 +4495,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Plokkfiskur með bearnaise sósu",
@@ -4508,7 +4508,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Prettyboy Choco",
@@ -4521,7 +4521,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pretzel Skinka og Cheddar",
@@ -4534,7 +4534,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pretzelloka",
@@ -4547,7 +4547,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Protein Chips Salt And Pepper",
@@ -4560,7 +4560,7 @@
     "servingSize": 1.0,
     "servingUnit": "bag",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Protein Powder With Vanilla Flavour",
@@ -4573,7 +4573,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Protein Púður",
@@ -4586,7 +4586,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Prótein Iced Coffee - Caramel Macchiato",
@@ -4599,7 +4599,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Prótein Snakk - BBQ",
@@ -4612,7 +4612,7 @@
     "servingSize": 50.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Prótein Snakk - Sýrður Rjómi Og Laukur",
@@ -4625,7 +4625,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Prótein Snakk Ostur Og Trufflur",
@@ -4638,7 +4638,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Próteinkaffi",
@@ -4651,7 +4651,7 @@
     "servingSize": 266.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Puff Popp Hocki Pulver",
@@ -4664,7 +4664,7 @@
     "servingSize": 1.0,
     "servingUnit": "bag",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Páska Engjamþykkni",
@@ -4677,7 +4677,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Páska Jógúrt",
@@ -4690,7 +4690,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Páskaegg Með Lakkrís Og Kröns",
@@ -4703,7 +4703,7 @@
     "servingSize": 1.0,
     "servingUnit": "egg",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pítsu Pepperóní",
@@ -4716,7 +4716,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pítusósa",
@@ -4729,7 +4729,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Pítusósa",
@@ -4742,7 +4742,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rabo de Toro estofado",
@@ -4755,7 +4755,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ranch Dressing",
@@ -4768,7 +4768,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rauðlaukur Sultaður",
@@ -4781,7 +4781,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Red Pesto",
@@ -4794,7 +4794,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Regina Potatoe",
@@ -4807,7 +4807,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "remoulade",
@@ -4820,7 +4820,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Reykt Bleikja",
@@ -4833,7 +4833,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Reykt Kalkúnaálegg",
@@ -4846,7 +4846,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ristaður Laukur",
@@ -4859,7 +4859,7 @@
     "servingSize": 10.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rjómakúlur",
@@ -4872,7 +4872,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rjómaostur með svörtum pipar",
@@ -4885,7 +4885,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rjómasósa",
@@ -4898,7 +4898,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Roast Beef Sandwich",
@@ -4911,7 +4911,7 @@
     "servingSize": 160.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rækju Salat",
@@ -4924,7 +4924,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rís Kökur Dökkt Súkkulaði",
@@ -4937,7 +4937,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rískökur Með Ljósu Súkkulaði",
@@ -4950,7 +4950,7 @@
     "servingSize": 4.1,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rösti Kartöflur Fulleldaðar",
@@ -4963,7 +4963,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rúnstykki Með Birki",
@@ -4976,7 +4976,7 @@
     "servingSize": 95.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Rúsínulaust Geanóla",
@@ -4989,7 +4989,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Salsicha Fresca de Suíno",
@@ -5002,7 +5002,7 @@
     "servingSize": 108.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Salt karamellu Egg",
@@ -5015,7 +5015,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Saltkaramellu Púff",
@@ -5028,7 +5028,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Samloku Brauð",
@@ -5041,7 +5041,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Samlokubrauð",
@@ -5054,7 +5054,7 @@
     "servingSize": 33.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Say Cheese Sauce",
@@ -5067,7 +5067,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Seasamstangir Með Súkkulaði",
@@ -5080,7 +5080,7 @@
     "servingSize": 40.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sesam Beyglur",
@@ -5093,7 +5093,7 @@
     "servingSize": 1.0,
     "servingUnit": "beygla",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Shrimp salad",
@@ -5106,7 +5106,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sinnepssósa",
@@ -5119,7 +5119,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "skinka",
@@ -5132,7 +5132,7 @@
     "servingSize": 70.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skinka Og Ostur",
@@ -5145,7 +5145,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skinka Ostur Og Sinnepssósa",
@@ -5158,7 +5158,7 @@
     "servingSize": 180.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skinka/cooked Ham",
@@ -5171,7 +5171,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skinku Og Eggja Salat",
@@ -5184,7 +5184,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skonsur",
@@ -5197,7 +5197,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skovsvampe",
@@ -5210,7 +5210,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "skyr",
@@ -5223,7 +5223,7 @@
     "servingSize": 170.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr & Muesli",
@@ -5236,7 +5236,7 @@
     "servingSize": 200.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skyr frost jarðaberja",
@@ -5249,7 +5249,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Skúffuköku Muffins",
@@ -5262,7 +5262,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Slavi pomme",
@@ -5275,7 +5275,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Smoked Arctic Char",
@@ -5288,7 +5288,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Smoked Beef Salami",
@@ -5301,7 +5301,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Smoothie Mix - Superfood",
@@ -5314,7 +5314,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Snitzel",
@@ -5327,7 +5327,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Snitzel",
@@ -5340,7 +5340,7 @@
     "servingSize": 842.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Snitzel með Skinkubitum og Ost",
@@ -5353,7 +5353,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sorte Bønner",
@@ -5366,7 +5366,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Soðið Brauð",
@@ -5379,7 +5379,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Spaghetti Bolognese",
@@ -5392,7 +5392,7 @@
     "servingSize": 450.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Spaghetti Með Kjötbollum",
@@ -5405,7 +5405,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Spelt Surdeigsbrauð",
@@ -5418,7 +5418,7 @@
     "servingSize": 1000.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Spicy Chicken",
@@ -5431,7 +5431,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Spægipylsa",
@@ -5444,7 +5444,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Steinbítur Harðfiskur",
@@ -5457,7 +5457,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sterkur Túnfiskur Onigiri",
@@ -5470,7 +5470,7 @@
     "servingSize": 140.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Stjörnuegg stór brún egg 6stk",
@@ -5483,7 +5483,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "STRAWBERRIES, QUICK FROZEN",
@@ -5496,7 +5496,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Styrkur Ís - Súkkulaðibragð",
@@ -5509,7 +5509,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sveitabiti",
@@ -5522,7 +5522,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sveitajógúrt Jarðaberjabragð",
@@ -5535,7 +5535,7 @@
     "servingSize": 200.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sveppa Smurostur",
@@ -5548,7 +5548,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sweet & Smoky BBQ Pork Loin Steaks",
@@ -5561,7 +5561,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sítrónukaka Smá",
@@ -5574,7 +5574,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Sólkjarna Rúgbrauð",
@@ -5587,7 +5587,7 @@
     "servingSize": 42.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "sólþurrkaðir tómatar",
@@ -5600,7 +5600,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súkkulaði Egg Nr 1",
@@ -5613,7 +5613,7 @@
     "servingSize": 28.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súkkulaði Húðað",
@@ -5626,7 +5626,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súkkulaði Kremkex",
@@ -5639,7 +5639,7 @@
     "servingSize": 14.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súkkulaði Spænir",
@@ -5652,7 +5652,7 @@
     "servingSize": 150.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súkkulaðikaka",
@@ -5665,7 +5665,7 @@
     "servingSize": 50.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súrar Gúrkur",
@@ -5678,7 +5678,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súrdeigs Brauð Með Lauki",
@@ -5691,7 +5691,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súrdeigs Rústik",
@@ -5704,7 +5704,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súrdeigsbrauð fínt",
@@ -5717,7 +5717,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Súrdeigsbrauð Með Jalapeno Og Döðlum",
@@ -5730,7 +5730,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Taglia Telle Með Kjúklingi Í Ostasósu",
@@ -5743,7 +5743,7 @@
     "servingSize": 1.0,
     "servingUnit": "box",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tokyo Poke Kjúllakatsu Hrísgrjón",
@@ -5756,7 +5756,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tomatpasta",
@@ -5769,7 +5769,7 @@
     "servingSize": 200.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Traditional Icelandic Chocolate",
@@ -5782,7 +5782,7 @@
     "servingSize": null,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "trolli kiss minis",
@@ -5795,7 +5795,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tromp Bitar",
@@ -5808,7 +5808,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Truffles Fantasy",
@@ -5821,7 +5821,7 @@
     "servingSize": 8.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Tíramísú",
@@ -5834,7 +5834,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Túnfisksalat",
@@ -5847,7 +5847,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Túnfisksalat",
@@ -5860,7 +5860,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ungnautahakk",
@@ -5873,7 +5873,7 @@
     "servingSize": 250.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ungnautainnralæri",
@@ -5886,7 +5886,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ungnautainnralæri",
@@ -5899,7 +5899,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ungnautaribeye",
@@ -5912,7 +5912,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ungnautaribeye Black Garlic Marinering",
@@ -5925,7 +5925,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ungversk Gúllassúpa",
@@ -5938,7 +5938,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Vanilla coconut yog",
@@ -5951,7 +5951,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Vanillu Blanda",
@@ -5964,7 +5964,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Vanilluís með Kríspí Súkkulaði",
@@ -5977,7 +5977,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Vínarbrauð Snúðar",
@@ -5990,7 +5990,7 @@
     "servingSize": 160.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Vínarsnitsel Krónan",
@@ -6003,7 +6003,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Wedzok Ustrzycki",
@@ -6016,7 +6016,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Whey Advanced Cinnamon Bun",
@@ -6029,7 +6029,7 @@
     "servingSize": 1.0,
     "servingUnit": "scoop",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Whey Protein Belgian Chocolate",
@@ -6042,7 +6042,7 @@
     "servingSize": 32.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Whole Milk",
@@ -6055,7 +6055,7 @@
     "servingSize": 100.0,
     "servingUnit": "ml",
     "isLiquid": true,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "XL Fried Virginia Peanuts",
@@ -6068,7 +6068,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Íslenskt Nauta/-svinahakk",
@@ -6081,7 +6081,7 @@
     "servingSize": 100.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ítalsk salami",
@@ -6094,7 +6094,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Örnu Jógúrt Með Karamellu Og AB-gerlum",
@@ -6107,7 +6107,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Örnuskyr - Hreint - 170g",
@@ -6120,7 +6120,7 @@
     "servingSize": 1.0,
     "servingUnit": "dolla",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Örnuskyr Vanillu",
@@ -6133,7 +6133,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Úrbeinuð Kjúklingalæri Frosin",
@@ -6146,7 +6146,7 @@
     "servingSize": 900.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ýsa Í Raspi",
@@ -6159,7 +6159,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Ýsa Í Raspi",
@@ -6172,7 +6172,7 @@
     "servingSize": null,
     "servingUnit": null,
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Þurkaður Mangó",
@@ -6185,7 +6185,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Голубцы ленивые",
@@ -6198,7 +6198,7 @@
     "servingSize": 250.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Котлеты паровые, куриные",
@@ -6211,7 +6211,7 @@
     "servingSize": 1.0,
     "servingUnit": "portion",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Куриная грудка запечённая",
@@ -6224,7 +6224,7 @@
     "servingSize": 280.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Куриная грудка с овощами-гриль и кукурузным вйоли",
@@ -6237,7 +6237,7 @@
     "servingSize": 225.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   },
   {
     "name": "Стейк из индейки с рисом и брусничным соусом",
@@ -6250,6 +6250,6 @@
     "servingSize": 230.0,
     "servingUnit": "g",
     "isLiquid": false,
-    "source": "github_country_pack"
+    "source": "openfoodfacts"
   }
 ]

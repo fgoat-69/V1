@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T08:23:31.786758+00:00",
+  "generatedAt": "2026-07-28T00:35:53.447989+00:00",
   "countryCount": 179,
   "countries": [
     {
@@ -483,16 +483,63 @@
       }
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_be_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "BE",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:32.061685+00:00",
+      "recordCount": 33202,
+      "files": [
+        {
+          "name": "main.json",
+          "path": "countries/BE/main.json",
+          "kind": "main",
+          "recordCount": 23620,
+          "bytes": 6700496,
+          "sha256": "b48a225fc7f7c3d9bbb103dca0790af2b507c3c59f9a6d8575f320a34c064f19"
+        },
+        {
+          "name": "fill.json",
+          "path": "countries/BE/fill.json",
+          "kind": "fill",
+          "recordCount": 9582,
+          "bytes": 2689963,
+          "sha256": "4b75e4fa2fe9295d97cc72cf84c6c11bd0de81a62cdd01e5fed95b9bacb34c94"
+        }
+      ],
       "slug": "belgium",
-      "version": 1785139285,
-      "generatedAt": "2026-07-27T08:01:24.719872+00:00",
+      "version": 1785198933,
       "strategy": "main_fill",
       "itemCountDiscovered": 77499,
-      "bytesDiscovered": 16686697,
-      "itemCountTotal": 32272,
-      "itemCountMain": 23015,
-      "itemCountFill": 9257,
+      "bytesDiscovered": 16221703,
+      "itemCountTotal": 33202,
+      "itemCountMain": 23620,
+      "itemCountFill": 9582,
       "targetTotalBytes": 7000000,
       "targetMainBytes": 5000000,
       "packFiles": [
@@ -500,19 +547,23 @@
           "name": "main.json",
           "path": "countries/BE/main.json",
           "kind": "main",
-          "itemCount": 23015,
-          "bytes": 4999964
+          "itemCount": 23620,
+          "recordCount": 23620,
+          "bytes": 6700496,
+          "sha256": "b48a225fc7f7c3d9bbb103dca0790af2b507c3c59f9a6d8575f320a34c064f19"
         },
         {
           "name": "fill.json",
           "path": "countries/BE/fill.json",
           "kind": "fill",
-          "itemCount": 9257,
-          "bytes": 1999956
+          "itemCount": 9582,
+          "recordCount": 9582,
+          "bytes": 2689963,
+          "sha256": "4b75e4fa2fe9295d97cc72cf84c6c11bd0de81a62cdd01e5fed95b9bacb34c94"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:24.719872+00:00",
+        "generatedAt": "2026-07-28T00:35:32.061685+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -526,8 +577,14 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 22966,
         "discoveredItemCount": 77499,
-        "discoveredBytes": 16686697
-      }
+        "discoveredBytes": 16221703
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
       "countryIso2": "BF",
@@ -1558,13 +1615,52 @@
       }
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_dk_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "DK",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:31.140989+00:00",
+      "recordCount": 3657,
+      "files": [
+        {
+          "name": "full.json",
+          "path": "countries/DK/full.json",
+          "kind": "full",
+          "recordCount": 3657,
+          "bytes": 1037256,
+          "sha256": "494d1fff4c7699201d05de143ea7909d109475b650ce426034c4b22d3af3160c"
+        }
+      ],
       "slug": "denmark",
-      "version": 1785139283,
-      "generatedAt": "2026-07-27T08:01:23.694615+00:00",
+      "version": 1785198931,
       "strategy": "full",
       "itemCountDiscovered": 3657,
-      "bytesDiscovered": 795893,
+      "bytesDiscovered": 773951,
       "itemCountTotal": 3657,
       "itemCountMain": 3657,
       "itemCountFill": 0,
@@ -1576,11 +1672,13 @@
           "path": "countries/DK/full.json",
           "kind": "full",
           "itemCount": 3657,
-          "bytes": 795893
+          "recordCount": 3657,
+          "bytes": 1037256,
+          "sha256": "494d1fff4c7699201d05de143ea7909d109475b650ce426034c4b22d3af3160c"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:23.694615+00:00",
+        "generatedAt": "2026-07-28T00:35:31.140989+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -1594,8 +1692,14 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 15245,
         "discoveredItemCount": 3657,
-        "discoveredBytes": 795893
-      }
+        "discoveredBytes": 773951
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
       "countryIso2": "DM",
@@ -1925,13 +2029,52 @@
       }
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_fi_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "FI",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:31.048409+00:00",
+      "recordCount": 3709,
+      "files": [
+        {
+          "name": "full.json",
+          "path": "countries/FI/full.json",
+          "kind": "full",
+          "recordCount": 3709,
+          "bytes": 1054621,
+          "sha256": "1d4eb32961ce7c4865f2d1bbc6a63ed0bc3fcf401e6523e7e70b640f650c0682"
+        }
+      ],
       "slug": "finland",
-      "version": 1785139283,
-      "generatedAt": "2026-07-27T08:01:23.586478+00:00",
+      "version": 1785198931,
       "strategy": "full",
       "itemCountDiscovered": 3709,
-      "bytesDiscovered": 809826,
+      "bytesDiscovered": 787572,
       "itemCountTotal": 3709,
       "itemCountMain": 3709,
       "itemCountFill": 0,
@@ -1943,11 +2086,13 @@
           "path": "countries/FI/full.json",
           "kind": "full",
           "itemCount": 3709,
-          "bytes": 809826
+          "recordCount": 3709,
+          "bytes": 1054621,
+          "sha256": "1d4eb32961ce7c4865f2d1bbc6a63ed0bc3fcf401e6523e7e70b640f650c0682"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:23.586478+00:00",
+        "generatedAt": "2026-07-28T00:35:31.048409+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -1961,8 +2106,14 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 15621,
         "discoveredItemCount": 3709,
-        "discoveredBytes": 809826
-      }
+        "discoveredBytes": 787572
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
       "countryIso2": "FJ",
@@ -2132,16 +2283,63 @@
       }
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_gb_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "GB",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:27.121091+00:00",
+      "recordCount": 32533,
+      "files": [
+        {
+          "name": "main.json",
+          "path": "countries/GB/main.json",
+          "kind": "main",
+          "recordCount": 23215,
+          "bytes": 6671311,
+          "sha256": "44eeb92adda7f2fe41f9ac5a6d52fe4892f6e63251890120196bd4500d867311"
+        },
+        {
+          "name": "fill.json",
+          "path": "countries/GB/fill.json",
+          "kind": "fill",
+          "recordCount": 9318,
+          "bytes": 2670964,
+          "sha256": "c5f15e7f9ab38d313110a120cefc67d3a9996a80cfc9b31373d9a1e56398366a"
+        }
+      ],
       "slug": "united-kingdom",
-      "version": 1785139280,
-      "generatedAt": "2026-07-27T08:01:19.260470+00:00",
+      "version": 1785198928,
       "strategy": "main_fill",
       "itemCountDiscovered": 141548,
-      "bytesDiscovered": 31164798,
-      "itemCountTotal": 31647,
-      "itemCountMain": 22588,
-      "itemCountFill": 9059,
+      "bytesDiscovered": 30315510,
+      "itemCountTotal": 32533,
+      "itemCountMain": 23215,
+      "itemCountFill": 9318,
       "targetTotalBytes": 7000000,
       "targetMainBytes": 5000000,
       "packFiles": [
@@ -2149,19 +2347,23 @@
           "name": "main.json",
           "path": "countries/GB/main.json",
           "kind": "main",
-          "itemCount": 22588,
-          "bytes": 4999950
+          "itemCount": 23215,
+          "recordCount": 23215,
+          "bytes": 6671311,
+          "sha256": "44eeb92adda7f2fe41f9ac5a6d52fe4892f6e63251890120196bd4500d867311"
         },
         {
           "name": "fill.json",
           "path": "countries/GB/fill.json",
           "kind": "fill",
-          "itemCount": 9059,
-          "bytes": 1999947
+          "itemCount": 9318,
+          "recordCount": 9318,
+          "bytes": 2670964,
+          "sha256": "c5f15e7f9ab38d313110a120cefc67d3a9996a80cfc9b31373d9a1e56398366a"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:19.260470+00:00",
+        "generatedAt": "2026-07-28T00:35:27.121091+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -2175,8 +2377,14 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 45237,
         "discoveredItemCount": 141548,
-        "discoveredBytes": 31164798
-      }
+        "discoveredBytes": 30315510
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
       "countryIso2": "GD",
@@ -2779,16 +2987,63 @@
       }
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_ie_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "IE",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:29.231582+00:00",
+      "recordCount": 33200,
+      "files": [
+        {
+          "name": "main.json",
+          "path": "countries/IE/main.json",
+          "kind": "main",
+          "recordCount": 23689,
+          "bytes": 6705462,
+          "sha256": "5f9a3e188e1cb513d47328a8aaa09620b120ffc6a730b338544db39876b9bdf7"
+        },
+        {
+          "name": "fill.json",
+          "path": "countries/IE/fill.json",
+          "kind": "fill",
+          "recordCount": 9511,
+          "bytes": 2684928,
+          "sha256": "aa095259833d1d2dc37e4dac23f54a2ba4d924b077da1be51737eb6e395be20c"
+        }
+      ],
       "slug": "ireland",
-      "version": 1785139282,
-      "generatedAt": "2026-07-27T08:01:21.508588+00:00",
+      "version": 1785198930,
       "strategy": "main_fill",
       "itemCountDiscovered": 68178,
-      "bytesDiscovered": 14758686,
-      "itemCountTotal": 32279,
-      "itemCountMain": 23033,
-      "itemCountFill": 9246,
+      "bytesDiscovered": 14349618,
+      "itemCountTotal": 33200,
+      "itemCountMain": 23689,
+      "itemCountFill": 9511,
       "targetTotalBytes": 7000000,
       "targetMainBytes": 5000000,
       "packFiles": [
@@ -2796,19 +3051,23 @@
           "name": "main.json",
           "path": "countries/IE/main.json",
           "kind": "main",
-          "itemCount": 23033,
-          "bytes": 4999934
+          "itemCount": 23689,
+          "recordCount": 23689,
+          "bytes": 6705462,
+          "sha256": "5f9a3e188e1cb513d47328a8aaa09620b120ffc6a730b338544db39876b9bdf7"
         },
         {
           "name": "fill.json",
           "path": "countries/IE/fill.json",
           "kind": "fill",
-          "itemCount": 9246,
-          "bytes": 2000037
+          "itemCount": 9511,
+          "recordCount": 9511,
+          "bytes": 2684928,
+          "sha256": "aa095259833d1d2dc37e4dac23f54a2ba4d924b077da1be51737eb6e395be20c"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:21.508588+00:00",
+        "generatedAt": "2026-07-28T00:35:29.231582+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -2822,8 +3081,14 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 10454,
         "discoveredItemCount": 68178,
-        "discoveredBytes": 14758686
-      }
+        "discoveredBytes": 14349618
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
       "countryIso2": "IL",
@@ -2946,13 +3211,52 @@
       }
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_is_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "IS",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:30.288729+00:00",
+      "recordCount": 481,
+      "files": [
+        {
+          "name": "full.json",
+          "path": "countries/IS/full.json",
+          "kind": "full",
+          "recordCount": 481,
+          "bytes": 136634,
+          "sha256": "f6e9f599215999286d9e3b87639dfe87045752eb131c7f67a8c8634fdcbd013e"
+        }
+      ],
       "slug": "iceland",
-      "version": 1785139282,
-      "generatedAt": "2026-07-27T08:01:22.707107+00:00",
+      "version": 1785198930,
       "strategy": "full",
       "itemCountDiscovered": 481,
-      "bytesDiscovered": 104887,
+      "bytesDiscovered": 102001,
       "itemCountTotal": 481,
       "itemCountMain": 481,
       "itemCountFill": 0,
@@ -2964,11 +3268,13 @@
           "path": "countries/IS/full.json",
           "kind": "full",
           "itemCount": 481,
-          "bytes": 104887
+          "recordCount": 481,
+          "bytes": 136634,
+          "sha256": "f6e9f599215999286d9e3b87639dfe87045752eb131c7f67a8c8634fdcbd013e"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:22.707107+00:00",
+        "generatedAt": "2026-07-28T00:35:30.288729+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -2982,8 +3288,14 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 2243,
         "discoveredItemCount": 481,
-        "discoveredBytes": 104887
-      }
+        "discoveredBytes": 102001
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
       "countryIso2": "IT",
@@ -3833,13 +4145,52 @@
       }
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_lu_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "LU",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:33.136837+00:00",
+      "recordCount": 2444,
+      "files": [
+        {
+          "name": "full.json",
+          "path": "countries/LU/full.json",
+          "kind": "full",
+          "recordCount": 2444,
+          "bytes": 697986,
+          "sha256": "2e7b110393c173e59d5cb2a7515db3bbd88deb2daf1f21301088368304052d39"
+        }
+      ],
       "slug": "luxembourg",
-      "version": 1785139285,
-      "generatedAt": "2026-07-27T08:01:25.929774+00:00",
+      "version": 1785198933,
       "strategy": "full",
       "itemCountDiscovered": 2444,
-      "bytesDiscovered": 536681,
+      "bytesDiscovered": 522017,
       "itemCountTotal": 2444,
       "itemCountMain": 2444,
       "itemCountFill": 0,
@@ -3851,11 +4202,13 @@
           "path": "countries/LU/full.json",
           "kind": "full",
           "itemCount": 2444,
-          "bytes": 536681
+          "recordCount": 2444,
+          "bytes": 697986,
+          "sha256": "2e7b110393c173e59d5cb2a7515db3bbd88deb2daf1f21301088368304052d39"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:25.929774+00:00",
+        "generatedAt": "2026-07-28T00:35:33.136837+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -3869,8 +4222,14 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 8827,
         "discoveredItemCount": 2444,
-        "discoveredBytes": 536681
-      }
+        "discoveredBytes": 522017
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
       "countryIso2": "LV",
@@ -4833,13 +5192,52 @@
       }
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_nl_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "NL",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:31.290060+00:00",
+      "recordCount": 15062,
+      "files": [
+        {
+          "name": "main.json",
+          "path": "countries/NL/main.json",
+          "kind": "main",
+          "recordCount": 15062,
+          "bytes": 4287338,
+          "sha256": "aaf5bc989b3ad00294d54d11ba2b6b0a34d92da1383629f6074d09e0954fcd64"
+        }
+      ],
       "slug": "netherlands",
-      "version": 1785139283,
-      "generatedAt": "2026-07-27T08:01:23.865939+00:00",
+      "version": 1785198931,
       "strategy": "main_fill",
       "itemCountDiscovered": 15062,
-      "bytesDiscovered": 3293245,
+      "bytesDiscovered": 3202873,
       "itemCountTotal": 15062,
       "itemCountMain": 15062,
       "itemCountFill": 0,
@@ -4851,11 +5249,13 @@
           "path": "countries/NL/main.json",
           "kind": "main",
           "itemCount": 15062,
-          "bytes": 3293245
+          "recordCount": 15062,
+          "bytes": 4287338,
+          "sha256": "aaf5bc989b3ad00294d54d11ba2b6b0a34d92da1383629f6074d09e0954fcd64"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:23.865939+00:00",
+        "generatedAt": "2026-07-28T00:35:31.290060+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -4869,17 +5269,62 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 60497,
         "discoveredItemCount": 15062,
-        "discoveredBytes": 3293245
-      }
+        "discoveredBytes": 3202873
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_no_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "NO",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:30.338354+00:00",
+      "recordCount": 3605,
+      "files": [
+        {
+          "name": "full.json",
+          "path": "countries/NO/full.json",
+          "kind": "full",
+          "recordCount": 3605,
+          "bytes": 1025389,
+          "sha256": "b164d5d187be92ebd921206ed58c68f555c266884ecca3066a7febe742f708a6"
+        }
+      ],
       "slug": "norway",
-      "version": 1785139282,
-      "generatedAt": "2026-07-27T08:01:22.761936+00:00",
+      "version": 1785198930,
       "strategy": "full",
       "itemCountDiscovered": 3605,
-      "bytesDiscovered": 787458,
+      "bytesDiscovered": 765828,
       "itemCountTotal": 3605,
       "itemCountMain": 3605,
       "itemCountFill": 0,
@@ -4891,11 +5336,13 @@
           "path": "countries/NO/full.json",
           "kind": "full",
           "itemCount": 3605,
-          "bytes": 787458
+          "recordCount": 3605,
+          "bytes": 1025389,
+          "sha256": "b164d5d187be92ebd921206ed58c68f555c266884ecca3066a7febe742f708a6"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:22.761936+00:00",
+        "generatedAt": "2026-07-28T00:35:30.338354+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -4909,8 +5356,14 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 21950,
         "discoveredItemCount": 3605,
-        "discoveredBytes": 787458
-      }
+        "discoveredBytes": 765828
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
       "countryIso2": "NP",
@@ -5713,13 +6166,52 @@
       }
     },
     {
+      "schemaVersion": 1,
+      "packId": "off_se_2026_07_28",
+      "packType": "openfoodfacts",
       "countryIso2": "SE",
+      "source": "openfoodfacts",
+      "sourceName": "Open Food Facts",
+      "publisher": "Open Food Facts",
+      "datasetVersion": "2026-07-28",
+      "license": "ODbL-1.0",
+      "sourceUrl": "https://world.openfoodfacts.org/data",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "modified": true,
+      "modifications": [
+        "filtered the Open Food Facts export by country tags",
+        "reduced records to fields used by the MostoFit food schema",
+        "selected energy, protein, carbohydrate and fat values per 100 g",
+        "converted energy from kilojoules per 100 g to kilocalories per 100 g when required",
+        "set missing selected nutrient values to zero",
+        "removed products with no usable name",
+        "removed products where all selected nutrition values were zero",
+        "preserved the Open Food Facts barcode where available",
+        "normalized serving quantities and units",
+        "inferred liquid status from serving units and food-name hints",
+        "deduplicated by barcode with normalized name and brand as a fallback",
+        "sorted products using Open Food Facts popularity information where available",
+        "limited large packs to the configured app download-size budget",
+        "split large country packs into main and fill files",
+        "converted the Open Food Facts export to app-facing JSON"
+      ],
+      "generatedAt": "2026-07-28T00:35:30.522286+00:00",
+      "recordCount": 22281,
+      "files": [
+        {
+          "name": "main.json",
+          "path": "countries/SE/main.json",
+          "kind": "main",
+          "recordCount": 22281,
+          "bytes": 6275198,
+          "sha256": "c1865de5e0dd3f421c53662c92838fee164bbacd2879f868511cdfb36a1d4708"
+        }
+      ],
       "slug": "sweden",
-      "version": 1785139283,
-      "generatedAt": "2026-07-27T08:01:22.967566+00:00",
+      "version": 1785198931,
       "strategy": "main_fill",
       "itemCountDiscovered": 22281,
-      "bytesDiscovered": 4804651,
+      "bytesDiscovered": 4670965,
       "itemCountTotal": 22281,
       "itemCountMain": 22281,
       "itemCountFill": 0,
@@ -5731,11 +6223,13 @@
           "path": "countries/SE/main.json",
           "kind": "main",
           "itemCount": 22281,
-          "bytes": 4804651
+          "recordCount": 22281,
+          "bytes": 6275198,
+          "sha256": "c1865de5e0dd3f421c53662c92838fee164bbacd2879f868511cdfb36a1d4708"
         }
       ],
       "buildMeta": {
-        "generatedAt": "2026-07-27T08:01:22.967566+00:00",
+        "generatedAt": "2026-07-28T00:35:30.522286+00:00",
         "discoveryMethod": "off_csv_dump_single_pass_country_filter",
         "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
         "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
@@ -5749,8 +6243,14 @@
         "dedupedProducts": 0,
         "skippedNoNutrition": 2899,
         "discoveredItemCount": 22281,
-        "discoveredBytes": 4804651
-      }
+        "discoveredBytes": 4670965
+      },
+      "contentsLicense": "DbCL-1.0",
+      "contentsLicenseUrl": "https://opendatacommons.org/licenses/dbcl/1-0/",
+      "attribution": "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).",
+      "databaseNotice": "This modified Open Food Facts country database is distributed under ODbL 1.0.",
+      "contentsNotice": "Individual database contents are available under DbCL 1.0.",
+      "containsProductImages": false
     },
     {
       "countryIso2": "SG",
