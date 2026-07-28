@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Молоко сгущенное цельное с сахаром ГОСТ 31688-2012",
+    "brand": "Рогачевъ",
+    "barcode": "4810065006079",
+    "calories": 330.0,
+    "protein": 8.0,
+    "carbs": 56.0,
+    "fat": 8.5,
+    "servingSize": 380.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Конфеты Мишка косолапый",
+    "brand": "Красный Октябрь",
+    "barcode": "4600300086863",
+    "calories": 540.0,
+    "protein": 6.0,
+    "carbs": 59.0,
+    "fat": 30.0,
+    "servingSize": 40.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Bonbons Rosehen",
+    "brand": "Roshen",
+    "barcode": "4823077609732",
+    "calories": 380.0,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Грильяж смотка в пачках",
+    "brand": "РотФронт",
+    "barcode": "4600080310400",
+    "calories": 520.0,
+    "protein": 5.5,
+    "carbs": 64.0,
+    "fat": 26.0,
+    "servingSize": null,
+    "servingUnit": null,
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  },
+  {
+    "name": "Отруби бородинские",
+    "brand": "Ого!",
+    "barcode": "4630012080491",
+    "calories": 270.0,
+    "protein": 40.0,
+    "carbs": 40.0,
+    "fat": 2.0,
+    "servingSize": 200.0,
+    "servingUnit": "g",
+    "isLiquid": false,
+    "source": "openfoodfacts"
+  }
+]
