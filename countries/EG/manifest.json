@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "packId": "off_eg_2026_07_28",
+  "packId": "off_eg_2026_08_03",
   "packType": "openfoodfacts",
   "countryIso2": "EG",
   "source": "openfoodfacts",
   "sourceName": "Open Food Facts",
   "publisher": "Open Food Facts",
-  "datasetVersion": "2026-07-28",
+  "datasetVersion": "2026-08-03",
   "license": "ODbL-1.0",
   "sourceUrl": "https://world.openfoodfacts.org/data",
   "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
@@ -28,7 +28,7 @@
     "split large country packs into main and fill files",
     "converted the Open Food Facts export to app-facing JSON"
   ],
-  "generatedAt": "2026-07-28T12:44:36.922592+00:00",
+  "generatedAt": "2026-08-03T08:05:44.080316+00:00",
   "recordCount": 352,
   "files": [
     {
@@ -41,7 +41,7 @@
     }
   ],
   "slug": "egypt",
-  "version": 1785242676,
+  "version": 1785744344,
   "strategy": "full",
   "itemCountDiscovered": 352,
   "bytesDiscovered": 74956,
@@ -62,7 +62,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-07-28T12:44:36.922592+00:00",
+    "generatedAt": "2026-08-03T08:05:44.080316+00:00",
     "discoveryMethod": "off_csv_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
