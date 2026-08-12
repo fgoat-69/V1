@@ -20,6 +20,7 @@ CANONICAL_SOURCE_IDS = {
     "france_ciqual",
     "canada_cnf",
     "uk_cofid_2021",
+    "fineli_thl",
     "custom",
 }
 
