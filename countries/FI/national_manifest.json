@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "packId": "fineli_fi_20_0",
+  "packType": "national",
+  "countryIso2": "FI",
+  "source": "fineli_thl",
+  "sourceName": "Fineli - Finnish Food Composition Database",
+  "publisher": "Finnish Institute for Health and Welfare (THL)",
+  "datasetVersion": "20.0",
+  "license": "CC-BY-4.0",
+  "sourceUrl": "https://fineli.fi/fineli/en/avoin-data",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "modified": true,
+  "modifications": [
+    "combined Fineli Basic package 1, Basic package 2 and Ingredients for food industry",
+    "used English food names only",
+    "converted all-uppercase English food names to sentence case",
+    "selected energy, protein, available carbohydrate and total fat fields",
+    "converted Fineli energy values from kilojoules per 100 g to kilocalories per 100 g",
+    "normalized nutrient values to the MostoFit food schema",
+    "set brand and barcode to null because these fields are not supplied by the selected Fineli data",
+    "represented nutrition on a 100 g basis",
+    "deduplicated records across the three Fineli packages by Fineli FOODID and verified overlapping values",
+    "removed records that had none of the selected app-facing nutrient values",
+    "converted the source CSV data to JSON"
+  ],
+  "generatedAt": "2026-08-12T09:21:56.527372+00:00",
+  "recordCount": 4232,
+  "files": [
+    {
+      "name": "national.json",
+      "path": "countries/FI/national.json",
+      "kind": "national",
+      "recordCount": 4232,
+      "bytes": 1316414,
+      "sha256": "20ecfa8edcb548024714e77237b00404a1ddb51a5763f47b8ccabcbd0bd1a7be"
+    }
+  ],
+  "owner": "Finnish Institute for Health and Welfare (THL)",
+  "itemCount": 4232,
+  "file": "countries/FI/national.json",
+  "sourceFiles": [
+    "national_sources/FI/Fineli_Rel20__74_ravintotekij__.zip",
+    "national_sources/FI/Fineli_Rel20.zip",
+    "national_sources/FI/Fineli_Rel20_R40.zip"
+  ],
+  "copyright": "Copyright 2015 National Institute for Health and Welfare (THL).",
+  "attribution": "Fineli - Finnish Food Composition Database, Release 20.0, Finnish Institute for Health and Welfare (THL), CC BY 4.0. Modified by MostoFit."
+}
