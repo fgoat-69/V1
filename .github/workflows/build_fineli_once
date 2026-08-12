@@ -1,0 +1,35 @@
+name: Build Fineli national pack
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-fineli:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build Fineli pack
+        run: python scripts/build_fineli_pack.py
+
+      - name: Commit generated Fineli pack
+        run: |
+          git config user.name "actions-user"
+          git config user.email "actions@github.com"
+
+          git add \
+            countries/FI/national.json \
+            countries/FI/national_manifest.json
+
+          git commit -m "Build Fineli national food pack" || echo "No changes to commit"
+          git push
