@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Build Fineli pack
+      - name: Build and audit Fineli pack
         run: python scripts/build_fineli_pack.py
 
       - name: Commit generated Fineli pack
