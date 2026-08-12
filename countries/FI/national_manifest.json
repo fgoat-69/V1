@@ -17,14 +17,17 @@
     "converted all-uppercase English food names to sentence case",
     "selected energy, protein, available carbohydrate and total fat fields",
     "converted Fineli energy values from kilojoules per 100 g to kilocalories per 100 g",
+    "kept app-facing nutrient values on Fineli's documented 100 g basis and did not rescale them by serving size or liquid status",
     "normalized nutrient values to the MostoFit food schema",
     "set brand and barcode to null because these fields are not supplied by the selected Fineli data",
-    "represented nutrition on a 100 g basis",
-    "deduplicated records across the three Fineli packages by Fineli FOODID and verified overlapping values",
+    "used an explicit serving mass only when Fineli supplied a manufacturer piece or food-composition-table portion; otherwise left serving size and unit null",
+    "stored accepted Fineli serving masses in grams using the MASS field from foodaddunit.csv",
+    "classified liquids conservatively from explicit Fineli food-use classification codes and did not infer liquid status from names or volume-unit availability",
+    "deduplicated records across the three Fineli packages by Fineli FOODID and verified overlapping nutrient and food-unit values",
     "removed records that had none of the selected app-facing nutrient values",
     "converted the source CSV data to JSON"
   ],
-  "generatedAt": "2026-08-12T09:21:56.527372+00:00",
+  "generatedAt": "2026-08-12T12:55:37.427335+00:00",
   "recordCount": 4232,
   "files": [
     {
@@ -32,8 +35,8 @@
       "path": "countries/FI/national.json",
       "kind": "national",
       "recordCount": 4232,
-      "bytes": 1316414,
-      "sha256": "20ecfa8edcb548024714e77237b00404a1ddb51a5763f47b8ccabcbd0bd1a7be"
+      "bytes": 1315897,
+      "sha256": "86c527d83d4dcb9c453db8bbb859ab2c83b5d4c15a9c12647014d8df7c7ef4f8"
     }
   ],
   "owner": "Finnish Institute for Health and Welfare (THL)",
