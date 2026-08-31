@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "packId": "off_lk_2026_08_24",
+  "packId": "off_lk_2026_08_31",
   "packType": "openfoodfacts",
   "countryIso2": "LK",
   "source": "openfoodfacts",
   "sourceName": "Open Food Facts",
   "publisher": "Open Food Facts",
-  "datasetVersion": "2026-08-24",
+  "datasetVersion": "2026-08-31",
   "license": "ODbL-1.0",
   "sourceUrl": "https://world.openfoodfacts.org/data",
   "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
@@ -28,7 +28,7 @@
     "split large country packs into main and fill files",
     "converted the Open Food Facts export to app-facing JSON"
   ],
-  "generatedAt": "2026-08-24T05:18:24.671332+00:00",
+  "generatedAt": "2026-08-31T11:10:14.836745+00:00",
   "recordCount": 65,
   "files": [
     {
@@ -41,7 +41,7 @@
     }
   ],
   "slug": "sri-lanka",
-  "version": 1787548704,
+  "version": 1788174614,
   "strategy": "full",
   "itemCountDiscovered": 65,
   "bytesDiscovered": 13709,
@@ -62,7 +62,7 @@
     }
   ],
   "buildMeta": {
-    "generatedAt": "2026-08-24T05:18:24.671332+00:00",
+    "generatedAt": "2026-08-31T11:10:14.836745+00:00",
     "discoveryMethod": "off_csv_dump_single_pass_country_filter",
     "coverageNote": "This build is generated from a single pass over the OFF CSV dump with country filtering, app-field reduction, nutrition filtering, and per-country deduplication. Products with completely empty calories/protein/carbs/fat are skipped unless they appear to be plain water. Large countries are popularity-sorted using OFF popularity fields when available before budget-based packaging.",
     "dumpUrl": "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz",
